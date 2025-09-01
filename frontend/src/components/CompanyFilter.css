@@ -1,0 +1,28 @@
+.company-filter {
+  display: flex;            
+  flex-direction: column;    
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 6px;
+  max-width: 300px;
+  background: #fafafa;
+}
+
+.company-item {
+  display: flex;
+  align-items: center;
+  width: 100%;               
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.company-item input {
+  margin-right: 6px;
+}
+
+.company-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin-right: 8px;
+}
