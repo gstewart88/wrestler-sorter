@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+:root {
+  --gap: 1rem;
+  --radius: 0.5rem;
+  --overlay-bg: rgba(0, 0, 0, 0.6);
+  --primary: #0074d9;
+  --border-color: #ddd;
+  --transition: 200ms ease-in-out;
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -43,4 +53,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.main-content {
+  flex: 1;            /* takes all window width minus menu */
+  overflow-y: auto;   /* scroll if content overflows vertically */
+  background: #fff;
 }

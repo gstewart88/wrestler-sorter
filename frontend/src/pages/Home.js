@@ -4,12 +4,15 @@ import React, { useState, useEffect } from 'react';
 import CompanyFilter from '../components/CompanyFilter';
 import ComparisonPrompt from '../components/ComparisonPrompt';
 import fordJohnsonSort from '../utils/fordJohnsonSort';
+import WrestlerGrid     from '../components/WrestlerGrid';
+import ResultsList from '../components/ResultsList';
 import './Home.css';    // ← make sure this exists
 
 export default function Home() {
   const [wrestlers, setWrestlers]         = useState([]);
   const [companies, setCompanies]         = useState([]);
-  const [selectedCompanies, setSelected]  = useState([]);
+  const [selectedCompanies, setSelected]  = useState(['WWE']);
+  const [showAll, setShowAll] = useState(false);
 
   // Sidebar open/close
   const [filterOpen, setFilterOpen]       = useState(false);
@@ -120,13 +123,6 @@ export default function Home() {
           {sorting ? 'Sorting…' : 'Start Sorting'}
         </button>
 
-        {/* Progress Indicator */}
-        {sorting && totalQs > 0 && (
-          <div style={{ marginTop: 12, fontStyle: 'italic' }}>
-            Question {currentQ + 1} of {totalQs}
-          </div>
-        )}
-
         {/* Comparison Overlay */}
         {sorting && currentPair && (
           <ComparisonPrompt
@@ -136,29 +132,15 @@ export default function Home() {
           />
         )}
 
-        {/* Results */}
-        {result && !sorting && (
-          <div style={{ marginTop: 24 }}>
-            <h2>Your Ranked Roster</h2>
-            <ol>
-              {result.map(w => (
-                <li key={w.name}>
-                  {w.name} <small>({w.company})</small>
-                </li>
-              ))}
-            </ol>
-          </div>
-        )}
+    {/* Results */}
+    {result && !sorting && <ResultsList result={result} />}
+
 
         {/* Preview */}
         {!sorting && !result && (
           <div style={{ marginTop: 24 }}>
             <h3>Preview ({filtered.length})</h3>
-            <ul>
-              {filtered.map(w => (
-                <li key={w.name}>{w.name} ({w.company})</li>
-              ))}
-            </ul>
+            <WrestlerGrid wrestlers={filtered} />
           </div>
         )}
       </main>
