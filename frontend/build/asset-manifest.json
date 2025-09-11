@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/wrestler-sorter/static/css/main.6e5902bb.css",
+    "main.js": "/wrestler-sorter/static/js/main.8e5f5ce0.js",
+    "static/js/453.0a2f7822.chunk.js": "/wrestler-sorter/static/js/453.0a2f7822.chunk.js",
+    "index.html": "/wrestler-sorter/index.html",
+    "main.6e5902bb.css.map": "/wrestler-sorter/static/css/main.6e5902bb.css.map",
+    "main.8e5f5ce0.js.map": "/wrestler-sorter/static/js/main.8e5f5ce0.js.map",
+    "453.0a2f7822.chunk.js.map": "/wrestler-sorter/static/js/453.0a2f7822.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e5902bb.css",
+    "static/js/main.8e5f5ce0.js"
+  ]
+}

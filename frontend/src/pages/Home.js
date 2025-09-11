@@ -1,12 +1,22 @@
 // src/pages/Home.js
 
-import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { Row, Col, Button, Offcanvas } from 'react-bootstrap';
-import CompanyFilter from '../components/CompanyFilter';
+import React, {
+  useState,
+  useEffect,
+  useRef,
+  useCallback
+} from 'react';
+import {
+  Row,
+  Col,
+  Button,
+  Offcanvas
+} from 'react-bootstrap';
+import CompanyFilter    from '../components/CompanyFilter';
 import ComparisonPrompt from '../components/ComparisonPrompt';
-import WrestlerGrid from '../components/WrestlerGrid';
-import ResultsList from '../components/ResultsList';
-import fordJohnsonSort from '../utils/fordJohnsonSort';
+import WrestlerGrid     from '../components/WrestlerGrid';
+import ResultsList      from '../components/ResultsList';
+import fordJohnsonSort  from '../utils/fordJohnsonSort';
 import './Home.css';
 
 export default function Home() {
@@ -23,9 +33,12 @@ export default function Home() {
   const [awaiting, setAwaiting]         = useState(null);
   const [result, setResult]             = useState(null);
 
-  // Load data
+  // Track ignored wrestlers by ID/name
+  const ignoreSet = useRef(new Set());
+
+  // Load static JSON
   useEffect(() => {
-    fetch('http://localhost:3001/api/wrestlers')
+    fetch('wrestlers.json')
       .then(r => r.json())
       .then(data => {
         setWrestlers(data);
@@ -41,7 +54,7 @@ export default function Home() {
     );
   }
 
-  // Base compare that shows the prompt
+  // Show the comparison prompt
   function compareUser(a, b) {
     return new Promise(resolve => {
       setCurrentPair({ a, b });
@@ -49,48 +62,52 @@ export default function Home() {
     });
   }
 
-  // Cache wrapper to avoid re-asking the same pair
+  // Cache + auto-skip ignored wrapper
   const cacheRef = useRef(new Map());
   const compareWithCache = useCallback(
     async (a, b) => {
-      // build a key that's order-agnostic
       const idA = a.id ?? a.name;
       const idB = b.id ?? b.name;
+
+      // auto-skip if one is ignored
+      if (ignoreSet.current.has(idA)) return b;
+      if (ignoreSet.current.has(idB)) return a;
+
+      // order-agnostic key
       const key = idA < idB ? `${idA}|${idB}` : `${idB}|${idA}`;
 
-      // if we've seen this pair, return stored winner
       if (cacheRef.current.has(key)) {
         return cacheRef.current.get(key) === idA ? a : b;
       }
 
-      // otherwise prompt user once
+      // first-time ask user
       const winner = await compareUser(a, b);
-      const winId = winner.id ?? winner.name;
+      const winId   = winner.id ?? winner.name;
       cacheRef.current.set(key, winId);
       return winner;
     },
-    [compareUser]
+    []
   );
 
-  // Kick off sorting
-  async function handleStart() {
-    setSorting(true);
-    cacheRef.current.clear();
+  // Handle “Ignore” click in the prompt
+  function handleIgnore(ignored) {
+    if (!awaiting || !currentPair) return;
 
-    const filtered = wrestlers.filter(w =>
-      selectedCompanies.includes(w.company)
-    );
+    // mark ignored
+    const ignoreId = ignored.id ?? ignored.name;
+    ignoreSet.current.add(ignoreId);
 
-    // Optional dry-run to count comparisons (not displayed here)
-    await fordJohnsonSort(filtered, async () => true);
+    // resolve comparison with the other item
+    const other =
+      ignored === currentPair.a ? currentPair.b : currentPair.a;
 
-    // Real sort with cache-backed comparisons
-    const sorted = await fordJohnsonSort(filtered, compareWithCache);
-    setResult(sorted);
-    setSorting(false);
+    const resolve = awaiting;
+    setAwaiting(null);
+    setCurrentPair(null);
+    resolve(other);
   }
 
-  // When user picks A or B
+  // Handle normal choice
   function handleChoice(chosen) {
     if (!awaiting) return;
     const resolve = awaiting;
@@ -99,13 +116,38 @@ export default function Home() {
     resolve(chosen);
   }
 
-  const filtered = wrestlers.filter(w =>
-    selectedCompanies.includes(w.company)
+  // Start the sort run
+  async function handleStart() {
+    setSorting(true);
+    ignoreSet.current.clear();
+    cacheRef.current.clear();
+
+    // prepare list, filtering out ignored
+    const toSort = wrestlers.filter(
+      w =>
+        selectedCompanies.includes(w.company) &&
+        !ignoreSet.current.has(w.id ?? w.name)
+    );
+
+    // (optional) dry-run to count comparisons
+    await fordJohnsonSort(toSort, async () => true);
+
+    // real sort with cached+ignored logic
+    const sorted = await fordJohnsonSort(toSort, compareWithCache);
+    setResult(sorted);
+    setSorting(false);
+  }
+
+  // Filter preview to skip ignored
+  const filtered = wrestlers.filter(
+    w =>
+      selectedCompanies.includes(w.company) &&
+      !ignoreSet.current.has(w.id ?? w.name)
   );
 
   return (
     <Row className="g-0 home-container">
-      {/* Sidebar on md+ */}
+      {/* Desktop sidebar */}
       <Col
         xs={12}
         md={3}
@@ -119,7 +161,7 @@ export default function Home() {
         />
       </Col>
 
-      {/* Mobile filter Offcanvas */}
+      {/* Mobile Offcanvas */}
       <Offcanvas
         show={filterOpen}
         onHide={() => setFilterOpen(false)}
@@ -140,7 +182,7 @@ export default function Home() {
 
       {/* Main content */}
       <Col xs={12} md={9} lg={10} className="p-3 content">
-        {/* Mobile hamburger */}
+        {/* Mobile filter button */}
         <Button
           variant="outline-secondary"
           className="d-md-none mb-3"
@@ -160,12 +202,13 @@ export default function Home() {
           {sorting ? 'Sorting…' : 'Start Sorting'}
         </Button>
 
-        {/* Comparison prompt */}
+        {/* Comparison prompt with Ignore */}
         {sorting && currentPair && (
           <ComparisonPrompt
             a={currentPair.a}
             b={currentPair.b}
             onChoose={handleChoice}
+            onIgnore={handleIgnore}
           />
         )}
 
