@@ -929,5 +929,155 @@
     "name": "AJ Lee",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/e/e9/Aj_1_full_20130815.png"
+  },
+  {
+    "name": "Chase Owens",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/2/22/ChaseOwens.jpg/"
+  },
+  {
+    "name": "David Finlay",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/2/26/DavidFinlay7.jpg"
+  },
+  {
+    "name": "El Phantasmo",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/3/3d/ELP5.jpg"
+  },
+  {
+    "name": "Evil",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/c/c4/EVILBC22.jpg"
+  },
+  {
+    "name": "Gabe Kidd",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/b/bf/GabeKidd24.jpg"
+  },
+  {
+    "name": "Hirooki Goto",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/3/38/HirookiGoto2023.jpg"
+  },
+  {
+    "name": "Ren Narita",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/c/cb/Narita2024.jpg"
+  },
+  {
+    "name": "Sanada",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/4/41/SANADAWarDogs2.jpg"
+  },
+  {
+    "name": "Satoshi Kojima",
+    "company": "NJPW",
+    "imageURL": ""
+  },
+  {
+    "name": "Shingo Takagi",
+    "company": "NJPW",
+    "imageURL": ""
+  },
+  {
+    "name": "Shota Umino",
+    "company": "NJPW",
+    "imageURL": ""
+  },
+  {
+    "name": "Taichi",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/d/d1/Taichi2024.jpg"
+  },
+  {
+    "name": "Togi Makabe",
+    "company": "NJPW",
+    "imageURL": ""
+  },
+  {
+    "name": "Tomohiro Ishii",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/3/3a/TomohiroIshii2022.jpg"
+  },
+  {
+    "name": "Toru Yano",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/7/72/YTR21.jpg"
+  },
+  {
+    "name": "Yoshi Hashi",
+    "company": "NJPW",
+    "imageURL": ""
+  },
+  {
+    "name": "Yota Tsuji",
+    "company": "NJPW",
+    "imageURL": ""
+  },
+  {
+    "name": "Yuji Nagata",
+    "company": "NJPW",
+    "imageURL": ""
+  },
+  {
+    "name": "Yuya Uemura",
+    "company": "NJPW",
+    "imageURL": ""
+  },
+  {
+    "name": "ZSJ",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/e/e0/SabreJr7.jpg"
+  },
+  {
+    "name": "Douki",
+    "company": "NJPW",
+    "imageURL": ""
+  },
+  {
+    "name": "El Desperado",
+    "company": "NJPW",
+    "imageURL": ""
+  },
+  {
+    "name": "Gedo",
+    "company": "NJPW",
+    "imageURL": ""
+  },
+  {
+    "name": "Hiromu Takahashi",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/1/1e/HiromuTakahashi2.jpg"
+  },
+  {
+    "name": "Kushida",
+    "company": "NJPW",
+    "imageURL": ""
+  },
+  {
+    "name": "Ryusuke Taguchi",
+    "company": "NJPW",
+    "imageURL": ""
+  },
+  {
+    "name": "Sho",
+    "company": "NJPW",
+    "imageURL": ""
+  },
+  {
+    "name": "Taiji Ishimori",
+    "company": "NJPW",
+    "imageURL": ""
+  },
+  {
+    "name": "Yoh",
+    "company": "NJPW",
+    "imageURL": ""
+  },
+  {
+    "name": "Great-O-Khan",
+    "company": "NJPW",
+    "imageURL": ""
   }
 ]
