@@ -72,7 +72,7 @@
   width: 120px;                 /* fixed box width */
   height: 180px;                /* uniform vertical size */
   object-fit: cover;            /* fill & crop sides */
-  object-position: center;      /* center the crop */
+  object-position: top center;      /* center the crop */
   border-radius: var(--radius);
   border: 2px solid var(--border-color);
   transition: transform var(--transition), box-shadow var(--transition);
