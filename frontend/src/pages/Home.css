@@ -46,6 +46,22 @@
   z-index: 900;
 }
 
+.page-header {
+  background: var(--accent-blue);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-header h2 {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.header-logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
 /* Responsive rules */
 @media (max-width: 768px) {
   /* Hide sidebar off‐canvas by default */

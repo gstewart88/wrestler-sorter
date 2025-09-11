@@ -151,6 +151,15 @@ export default function Home() {
     : [];
 
   return (
+       <>
+     <header className="page-header d-flex justify-content-between align-items-center px-3 py-2">
+       <h2 className="mb-0">Fave Five</h2>
+       <img
+         src="https://www.thesmackdownhotel.com/images/wwe2k24/roster/booker-t.png"
+         alt="Booker T"
+         className="header-logo"
+       />
+     </header>
     <Row className="g-0 home-container">
       {/* Desktop sidebar */}
       <Col
@@ -235,5 +244,6 @@ export default function Home() {
         )}
       </Col>
     </Row>
+    </>
   );
 }
