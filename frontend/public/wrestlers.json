@@ -328,62 +328,62 @@
   {
     "name": "Xavier Woods",
     "company": "WWE",
-    "imageURL": "/images/xavier-woods.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/a/a8/Xavier_Woods_stat_photo.png/revision/latest?cb=20180727165411"
   },
   {
     "name": "Jacob Fatu",
     "company": "WWE",
-    "imageURL": "/images/jacob-fatu.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/0/0c/Jacob_Fatu_2024.png/revision/latest?cb=20240805185821g"
   },
   {
     "name": "Montez Ford",
     "company": "WWE",
-    "imageURL": "/images/montez-ford.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/6/60/Montez_Ford_stat_photo.png/revision/latest?cb=20170919203226"
   },
   {
     "name": "Anthony Bowens",
     "company": "AEW",
-    "imageURL": "/images/anthony-bowens.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/f/f8/Anthony_Bowens_-_D6EmE9zX4AQuVOZ.jpg/revision/latest?cb=20190610022333"
   },
   {
     "name": "Chris Jericho",
     "company": "AEW",
-    "imageURL": "/images/chris-jericho.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/1/11/Chris_Jericho_-_2020.png/revision/latest?cb=20200517103743"
   },
   {
     "name": "Cope",
     "company": "AEW",
-    "imageURL": "/images/cope.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/e/e6/EDGE_2022.png/revision/latest?cb=20220404023553"
   },
   {
     "name": "Daniel Garcia",
     "company": "AEW",
-    "imageURL": "/images/daniel-garcia.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/e/ea/Daniel_Garcia.jpg/revision/latest?cb=20210704005144"
   },
   {
     "name": "Katsuyori Shibata",
     "company": "AEW",
-    "imageURL": "/images/katsuyori-shibata.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/1/13/Katsuyori_Shibata_-_1d373298.jpg/revision/latest?cb=20151127230107"
   },
   {
     "name": "Kris Statlander",
     "company": "AEW",
-    "imageURL": "/images/kris-statlander.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/5/55/Kris_Statlander_2023.png/revision/latest?cb=20230531012852"
   },
   {
     "name": "Powerhouse Hobbs",
     "company": "AEW",
-    "imageURL": "/images/powerhouse-hobbs.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/2/2d/POWERHOUSE_HOBBS_-_NO_BG.png/revision/latest?cb=20230316000816"
   },
   {
     "name": "Thekla",
     "company": "AEW",
-    "imageURL": "/images/thekla.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/7/7b/Thekla_2025.png/revision/latest?cb=20250529191642"
   },
   {
     "name": "Thunder Rosa",
     "company": "AEW",
-    "imageURL": "/images/thunder-rosa.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/c/ce/Thunder_Rosa_2021_AEW.png/revision/latest?cb=20220808123643"
   },
   {
     "name": "Maki Itoh",
@@ -398,127 +398,77 @@
   {
     "name": "Bianca Belair",
     "company": "WWE",
-    "imageURL": "/images/bianca-belair.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/f/f7/BiancaEST.png/revision/latest?cb=20230124214524"
   },
   {
     "name": "Brock Lesnar",
     "company": "WWE",
-    "imageURL": "/images/brock-lesnar.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/c/ce/Brock_lesnar_png_render_wwe_2021_by_v_mozz_der4wx0-fullview.png/revision/latest?cb=20220805052401"
   },
   {
     "name": "Dominik Mysterio",
     "company": "WWE",
-    "imageURL": "/images/dominik-mysterio.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/1/1b/Dominik_Mysterio_2025.png/revision/latest?cb=20250204212937"
   },
   {
     "name": "Finn Balor",
     "company": "WWE",
-    "imageURL": "/images/finn-balor.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/1/1b/Finn_B%C3%A1lor_Judgement_Day_Look.png/revision/latest?cb=20231115195601"
   },
   {
     "name": "Giulia",
     "company": "WWE",
-    "imageURL": "/images/giulia.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/e/e2/Giulia_NXT.png/revision/latest?cb=20241001090959"
   },
   {
     "name": "Gunther",
     "company": "WWE",
-    "imageURL": "/images/gunther.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/f/f8/Gunther_2022_Render.png/revision/latest?cb=20221126011507"
   },
   {
     "name": "Jimmy Uso",
     "company": "WWE",
-    "imageURL": "/images/jimmy-uso.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/3/30/JimmyUsofull2022.png/revision/latest?cb=20220503062024"
   },
   {
     "name": "John Cena",
     "company": "WWE",
-    "imageURL": "/images/john-cena.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/8/88/John_cena_2018_by_ambriegnsasylum16.png/revision/latest?cb=20180221165142"
   },
   {
     "name": "Kofi Kingston",
     "company": "WWE",
-    "imageURL": "/images/kofi-kingston.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/f/f2/Kofi_Kingston_stat_photo.png/revision/latest?cb=20180727165643"
   },
   {
     "name": "Nathan Frazer",
     "company": "WWE",
-    "imageURL": "/images/nathan-frazer.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/d/d7/NathanFrazerWWE.png/revision/latest?cb=20220504082738"
   },
   {
     "name": "Naomi",
     "company": "WWE",
-    "imageURL": "/images/naomi.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/a/a5/Naomi_WWE_2025.png/revision/latest?cb=20250524200132"
   },
   {
     "name": "Raquel Rodriguez",
     "company": "WWE",
-    "imageURL": "/images/raquel-rodriguez.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/a/ad/RaquelRodriguez2022.png/revision/latest?cb=20220503062504"
   },
   {
     "name": "Seth Rollins",
     "company": "WWE",
-    "imageURL": "/images/seth-rollins.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/0/07/MessiahSethRollins.png/revision/latest?cb=20200915160427"
   },
   {
     "name": "Solo Sikoa",
     "company": "WWE",
-    "imageURL": "/images/solo-sikoa.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/d/d3/Sefa_Fatu.jpg/revision/latest?cb=20211211040930"
   },
   {
     "name": "The Miz",
     "company": "WWE",
-    "imageURL": "/images/the-miz.jpg"
-  },
-  {
-    "name": "Thekla",
-    "company": "AEW",
-    "imageURL": "/images/thekla.jpg"
-  },
-  {
-    "name": "Cope",
-    "company": "AEW",
-    "imageURL": "/images/cope.jpg"
-  },
-  {
-    "name": "Katsuyori Shibata",
-    "company": "AEW",
-    "imageURL": "/images/katsuyori-shibata.jpg"
-  },
-  {
-    "name": "Thunder Rosa",
-    "company": "AEW",
-    "imageURL": "/images/thunder-rosa.jpg"
-  },
-  {
-    "name": "Kris Statlander",
-    "company": "AEW",
-    "imageURL": "/images/kris-statlander.jpg"
-  },
-  {
-    "name": "Daniel Garcia",
-    "company": "AEW",
-    "imageURL": "/images/daniel-garcia.jpg"
-  },
-  {
-    "name": "Anthony Bowens",
-    "company": "AEW",
-    "imageURL": "/images/anthony-bowens.jpg"
-  },
-  {
-    "name": "Chris Jericho",
-    "company": "AEW",
-    "imageURL": "/images/chris-jericho.jpg"
-  },
-  {
-    "name": "Powerhouse Hobbs",
-    "company": "AEW",
-    "imageURL": "/images/powerhouse-hobbs.jpg"
-  },
-  {
-    "name": "Hanan",
-    "company": "Stardom",
-    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/8/8a/Hanan.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/7/7a/The_Miz_stat--0a50d3035ba1bf9ca5827c3e8af2fbcf.png/revision/latest?cb=20170719021252"
   },
   {
     "name": "Hina",
@@ -533,282 +483,97 @@
   {
     "name": "Aleister Black",
     "company": "WWE",
-    "imageURL": "/images/aleister-black.jpg"
-  },
-  {
-    "name": "Gunther",
-    "company": "WWE",
-    "imageURL": "/images/gunther.jpg"
-  },
-  {
-    "name": "Giulia",
-    "company": "WWE",
-    "imageURL": "/images/giulia.jpg"
-  },
-  {
-    "name": "The Miz",
-    "company": "WWE",
-    "imageURL": "/images/the-miz.jpg"
-  },
-  {
-    "name": "Kofi Kingston",
-    "company": "WWE",
-    "imageURL": "/images/kofi-kingston.jpg"
-  },
-  {
-    "name": "Bianca Belair",
-    "company": "WWE",
-    "imageURL": "/images/bianca-belair.jpg"
-  },
-  {
-    "name": "Raquel Rodriguez",
-    "company": "WWE",
-    "imageURL": "/images/raquel-rodriguez.jpg"
-  },
-  {
-    "name": "Seth Rollins",
-    "company": "WWE",
-    "imageURL": "/images/seth-rollins.jpg"
-  },
-  {
-    "name": "Solo Sikoa",
-    "company": "WWE",
-    "imageURL": "/images/solo-sikoa.jpg"
-  },
-  {
-    "name": "Naomi",
-    "company": "WWE",
-    "imageURL": "/images/naomi.jpg"
-  },
-  {
-    "name": "Jimmy Uso",
-    "company": "WWE",
-    "imageURL": "/images/jimmy-uso.jpg"
-  },
-  {
-    "name": "Brock Lesnar",
-    "company": "WWE",
-    "imageURL": "/images/brock-lesnar.jpg"
-  },
-  {
-    "name": "Nathan Frazer",
-    "company": "WWE",
-    "imageURL": "/images/nathan-frazer.jpg"
-  },
-  {
-    "name": "Dominik Mysterio",
-    "company": "WWE",
-    "imageURL": "/images/dominik-mysterio.jpg"
-  },
-  {
-    "name": "Finn Bálor",
-    "company": "WWE",
-    "imageURL": "/images/finn-balor.jpg"
-  },
-  {
-    "name": "John Cena",
-    "company": "WWE",
-    "imageURL": "/images/john-cena.jpg"
-  },
-  {
-    "name": "Ricochet",
-    "company": "AEW",
-    "imageURL": "/images/ricochet.jpg"
-  },
-  {
-    "name": "Will Ospreay",
-    "company": "AEW",
-    "imageURL": "/images/will-ospreay.jpg"
-  },
-  {
-    "name": "Adam Cole",
-    "company": "AEW",
-    "imageURL": "/images/adam-cole.jpg"
-  },
-  {
-    "name": "Claudio Castagnoli",
-    "company": "AEW",
-    "imageURL": "/images/claudio-castagnoli.jpg"
-  },
-  {
-    "name": "Eddie Kingston",
-    "company": "AEW",
-    "imageURL": "/images/eddie-kingston.jpg"
-  },
-  {
-    "name": "Jay White",
-    "company": "AEW",
-    "imageURL": "/images/jay-white.jpg"
-  },
-  {
-    "name": "Toni Storm",
-    "company": "AEW",
-    "imageURL": "/images/toni-storm.jpg"
-  },
-  {
-    "name": "Pac",
-    "company": "AEW",
-    "imageURL": "/images/pac.jpg"
-  },
-  {
-    "name": "Darby Allin",
-    "company": "AEW",
-    "imageURL": "/images/darby-allin.jpg"
-  },
-  {
-    "name": "Konosuke Takeshita",
-    "company": "AEW",
-    "imageURL": "/images/konosuke-takeshita.jpg"
-  },
-  {
-    "name": "Kyle Fletcher",
-    "company": "AEW",
-    "imageURL": "/images/kyle-fletcher.jpg"
-  },
-  {
-    "name": "Samoa Joe",
-    "company": "AEW",
-    "imageURL": "/images/samoa-joe.jpg"
-  },
-  {
-    "name": "Christian Cage",
-    "company": "AEW",
-    "imageURL": "/images/christian-cage.jpg"
-  },
-  {
-    "name": "Bayley",
-    "company": "WWE",
-    "imageURL": "/images/bayley.jpg"
-  },
-  {
-    "name": "Becky Lynch",
-    "company": "WWE",
-    "imageURL": "/images/becky-lynch.jpg"
-  },
-  {
-    "name": "Tommaso Ciampa",
-    "company": "WWE",
-    "imageURL": "/images/tommaso-ciampa.jpg"
-  },
-  {
-    "name": "Penta",
-    "company": "WWE",
-    "imageURL": "/images/penta.jpg"
-  },
-  {
-    "name": "Bron Breakker",
-    "company": "WWE",
-    "imageURL": "/images/bron-breakker.jpg"
-  },
-  {
-    "name": "Jey Uso",
-    "company": "WWE",
-    "imageURL": "/images/jey-uso.jpg"
-  },
-  {
-    "name": "Xavier Woods",
-    "company": "WWE",
-    "imageURL": "/images/xavier-woods.jpg"
-  },
-  {
-    "name": "Jacob Fatu",
-    "company": "WWE",
-    "imageURL": "/images/jacob-fatu.jpg"
-  },
-  {
-    "name": "Montez Ford",
-    "company": "WWE",
-    "imageURL": "/images/montez-ford.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/6/69/Aleister_Black_stat_photo.png/revision/latest?cb=20170402111730"
   },
   {
     "name": "Anna Jay",
     "company": "AEW",
-    "imageURL": "/images/anna-jay.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/0/06/Anna_Jay_A.S..png/revision/latest?cb=20230404160432"
   },
   {
     "name": "Billie Starkz",
     "company": "AEW",
-    "imageURL": "/images/billie-starkz.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/8/84/Billie_Starkz_2024_2.png/revision/latest?cb=20241224191620"
   },
   {
     "name": "Billy Gunn",
     "company": "AEW",
-    "imageURL": "/images/billy-gunn.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/a/aa/Billy_Gunn_%28Daddy_Ass%29_AEW_2023.png/revision/latest?cb=20230627055615"
   },
   {
     "name": "Buddy Matthews",
     "company": "AEW",
-    "imageURL": "/images/buddy-matthews.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/6/61/Buddy_Murphy_2018_stat_photo.png/revision/latest?cb=20180301223104"
   },
   {
     "name": "Dante Martin",
     "company": "AEW",
-    "imageURL": "/images/dante-martin.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/7/71/Daunte_Martin.jpg/revision/latest?cb=20201224171919"
   },
   {
     "name": "Darius Martin",
     "company": "AEW",
-    "imageURL": "/images/darius-martin.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/3/30/Darius_Martin_-_120802674.jpg/revision/latest?cb=20210117150030"
   },
   {
     "name": "Dax Harwood",
     "company": "AEW",
-    "imageURL": "/images/dax-harwood.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/b/b3/Scott_Dawson.png/revision/latest?cb=20140902164331"
   },
   {
     "name": "Jay Lethal",
     "company": "AEW",
-    "imageURL": "/images/jay-lethal.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/0/0d/Jay_Lethal_2016.png/revision/latest?cb=20160904015019"
   },
   {
     "name": "Keith Lee",
     "company": "AEW",
-    "imageURL": "/images/keith-lee.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/d/dc/Keith_Lee_stat_photo1.png/revision/latest?cb=20180817051920"
   },
   {
     "name": "Lance Archer",
     "company": "AEW",
-    "imageURL": "/images/lance-archer.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/8/87/Lance_Archer_2022.png/revision/latest?cb=20220724033714"
   },
   {
     "name": "Mason Madden",
     "company": "AEW",
-    "imageURL": "/images/mason-madden.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/d/d0/Mace2022.jpg/revision/latest?cb=20220730235358"
   },
   {
     "name": "Max Caster",
     "company": "AEW",
-    "imageURL": "/images/max-caster.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/9/9e/Max_Caster_AEW1.jpg/revision/latest?cb=20220430073656"
   },
   {
     "name": "Mansoor",
     "company": "AEW",
-    "imageURL": "/images/mansoor.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/8/81/Mansoor2022.jpg/revision/latest?cb=20220730234906"
   },
   {
     "name": "Penelope Ford",
     "company": "AEW",
-    "imageURL": "/images/penelope-ford.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/5/51/Penelope_Ford_-_AEW_%27_19_Photo.jpg/revision/latest?cb=20191013130252"
   },
   {
     "name": "Shelton Benjamin",
     "company": "AEW",
-    "imageURL": "/images/shelton-benjamin.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/4/45/Shelton_Benjamin_stat_photo.png/revision/latest?cb=20170915013323"
   },
   {
     "name": "Skye Blue",
     "company": "AEW",
-    "imageURL": "/images/skye-blue.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/f/fa/Skye_Blue_Dark_Look_AEW_2023.png/revision/latest?cb=20231217083316"
   },
   {
     "name": "The Beast Mortos",
     "company": "AEW",
-    "imageURL": "/images/the-beast-mortos.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/8/8a/BlackTauro_B.jpg/revision/latest?cb=20170712020832"
   },
   {
     "name": "Wheeler Yuta",
     "company": "AEW",
-    "imageURL": "/images/wheeler-yuta.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/5/53/Jimmy_Yuta_-_DDXgRp0UAAAiGM3.jpg/revision/latest?cb=20180304005256"
   },
   {
     "name": "Mirai",
@@ -823,87 +588,87 @@
   {
     "name": "Alexa Bliss",
     "company": "WWE",
-    "imageURL": "/images/alexa-bliss.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/e/e9/Alexa_Bliss_2022_render.png/revision/latest?cb=20220614224350"
   },
   {
     "name": "Austin Theory",
     "company": "WWE",
-    "imageURL": "/images/austin-theory.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/d/df/Austin_Theory.png/revision/latest?cb=20200403014634"
   },
   {
     "name": "Chris Sabin",
     "company": "WWE",
-    "imageURL": "/images/chris-sabin.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/b/b0/Chris_Sabin_RoH2.png/revision/latest?cb=20151018220810"
   },
   {
     "name": "Maxxine Dupri",
     "company": "WWE",
-    "imageURL": "/images/maxxine-dupri.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/c/c9/Maxxine_Dupri_%28Alpha_Academy_Gear%29.jpg/revision/latest?cb=20230704093426"
   },
   {
     "name": "Michin",
     "company": "WWE",
-    "imageURL": "/images/michin.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/d/d9/Michin_%28Mia_Yim%29_2025.png/revision/latest?cb=20250524200129"
   },
   {
     "name": "Nia Jax",
     "company": "WWE",
-    "imageURL": "/images/nia-jax.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/d/df/Nia_Jax_2024.png/revision/latest?cb=20240305184424"
   },
   {
     "name": "Rey Mysterio",
     "company": "WWE",
-    "imageURL": "/images/rey-mysterio.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/2/2e/619.png/revision/latest?cb=20220805070508"
   },
   {
     "name": "Tama Tonga",
     "company": "WWE",
-    "imageURL": "/images/tama-tonga.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/5/5d/Tama_20181213_3-352x528.png/revision/latest?cb=20190422132722"
   },
   {
     "name": "Tiffany Stratton",
     "company": "WWE",
-    "imageURL": "/images/tiffany-stratton.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/f/ff/Tiffany_Stratton_2023.png/revision/latest?cb=20230530115059"
   },
   {
     "name": "Marina Shafir",
     "company": "AEW",
-    "imageURL": "/images/marina-shafir.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/4/42/Marina_Shafir_2025.png/revision/latest?cb=20250718044501"
   },
   {
     "name": "Action Andretti",
     "company": "AEW",
-    "imageURL": "/images/action-andretti.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/d/d5/Action_Andretti.jpg/revision/latest?cb=20221215141352"
   },
   {
     "name": "Mark Briscoe",
     "company": "AEW",
-    "imageURL": "/images/mark-briscoe.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/6/68/Markbriscoebio_0.png/revision/latest?cb=20130903005529"
   },
   {
     "name": "Wardlow",
     "company": "AEW",
-    "imageURL": "/images/wardlow.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/9/9a/Wardlow_-_EeXIhbFXsAAeDcO.jpg/revision/latest?cb=20201225161350"
   },
   {
     "name": "Ruby Soho",
     "company": "AEW",
-    "imageURL": "/images/ruby-soho.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/e/e7/Ruby_Soho_AEW_Outcasts_Look_2023.png/revision/latest?cb=20230816090459"
   },
   {
     "name": "Dr. Britt Baker, D.M.D.",
     "company": "AEW",
-    "imageURL": "/images/dr-britt-baker-dmd.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/0/08/Britt_Baker_2022_render.png/revision/latest?cb=20220909105950"
   },
   {
     "name": "Nick Jackson",
     "company": "AEW",
-    "imageURL": "/images/nick-jackson.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/5/55/Nick_Jackson_AEW_2022.png/revision/latest?cb=20220905093758"
   },
   {
     "name": "Jack Perry",
     "company": "AEW",
-    "imageURL": "/images/jack-perry.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/8/8b/Jungle_Boy_2021.jpg/revision/latest?cb=20210801020418"
   },
   {
     "name": "Fukigen Death",
@@ -948,157 +713,157 @@
   {
     "name": "Brutus Creed",
     "company": "WWE",
-    "imageURL": "/images/brutus-creed.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/3/32/Brutus_Creed_-_7f4b25dd6a2f48e089e5b38e0b4586ce.png/revision/latest?cb=20211208194821"
   },
   {
     "name": "Ludwig Kaiser",
     "company": "WWE",
-    "imageURL": "/images/ludwig-kaiser.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/9/93/SIRGETSLSAPSALOT.png/revision/latest?cb=20220805072742"
   },
   {
     "name": "Elton Prince",
     "company": "WWE",
-    "imageURL": "/images/elton-prince.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/d/dd/Elton_Prince.png/revision/latest?cb=20230722122817"
   },
   {
     "name": "Omos",
     "company": "WWE",
-    "imageURL": "/images/omos.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/4/4c/Omos2022.png/revision/latest?cb=20220503051525"
   },
   {
     "name": "Akira Tozawa",
     "company": "WWE",
-    "imageURL": "/images/akira-tozawa.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/5/53/Akira_Tozawa_%28Alpha_Academy%29.png/revision/latest?cb=20250512233924"
   },
   {
     "name": "Nikki Cross",
     "company": "WWE",
-    "imageURL": "/images/nikki-cross.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/2/20/Nikki_Cross_Wyatt_Sicks_Look.png/revision/latest?cb=20241120043732"
   },
   {
     "name": "Ilja Dragunov",
     "company": "WWE",
-    "imageURL": "/images/ilja-dragunov.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/b/ba/Ilja_Dragunov_stat.png/revision/latest?cb=20190820180052"
   },
   {
     "name": "Angelo Dawkins",
     "company": "WWE",
-    "imageURL": "/images/angelo-dawkins.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/a/a3/Angelo_Dawkins_stat_photo_2017.png/revision/latest?cb=20170919203430"
   },
   {
     "name": "Santos Escobar",
     "company": "WWE",
-    "imageURL": "/images/santos-escobar.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/4/42/Santos_Escobar_Updated_Render.png/revision/latest?cb=20221126065006"
   },
   {
     "name": "Carmelo Hayes",
     "company": "WWE",
-    "imageURL": "/images/carmelo-hayes.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/d/d9/CarmeloHayesNoBelt.png/revision/latest?cb=20220503065002"
   },
   {
     "name": "Axiom",
     "company": "WWE",
-    "imageURL": "/images/axiom.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/0/05/Axiom.png/revision/latest?cb=20230301132409"
   },
   {
     "name": "Zoey Stark",
     "company": "WWE",
-    "imageURL": "/images/zoey-stark.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/3/3a/Zoey_Stark_NXT_2.png/revision/latest?cb=20230412034447"
   },
   {
     "name": "Andrade",
     "company": "WWE",
-    "imageURL": "/images/andrade.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/9/92/Andrade_Stat3.png/revision/latest?cb=20190615073052"
   },
   {
     "name": "Lio Rush",
     "company": "AEW",
-    "imageURL": "/images/lio-rush.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/6/69/Lio_Rush_stat_photo.png/revision/latest?cb=20171117102439"
   },
   {
     "name": "Tay Melo",
     "company": "AEW",
-    "imageURL": "/images/tay-melo.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/b/bd/Tay_Melo.png/revision/latest?cb=20230404160429"
   },
   {
     "name": "Big Bill",
     "company": "AEW",
-    "imageURL": "/images/big-bill.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/b/b4/Big_Cass_-_2016.png/revision/latest?cb=20161224125324"
   },
   {
     "name": "Colt Cabana",
     "company": "AEW",
-    "imageURL": "/images/colt-cabana.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/b/b1/1033_Colt_Cabana.png/revision/latest?cb=20131027190533"
   },
   {
     "name": "The Blade",
     "company": "AEW",
-    "imageURL": "/images/the-blade.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/7/78/The_Blade_-_ELgthvqXsAA9XV2.jpg/revision/latest?cb=20200220012945"
   },
   {
     "name": "Emi Sakura",
     "company": "AEW",
-    "imageURL": "/images/emi-sakura.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/a/a5/Emi_Sakura.jpg/revision/latest?cb=20121206150828"
   },
   {
     "name": "Mike Bennett",
     "company": "AEW",
-    "imageURL": "/images/mike-bennett.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/1/18/Mike_Kanellis_stat--1647fcc1919fb4acd0a983613581da11.png/revision/latest?cb=20170719020210"
   },
   {
     "name": "Red Velvet",
     "company": "AEW",
-    "imageURL": "/images/red-velvet.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/2/2a/Red_Velvett_-_ProfPic_-_de2dl0h7df1f1c98b414649836f881460cf2a2d.png/revision/latest?cb=20200828220744"
   },
   {
     "name": "Kamille",
     "company": "AEW",
-    "imageURL": "/images/kamille.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/4/49/Kamille_-_169842758.jpg/revision/latest?cb=20210607204043"
   },
   {
     "name": "Harley Cameron",
     "company": "AEW",
-    "imageURL": "/images/harley-cameron.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/8/8b/Harley_Cameron_2025.png/revision/latest?cb=20250416000635"
   },
   {
     "name": "Killswitch",
     "company": "AEW",
-    "imageURL": "/images/killswitch.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/d/db/Luchasaurus_-_981-9813616.jpg/revision/latest?cb=20190903154308"
   },
   {
     "name": "Colten Gunn",
     "company": "AEW",
-    "imageURL": "/images/colten-gunn.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/wrestlepedia/images/4/49/Colten_Gunn_03.jpg/revision/latest?cb=20220630033830"
   },
   {
     "name": "Matt Sydal",
     "company": "AEW",
-    "imageURL": "/images/matt-sydal.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/1/17/MattSydal.jpg/revision/latest?cb=20170312234155"
   },
   {
     "name": "Leila Grey",
     "company": "AEW",
-    "imageURL": "/images/leila-grey.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/d/d0/Leila_Grey_2023.png/revision/latest?cb=20230417004457"
   },
   {
     "name": "Alex Windsor",
     "company": "AEW",
-    "imageURL": "/images/alex-windsor.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/a/a2/Alex_Windsor_2024.png/revision/latest?cb=20240528050041"
   },
   {
     "name": "Nick Wayne",
     "company": "AEW",
-    "imageURL": "/images/nick-wayne.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/e/e2/Nick_Wayne1.jpg/revision/latest?cb=20230114124617"
   },
   {
     "name": "Hologram",
     "company": "AEW",
-    "imageURL": "/images/hologram.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/2/2e/Aramis_%28luchador%29.png/revision/latest?cb=20240721160027"
   },
   {
     "name": "Matt Menard",
     "company": "AEW",
-    "imageURL": "/images/matt-menard.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/wrestlepedia/images/b/bf/Matt_Menard_02.png/revision/latest?cb=20230123113251"
   },
   {
     "name": "Natsuko Tora",
@@ -1128,27 +893,27 @@
   {
     "name": "Kit Wilson",
     "company": "WWE",
-    "imageURL": "/images/kit-wilson.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/bwwe/images/1/1e/Sam_Stoker_2.png/revision/latest?cb=20211209231604"
   },
   {
     "name": "Logan Paul",
     "company": "WWE",
-    "imageURL": "/images/logan-paul.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/4/44/Logan_Paul_WWE_Render.png/revision/latest?cb=20220731201012"
   },
   {
     "name": "Dexter Lumis",
     "company": "WWE",
-    "imageURL": "/images/dexter-lumis.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/protagonists/images/f/f5/LumisWWE.png/revision/latest?cb=20221218015052"
   },
   {
     "name": "(El Grande Americano)",
     "company": "WWE",
-    "imageURL": "/images/(el-grande-americano).jpg"
+    "imageURL": "https://images2.minutemediacdn.com/image/upload/c_crop,w_1199,h_674,x_0,y_0/c_fill,w_1200,ar_1:1,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/wrestling_on_fannation/01jwsv5hvnhs806p6et3.jpg"
   },
   {
     "name": "Alex Shelley",
     "company": "WWE",
-    "imageURL": "/images/alex-shelley.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/d/de/AlexShelley2.JPG/revision/latest?cb=20221220194254"
   },
   {
     "name": "Jade Cargill",
