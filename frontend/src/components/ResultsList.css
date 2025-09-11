@@ -1,0 +1,40 @@
+/* src/components/ResultsList.css */
+
+.results-container {
+  margin-top: var(--gap);
+  text-align: center;
+}
+
+.results-list { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: var(--gap); 
+    padding:0; 
+}
+
+.results-item { 
+    display:flex; 
+    flex-direction: column; 
+    align-items:center; 
+    width:100px; 
+}
+
+.result-thumb { 
+    width:100%; 
+    aspect-ratio:1/1; 
+    object-fit:contain; 
+}
+
+.result-info {
+  text-align: left;
+}
+
+.result-name {
+  font-weight: bold;
+}
+
+.result-company {
+  color: #666;
+  font-size: 0.85rem;
+}

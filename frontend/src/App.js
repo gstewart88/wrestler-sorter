@@ -1,15 +1,14 @@
-// frontend/src/App.js
-
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';  // ① pull in Bootstrap
+import { Container } from 'react-bootstrap';
 import Home from './pages/Home';
 import './App.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
+    // fluid + p-0 makes it edge-to-edge; child components control gutters
+    <Container fluid className="p-0">
       <Home />
-    </div>
+    </Container>
   );
 }
-
-export default App;

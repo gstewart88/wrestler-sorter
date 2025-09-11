@@ -68,3 +68,12 @@
     padding: 16px;
   }
 }
+
+.separator {
+  text-align: center;
+  font-style: italic;
+  color: var(--border-color);
+  cursor: default;
+  list-style: none;
+  margin: 0.5rem 0;
+}

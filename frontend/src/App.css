@@ -1,5 +1,9 @@
+/* src/App.css */
+
 .App {
   text-align: center;
+  /* give App its page-background in case App-header isn’t full-height */
+  background: var(--bg-page);
 }
 
 .App-logo {
@@ -13,27 +17,27 @@
   }
 }
 
-
 .App-header {
-  background-color: #282c34;
+  /* swap from #282c34 → your surface or gradient */
+  background: var(--bg-surface);
+  /* optional subtle gradient instead:
+     background: var(--grad-light);
+  */
+  border-bottom: 1px solid var(--border-color);
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--text);
 }
 
 .App-link {
-  color: #61dafb;
-}
-
-.company-filter {
-  border: 1px solid #ddd;
-  padding: 12px;
-  border-radius: 6px;
-  max-width: 300px;
+  /* use your primary or one of your accents */
+  color: var(--primary);
 }
 
 @keyframes App-logo-spin {
