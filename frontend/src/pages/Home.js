@@ -145,6 +145,11 @@ export default function Home() {
       !ignoreSet.current.has(w.id ?? w.name)
   );
 
+ // remove any ignored wrestlers from the final sorted array
+  const filteredResult = result
+    ? result.filter(w => !ignoreSet.current.has(w.id ?? w.name))
+    : [];
+
   return (
     <Row className="g-0 home-container">
       {/* Desktop sidebar */}
@@ -215,7 +220,7 @@ export default function Home() {
         {/* Results */}
         {result && !sorting && (
           <ResultsList
-            result={result}
+            result={filteredResult}
             showAll={showAll}
             onToggle={() => setShowAll(x => !x)}
           />
