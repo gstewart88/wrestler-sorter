@@ -4,7 +4,7 @@
 .home-container {
   display: flex;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* Sidebar defaults: fixed width, visible on desktop */
