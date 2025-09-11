@@ -85,6 +85,16 @@
   }
 }
 
+/* spacing between instruction items */
+.instructions li {
+  margin-bottom: var(--gap);
+}
+
+/* slightly smaller font for instructions */
+.instructions {
+  font-size: 1rem;
+}
+
 .separator {
   text-align: center;
   font-style: italic;

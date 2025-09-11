@@ -18,6 +18,7 @@ import WrestlerGrid     from '../components/WrestlerGrid';
 import ResultsList      from '../components/ResultsList';
 import fordJohnsonSort  from '../utils/fordJohnsonSort';
 import './Home.css';
+import bookerTLogo from '../assets/bookert.png';
 
 export default function Home() {
   // Data & filter state
@@ -155,10 +156,10 @@ export default function Home() {
      <header className="page-header d-flex justify-content-between align-items-center px-3 py-2">
        <h2 className="mb-0">Fave Five</h2>
        <img
-         src="https://www.thesmackdownhotel.com/images/wwe2k24/roster/booker-t.png"
-         alt="Booker T"
-         className="header-logo"
-       />
+        src={bookerTLogo}
+        alt="Booker T"
+        className="header-logo"
+      />
      </header>
     <Row className="g-0 home-container">
       {/* Desktop sidebar */}
@@ -205,7 +206,10 @@ export default function Home() {
           ☰ Filter
         </Button>
 
-        <h1 className="text-center">Wrestler Sorter</h1>
+         <ul className="instructions list-unstyled text-center mb-4">
+          <li>Select the companies you wish to use from the filter menu</li>
+          <li>Answer A v B to determine your favourite wrestlers!</li>
+        </ul>
 
         <Button
           variant="primary"
