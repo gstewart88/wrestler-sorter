@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/wrestler-sorter/static/css/main.e19ea6c5.css",
-    "main.js": "/wrestler-sorter/static/js/main.94612e4b.js",
+    "main.css": "/wrestler-sorter/static/css/main.1a276dcf.css",
+    "main.js": "/wrestler-sorter/static/js/main.84202f09.js",
     "static/js/453.0a2f7822.chunk.js": "/wrestler-sorter/static/js/453.0a2f7822.chunk.js",
     "index.html": "/wrestler-sorter/index.html",
-    "main.e19ea6c5.css.map": "/wrestler-sorter/static/css/main.e19ea6c5.css.map",
-    "main.94612e4b.js.map": "/wrestler-sorter/static/js/main.94612e4b.js.map",
+    "main.1a276dcf.css.map": "/wrestler-sorter/static/css/main.1a276dcf.css.map",
+    "main.84202f09.js.map": "/wrestler-sorter/static/js/main.84202f09.js.map",
     "453.0a2f7822.chunk.js.map": "/wrestler-sorter/static/js/453.0a2f7822.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e19ea6c5.css",
-    "static/js/main.94612e4b.js"
+    "static/css/main.1a276dcf.css",
+    "static/js/main.84202f09.js"
   ]
 }
