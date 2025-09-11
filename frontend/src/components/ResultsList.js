@@ -1,60 +1,60 @@
-// frontend/src/components/ResultsList.js
-import React, { useState } from 'react';
+// src/components/ResultsList.js
+import React from 'react';
+import './ResultsList.css';
 
-export default function ResultsList({ result }) {
-  const [showAll, setShowAll] = useState(false);
+export default function ResultsList({ result, showAll, onToggle }) {
+  if (!result || result.length === 0) return null;
 
-  if (!result.length) return null;
+  // Helper to render a list of wrestlers with images
+  const renderList = (list, start = 1) => (
+    <ol start={start} className="results-list">
+      {list.map(w => (
+        <li key={w.name} className="results-item">
+          <img
+            src={w.imageURL}
+            alt={w.name}
+            className="result-thumb"
+            onError={e => { e.currentTarget.src = '/images/placeholder.png'; }}
+          />
+          <div className="result-info">
+            <div className="result-name">{w.name}</div>
+            <div className="result-company">({w.company})</div>
+          </div>
+        </li>
+      ))}
+    </ol>
+  );
 
-  // Full list view
+  // Full-list view
   if (showAll || result.length <= 10) {
     return (
-      <div className="results-list">
-        <h2>Your Ranked Roster</h2>
-        <ol>
-          {result.map(w => (
-            <li key={w.name}>
-              {w.name} <small>({w.company})</small>
-            </li>
-          ))}
-        </ol>
+      <div className="results-container">
+        <h2>Your Full Ranked Roster</h2>
+        {renderList(result)}
         {result.length > 10 && (
-          <button onClick={() => setShowAll(false)}>
-            Show Top & Bottom 5
+          <button className="btn btn-link" onClick={onToggle}>
+            Show Top 5 & Bottom 5
           </button>
         )}
       </div>
     );
   }
 
-  // Top 5 + Bottom 5 view
-  const top5    = result.slice(0, 5);
+  // Top & bottom 5 view
+  const top5 = result.slice(0, 5);
   const bottom5 = result.slice(-5);
 
   return (
-    <div className="results-list">
+    <div className="results-container">
       <h2>Your Ranked Roster</h2>
 
       <h3>Fave 5</h3>
-      <ol>
-        {top5.map(w => (
-          <li key={w.name}>
-            {w.name} <small>({w.company})</small>
-          </li>
-        ))}
-      </ol>
+      {renderList(top5)}
 
       <h3>Hated 5</h3>
-      {/* “start” keeps correct numbering */}
-      <ol start={result.length - 4}>
-        {bottom5.map(w => (
-          <li key={w.name}>
-            {w.name} <small>({w.company})</small>
-          </li>
-        ))}
-      </ol>
+      {renderList(bottom5, result.length - 4)}
 
-      <button onClick={() => setShowAll(true)}>
+      <button className="btn btn-link" onClick={onToggle}>
         Show All {result.length}
       </button>
     </div>
