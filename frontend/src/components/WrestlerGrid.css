@@ -15,12 +15,16 @@
 /* 1) Fix your cell to a consistent square (or whatever ratio) */
 .wrestler-cell {
   position: relative;
-  width: 120px;         /* ← desired cell width */
-  height: 120px;        /* ← desired cell height */
-  overflow: hidden;
-  background: #f5f5f5;  /* shows behind any letterboxing */
+  width: 120px;
+  height: 120px;
+  /* margin: var(--gap) auto;  remove or shrink this */
+  margin: 0;               /* now cells align flush within the grid */
+  background-color: #003366;
   border-radius: var(--radius);
-  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* 2) Make the IMG fill the cell but keep its aspect ratio */
