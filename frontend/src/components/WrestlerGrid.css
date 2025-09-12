@@ -3,14 +3,16 @@
 /* Container takes all available width */
 .wrestler-grid {
   display: grid;
-  gap: 0.5rem;
+  gap: 0.5rem;                       /* tighter spacing */
   padding: var(--gap);
-  /* auto-fill as many 120px columns as will fit, then wrap */
+  /* fixed 120px columns, wrap as needed */
   grid-template-columns: repeat(
     auto-fill,
-    minmax(max(10rem, 15%), 1fr)
+    minmax(120px, 120px)
   );
-}
+  justify-content: center;           /* center the entire grid */
+  justify-items: center;             /* center each cell inside its track */
+ }
 
 /* 1) Fix your cell to a consistent square (or whatever ratio) */
 .wrestler-cell {
