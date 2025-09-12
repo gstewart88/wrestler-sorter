@@ -33,7 +33,7 @@
   {
     "name": "Waka Tsukiyama",
     "company": "Stardom",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/e/ea/Waka_Tsukiyama.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/e/ea/Waka_Tsukiyama.jpg"
   },
   {
     "name": "Madison Rayne",
@@ -119,11 +119,6 @@
     "name": "Mayu Iwatani",
     "company": "Marigold",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/9/93/Mayu_Iwatani_2020.jpg"
-  },
-  {
-    "name": "Hiroshi Tanahashi",
-    "company": "NJPW",
-    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/9/98/HiroshiTanahashi4.jpg"
   },
   {
     "name": "Starlight Kid",
@@ -304,6 +299,16 @@
     "name": "Becky Lynch",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/a/a0/Becky_Lynch_The_Man_stat.png"
+  },
+  {
+    "name": "Roman Reigns",
+    "company": "WWE",
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/f/f7/Roman_Reigns_Tribal_Chief.png"
+  },
+  {
+    "name": "Cody Rhodes",
+    "company": "WWE",
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/d/d6/Cody_Rhodes_2022.png"
   },
   {
     "name": "Tommaso Ciampa",
@@ -673,7 +678,7 @@
   {
     "name": "Fukigen Death",
     "company": "Stardom",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/4/48/Kaori_Yoneyama_1.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/b/b8/Yoneyama.jpg"
   },
   {
     "name": "Syuri",
@@ -688,7 +693,7 @@
   {
     "name": "Momo Kohgo",
     "company": "Stardom",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/4/48/Momo_Kohgo.jpg"
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/4/48/Momo_Kohgo.jpg"
   },
   {
     "name": "Pom Harajuku",
@@ -973,17 +978,17 @@
   {
     "name": "Satoshi Kojima",
     "company": "NJPW",
-    "imageURL": ""
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/e/e6/SatoshiKojima.jpg"
   },
   {
     "name": "Shingo Takagi",
     "company": "NJPW",
-    "imageURL": ""
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/3/33/Takagi2024.jpg"
   },
   {
     "name": "Shota Umino",
     "company": "NJPW",
-    "imageURL": ""
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/1/16/ShotaUmino3.jpg"
   },
   {
     "name": "Taichi",
@@ -993,7 +998,7 @@
   {
     "name": "Togi Makabe",
     "company": "NJPW",
-    "imageURL": ""
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/d/d5/Makabe02_2024.jpeg"
   },
   {
     "name": "Tomohiro Ishii",
@@ -1008,22 +1013,22 @@
   {
     "name": "Yoshi Hashi",
     "company": "NJPW",
-    "imageURL": ""
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/1/15/Yoshi-Hashi2022.jpg"
   },
   {
     "name": "Yota Tsuji",
     "company": "NJPW",
-    "imageURL": ""
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/1/17/YotaTsuji3.jpg"
   },
   {
     "name": "Yuji Nagata",
     "company": "NJPW",
-    "imageURL": ""
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/d/dd/Nagatayuujii.jpeg"
   },
   {
     "name": "Yuya Uemura",
     "company": "NJPW",
-    "imageURL": ""
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/1/15/YuyaUemura.jpg"
   },
   {
     "name": "ZSJ",
@@ -1033,17 +1038,17 @@
   {
     "name": "Douki",
     "company": "NJPW",
-    "imageURL": ""
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/5/55/Douki2024.jpeg"
   },
   {
     "name": "El Desperado",
     "company": "NJPW",
-    "imageURL": ""
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/f/f0/El_Desperado3.jpg"
   },
   {
     "name": "Gedo",
     "company": "NJPW",
-    "imageURL": ""
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/c/cb/Gedo.jpg"
   },
   {
     "name": "Hiromu Takahashi",
@@ -1053,31 +1058,36 @@
   {
     "name": "Kushida",
     "company": "NJPW",
-    "imageURL": ""
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/c/c5/KUSHIDA2022.jpg"
   },
   {
     "name": "Ryusuke Taguchi",
     "company": "NJPW",
-    "imageURL": ""
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/1/1c/RyusukeT.jpg"
   },
   {
     "name": "Sho",
     "company": "NJPW",
-    "imageURL": ""
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/0/07/Sho2022.jpg"
   },
   {
     "name": "Taiji Ishimori",
     "company": "NJPW",
-    "imageURL": ""
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/2/2e/Ishimori2024.jpg"
   },
   {
     "name": "Yoh",
     "company": "NJPW",
-    "imageURL": ""
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/c/cb/Yoh2023.jpg"
+  },
+  {
+    "name": "Hiroshi Tanahashi",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/9/98/HiroshiTanahashi4.jpg"
   },
   {
     "name": "Great-O-Khan",
     "company": "NJPW",
-    "imageURL": ""
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/9/96/GreatO-Khan.jpg"
   }
 ]
