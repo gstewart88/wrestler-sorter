@@ -5,38 +5,40 @@ import html2canvas from 'html2canvas';
 import './ResultsList.css';
 
 export default function ResultsList({ result, showAll, onToggle }) {
-  if (!result || result.length === 0) return null;
-
+  // 1. Hooks must always be called unconditionally at the top
   const containerRef = useRef(null);
 
-  // download a Blob as file
   const downloadBlob = useCallback((blob, filename) => {
     const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = filename;
+    const a   = document.createElement('a');
+    a.href    = url;
+    a.download= filename;
     document.body.appendChild(a);
     a.click();
     a.remove();
     URL.revokeObjectURL(url);
   }, []);
 
-  // capture the results-container as a PNG
-  const exportAsImage = async () => {
+  const exportAsImage = useCallback(async () => {
     if (!containerRef.current) return;
     const canvas = await html2canvas(containerRef.current, {
       backgroundColor: '#fff',
-      scale: 2
+      scale: 2,
     });
     canvas.toBlob(blob => {
       if (blob) downloadBlob(blob, 'fave-hated-5.png');
     });
-  };
+  }, [downloadBlob]);
 
-  // helper for rendering an ordered list
+  // 2. Now it’s safe to early-return without skipping any hooks
+  if (!result || result.length === 0) {
+    return null;
+  }
+
+  // 3. Helper to render the lists
   const renderList = (list, start = 1) => (
     <ol start={start} className="results-list">
-      {list.map(w => (
+      {list.map((w, i) => (
         <li key={w.name} className="results-item">
           <img
             src={w.imageURL}
@@ -45,7 +47,7 @@ export default function ResultsList({ result, showAll, onToggle }) {
             onError={e => { e.currentTarget.src = '/images/placeholder.png'; }}
           />
           <div className="result-info">
-            <div className="result-name">{w.name}</div>
+            <div className="result-name">{i + start}. {w.name}</div>
             <div className="result-company">({w.company})</div>
           </div>
         </li>
@@ -53,10 +55,10 @@ export default function ResultsList({ result, showAll, onToggle }) {
     </ol>
   );
 
-  const top5 = result.slice(0, 5);
+  const top5    = result.slice(0, 5);
   const bottom5 = result.slice(-5);
 
-  // Export button always sits above, but is outside the capture wrapper
+  // Export button group (always visible)
   const exportControls = (
     <div className="d-flex justify-content-end mb-3">
       <button
@@ -68,7 +70,7 @@ export default function ResultsList({ result, showAll, onToggle }) {
     </div>
   );
 
-  // Full-list view
+  // 4. Render either full list or “Fave/Hated 5”
   if (showAll || result.length <= 10) {
     return (
       <>
@@ -86,11 +88,10 @@ export default function ResultsList({ result, showAll, onToggle }) {
     );
   }
 
-  // Top & bottom 5 view
   return (
     <>
       {exportControls}
-      <div ref={containerRef} className="exportable">
+      <div ref={containerRef} className="results-container">
         <h2>Your Ranked Roster</h2>
 
         <h3>Fave 5</h3>
