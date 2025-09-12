@@ -47,41 +47,40 @@ export default function Home() {
   const ignoreSet = useRef(new Set());
 
   // Load static JSON once
-  useEffect(() => {
-    const files = [
-      'aew.json',
-      'marigold.json',
-      'njpw.json',
-      'stardom.json',
-      'tjp.json',
-      'wwe.json'
-    ];
+// inside src/pages/Home.js, replace your useEffect with this:
 
-    Promise.all(
-      files.map(name =>
-        fetch(`/${name}`)
-          .then(res => {
-            if (!res.ok) throw new Error(`Failed to load ${name}`);
-            return res.json();
-          })
+useEffect(() => {
+  // base filenames (no .json, no leading slash)
+  const parts = ['aew', 'marigold', 'njpw', 'stardom', 'tjp', 'wwe'];
+
+  Promise.all(
+    parts.map(key =>
+      fetch(
+        // PUBLIC_URL ensures the correct base path in prod
+        `${process.env.PUBLIC_URL}/${key}.json`
       )
+        .then(res => {
+          if (!res.ok) throw new Error(`Failed to load ${key}.json`);
+          return res.json();
+        })
     )
+  )
+    .then(arrays => {
+      // flatten: [ [...], [...], … ] → one big array
+      const allWrestlers = arrays.flat();
+      setWrestlers(allWrestlers);
 
-  .then(arrays => {
-        // flatten [ [...], [...], … ] → one big array
-        const allWrestlers = arrays.flat();
-        setWrestlers(allWrestlers);
+      // recalc your unique company list
+      const unique = [
+        ...new Set(allWrestlers.map(w => w.company))
+      ].filter(Boolean);
+      setCompanies(unique);
+    })
+    .catch(err => {
+      console.error('Error loading wrestler data:', err);
+    });
+}, []);
 
-        // recalc unique companies
-        const unique = [
-          ...new Set(allWrestlers.map(w => w.company))
-        ].filter(Boolean);
-        setCompanies(unique);
-      })
-      .catch(err => {
-        console.error('Error loading wrestler data:', err);
-      });
-  }, []);
 
   // Toggle a company filter
   const toggleCompany = c => {
