@@ -38,3 +38,12 @@
   color: #666;
   font-size: 0.85rem;
 }
+
+.exportable {
+  font-family: sans-serif;
+  color: #333;
+  width: 300px;           /* fixed width for predictable layout */
+  border: 1px solid #ddd;
+  padding: 16px;
+  background: #fff;
+}
