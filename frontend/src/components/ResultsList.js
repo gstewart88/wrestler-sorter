@@ -77,17 +77,17 @@ export default function ResultsList({ result, showAll, onToggle }) {
     </ol>
   );
 
-  // the two export buttons
-  const exportControls = (
-    <div className="d-flex justify-content-end mb-3">
-      <button
-        className="btn btn-outline-success btn-sm"
-        onClick={exportCustomMobile}
-      >
-        Export Results
-      </button>
-    </div>
-  );
+  // the export button
+  // const exportControls = (
+  //   <div className="d-flex justify-content-end mb-3">
+  //     <button
+  //       className="btn btn-outline-success btn-sm"
+  //       onClick={exportCustomMobile}
+  //     >
+  //       Export Results
+  //     </button>
+  //   </div>
+  // );
 
   // render standard list or top/bottom 5
   const listView = showAll || result.length <= 10
@@ -112,6 +112,17 @@ export default function ResultsList({ result, showAll, onToggle }) {
         </button>
       </div>
     );
+      // the export button
+  const exportControls = (
+    <div className="d-flex justify-content-end mb-3">
+      <button
+        className="btn btn-outline-success btn-sm"
+        onClick={exportCustomMobile}
+      >
+        Export Results
+      </button>
+    </div>
+  );
 
   return (
     <>
