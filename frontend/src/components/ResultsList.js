@@ -22,13 +22,16 @@ export default function ResultsList({ result, showAll, onToggle }) {
   const exportAsImage = useCallback(async () => {
     if (!containerRef.current) return;
     const canvas = await html2canvas(containerRef.current, {
-      backgroundColor: '#fff',
-      scale: 2,
+     useCORS:      true,          // ← enable cross-origin fetches
+     allowTaint:   false,         // ← disallow tainted canvases
+     backgroundColor: '#fff',
+     scale:        2,
     });
+
     canvas.toBlob(blob => {
       if (blob) downloadBlob(blob, 'fave-hated-5.png');
     });
-  }, [downloadBlob]);
+    }, [downloadBlob]);
 
   // 2. Now it’s safe to early-return without skipping any hooks
   if (!result || result.length === 0) {
@@ -42,6 +45,7 @@ export default function ResultsList({ result, showAll, onToggle }) {
         <li key={w.name} className="results-item">
           <img
             src={w.imageURL}
+            crossOrigin="anonymous"
             alt={w.name}
             className="result-thumb"
             onError={e => { e.currentTarget.src = '/images/placeholder.png'; }}
