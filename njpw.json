@@ -1,0 +1,188 @@
+[
+  {
+    "name": "Chase Owens",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/2/22/ChaseOwens.jpg/",
+    "division": "Men's"
+  },
+  {
+    "name": "David Finlay",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/2/26/DavidFinlay7.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "El Phantasmo",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/3/3d/ELP5.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Evil",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/c/c4/EVILBC22.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Gabe Kidd",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/b/bf/GabeKidd24.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Hirooki Goto",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/3/38/HirookiGoto2023.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Ren Narita",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/c/cb/Narita2024.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Sanada",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/4/41/SANADAWarDogs2.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Satoshi Kojima",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/e/e6/SatoshiKojima.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Shingo Takagi",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/3/33/Takagi2024.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Shota Umino",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/1/16/ShotaUmino3.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Taichi",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/d/d1/Taichi2024.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Togi Makabe",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/d/d5/Makabe02_2024.jpeg",
+    "division": "Men's"
+  },
+  {
+    "name": "Tomohiro Ishii",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/3/3a/TomohiroIshii2022.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Toru Yano",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/7/72/YTR21.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Yoshi Hashi",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/1/15/Yoshi-Hashi2022.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Yota Tsuji",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/1/17/YotaTsuji3.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Yuji Nagata",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/d/dd/Nagatayuujii.jpeg",
+    "division": "Men's"
+  },
+  {
+    "name": "Yuya Uemura",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/1/15/YuyaUemura.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "ZSJ",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/e/e0/SabreJr7.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Douki",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/5/55/Douki2024.jpeg",
+    "division": "Men's"
+  },
+  {
+    "name": "El Desperado",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/f/f0/El_Desperado3.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Gedo",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/c/cb/Gedo.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Hiromu Takahashi",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/1/1e/HiromuTakahashi2.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Kushida",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/c/c5/KUSHIDA2022.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Ryusuke Taguchi",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/1/1c/RyusukeT.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Sho",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/0/07/Sho2022.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Taiji Ishimori",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/2/2e/Ishimori2024.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Yoh",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/c/cb/Yoh2023.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Hiroshi Tanahashi",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/9/98/HiroshiTanahashi4.jpg",
+    "division": "Men's"
+  },
+  {
+    "name": "Great-O-Khan",
+    "company": "NJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/9/96/GreatO-Khan.jpg",
+    "division": "Men's"
+  }
+]
