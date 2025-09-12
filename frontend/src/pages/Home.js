@@ -34,6 +34,7 @@ export default function Home() {
   const [showQuote, setShowQuote]       = useState(false);
 
   const handleLogoClick = () => {
+    console.log('Logo clicked!');
     const pick = quotes[Math.floor(Math.random() * quotes.length)];
     setCurrentQuote(pick);
     setShowQuote(true);
