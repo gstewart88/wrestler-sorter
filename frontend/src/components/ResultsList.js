@@ -25,6 +25,7 @@ export default function ResultsList({ result, showAll, onToggle }) {
      useCORS:      true,          // ← enable cross-origin fetches
      allowTaint:   false,         // ← disallow tainted canvases
      backgroundColor: '#fff',
+     ignoreElements: el => el.classList.contains('skip-export'),
      scale:        2,
     });
 
@@ -104,7 +105,7 @@ export default function ResultsList({ result, showAll, onToggle }) {
         <h3>Hated 5</h3>
         {renderList(bottom5, result.length - 4)}
 
-        <button className="btn btn-link" onClick={onToggle}>
+        <button className="btn btn-link skip-export" onClick={onToggle}>
           Show All {result.length}
         </button>
       </div>
