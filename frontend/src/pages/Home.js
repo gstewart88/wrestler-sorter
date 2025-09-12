@@ -228,9 +228,10 @@ export default function Home() {
           placement="start"
         >
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title>Filter by Company & Division</Offcanvas.Title>
+            <Offcanvas.Title>Filters</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
+            <div><strong>Company</strong></div>
             <CompanyFilter
               companies={companies}
               selected={selectedCompanies}
