@@ -3,7 +3,7 @@
 /* Container takes all available width */
 .wrestler-grid {
   display: grid;
-  gap: var(--gap);
+  gap: 0.5rem;
   padding: var(--gap);
   /* auto-fill as many 120px columns as will fit, then wrap */
   grid-template-columns: repeat(
@@ -20,7 +20,7 @@
   overflow: hidden;
   background: #f5f5f5;  /* shows behind any letterboxing */
   border-radius: var(--radius);
-  margin: var(--gap) auto;
+  margin: 0;
 }
 
 /* 2) Make the IMG fill the cell but keep its aspect ratio */
