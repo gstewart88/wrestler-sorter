@@ -1,13 +1,7 @@
 // src/pages/Home.js
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import {
-  Row,
-  Col,
-  Button,
-  Offcanvas,
-  Form
-} from 'react-bootstrap';
+import { Row, Col, Button, Offcanvas, Form } from 'react-bootstrap';
 import CompanyFilter    from '../components/CompanyFilter';
 import ComparisonPrompt from '../components/ComparisonPrompt';
 import WrestlerGrid     from '../components/WrestlerGrid';
@@ -54,12 +48,38 @@ export default function Home() {
 
   // Load static JSON once
   useEffect(() => {
-    fetch('wrestlers.json')
-      .then(r => r.json())
-      .then(data => {
-        setWrestlers(data);
-        const unique = [...new Set(data.map(w => w.company))].filter(Boolean);
+    const files = [
+      'aew.json',
+      'marigold.json',
+      'njpw.json',
+      'stardom.json',
+      'tjp.json',
+      'wwe.json'
+    ];
+
+    Promise.all(
+      files.map(name =>
+        fetch(`/${name}`)
+          .then(res => {
+            if (!res.ok) throw new Error(`Failed to load ${name}`);
+            return res.json();
+          })
+      )
+    )
+
+  .then(arrays => {
+        // flatten [ [...], [...], … ] → one big array
+        const allWrestlers = arrays.flat();
+        setWrestlers(allWrestlers);
+
+        // recalc unique companies
+        const unique = [
+          ...new Set(allWrestlers.map(w => w.company))
+        ].filter(Boolean);
         setCompanies(unique);
+      })
+      .catch(err => {
+        console.error('Error loading wrestler data:', err);
       });
   }, []);
 
