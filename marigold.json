@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Mayu Iwatani",
+    "company": "Marigold",
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/9/93/Mayu_Iwatani_2020.jpg",
+    "division": "Women's"
+  },
+  {
+    "name": "Utami",
+    "company": "Marigold",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/1/1e/UtamiHayashishita23.jpg",
+    "division": "Women's"
+  },
+  {
+    "name": "Kouki Amarei",
+    "company": "Marigold",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/3/3d/KoukiAmarei.jpg",
+    "division": "Women's"
+  },
+  {
+    "name": "Mirai",
+    "company": "Marigold",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/9/9b/MIRAI.jpg",
+    "division": "Women's"
+  }
+]

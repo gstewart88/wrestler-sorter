@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Miu Watanabe",
+    "company": "TJPW",
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/4/4d/Miu_Watanabe_4.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Maki Itoh",
+    "company": "TJPW",
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/e/e4/DDT_Ironman_-_Maki_Ito_20181028.jpg",
+    "division": "Women's"
+  },
+  {
+    "name": "Miyu Yamashita",
+    "company": "TJPW",
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/0/0c/Miyu_Yamashita_-_ruj8hQ3K.jpg",
+    "division": "Women's"
+  },
+ {
+    "name": "Pom Harajuku",
+    "company": "TJPW",
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/0/0b/Pom_Harajuku_2.jpg",
+    "division": "Women's"
+  },
+  {
+    "name": "Wakana Uehara",
+    "company": "TJPW",
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/2/25/Wakana_Uehara.jpg",
+    "division": "Women's"
+  },
+  {
+    "name": "Shoko Nakajima",
+    "company": "TJPW",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/4/43/NakajimaShoko.jpg",
+    "division": "Women's"
+  }
+]
