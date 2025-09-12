@@ -209,6 +209,7 @@ export default function Home() {
          <ul className="instructions list-unstyled text-center mb-4">
           <li>Select the companies you wish to use from the filter menu</li>
           <li>Answer A v B to determine your favourite wrestlers!</li>
+          <li>Use ignore to remove wrestlers from the list</li>
         </ul>
 
         <Button
