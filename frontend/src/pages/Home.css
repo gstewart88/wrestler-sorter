@@ -138,9 +138,11 @@
 }
 
 .division-filter {
-  margin-top: var(--gap);
-}
-
-.division-filter .form-check {
-  margin-bottom: 0.25rem;
+  display: flex;            
+  flex-direction: column;    
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 6px;
+  max-width: 300px;
+  background: #fafafa;
 }
