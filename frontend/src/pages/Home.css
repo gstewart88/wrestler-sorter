@@ -149,6 +149,7 @@
 
 /* Instructions panel */
 .instructions-panel {
+  margin: 0 20px;
   padding-top:    2rem;    /* increased top padding */
   padding-bottom: 2rem;    /* increased bottom padding */
   background:     #f8f9fa; /* light gray panel background (optional) */
