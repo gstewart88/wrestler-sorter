@@ -173,33 +173,19 @@ export default function Home() {
 
   return (
        <>
-     {/* <header className="page-header d-flex justify-content-between align-items-center px-3 py-2">
+     <header className="page-header d-flex justify-content-between align-items-center px-3 py-2">
        <h2 className="mb-0">Fave Five</h2>
        <img
         src={bookerTLogo}
         alt="Booker T"
         className="header-logo"
+        onClick={handleLogoClick}
       />
-     </header> */}
-
-    <header className="page-header d-flex justify-content-between align-items-center px-3 py-2">
-      <h2 className="mb-0">Fave Five</h2>
-
-      {/* make this relative so the bubble can position absolutely */}
-      <div style={{ position: 'relative', cursor: 'pointer' }}>
-        <img
-          src="https://…/booker-t.png"
-          alt="Booker T"
-          className="header-logo"
-          onClick={handleLogoClick}
-        />
-
         {showQuote && (
           <div className="speech-bubble">
             {currentQuote}
           </div>
         )}
-      </div>
     </header>
 
     <Row className="g-0 home-container">
