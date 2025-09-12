@@ -81,16 +81,10 @@ export default function ResultsList({ result, showAll, onToggle }) {
   const exportControls = (
     <div className="d-flex justify-content-end mb-3">
       <button
-        className="btn btn-outline-primary btn-sm me-2"
-        onClick={exportAsImage}
-      >
-        Export as Image
-      </button>
-      <button
         className="btn btn-outline-success btn-sm"
         onClick={exportCustomMobile}
       >
-        Export Mobile Layout
+        Export Results
       </button>
     </div>
   );
