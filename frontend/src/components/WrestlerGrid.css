@@ -21,7 +21,7 @@
   height: 120px;
   /* margin: var(--gap) auto;  remove or shrink this */
   margin: 0;               /* now cells align flush within the grid */
-  background-color: #6c649d;
+  background-color: #7a759e;
   border-radius: var(--radius);
   overflow: hidden;
   display: flex;
