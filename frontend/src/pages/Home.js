@@ -21,6 +21,26 @@ import './Home.css';
 import bookerTLogo from '../assets/bookert.png';
 
 export default function Home() {
+
+  // BOOKER T SPEECH BUBBLE STATE
+  const quotes = [
+    'Can you dig it, sucker!',
+    "You didn't just say that. Tell me you did not just say that",
+    'Shucky ducky quack quack',
+    'You lookin real jacked, baby',
+    '5 time',
+  ];
+  const [currentQuote, setCurrentQuote] = useState('');
+  const [showQuote, setShowQuote]       = useState(false);
+
+  const handleLogoClick = () => {
+    const pick = quotes[Math.floor(Math.random() * quotes.length)];
+    setCurrentQuote(pick);
+    setShowQuote(true);
+    // auto-hide after 5s
+    setTimeout(() => setShowQuote(false), 5000);
+  };
+
   // Data & filter state
   const [wrestlers, setWrestlers]       = useState([]);
   const [companies, setCompanies]       = useState([]);
@@ -161,6 +181,27 @@ export default function Home() {
         className="header-logo"
       />
      </header>
+
+    <header className="page-header d-flex justify-content-between align-items-center px-3 py-2">
+      <h2 className="mb-0">Fave Five</h2>
+
+      {/* make this relative so the bubble can position absolutely */}
+      <div style={{ position: 'relative', cursor: 'pointer' }}>
+        <img
+          src="https://…/booker-t.png"
+          alt="Booker T"
+          className="header-logo"
+          onClick={handleLogoClick}
+        />
+
+        {showQuote && (
+          <div className="speech-bubble">
+            {currentQuote}
+          </div>
+        )}
+      </div>
+    </header>
+
     <Row className="g-0 home-container">
       {/* Desktop sidebar */}
       <Col
