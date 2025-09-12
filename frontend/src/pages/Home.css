@@ -146,3 +146,22 @@
   max-width: 300px;
   background: #fafafa;
 }
+
+/* Instructions panel */
+.instructions-panel {
+  padding-top:    2rem;    /* increased top padding */
+  padding-bottom: 2rem;    /* increased bottom padding */
+  background:     #f8f9fa; /* light gray panel background (optional) */
+  border-radius:  0.5rem;  /* soften the corners */
+}
+
+/* Reduce space between list items by halving the default margin */
+.instructions-panel .instructions li {
+  margin-bottom: 0.25rem;  /* tighter spacing */
+  line-height:   1.2;      /* reduce overall line height */
+}
+
+/* Remove bottom margin on the final list item */
+.instructions-panel .instructions li:last-child {
+  margin-bottom: 0;
+}

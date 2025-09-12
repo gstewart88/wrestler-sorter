@@ -297,11 +297,14 @@ useEffect(() => {
             ☰ Filter
           </Button>
 
-          <ul className="instructions list-unstyled text-center mb-4">
+        {/* Instruction panel */}
+        <div className="instructions-panel mb-4">
+          <ul className="instructions list-unstyled text-center">
             <li>Use filters for company and division</li>
             <li>Choose ignore to remove wrestler from consideration</li>
             <li>Answer A v B to determine your favourite wrestlers!</li>
           </ul>
+        </div>
 
         {!result && !sorting && (
           <Button
