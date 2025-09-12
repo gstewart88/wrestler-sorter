@@ -279,8 +279,8 @@ export default function Home() {
           </Button>
 
           <ul className="instructions list-unstyled text-center mb-4">
-            <li>Select the companies you wish to use from the filter menu</li>
-            <li>Choose Men’s, Women’s, or All from Division</li>
+            <li>Use filters for company and division</li>
+            <li>Choose ignore to remove wrestler from consideration</li>
             <li>Answer A v B to determine your favourite wrestlers!</li>
           </ul>
 
