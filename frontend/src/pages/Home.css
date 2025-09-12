@@ -104,11 +104,13 @@
   margin: 0.5rem 0;
 }
 
-/* the little callout box above the logo */
+/* position the bubble to the left, vertically centered on the logo */
 .speech-bubble {
   position: absolute;
-  top: -0.5rem;         /* tweak vertical offset */
-  right: 0;             /* align its right edge with the logo */
+  top: 50%;
+  right: 100%;              /* push it fully to the left of the logo */
+  transform: translateY(-50%);
+  margin-right: 0.5rem;     /* gap between bubble and image */
   max-width: 200px;
   padding: 0.5rem 0.75rem;
   background: var(--accent-blue);
@@ -119,13 +121,18 @@
   z-index: 1500;
 }
 
-/* triangular “tail” pointing down at the logo */
+/* flip the little “tail” to point right at the logo */
 .speech-bubble::after {
   content: '';
   position: absolute;
-  bottom: -6px;
-  right: 10px;          /* tweak horizontal position */
-  border-width: 6px 6px 0 6px;
+  top: 50%;
+  left: 100%;               /* attach tail to the right edge of bubble */
+  transform: translateY(-50%);
+  border-width: 6px 0 6px 6px;
   border-style: solid;
-  border-color: var(--accent-blue) transparent transparent transparent;
+  border-color: transparent transparent transparent var(--accent-blue);
+}
+.logo-container {
+  position: relative;
+  display: inline-block;
 }
