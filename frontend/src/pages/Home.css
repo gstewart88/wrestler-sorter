@@ -107,26 +107,26 @@
 /* position the bubble to the left, vertically centered on the logo */
 .speech-bubble {
   position: absolute;
-  bottom: calc(100% + 0.5rem);  /* sit right above the logo, with 0.5rem gap */
-  right: 100%;                  /* push it fully to the left */
-  width: 250px;                 /* explicit width */
-  max-width: 80vw;              /* never overflow the viewport */
-  padding: 0.75rem 1rem;
+  top: 50%;
+  right: 100%;              /* push it fully to the left of the logo */
+  transform: translateY(-50%);
+  margin-right: 0.5rem;     /* gap between bubble and image */
+  max-width: 400px;
+  padding: 0.5rem 0.75rem;
   background: var(--accent-blue);
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   border-radius: 0.5rem;
-  line-height: 1.3;
+  line-height: 1.2;
   z-index: 1500;
-  white-space: normal;          /* allow wrapping */
 }
 
-/* ─── flip & reposition the tail to point right at the logo ─── */
+/* flip the little “tail” to point right at the logo */
 .speech-bubble::after {
   content: '';
   position: absolute;
-  top: 50%;                     /* vertical center of bubble */
-  left: 100%;                   /* attach to right edge */
+  top: 50%;
+  left: 100%;               /* attach tail to the right edge of bubble */
   transform: translateY(-50%);
   border-width: 6px 0 6px 6px;
   border-style: solid;
@@ -135,5 +135,4 @@
 .logo-container {
   position: relative;
   display: inline-block;
-  overflow: visible;
 }
