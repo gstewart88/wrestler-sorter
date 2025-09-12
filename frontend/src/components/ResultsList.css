@@ -20,10 +20,12 @@
     width:100px; 
 }
 
-.result-thumb { 
-    width:100%; 
-    aspect-ratio:1/1; 
-    object-fit:contain; 
+.result-thumb {
+  width: auto;            /* let width grow/shrink */
+  height: 80px;           /* fixed height you choose */
+  object-fit: contain;    /* preserve full image, letterbox if needed */
+  /* or if you’d rather crop the top/bottom, use:
+     object-fit: cover; */
 }
 
 .result-info {
@@ -41,9 +43,9 @@
 
 .exportable {
   font-family: sans-serif;
-  color: #333;
+  color: #fff;
   width: 300px;           /* fixed width for predictable layout */
   border: 1px solid #ddd;
   padding: 16px;
-  background: #fff;
+  background: #333;
 }
