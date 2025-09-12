@@ -303,14 +303,16 @@ useEffect(() => {
             <li>Answer A v B to determine your favourite wrestlers!</li>
           </ul>
 
+        {!result && !sorting && (
           <Button
             variant="primary"
             className="d-block mx-auto my-3"
             onClick={handleStart}
-            disabled={!selectedCompanies.length || sorting}
+            disabled={!selectedCompanies.length}
           >
-            {sorting ? 'Sorting…' : 'Start Sorting'}
+          Start Sorting
           </Button>
+        )}
 
           {sorting && currentPair && (
             <ComparisonPrompt

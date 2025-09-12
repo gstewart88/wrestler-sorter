@@ -73,7 +73,17 @@ export default function ResultsList({ result, showAll, onToggle }) {
         hated5={hated5}
       />
 
-      {/* Export button pinned bottom-right */}
+      {/* Bottom-left: Restart */}
+      <div className="position-fixed bottom-0 start-0 m-3">
+        <button
+          className="btn btn-outline-secondary"
+          onClick={() => window.location.reload()}
+        >
+          Restart
+        </button>
+      </div>
+
+      {/* Bottom-right: Export */}
       <div className="position-fixed bottom-0 end-0 m-3">
         <button
           className="btn btn-outline-success"
@@ -85,7 +95,7 @@ export default function ResultsList({ result, showAll, onToggle }) {
             )
           }
         >
-          Export Mobile Layout
+          Export
         </button>
       </div>
     </>
