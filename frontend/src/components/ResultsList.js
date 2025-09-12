@@ -151,11 +151,12 @@ export default function ResultsList({ result, showAll, onToggle }) {
           alt={top.name}
           onError={e => { e.currentTarget.src = '/images/placeholder.png'; }}
           style={{
-            height:    '50%',
-            width:     'auto',
-            maxWidth:   '100%',
-            objectFit: 'contain',
-            marginBottom: '12px'
+            display:     'block',         // make it a block
+            margin:      '0 auto 12px',   // horizontally center + 12px bottom gap
+            height:      '50%',           // half the container’s height
+            width:       'auto',          // natural aspect ratio
+            maxWidth:    '100%',          // don’t overflow
+            objectFit:   'contain'
           }}
         />
 
