@@ -206,16 +206,16 @@ export default function Home() {
               id="div-men"
               label="Men’s"
               name="division"
-              checked={divisionFilter === 'Men'}
-              onChange={() => setDivisionFilter('Men')}
+              checked={divisionFilter === "Men's"}
+              onChange={() => setDivisionFilter("Men's")}
             />
             <Form.Check
               type="radio"
               id="div-women"
               label="Women’s"
               name="division"
-              checked={divisionFilter === 'Women'}
-              onChange={() => setDivisionFilter('Women')}
+              checked={divisionFilter === "Women's"}
+              onChange={() => setDivisionFilter("Women's")}
             />
           </div>
         </Col>
@@ -252,16 +252,16 @@ export default function Home() {
                 id="div-men-mobile"
                 label="Men’s"
                 name="division-mobile"
-                checked={divisionFilter === 'Men'}
-                onChange={() => setDivisionFilter('Men')}
+                checked={divisionFilter === "Men's"}
+                onChange={() => setDivisionFilter("Men's")}
               />
               <Form.Check
                 type="radio"
                 id="div-women-mobile"
                 label="Women’s"
                 name="division-mobile"
-                checked={divisionFilter === 'Women'}
-                onChange={() => setDivisionFilter('Women')}
+                checked={divisionFilter === "Women's"}
+                onChange={() => setDivisionFilter("Women's")}
               />
             </div>
           </Offcanvas.Body>
