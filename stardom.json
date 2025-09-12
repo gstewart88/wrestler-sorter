@@ -5,24 +5,6 @@
     "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/e/ec/Ami_Sourei.jpg",
     "division": "Women's"
   },
-    {
-    "name": "Ruaka",
-    "company": "Stardom",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/1/15/RUAKA_5.jpg",
-    "division": "Women's"
-  },
-  {
-    "name": "Waka Tsukiyama",
-    "company": "Stardom",
-    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/e/ea/Waka_Tsukiyama.jpg",
-    "division": "Women's"
-  },
-  {
-    "name": "Starlight Kid",
-    "company": "Stardom",
-    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/2/2e/StarlightKid2024.jpg",
-    "division": "Women's"
-  },
   {
     "name": "AZM",
     "company": "Stardom",
@@ -30,15 +12,15 @@
     "division": "Women's"
   },
   {
-    "name": "Miyu Amasaki",
+    "name": "Bozilla",
     "company": "Stardom",
-    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/5/52/MiyuAmasaki.jpg",
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/0/06/Bozilla.png",
     "division": "Women's"
   },
   {
-    "name": "Saya Kamitani",
+    "name": "Fukigen Death",
     "company": "Stardom",
-    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/9/9d/SayaKamitani2024.jpg",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/b/b8/Yoneyama.jpg",
     "division": "Women's"
   },
   {
@@ -48,39 +30,9 @@
     "division": "Women's"
   },
   {
-    "name": "Natsupoi",
-    "company": "Stardom",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/f/fc/NATSUPOI.jpg",
-    "division": "Women's"
-  },
-  {
     "name": "Hina",
     "company": "Stardom",
     "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/6/67/Hina.jpg",
-    "division": "Women's"
-  },
-  {
-    "name": "Rina",
-    "company": "Stardom",
-    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/8/84/Rina.jpg",
-    "division": "Women's"
-  },
-  {
-    "name": "Saya Iida",
-    "company": "Stardom",
-    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/a/a4/Iida.jpg",
-    "division": "Women's"
-  },
- {
-    "name": "Fukigen Death",
-    "company": "Stardom",
-    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/b/b8/Yoneyama.jpg",
-    "division": "Women's"
-  },
-  {
-    "name": "Syuri",
-    "company": "Stardom",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/8/8c/SyuriX.jpg",
     "division": "Women's"
   },
   {
@@ -90,15 +42,81 @@
     "division": "Women's"
   },
   {
+    "name": "Miyu Amasaki",
+    "company": "Stardom",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/5/52/MiyuAmasaki.jpg",
+    "division": "Women's"
+  },
+  {
     "name": "Momo Kohgo",
     "company": "Stardom",
     "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/4/48/Momo_Kohgo.jpg",
     "division": "Women's"
   },
   {
+    "name": "Natsuko Tora",
+    "company": "Stardom",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/9/9b/NTora.jpg",
+    "division": "Women's"
+  },
+  {
+    "name": "Natsupoi",
+    "company": "Stardom",
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/f/fc/NATSUPOI.jpg",
+    "division": "Women's"
+  },
+  {
+    "name": "Rina",
+    "company": "Stardom",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/8/84/Rina.jpg",
+    "division": "Women's"
+  },
+  {
+    "name": "Ruaka",
+    "company": "Stardom",
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/1/15/RUAKA_5.jpg",
+    "division": "Women's"
+  },
+  {
+    "name": "Saya Iida",
+    "company": "Stardom",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/a/a4/Iida.jpg",
+    "division": "Women's"
+  },
+  {
+    "name": "Saya Kamitani",
+    "company": "Stardom",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/9/9d/SayaKamitani2024.jpg",
+    "division": "Women's"
+  },
+  {
+    "name": "Starlight Kid",
+    "company": "Stardom",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/2/2e/StarlightKid2024.jpg",
+    "division": "Women's"
+  },
+  {
     "name": "Suzu Suzuki",
     "company": "Stardom",
     "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/3/3e/Suzusuzuki.jpg",
+    "division": "Women's"
+  },
+  {
+    "name": "Syuri",
+    "company": "Stardom",
+    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/8/8c/SyuriX.jpg",
+    "division": "Women's"
+  },
+  {
+    "name": "Tomoka Inaba",
+    "company": "Stardom",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/e/e0/TomokaInaba.jpg",
+    "division": "Women's"
+  },
+  {
+    "name": "Waka Tsukiyama",
+    "company": "Stardom",
+    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/e/ea/Waka_Tsukiyama.jpg",
     "division": "Women's"
   }
 ]
