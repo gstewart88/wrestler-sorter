@@ -25,7 +25,7 @@ export default function Home() {
   // BOOKER T SPEECH BUBBLE STATE
   const quotes = [
     'Can you dig it, sucker!',
-    "You didn't just say that. Tell me you did not just say that",
+    "Tell me you did not just say that",
     'Shucky ducky quack quack',
     'You lookin real jacked, baby',
     '5 time',
@@ -45,6 +45,7 @@ export default function Home() {
   const [wrestlers, setWrestlers]       = useState([]);
   const [companies, setCompanies]       = useState([]);
   const [selectedCompanies, setSelected]= useState(['WWE']);
+  const [divisionFilter, setDivisionFilter] = useState('All');
   const [showAll, setShowAll]           = useState(false);
 
   // UI state
@@ -65,6 +66,8 @@ export default function Home() {
         setWrestlers(data);
         const unique = [...new Set(data.map(w => w.company))].filter(Boolean);
         setCompanies(unique);
+        const [divisionFilter, setDivisionFilter] = useState('All');
+        setDivisions(divs);
       });
   }, []);
 
@@ -144,11 +147,12 @@ export default function Home() {
     cacheRef.current.clear();
 
     // prepare list, filtering out ignored
-    const toSort = wrestlers.filter(
-      w =>
-        selectedCompanies.includes(w.company) &&
-        !ignoreSet.current.has(w.id ?? w.name)
-    );
+  const toSort = wrestlers.filter(w => {
+    const byCompany = selectedCompanies.includes(w.company);
+    const byDivision = divisionFilter === 'All' || w.division === divisionFilter;
+    const byIgnore   = !ignoreSet.current.has(w.id ?? w.name);
+    return byCompany && byDivision && byIgnore;
+  });
 
     // (optional) dry-run to count comparisons
     await fordJohnsonSort(toSort, async () => true);
@@ -160,11 +164,12 @@ export default function Home() {
   }
 
   // Filter preview to skip ignored
-  const filtered = wrestlers.filter(
-    w =>
-      selectedCompanies.includes(w.company) &&
-      !ignoreSet.current.has(w.id ?? w.name)
-  );
+ const filtered = wrestlers.filter(w => {
+   const byCompany = selectedCompanies.includes(w.company);
+   const byDivision = divisionFilter === 'All' || w.division === divisionFilter;
+   const byIgnore = !ignoreSet.current.has(w.id ?? w.name);
+   return byCompany && byDivision && byIgnore;
+ });
 
  // remove any ignored wrestlers from the final sorted array
   const filteredResult = result
@@ -173,14 +178,6 @@ export default function Home() {
 
   return (
        <>
-     {/* <header className="page-header d-flex justify-content-between align-items-center px-3 py-2">
-       <h2 className="mb-0">Fave Five</h2>
-       <img
-        src={bookerTLogo}
-        alt="Booker T"
-        className="header-logo"
-      />
-     </header> */}
 
     <header className="page-header d-flex justify-content-between align-items-center px-3 py-2">
       <h2 className="mb-0">Fave Five</h2>
@@ -188,7 +185,7 @@ export default function Home() {
       {/* make this relative so the bubble can position absolutely */}
       <div style={{ position: 'relative', cursor: 'pointer' }}>
         <img
-          src="https://…/booker-t.png"
+          src={bookerTLogo}
           alt="Booker T"
           className="header-logo"
           onClick={handleLogoClick}
@@ -233,6 +230,36 @@ export default function Home() {
             selected={selectedCompanies}
             onToggle={toggleCompany}
           />
+          <div className="division-filter">
+            <div><strong>Division</strong></div>
+            <Form.Check
+              type="radio"
+              id="div-all"
+              label="All"
+              name="division"
+              value="All"
+              checked={divisionFilter === 'All'}
+              onChange={() => setDivisionFilter('All')}
+            />
+            <Form.Check
+              type="radio"
+              id="div-men"
+              label="Men’s"
+              name="division"
+              value="Men"
+              checked={divisionFilter === 'Men'}
+              onChange={() => setDivisionFilter('Men')}
+            />
+            <Form.Check
+              type="radio"
+              id="div-women"
+              label="Women’s"
+              name="division"
+              value="Women"
+              checked={divisionFilter === 'Women'}
+              onChange={() => setDivisionFilter('Women')}
+            />
+        </div>
         </Offcanvas.Body>
       </Offcanvas>
 

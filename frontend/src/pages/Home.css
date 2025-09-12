@@ -136,3 +136,11 @@
   position: relative;
   display: inline-block;
 }
+
+.division-filter {
+  margin-top: var(--gap);
+}
+
+.division-filter .form-check {
+  margin-bottom: 0.25rem;
+}
