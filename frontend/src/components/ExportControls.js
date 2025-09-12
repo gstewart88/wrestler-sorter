@@ -2,10 +2,7 @@
 
 import React from 'react';
 
-export default function ExportControls({
-  onExportList,
-  onExportMobile
-}) {
+export default function ExportControls({ onExportList, onExportMobile }) {
   return (
     <div className="d-flex justify-content-end mb-3">
       <button

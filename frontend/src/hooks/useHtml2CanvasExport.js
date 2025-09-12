@@ -17,7 +17,10 @@ export default function useHtml2CanvasExport() {
 
   const exportRef = useCallback(
     async (ref, opts = {}, filename = 'export.png') => {
-      if (!ref.current) return;
+      if (!ref.current) {
+        console.warn('Nothing to export—missing ref.');
+        return;
+      }
       const canvas = await html2canvas(ref.current, {
         useCORS:    true,
         allowTaint: false,
