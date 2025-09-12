@@ -1,16 +1,13 @@
 // src/components/ResultsList.js
 
 import React, { useRef } from 'react';
-import ExportControls  from './ExportControls';
 import MobileMockup    from './MobileMockup';
 import useHtml2CanvasExport from '../hooks/useHtml2CanvasExport';
 import './ResultsList.css';
 
 export default function ResultsList({ result, showAll, onToggle }) {
-  // Refs for the two export targets
   const listRef   = useRef(null);
   const mobileRef = useRef(null);
-
   const { exportRef } = useHtml2CanvasExport();
 
   if (!result || !result.length) return null;
@@ -32,9 +29,7 @@ export default function ResultsList({ result, showAll, onToggle }) {
             onError={e => (e.currentTarget.src = '/images/placeholder.png')}
           />
           <div className="result-info">
-            <div className="result-name">
-              {i + start}. {w.name}
-            </div>
+            <div className="result-name">{i + start}. {w.name}</div>
             <div className="result-company">({w.company})</div>
           </div>
         </li>
@@ -68,20 +63,31 @@ export default function ResultsList({ result, showAll, onToggle }) {
 
   return (
     <>
-      <ExportControls
-        onExportList={()    => exportRef(listRef, {}, 'fave-hated-5.png')}
-        onExportMobile={()  => exportRef(mobileRef, { backgroundColor: null }, 'mobile-fave-hated.png')}
-      />
-
       {listView}
 
-      {/* off-screen mockup. html2canvas will grab this via mobileRef */}
+      {/* off-screen mobile mockup for html2canvas */}
       <MobileMockup
         ref={mobileRef}
         top={top}
         fave5={fave5}
         hated5={hated5}
       />
+
+      {/* Export button pinned bottom-right */}
+      <div className="position-fixed bottom-0 end-0 m-3">
+        <button
+          className="btn btn-outline-success"
+          onClick={() =>
+            exportRef(
+              mobileRef,
+              { backgroundColor: null },
+              'mobile-fave-hated.png'
+            )
+          }
+        >
+          Export Mobile Layout
+        </button>
+      </div>
     </>
   );
 }
