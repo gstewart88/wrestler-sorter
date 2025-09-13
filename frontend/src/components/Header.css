@@ -1,0 +1,23 @@
+/* src/components/Header.css */
+
+.page-header {
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header-logo {
+  height: 48px;
+  cursor: pointer;
+}
+
+.speech-bubble {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transform: translateX(50%);
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  white-space: nowrap;
+}

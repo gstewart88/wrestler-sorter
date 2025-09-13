@@ -1,33 +1,16 @@
 // src/pages/Home.js
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { Row, Col, Button, Offcanvas, Form } from 'react-bootstrap';
+import { Row, Col, Button, Offcanvas, Form, ProgressBar } from 'react-bootstrap';
 import CompanyFilter    from '../components/CompanyFilter';
 import ComparisonPrompt from '../components/ComparisonPrompt';
 import WrestlerGrid     from '../components/WrestlerGrid';
 import ResultsList      from '../components/ResultsList';
 import fordJohnsonSort  from '../utils/fordJohnsonSort';
 import './Home.css';
-import bookerTLogo from '../assets/bookert.png';
+import Header from '../components/Header';
 
 export default function Home() {
-  // Booker T speech-bubble state
-  const quotes = [
-    'Can you dig it, sucker!',
-    'Tell me you did not just say that',
-    'Shucky ducky quack quack',
-    'You lookin real jacked, baby',
-    '5 time'
-  ];
-  const [currentQuote, setCurrentQuote] = useState('');
-  const [showQuote, setShowQuote]       = useState(false);
-
-  const handleLogoClick = () => {
-    const pick = quotes[Math.floor(Math.random() * quotes.length)];
-    setCurrentQuote(pick);
-    setShowQuote(true);
-    setTimeout(() => setShowQuote(false), 5000);
-  };
 
   // Data & filter state
   const [wrestlers, setWrestlers]            = useState([]);
@@ -43,7 +26,7 @@ export default function Home() {
   const [awaiting, setAwaiting]         = useState(null);
   const [result, setResult]             = useState(null);
 
-  // Track ignored wrestlers by ID/name
+
   const ignoreSet = useRef(new Set());
 
   // Load static JSON once
@@ -178,24 +161,7 @@ useEffect(() => {
 
   return (
     <>
-      <header className="page-header d-flex justify-content-between align-items-center px-3 py-2">
-        <h2 className="mb-0">Fave Five</h2>
-
-        <div className="logo-container" style={{ cursor: 'pointer' }}>
-          <img
-            src={bookerTLogo}
-            alt="Booker T"
-            className="header-logo"
-            onClick={handleLogoClick}
-          />
-          {showQuote && (
-            <div className="speech-bubble">
-              {currentQuote}
-            </div>
-          )}
-        </div>
-      </header>
-
+      <Header />
       <Row className="g-0 home-container">
         {/* Desktop sidebar */}
         <Col
