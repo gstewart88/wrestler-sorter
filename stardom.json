@@ -2,13 +2,25 @@
   {
     "name": "Ami Sohrei",
     "company": "Stardom",
-    "imageURL": "https://i0.wp.com/joshicity.com/wp-content/uploads/2022/04/ami.jpg",
+    "imageURL": "https://i.namu.wiki/i/5MNUMBEQ8mfr5xgRuuU9vX6j-RbjzQWb3naVCpCtya9-xdDjQ7NCJE7nuLa3PWBpKBKSkqN8o1KXkT_RmHeKC1kklKmVV-SbpQziZ_u8YyNgYKNFqM7kPw3T9-xbgeZ10ZA0-ON5p27MGYgdzeVnfg.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Aya Sakura",
+    "company": "Stardom",
+    "imageURL": "https://i.namu.wiki/i/e-pgLC3qrNuXDHoDlysUvk7dO8IA-mN6k3RkSID1BF2Tz7vV_RpNk9lbQii7jEIM_xUin2nSDa8JlAX013CamX8Jv4a1njaUC3-dMYYoAzCTYv8Jpaz9mPJJhK1HLOy3Ay3cnXqZosOriKZnNbHrnA.webp",
     "division": "Women's"
   },
   {
     "name": "AZM",
     "company": "Stardom",
     "imageURL": "https://i.namu.wiki/i/qbnsAlca9vV4Jk-pJwPgjEjNfC6GjvsL5snWTnJwWIVQm1vc3q59zb4zsWPKtQexKyvnv2Qg3V5EC55Fm9CqBQ.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Azusa Inaba",
+    "company": "Stardom",
+    "imageURL": "https://i.namu.wiki/i/5klfLGXuIcv3qYJInx9k_OAenxu2j6HR7dfgpVDZ6YI4TjbB3ptS7nkpkXlnINIOvultDvxWQraqW8_iQ09m9_C0i-0pzpher6zyO7ebWQ2dP9a9ICtkKSQin_j-5LJeawPKAT7g9ZAR089wcAmW9Q.webp",
     "division": "Women's"
   },
   {
@@ -45,6 +57,12 @@
     "name": "Hina",
     "company": "Stardom",
     "imageURL": "https://i.namu.wiki/i/6imcivlq2NG4clW3SlwMJhjC-rasCa29E6ArCIjo2Eubg4zmKU0qRj9uFlMgWpnJad5pbBlL1W3CMlli9_fiPAuVwK5hCc1bH0BEdcx8xuJMBR3xeaaWHlgha1bsucOl979CVEXsQwTdrpTkkram5g.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Itsuki Aoki",
+    "company": "Stardom",
+    "imageURL": "https://i.namu.wiki/i/Ck7Yg48JcN924Xe8HeXJ9z9TmKjdC-bLCXUIeQdRLhypVS5KFJj_gAptpvjSooYqvDgvx7y7qHiyWEGsG2xpWEsWXyC-V8KKXtWtf67SDn3hIiGFF588JtMa2ORgUMdhzRFGq_zXs7xMysBz7r4eOw.webp",
     "division": "Women's"
   },
   {
@@ -108,15 +126,39 @@
     "division": "Women's"
   },
   {
+    "name": "Ranna Yagami",
+    "company": "Stardom",
+    "imageURL": "https://i.namu.wiki/i/y1yul1TpCHDi7UnmxKoKTyMYNXeK1gAmtvq1JjH5FnXst03PIUoMtrOJZn32Fc5qEkVHjH5nL_vV886Ee2T4rObJjaPHWYhydZyyUPlHEatoAcv0JdniceJAzVD5UQF94RmdQfV1ec7G6Bquu8Nmlg.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Rian",
+    "company": "Stardom",
+    "imageURL": "https://i.namu.wiki/i/3OYuWKTTsw0mm8AK57gp4pZL4pfs1FN5B_Vy4nEYxSfgd50HWoc_ZoDwuDBbtdtVlo2EDo4zg3SIpKKT6IFJfjgLopV7Z1yhuxWWAu71G797bRa66Ig9eFH2vrz1c7u6NO07m4RzIpQ-jEoeN0ZCjQ.webp",
+    "division": "Women's"
+  },
+  {
     "name": "Rina",
     "company": "Stardom",
     "imageURL": "https://i.namu.wiki/i/mkCG-dbqw2TuCeb1HSqNrQJzHFRB1RRhgHfIZ8kEFb9HjqzJc3WgMSqduf7UAxxDdXlhFet2nnPQ-UH5v2CIcQ.webp",
     "division": "Women's"
   },
   {
+    "name": "Rina Yamashita",
+    "company": "Stardom",
+    "imageURL": "https://i.namu.wiki/i/YpwudfeUzroJYF_AzeytqBNume1WKojYj2yhIjmgyzEL72Cbz4bJ3izUaZxZY2hk5eXBHRadmsFcbqtfr-UYCv-kFULuQ_aDMVI1sBMUIcEviYt38TQFCIk8ZUFY8c0j2fIjKj64xACTBycTEhBsyA.webp",
+    "division": "Women's"
+  },
+  {
     "name": "Ruaka",
     "company": "Stardom",
     "imageURL": "https://i.namu.wiki/i/mFongHaY14u0WhA3fLWsSjl-nePNm6tTHnqgY1EQVgnThxeg_v275YnDiZHYJuUas3Sm42Q-qt4OWRoum5PebCS0e000ps8N-AS6qLTVEOO2h0NgOkIFa_MWIF-6gC444FmZtzKyOvnh93YK5IroUQ.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Sayaka Kurara",
+    "company": "Stardom",
+    "imageURL": "https://i.namu.wiki/i/9gNta04z9ZIDGDW_rRukVwUnIVUNeYnzgXLAZY1Or8nfboVEUnry_UOL4drdPHrjUcPbQS8oxcaHC9o0r-nDuqDHTApXTZicwaVX7eSzzEiVHwAYqLQGG9w5SY7HzYBxGohDWVVg_JbYr9NZThnKVw.webp",
     "division": "Women's"
   },
   {
@@ -170,13 +212,25 @@
   {
     "name": "Tomoka Inaba",
     "company": "Stardom",
-    "imageURL": "https://static.wikia.nocookie.net/puroresusystem/images/e/e0/TomokaInaba.jpg",
+    "imageURL": "https://i.namu.wiki/i/NsDKvCYdx3hZrTCw-2fTcb7PMoulW-OBzHXe_a_UuzIqhVWrZGuDwCUuVUiK4cI3LsI4EuEZQk3V0i8mV-iMldfYMybwMopoyZPpeeH0IlCqpnrtS9qvGtlnbzDqWUYDlfGd0ybg8kv0qqkXhZxXkg.webp",
     "division": "Women's"
   },
   {
     "name": "Waka Tsukiyama",
     "company": "Stardom",
     "imageURL": "https://i.namu.wiki/i/tjhma_AwYzhusEECw-oRtN-ZXGxptIuy_2kfQ6sA_RTq3BdNqbpLoGM88LqngmRZd7EB6lzMDlkmuV5h9ZK8TfODG0ltUyV2uTrLdyjElYfmfO8mDuUFUkKfz2b8vGNSkQwsv0we1zBtvgr8Kj0z1Q.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Xena",
+    "company": "Stardom",
+    "imageURL": "https://i.namu.wiki/i/3PEl9Mhug-Y-3OLilFiGiERGMHru0JextJAyOjQKyq3DfnEC3n2MOXOd5nEodkmngCfXi793aeoqDQV4S7yluW1folWcgZc8mtHLm7In5YbptI8r5IlfA-zMQS4c8-tbDFhf-mT-g4gk5yWN7_VOLQ.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Yuna Mizumori",
+    "company": "Stardom",
+    "imageURL": "https://i.namu.wiki/i/IrgdQJ_rWGYIgmYerJ7EMNG1EBRdjoRCfr68FV3wqesw5AKEIj07JOuT_pXXDv2spKEmrLlQ0Y26yvu6WVT41iti1hg-5nd7H3RF2oHpkW6c8UYn5HtTqfkM7YeBcvmxH_8JQD0-F34FJdM_9A57sg.webp",
     "division": "Women's"
   }
 ]
