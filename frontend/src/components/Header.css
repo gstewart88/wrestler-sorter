@@ -1,5 +1,10 @@
 /* src/components/Header.css */
 
+.site-logo {
+  height: 48px;
+  width: auto;
+}
+
 .speech-bubble {
   position: absolute;
   top: 100%;
