@@ -46,22 +46,6 @@
   z-index: 900;
 }
 
-.page-header {
-  background: var(--accent-blue);
-  border-bottom: 1px solid var(--border-color);
-}
-
-.page-header h2 {
-  font-size: 1.5rem;
-  color: var(--text);
-}
-
-.header-logo {
-  height: 48px;
-  width: auto;
-  object-fit: contain;
-}
-
 /* Responsive rules */
 @media (max-width: 768px) {
   /* Hide sidebar off‐canvas by default */
@@ -102,39 +86,6 @@
   cursor: default;
   list-style: none;
   margin: 0.5rem 0;
-}
-
-/* position the bubble to the left, vertically centered on the logo */
-.speech-bubble {
-  position: absolute;
-  top: 50%;
-  right: 100%;              /* push it fully to the left of the logo */
-  transform: translateY(-50%);
-  margin-right: 0.5rem;     /* gap between bubble and image */
-  max-width: 400px;
-  padding: 0.5rem 0.75rem;
-  background: var(--accent-blue);
-  color: #fff;
-  font-size: 0.85rem;
-  border-radius: 0.5rem;
-  line-height: 1.2;
-  z-index: 1500;
-}
-
-/* flip the little “tail” to point right at the logo */
-.speech-bubble::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 100%;               /* attach tail to the right edge of bubble */
-  transform: translateY(-50%);
-  border-width: 6px 0 6px 6px;
-  border-style: solid;
-  border-color: transparent transparent transparent var(--accent-blue);
-}
-.logo-container {
-  position: relative;
-  display: inline-block;
 }
 
 .division-filter {
