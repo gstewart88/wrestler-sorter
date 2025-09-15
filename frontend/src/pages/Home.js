@@ -7,6 +7,7 @@ import ComparisonPrompt from '../components/ComparisonPrompt';
 import WrestlerGrid     from '../components/WrestlerGrid';
 import ResultsList      from '../components/ResultsList';
 import fordJohnsonSort  from '../utils/fordJohnsonSort';
+import { countComparisons } from '../utils/countComparisons';
 import './Home.css';
 import Header from '../components/Header';
 
@@ -21,6 +22,10 @@ function shuffleArray(arr) {
 }
 
 export default function Home() {
+
+  // progress‐bar state
+  const [totalComparisons, setTotalComparisons]       = useState(0);
+  const [completedComparisons, setCompletedComparisons] = useState(0);
 
   // Data & filter state
   const [wrestlers, setWrestlers]            = useState([]);
@@ -149,11 +154,19 @@ useEffect(() => {
 
     const randomized = shuffleArray(toSort);
 
-    // dry-run to count comparisons
-    await fordJohnsonSort(randomized, async () => true);
+    // 1) estimate total comparisons in O(1)
+    const estimate = countComparisons(toSort.length);
+    setTotalComparisons(estimate);
+    setCompletedComparisons(0);
 
-    // real sort with user input
-    const sorted = await fordJohnsonSort(randomized, compareWithCache);
+    // 2) wrap compareWithCache so each decision ticks the progress
+    const realCompare = async (a, b) => {
+    const winner = await compareWithCache(a, b);
+    setCompletedComparisons(c => c + 1);
+    return winner;
+    };
+
+    const sorted = await fordJohnsonSort(toSort, realCompare);
     setResult(sorted);
     setSorting(false);
   }
@@ -298,6 +311,15 @@ useEffect(() => {
           {sorting && currentPair && (
             <>
               <div className="comparison-backdrop" />
+              <ProgressBar
+              now={
+                totalComparisons > 0
+                  ? (completedComparisons / totalComparisons) * 100
+                  : 0
+              }
+              label={`${completedComparisons}/${totalComparisons}`}
+              className="mb-3"
+            />
               <ComparisonPrompt
                 a={currentPair.a}
                 b={currentPair.b}
@@ -306,6 +328,7 @@ useEffect(() => {
               />
             </>
           )}
+          
 
           {result && !sorting && (
             <ResultsList
