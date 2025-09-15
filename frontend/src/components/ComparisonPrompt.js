@@ -14,7 +14,7 @@ export default function ComparisonPrompt({
 }) {
   const percent =
     totalComparisons > 0
-      ? (completedComparisons / totalComparisons) * 100
+      ? Math.round((completedComparisons / totalComparisons) * 100)
       : 0;
   return (
     <div className="comparison-overlay">
@@ -22,7 +22,7 @@ export default function ComparisonPrompt({
 
       <ProgressBar
         now={percent}
-        label={`${completedComparisons}/${totalComparisons}`}
+        label={`${percent}%`}
         className="mb-3"
       />
 
