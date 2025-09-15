@@ -117,3 +117,21 @@
 .instructions-panel .instructions li:last-child {
   margin-bottom: 0;
 }
+
+/* full-screen semi-transparent overlay */
+.comparison-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  pointer-events: all; /* blocks clicks to underlying UI */
+}
+
+/* ensure the prompt itself sits above the overlay */
+.comparison-prompt {
+  position: relative;
+  z-index: 1001;
+}

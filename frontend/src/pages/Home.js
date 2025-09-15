@@ -284,12 +284,15 @@ useEffect(() => {
         )}
 
           {sorting && currentPair && (
-            <ComparisonPrompt
-              a={currentPair.a}
-              b={currentPair.b}
-              onChoose={handleChoice}
-              onIgnore={handleIgnore}
-            />
+            <>
+              <div className="comparison-backdrop" />
+              <ComparisonPrompt
+                a={currentPair.a}
+                b={currentPair.b}
+                onChoose={handleChoice}
+                onIgnore={handleIgnore}
+              />
+            </>
           )}
 
           {result && !sorting && (
