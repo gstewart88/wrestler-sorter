@@ -10,6 +10,16 @@ import fordJohnsonSort  from '../utils/fordJohnsonSort';
 import './Home.css';
 import Header from '../components/Header';
 
+// shuffle an array in place (Fisher–Yates)
+function shuffleArray(arr) {
+  const a = arr.slice(); // copy so we don't mutate props/state
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 export default function Home() {
 
   // Data & filter state
@@ -137,11 +147,13 @@ useEffect(() => {
       return byCompany && byDivision && byIgnore;
     });
 
+    const randomized = shuffleArray(toSort);
+
     // dry-run to count comparisons
-    await fordJohnsonSort(toSort, async () => true);
+    await fordJohnsonSort(randomized, async () => true);
 
     // real sort with user input
-    const sorted = await fordJohnsonSort(toSort, compareWithCache);
+    const sorted = await fordJohnsonSort(randomized, compareWithCache);
     setResult(sorted);
     setSorting(false);
   }
