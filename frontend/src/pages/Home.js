@@ -166,7 +166,7 @@ useEffect(() => {
     return winner;
     };
 
-    const sorted = await fordJohnsonSort(toSort, realCompare);
+    const sorted = await fordJohnsonSort(randomized, realCompare);
     setResult(sorted);
     setSorting(false);
   }
