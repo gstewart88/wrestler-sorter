@@ -308,27 +308,16 @@ useEffect(() => {
           </Button>
         )}
 
-          {sorting && currentPair && (
-            <>
-              <div className="comparison-backdrop" />
-              <ProgressBar
-              now={
-                totalComparisons > 0
-                  ? (completedComparisons / totalComparisons) * 100
-                  : 0
-              }
-              label={`${completedComparisons}/${totalComparisons}`}
-              className="mb-3"
-            />
-              <ComparisonPrompt
-                a={currentPair.a}
-                b={currentPair.b}
-                onChoose={handleChoice}
-                onIgnore={handleIgnore}
-              />
-            </>
-          )}
-          
+        {sorting && currentPair && (
+          <ComparisonPrompt
+            a={currentPair.a}
+            b={currentPair.b}
+            onChoose={handleChoice}
+            onIgnore={handleIgnore}
+            totalComparisons={totalComparisons}
+            completedComparisons={completedComparisons}
+          />
+        )}
 
           {result && !sorting && (
             <ResultsList

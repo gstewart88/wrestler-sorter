@@ -103,3 +103,19 @@
     align-items: center;
   }
 }
+
+/* ensure the prompt container scrolls if it grows too tall */
+.comparison-prompt {
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: 1001; /* above any backdrop you still have */
+}
+
+/* tighten the bar’s margins */
+.comparison-prompt .progress {
+  margin-bottom: 0.75rem;
+}

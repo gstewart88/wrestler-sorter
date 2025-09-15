@@ -2,11 +2,30 @@
 
 import React from 'react';
 import './ComparisonPrompt.css';
+import { ProgressBar } from 'react-bootstrap';
 
-export default function ComparisonPrompt({ a, b, onChoose, onIgnore }) {
+export default function ComparisonPrompt({
+  a,
+  b,
+  onChoose,
+  onIgnore,
+  totalComparisons = 0,
+  completedComparisons = 0
+}) {
+  const percent =
+    totalComparisons > 0
+      ? (completedComparisons / totalComparisons) * 100
+      : 0;
   return (
     <div className="comparison-overlay">
       <div className="comparison-box">
+
+      <ProgressBar
+        now={percent}
+        label={`${completedComparisons}/${totalComparisons}`}
+        className="mb-3"
+      />
+
         <h3>Who do you prefer?</h3>
         <div className="options">
 
@@ -29,6 +48,7 @@ export default function ComparisonPrompt({ a, b, onChoose, onIgnore }) {
             >
               Ignore
             </button>
+
           </div>
 
           <div
