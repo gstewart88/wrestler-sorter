@@ -129,9 +129,3 @@
   z-index: 1000;
   pointer-events: all; /* blocks clicks to underlying UI */
 }
-
-/* ensure the prompt itself sits above the overlay */
-.comparison-prompt {
-  position: relative;
-  z-index: 1001;
-}

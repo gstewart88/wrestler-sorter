@@ -309,6 +309,8 @@ useEffect(() => {
         )}
 
         {sorting && currentPair && (
+          <>
+          <div className="comparison-backdrop" />
           <ComparisonPrompt
             a={currentPair.a}
             b={currentPair.b}
@@ -317,6 +319,7 @@ useEffect(() => {
             totalComparisons={totalComparisons}
             completedComparisons={completedComparisons}
           />
+          </>
         )}
 
           {result && !sorting && (
