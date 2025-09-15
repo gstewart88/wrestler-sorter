@@ -24,7 +24,7 @@ const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
       src={top.imageURL}
       crossOrigin="anonymous"
       alt={top.name}
-      onError={e => (e.currentTarget.src = '/images/placeholder.png')}
+      onError={e => (e.currentTarget.src = 'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png')}
       style={{
         display:   'block',
         margin:    '0 auto 12px',

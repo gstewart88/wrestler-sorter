@@ -23,10 +23,10 @@ export default function ResultsList({ result, showAll, onToggle }) {
         <li key={w.name} className="results-item">
           <img
             src={w.imageURL}
-            crossOrigin="anonymous"
+            // crossOrigin="anonymous"
             alt={w.name}
             className="result-thumb"
-            onError={e => (e.currentTarget.src = '/images/placeholder.png')}
+            onError={e => (e.currentTarget.src = 'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png')}
           />
           <div className="result-info">
             <div className="result-name">{i + start}. {w.name}</div>

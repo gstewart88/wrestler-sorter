@@ -15,7 +15,7 @@ export default function ComparisonPrompt({ a, b, onChoose, onIgnore }) {
             onClick={() => onChoose(a)}
           >
             <img
-              src={a.imageURL || '/images/placeholder.png'}
+              src={a.imageURL || 'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png'}
               alt={a.name}
               className="compare-img"
             />
@@ -36,7 +36,7 @@ export default function ComparisonPrompt({ a, b, onChoose, onIgnore }) {
             onClick={() => onChoose(b)}
           >
             <img
-              src={b.imageURL || '/images/placeholder.png'}
+              src={b.imageURL || 'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png'}
               alt={b.name}
               className="compare-img"
             />

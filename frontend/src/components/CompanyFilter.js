@@ -17,7 +17,7 @@ function CompanyFilter({ companies, selected, onToggle }) {
       {companies.map(c => (
         <label key={c} className="company-item">
           <img
-            src={companyLogos[c] || '/images/companies/placeholder.png'}
+            src={companyLogos[c] || 'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png'}
             alt={c + ' logo'}
             className="company-logo"
           />
