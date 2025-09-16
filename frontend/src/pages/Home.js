@@ -30,7 +30,7 @@ export default function Home() {
   // Data & filter state
   const [wrestlers, setWrestlers]            = useState([]);
   const [companies, setCompanies]            = useState([]);
-  const [selectedCompanies, setSelected]     = useState(['WWE']);
+  const [selectedCompanies, setSelected]     = useState(['Raw']);
   const [divisionFilter, setDivisionFilter]  = useState('All');
   const [showAll, setShowAll]                = useState(false);
 
