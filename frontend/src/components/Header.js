@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import siteLogo from '../assets/logo.png';
+import siteLogoDark  from '../assets/logo2.png';
 import bookerTLogo from '../assets/bookert.png';
 import './Header.css';
 
@@ -26,11 +27,17 @@ export default function Header() {
   return (
     <header className="page-header d-flex justify-content-between align-items-center px-3 py-2">
       {/* Your new site logo */}
-      <img
-        src={siteLogo}
-        alt="Fave Five"
-        className="site-logo"
-      />
+        <picture>
+            <source
+                srcSet={siteLogoDark}
+                media="(prefers-color-scheme: dark)"
+            />
+             <img
+                src={siteLogoLight}
+                alt="Fave Five"
+                className="site-logo"
+            />
+        </picture>
 
       <div className="logo-container" onClick={handleLogoClick}>
         <img
