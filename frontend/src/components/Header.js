@@ -1,7 +1,7 @@
 // src/components/Header.js
 
 import React, { useState } from 'react';
-import siteLogo from '../assets/logo.png';
+import siteLogoLight from '../assets/logo.png';
 import siteLogoDark  from '../assets/logo2.png';
 import bookerTLogo from '../assets/bookert.png';
 import './Header.css';
