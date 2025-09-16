@@ -14,7 +14,7 @@ const companyLogos = {
 function CompanyFilter({ companies, selected, onToggle }) {
   return (
     <div className="company-filter">
-      <h2>Filter by Company</h2>
+      <h2>Company</h2>
       {companies.map(c => (
         <label key={c} className="company-item">
           <img

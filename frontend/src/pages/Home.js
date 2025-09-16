@@ -241,7 +241,6 @@ useEffect(() => {
             <Offcanvas.Title>Filters</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <div><strong>Company</strong></div>
             <CompanyFilter
               companies={companies}
               selected={selectedCompanies}
