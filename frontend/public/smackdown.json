@@ -6,18 +6,6 @@
     "division": "Women's"
   },
   {
-    "name": "AJ Styles",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/3/3f/AJ_Styles_stat--37783c9a172ebc7416045d07b87b8b26.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Akira Tozawa",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/5/53/Akira_Tozawa_%28Alpha_Academy%29.png",
-    "division": "Men's"
-  },
-  {
     "name": "Alba Fyre",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/4/4a/Wwe_alba_fyre_fka_kay_lee_ray_official_render_png_by_rahultr_df7zugi-fullview.png",
@@ -66,18 +54,6 @@
     "division": "Men's"
   },
   {
-    "name": "Asuka",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/a/a1/Asuka_2023.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Austin Theory",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/d/df/Austin_Theory.png",
-    "division": "Men's"
-  },
-  {
     "name": "Axiom",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/0/05/Axiom.png",
@@ -87,18 +63,6 @@
     "name": "B-Fab",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/9/92/B-FAB_2023.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Bayley",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/5/5b/Bayley_2024.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Becky Lynch",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/a/a0/Becky_Lynch_The_Man_stat.png",
     "division": "Women's"
   },
   {
@@ -120,24 +84,6 @@
     "division": "Men's"
   },
   {
-    "name": "Bron Breakker",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/protagonists/images/e/e9/Breakker2025.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Bronson Reed",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/f/fb/Bronson_Reed_stat.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Brutus Creed",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/3/32/Brutus_Creed_-_7f4b25dd6a2f48e089e5b38e0b4586ce.png",
-    "division": "Men's"
-  },
-  {
     "name": "Candice LeRae",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/4/4b/Candice_Heel.png",
@@ -147,12 +93,6 @@
     "name": "Carmelo Hayes",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/d/d9/CarmeloHayesNoBelt.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Chad Gable",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/5/51/ChadGable2022.png",
     "division": "Men's"
   },
   {
@@ -174,21 +114,9 @@
     "division": "Men's"
   },
   {
-    "name": "CM Punk",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/8/8a/Cmpunk_1_full_20130923.png",
-    "division": "Men's"
-  },
-  {
     "name": "Cody Rhodes",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/kion27s20adventures/images/0/09/Cody_Rhodes_American_Nightmare.webp",
-    "division": "Men's"
-  },
-  {
-    "name": "Cruz Del Toro",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/0/0b/Raul_Mendoza_Stat2.png",
     "division": "Men's"
   },
   {
@@ -204,27 +132,9 @@
     "division": "Men's"
   },
   {
-    "name": "Dominik Mysterio",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/1/1b/Dominik_Mysterio_2025.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Dragon Lee",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/2/2d/Dragon_Lee_PNG.png",
-    "division": "Men's"
-  },
-  {
     "name": "Drew McIntyre",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/2/2b/Drew_McIntyre--stat2.png",
-    "division": "Men's"
-  },
-  {
-    "name": "El Grande Americano",
-    "company": "WWE",
-    "imageURL": "https://www.wwe.com/f/styles/talent_champion_lg/public/2025/09/El_Grande_Profile.png",
     "division": "Men's"
   },
   {
@@ -240,57 +150,9 @@
     "division": "Men's"
   },
   {
-    "name": "Erik",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/f/fc/VIKING.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Finn Balor",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/1/1b/Finn_B%C3%A1lor_Judgement_Day_Look.png",
-    "division": "Men's"
-  },
-  {
     "name": "Giulia",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/e/e2/Giulia_NXT.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Grayson Waller",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/5/55/Grayson_Waller_2023.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Gunther",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/f/f8/Gunther_2022_Render.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Ilja Dragunov",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/b/ba/Ilja_Dragunov_stat.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Ivar",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/f/fa/Ivar_2020_by_nuruddinayobwwe_dduw5gq-fullview.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Ivy Nile",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/c/cc/Ivy_Nile.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Iyo Sky",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/0/0e/Io_shirai_new_2019_png_by_ambriegnsasylum16_ddg8yb3-fullview.png",
     "division": "Women's"
   },
   {
@@ -312,27 +174,9 @@
     "division": "Men's"
   },
   {
-    "name": "JD McDonagh",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/f/fb/J.D._McDonagh_2025.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Jey Uso",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/3/31/JeyUsofull2022.png",
-    "division": "Men's"
-  },
-  {
     "name": "Jimmy Uso",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/3/30/JimmyUsofull2022.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Joaquin Wilde",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/8/8f/Joaquin_Wilde_Stat2.png",
     "division": "Men's"
   },
   {
@@ -354,18 +198,6 @@
     "division": "Men's"
   },
   {
-    "name": "Julius Creed",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/e/e4/Julius_Creed_-_7ac26292cb744eb69900d06927c0389b.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Kairi Sane",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/4/4b/Kairi_Sane_2023.png",
-    "division": "Women's"
-  },
-  {
     "name": "Kevin Owens",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/e/eb/Kevin_owens_png_render_wwe_2021_by_v_mozz_dej6faa-pre.png",
@@ -384,48 +216,6 @@
     "division": "Men's"
   },
   {
-    "name": "Kofi Kingston",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/f/f2/Kofi_Kingston_stat_photo.png",
-    "division": "Men's"
-  },
-  {
-    "name": "LA Knight",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/a/a1/LA_Knight.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Liv Morgan",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/6/68/Liv_Morgan_2024.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Logan Paul",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/4/44/Logan_Paul_WWE_Render.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Ludwig Kaiser",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/9/93/SIRGETSLSAPSALOT.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Lyra Valkyria",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/c/ce/Lyra_Valkyria.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Maxxine Dupri",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/wwe-2k-mod-universe-mode/images/a/a9/Maxxine_Dupri.png",
-    "division": "Women's"
-  },
-  {
     "name": "Michin",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/d/d9/Michin_%28Mia_Yim%29_2025.png",
@@ -436,18 +226,6 @@
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/6/60/Montez_Ford_stat_photo.png",
     "division": "Men's"
-  },
-  {
-    "name": "Naomi",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/a/a5/Naomi_WWE_2025.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Natalya",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/8/8c/Natalya_2017_stat_photo.png",
-    "division": "Women's"
   },
   {
     "name": "Nathan Frazer",
@@ -462,12 +240,6 @@
     "division": "Women's"
   },
   {
-    "name": "Nikki Bella",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/a/a8/Nikki_Bella_Stat_Photo.png",
-    "division": "Women's"
-  },
-  {
     "name": "Nikki Cross",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/2/20/Nikki_Cross_Wyatt_Sicks_Look.png",
@@ -477,18 +249,6 @@
     "name": "Omos",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/4/4c/Omos2022.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Penta",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/bwwe/images/8/87/Penta.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Pete Dunne",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/a/a9/Pete_Dunne_stat.png",
     "division": "Men's"
   },
   {
@@ -510,45 +270,15 @@
     "division": "Men's"
   },
   {
-    "name": "Raquel Rodriguez",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/a/ad/RaquelRodriguez2022.png",
-    "division": "Women's"
-  },
-  {
     "name": "Rey Fenix",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/f/f9/FENIX.png",
     "division": "Men's"
   },
   {
-    "name": "Rey Mysterio",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/2/2e/619.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Rhea Ripley",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/9/9d/Rhea_Ripley_2024.png",
-    "division": "Women's"
-  },
-  {
     "name": "Roman Reigns",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/f/f7/Roman_Reigns_Tribal_Chief.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Roxanne Perez",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/4/44/Roxanne_Perez_render_V2_-_2022.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Rusev",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/d/d4/Rusev_2025.png",
     "division": "Men's"
   },
   {
@@ -563,18 +293,6 @@
     "division": "Men's"
   },
   {
-    "name": "Seth Rollins",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/0/07/MessiahSethRollins.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Sheamus",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/8/85/Sheamus2022.png",
-    "division": "Men's"
-  },
-  {
     "name": "Shinsuke Nakamura",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/d/dd/Shinsuke_Nakamura2.png",
@@ -585,12 +303,6 @@
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/bwwe/images/8/8b/Solo_Sikoa_2.png",
     "division": "Men's"
-  },
-  {
-    "name": "Stephanie Vaquer",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/6/6e/Stephanie_Vaquer_2024.png",
-    "division": "Women's"
   },
   {
     "name": "The Miz",
@@ -629,33 +341,15 @@
     "division": "Men's"
   },
   {
-    "name": "Tyler Bate",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/1/13/Tyler_Bate_stat.png",
-    "division": "Men's"
-  },
-  {
     "name": "Uncle Howdy",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/6/6f/Uncle_Howdy.png",
     "division": "Men's"
   },
   {
-    "name": "Xavier Woods",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/a/a8/Xavier_Woods_stat_photo.png",
-    "division": "Men's"
-  },
-  {
     "name": "Zelina Vega",
     "company": "WWE",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/b/b6/Zelina_Vega_2024.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Zoey Stark",
-    "company": "WWE",
-    "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/3/3a/Zoey_Stark_NXT_2.png",
     "division": "Women's"
   }
 ]

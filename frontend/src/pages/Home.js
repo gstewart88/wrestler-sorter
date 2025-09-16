@@ -49,7 +49,7 @@ export default function Home() {
 
 useEffect(() => {
   // base filenames (no .json, no leading slash)
-  const parts = ['aew', 'marigold', 'njpw', 'stardom', 'tjpw', 'wwe'];
+  const parts = ['aew', 'marigold', 'njpw', 'stardom', 'tjpw', 'raw', 'smackdown'];
 
   Promise.all(
     parts.map(key =>
