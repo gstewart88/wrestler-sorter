@@ -1,38 +1,56 @@
 .company-filter {
-  display: flex;            
-  flex-direction: column;    
-  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
   padding: 12px;
   border-radius: 6px;
   max-width: 300px;
-  background: #fafafa;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, border-color 0.3s, color 0.3s;
 }
 
+/* Heading */
+.company-filter h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+/* Each item */
 .company-item {
   display: flex;
   align-items: center;
-  width: 100%;               
+  width: 100%;
   margin-bottom: 8px;
   cursor: pointer;
+  color: var(--text);
 }
 
+/* Checkbox spacing */
 .company-item input {
   margin-right: 6px;
 }
 
-
+/* When checked, remove grayscale/filter */
 .company-item input:checked + .company-logo,
 .company-item input:checked + .company-logo + .company-name {
   opacity: 1;
   filter: none;
 }
 
+/* Logo styling */
 .company-logo {
   width: 24px;
   height: 24px;
   object-fit: contain;
   margin-right: 8px;
-  /* opacity: 0.6; */
   filter: grayscale(80%);
-  transition: filter var(--transition), opacity var(--transition);
+  transition: filter 0.3s, opacity 0.3s;
+}
+
+/* Company name text (after the input) */
+.company-item .company-name {
+  flex: 1;
+  color: var(--text);
 }
