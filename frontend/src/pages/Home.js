@@ -1,6 +1,7 @@
 // src/pages/Home.js
 
 import useWrestlers from '../hooks/useWrestlers';
+import React, { useState, useRef, useCallback } from 'react';
 import { Row, Col, Button, Offcanvas, Form, ProgressBar } from 'react-bootstrap';
 import CompanyFilter    from '../components/CompanyFilter';
 import ComparisonPrompt from '../components/ComparisonPrompt';
