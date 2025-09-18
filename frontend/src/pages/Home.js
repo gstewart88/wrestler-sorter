@@ -8,18 +8,9 @@ import WrestlerGrid     from '../components/WrestlerGrid';
 import ResultsList      from '../components/ResultsList';
 import fordJohnsonSort  from '../utils/fordJohnsonSort';
 import { countComparisons } from '../utils/countComparisons';
+import shuffleArray     from '../utils/shuffleArray';
 import './Home.css';
 import Header from '../components/Header';
-
-// shuffle an array in place (Fisher–Yates)
-function shuffleArray(arr) {
-  const a = arr.slice(); // copy so we don't mutate props/state
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
 
 export default function Home() {
 
