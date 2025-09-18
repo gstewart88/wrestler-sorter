@@ -20,6 +20,9 @@
     --panel-bg:     #242424;
     --text:         #f0f0f0;
   }
+  .bg-light {
+    background-color: var(--bg) !important;
+  }
 }
 
 /*-------------------------------
