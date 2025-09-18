@@ -147,7 +147,7 @@ export default function Home() {
           xs={12}
           md={3}
           lg={2}
-          className="bg-light border-end d-none d-md-block"
+          className="sidebar border-end d-none d-md-block"
         >
           <CompanyFilter
             companies={companies}
