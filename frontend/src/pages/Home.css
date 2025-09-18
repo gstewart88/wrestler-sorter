@@ -1,31 +1,64 @@
 /* frontend/src/pages/Home.css */
 
-/* Container holds sidebar + content */
+/*-------------------------------
+  CSS Variables for Light/Dark
+---------------------------------*/
+:root {
+  --bg:           #fafafa;
+  --border:       #ddd;
+  --border-color: var(--border);
+  --panel-bg:     #f8f9fa;
+  --text:         #000;
+  --gap:          1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:           #1e1e1e;
+    --border:       #444;
+    --border-color: var(--border);
+    --panel-bg:     #242424;
+    --text:         #f0f0f0;
+  }
+}
+
+/*-------------------------------
+  Container holds sidebar + content
+---------------------------------*/
 .home-container {
   display: flex;
   height: 100vh;
-  /* overflow: hidden; */
+  background: var(--bg);
+  color: var(--text);
 }
 
-/* Sidebar defaults: fixed width, visible on desktop */
+/*-------------------------------
+  Sidebar defaults: visible on desktop
+---------------------------------*/
 .sidebar {
   width: 260px;
-  background: #fafafa;
-  border-right: 1px solid #ddd;
+  background: var(--bg);
+  border-right: 1px solid var(--border);
   padding: 16px;
   box-sizing: border-box;
   transition: transform 0.3s ease;
   z-index: 1000;
 }
 
-/* Content area shifts right on wide screens */
+/*-------------------------------
+  Content area
+---------------------------------*/
 .content {
   flex: 1;
   overflow-y: auto;
   padding: 24px;
+  background: var(--bg);
+  color: var(--text);
 }
 
-/* Hamburger button: hidden on desktop */
+/*-------------------------------
+  Hamburger button: hidden on desktop
+---------------------------------*/
 .hamburger {
   position: fixed;
   top: 12px;
@@ -38,7 +71,9 @@
   display: none;
 }
 
-/* Backdrop covers content when sidebar open on small */
+/*-------------------------------
+  Backdrop covers content on small
+---------------------------------*/
 .backdrop {
   position: fixed;
   inset: 0;
@@ -46,39 +81,44 @@
   z-index: 900;
 }
 
-/* Responsive rules */
+/*-------------------------------
+  Responsive rules (mobile)
+---------------------------------*/
 @media (max-width: 768px) {
-  /* Hide sidebar off‐canvas by default */
   .sidebar {
     position: fixed;
     top: 0;
     bottom: 0;
     transform: translateX(-100%);
   }
-  /* When open, slide it in */
+
   .sidebar.open {
     transform: translateX(0);
   }
-  /* Show hamburger */
+
   .hamburger {
     display: block;
   }
-  /* Main content full-width, behind backdrop */
+
   .content {
     padding: 16px;
   }
 }
 
-/* spacing between instruction items */
+/*-------------------------------
+  Instructions list spacing
+---------------------------------*/
 .instructions li {
   margin-bottom: var(--gap);
 }
 
-/* slightly smaller font for instructions */
 .instructions {
   font-size: 1rem;
 }
 
+/*-------------------------------
+  Separator styling
+---------------------------------*/
 .separator {
   text-align: center;
   font-style: italic;
@@ -88,37 +128,43 @@
   margin: 0.5rem 0;
 }
 
+/*-------------------------------
+  Division filter box
+---------------------------------*/
 .division-filter {
-  display: flex;            
-  flex-direction: column;    
-  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
   padding: 12px;
   border-radius: 6px;
   max-width: 300px;
-  background: #fafafa;
+  background: var(--bg);
 }
 
-/* Instructions panel */
+/*-------------------------------
+  Instructions panel styling
+---------------------------------*/
 .instructions-panel {
   margin: 0 20px;
-  padding-top:    2rem;    /* increased top padding */
-  padding-bottom: 2rem;    /* increased bottom padding */
-  background:     #f8f9fa; /* light gray panel background (optional) */
-  border-radius:  0.5rem;  /* soften the corners */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: var(--panel-bg);
+  border-radius: 0.5rem;
+  color: var(--text);
 }
 
-/* Reduce space between list items by halving the default margin */
 .instructions-panel .instructions li {
-  margin-bottom: 0.25rem;  /* tighter spacing */
-  line-height:   1.2;      /* reduce overall line height */
+  margin-bottom: 0.25rem;
+  line-height: 1.2;
 }
 
-/* Remove bottom margin on the final list item */
 .instructions-panel .instructions li:last-child {
   margin-bottom: 0;
 }
 
-/* full-screen semi-transparent overlay */
+/*-------------------------------
+  Comparison backdrop
+---------------------------------*/
 .comparison-backdrop {
   position: fixed;
   top: 0;
@@ -127,5 +173,5 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
-  pointer-events: all; /* blocks clicks to underlying UI */
+  pointer-events: all;
 }
