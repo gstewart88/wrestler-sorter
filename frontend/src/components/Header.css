@@ -51,7 +51,8 @@
   right: 100%;
   transform: translateY(-50%);
   margin-right: 0.5rem;
-  max-width: 400px;
+  display: inline-block;
+  white-space: nowrap;
   padding: 0.5rem 0.75rem;
   background: var(--accent-blue);
   color: var(--text);          /* now dark text in light mode */
