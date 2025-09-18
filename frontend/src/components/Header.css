@@ -1,32 +1,42 @@
 /* src/components/Header.css */
 
-.site-logo {
-  height: 48px;
-  width: auto;
+/* 1) Accent‐blue variable with light/dark overrides */
+:root {
+  --accent-blue: #007bff;  /* light‐mode header bg */
 }
 
-.speech-bubble {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  transform: translateX(50%);
-  background: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  white-space: nowrap;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-blue: #003366;  /* dark‐mode header bg */
+  }
 }
 
+/* 2) Page header background uses the accent‐blue var */
 .page-header {
   background: var(--accent-blue);
   border-bottom: 1px solid var(--border-color);
+  color: var(--text);
 }
 
+/* 3) Optional: if you have an h2 inside header */
 .page-header h2 {
   font-size: 1.5rem;
   color: var(--text);
 }
 
+/* Site logo sizing */
+.site-logo {
+  height: 48px;
+  width: auto;
+}
+
+/* Booker T logo + click area */
+.logo-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* “Booker T” image */
 .header-logo {
   height: 48px;
   width: auto;
@@ -34,35 +44,31 @@
   cursor: pointer;
 }
 
-/* position the bubble to the left, vertically centered on the logo */
+/* 4) Speech bubble styling */
 .speech-bubble {
   position: absolute;
   top: 50%;
-  right: 100%;              /* push it fully to the left of the logo */
+  right: 100%;
   transform: translateY(-50%);
-  margin-right: 0.5rem;     /* gap between bubble and image */
+  margin-right: 0.5rem;
   max-width: 400px;
   padding: 0.5rem 0.75rem;
   background: var(--accent-blue);
-  color: #fff;
+  color: var(--text);          /* now dark text in light mode */
   font-size: 0.85rem;
   border-radius: 0.5rem;
   line-height: 1.2;
   z-index: 1500;
 }
 
-/* flip the little “tail” to point right at the logo */
+/* Tail of the speech bubble */
 .speech-bubble::after {
   content: '';
   position: absolute;
   top: 50%;
-  left: 100%;               /* attach tail to the right edge of bubble */
+  left: 100%;
   transform: translateY(-50%);
   border-width: 6px 0 6px 6px;
   border-style: solid;
   border-color: transparent transparent transparent var(--accent-blue);
-}
-.logo-container {
-  position: relative;
-  display: inline-block;
 }
