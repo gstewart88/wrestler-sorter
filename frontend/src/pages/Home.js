@@ -1,6 +1,6 @@
 // src/pages/Home.js
 
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import useWrestlers from '../hooks/useWrestlers';
 import { Row, Col, Button, Offcanvas, Form, ProgressBar } from 'react-bootstrap';
 import CompanyFilter    from '../components/CompanyFilter';
 import ComparisonPrompt from '../components/ComparisonPrompt';
@@ -19,11 +19,10 @@ export default function Home() {
   const [completedComparisons, setCompletedComparisons] = useState(0);
 
   // Data & filter state
-  const [wrestlers, setWrestlers]            = useState([]);
-  const [companies, setCompanies]            = useState([]);
   const [selectedCompanies, setSelected]     = useState(['Raw']);
   const [divisionFilter, setDivisionFilter]  = useState('All');
   const [showAll, setShowAll]                = useState(false);
+  const { wrestlers, companies } = useWrestlers();
 
   // UI state
   const [filterOpen, setFilterOpen]     = useState(false);
@@ -32,44 +31,7 @@ export default function Home() {
   const [awaiting, setAwaiting]         = useState(null);
   const [result, setResult]             = useState(null);
 
-
   const ignoreSet = useRef(new Set());
-
-  // Load static JSON once
-// inside src/pages/Home.js, replace your useEffect with this:
-
-useEffect(() => {
-  // base filenames (no .json, no leading slash)
-  const parts = ['aew', 'marigold', 'njpw', 'stardom', 'tjpw', 'raw', 'smackdown'];
-
-  Promise.all(
-    parts.map(key =>
-      fetch(
-        // PUBLIC_URL ensures the correct base path in prod
-        `${process.env.PUBLIC_URL}/${key}.json`
-      )
-        .then(res => {
-          if (!res.ok) throw new Error(`Failed to load ${key}.json`);
-          return res.json();
-        })
-    )
-  )
-    .then(arrays => {
-      // flatten: [ [...], [...], … ] → one big array
-      const allWrestlers = arrays.flat();
-      setWrestlers(allWrestlers);
-
-      // recalc your unique company list
-      const unique = [
-        ...new Set(allWrestlers.map(w => w.company))
-      ].filter(Boolean);
-      setCompanies(unique);
-    })
-    .catch(err => {
-      console.error('Error loading wrestler data:', err);
-    });
-}, []);
-
 
   // Toggle a company filter
   const toggleCompany = c => {
