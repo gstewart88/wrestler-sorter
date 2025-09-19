@@ -49,3 +49,9 @@
   padding: 16px;
   background: #333;
 }
+
+/* lift Restart & Export above the sidebar (which is z-index:1000) */
+.position-fixed.bottom-0.start-0,
+.position-fixed.bottom-0.end-0 {
+  z-index: 1100;
+}
