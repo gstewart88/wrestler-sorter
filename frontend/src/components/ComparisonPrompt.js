@@ -9,6 +9,7 @@ export default function ComparisonPrompt({
   b,
   onChoose,
   onIgnore,
+  onExit,
   totalComparisons = 0,
   completedComparisons = 0
 }) {
@@ -19,7 +20,9 @@ export default function ComparisonPrompt({
   return (
     <div className="comparison-overlay">
       <div className="comparison-box">
-
+        <button className="exit-btn" onClick={onExit} aria-label="Exit">
+          ✕
+        </button>
       <ProgressBar
         now={percent}
         label={`${percent}%`}

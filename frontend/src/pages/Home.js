@@ -33,6 +33,23 @@ export default function Home() {
   const [result, setResult]             = useState(null);
 
   const ignoreSet = useRef(new Set());
+  const cacheRef  = useRef(new Map());  // ensure this lives here too
+
+  // EXIT handler: abort & reset everything except filters
+  function handleExit() {
+    setSorting(false);
+    setCurrentPair(null);
+    setAwaiting(null);
+    setResult(null);
+
+    // clear out any ignores + cache
+    ignoreSet.current.clear();
+    cacheRef.current.clear();
+
+    // reset progress bar
+    setTotalComparisons(0);
+    setCompletedComparisons(0);
+  }
 
   // Toggle a company filter
   const toggleCompany = c => {
@@ -50,7 +67,7 @@ export default function Home() {
   }
 
   // Wrap with caching + ignore logic
-  const cacheRef = useRef(new Map());
+  
   const compareWithCache = useCallback(
     async (a, b) => {
       const idA = a.id ?? a.name;
@@ -270,6 +287,7 @@ export default function Home() {
             b={currentPair?.b}
             onChoose={handleChoice}
             onIgnore={handleIgnore}
+            onExit={handleExit}
             totalComparisons={totalComparisons}
             completedComparisons={completedComparisons}
           />
