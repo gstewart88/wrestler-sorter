@@ -23,14 +23,14 @@ export default function ComparisonPrompt({
         <button className="exit-btn" onClick={onExit} aria-label="Exit">
           ✕
         </button>
+        <h3>Who do you prefer?</h3>
+        <div className="options">
+
       <ProgressBar
         now={percent}
         label={`${percent}%`}
         className="mb-3"
       />
-
-        <h3>Who do you prefer?</h3>
-        <div className="options">
 
           <div
             className="option"
