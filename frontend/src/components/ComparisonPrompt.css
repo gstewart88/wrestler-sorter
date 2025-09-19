@@ -1,5 +1,26 @@
-/* frontend/src/components/ComparisonPrompt.css */
+/* src/components/ComparisonPrompt.css */
 
+/*─────────────────────────────────────────────
+  Prompt & Overlay Color Variables
+─────────────────────────────────────────────*/
+:root {
+  --prompt-bg:       #ffffff;                 /* white prompt background */
+  --overlay-bg:      rgba(0, 0, 0, 0.5);      /* semi-opaque backdrop */
+  --card-border:     var(--border-color);     /* from your Home.css */
+  --card-shadow:     rgba(0, 0, 0, 0.2);
+  --card-shadow-2:   rgba(0, 0, 0, 0.15);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --prompt-bg:     #2c2c2c;                  /* dark gray prompt background */
+    --overlay-bg:    rgba(0, 0, 0, 0.75);
+  }
+}
+
+/*─────────────────────────────────────────────
+  Full-screen overlay
+─────────────────────────────────────────────*/
 .comparison-overlay {
   background: var(--overlay-bg);
   position: fixed;
@@ -16,22 +37,31 @@
   to   { opacity: 1; }
 }
 
+/*─────────────────────────────────────────────
+  The white/dark prompt card
+─────────────────────────────────────────────*/
 .comparison-box {
-  background: #fff;
+  background: var(--prompt-bg);
   padding: calc(var(--gap) * 1.5);
   border-radius: var(--radius);
   max-width: 90%;
   width: 24rem;
   text-align: center;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px var(--card-shadow);
+  border: 1px solid var(--card-border);
+  color: var(--text);
 }
 
+/* Title inside prompt */
 .comparison-box h3 {
   margin: 0 0 var(--gap) 0;
   font-size: 1.25rem;
   color: var(--primary);
 }
 
+/*─────────────────────────────────────────────
+  Option cards
+─────────────────────────────────────────────*/
 .options {
   display: flex;
   justify-content: space-around;
@@ -42,7 +72,7 @@
 .option {
   position: relative;
   cursor: pointer;
-  flex: 1;                    /* unchanged */
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,26 +91,32 @@
   outline-offset: 4px;
 }
 
+/*─────────────────────────────────────────────
+  Wrestler image inside each option
+─────────────────────────────────────────────*/
+.compare-img {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: var(--radius);
+  border: 2px solid var(--card-border);
+  transition: transform var(--transition), box-shadow var(--transition);
+  background: var(--panel-bg);  /* subtle panel color */
+}
+
 .option:hover .compare-img,
 .option:focus-within .compare-img {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px var(--card-shadow-2);
 }
 
-/* ← REPLACED .compare-img block: */
-.compare-img {
-  width: 120px;                 /* fixed box width */
-  height: 180px;                /* uniform vertical size */
-  object-fit: cover;            /* fill & crop sides */
-  object-position: top center;      /* center the crop */
-  border-radius: var(--radius);
-  border: 2px solid var(--border-color);
-  transition: transform var(--transition), box-shadow var(--transition);
-  background: #f5f5f5;
-}
-
+/*─────────────────────────────────────────────
+  Wrestler name & “Ignore” button
+─────────────────────────────────────────────*/
 .name {
   font-weight: bold;
+  color: var(--text);
 }
 
 .ignore-btn {
@@ -97,6 +133,9 @@
   text-decoration: underline;
 }
 
+/*─────────────────────────────────────────────
+  Mobile stacking
+─────────────────────────────────────────────*/
 @media (max-width: 480px) {
   .options {
     flex-direction: column;
@@ -104,18 +143,21 @@
   }
 }
 
-/* ensure the prompt container scrolls if it grows too tall */
+/*─────────────────────────────────────────────
+  Ensure the prompt container scrolls if tall
+─────────────────────────────────────────────*/
 .comparison-prompt {
   max-height: 90vh;
   overflow-y: auto;
   padding: 1rem;
-  background: #fff;
-  border-radius: 0.5rem;
+  background: var(--prompt-bg);
+  border-radius: var(--radius);
   position: relative;
-  z-index: 1001; /* above any backdrop you still have */
+  z-index: 1001;
+  border: 1px solid var(--card-border);
 }
 
-/* tighten the bar’s margins */
+/* Tighten progress bar spacing */
 .comparison-prompt .progress {
   margin-bottom: 0.75rem;
 }
