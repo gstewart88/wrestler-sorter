@@ -7,49 +7,35 @@ import CompanyFilter    from '../components/CompanyFilter';
 import ComparisonPrompt from '../components/ComparisonPrompt';
 import WrestlerGrid     from '../components/WrestlerGrid';
 import ResultsList      from '../components/ResultsList';
-import fordJohnsonSort  from '../utils/fordJohnsonSort';
-import { countComparisons } from '../utils/countComparisons';
-import shuffleArray     from '../utils/shuffleArray';
+import useSorter from '../hooks/useSorter';
+import shuffleArray from '../utils/shuffleArray';
+
 import './Home.css';
 import Header from '../components/Header';
 
 export default function Home() {
-
-  // progress‐bar state
-  const [totalComparisons, setTotalComparisons]       = useState(0);
-  const [completedComparisons, setCompletedComparisons] = useState(0);
-
   // Data & filter state
   const [selectedCompanies, setSelected]     = useState(['Raw']);
   const [divisionFilter, setDivisionFilter]  = useState('All');
   const [showAll, setShowAll]                = useState(false);
   const { wrestlers, companies } = useWrestlers();
 
+    // Sorting flow from custom hook
+  const {
+    sorting,
+    currentPair,
+    totalComparisons,
+    completedComparisons,
+    result,
+    handleStart,
+    handleChoice,
+    handleIgnore,
+    handleExit,
+    ignoredSet
+    } = useSorter();
+
   // UI state
   const [filterOpen, setFilterOpen]     = useState(false);
-  const [sorting, setSorting]           = useState(false);
-  const [currentPair, setCurrentPair]   = useState(null);
-  const [awaiting, setAwaiting]         = useState(null);
-  const [result, setResult]             = useState(null);
-
-  const ignoreSet = useRef(new Set());
-  const cacheRef  = useRef(new Map());  // ensure this lives here too
-
-  // EXIT handler: abort & reset everything except filters
-  function handleExit() {
-    setSorting(false);
-    setCurrentPair(null);
-    setAwaiting(null);
-    setResult(null);
-
-    // clear out any ignores + cache
-    ignoreSet.current.clear();
-    cacheRef.current.clear();
-
-    // reset progress bar
-    setTotalComparisons(0);
-    setCompletedComparisons(0);
-  }
 
   // Toggle a company filter
   const toggleCompany = c => {
@@ -58,102 +44,17 @@ export default function Home() {
     );
   };
 
-  // Show the comparison prompt
-  function compareUser(a, b) {
-    return new Promise(resolve => {
-      setCurrentPair({ a, b });
-      setAwaiting(() => resolve);
-    });
-  }
-
-  // Wrap with caching + ignore logic
-  
-  const compareWithCache = useCallback(
-    async (a, b) => {
-      const idA = a.id ?? a.name;
-      const idB = b.id ?? b.name;
-
-      if (ignoreSet.current.has(idA)) return b;
-      if (ignoreSet.current.has(idB)) return a;
-
-      const key = idA < idB ? `${idA}|${idB}` : `${idB}|${idA}`;
-      if (cacheRef.current.has(key)) {
-        return cacheRef.current.get(key) === idA ? a : b;
-      }
-
-      const winner = await compareUser(a, b);
-      const winId   = winner.id ?? winner.name;
-      cacheRef.current.set(key, winId);
-      return winner;
-    },
-    []
-  );
-
-  // Handle “Ignore” click
-  function handleIgnore(ignored) {
-    if (!awaiting || !currentPair) return;
-    const ignoreId = ignored.id ?? ignored.name;
-    ignoreSet.current.add(ignoreId);
-    const other = ignored === currentPair.a ? currentPair.b : currentPair.a;
-    const resolve = awaiting;
-    setAwaiting(null);
-    // setCurrentPair(null);
-    resolve(other);
-  }
-
-  // Handle normal choice
-  function handleChoice(chosen) {
-    if (!awaiting) return;
-    const resolve = awaiting;
-    setAwaiting(null);
-    // setCurrentPair(null);
-    resolve(chosen);
-  }
-
-  // Start the sorting run
-  async function handleStart() {
-    setSorting(true);
-    ignoreSet.current.clear();
-    cacheRef.current.clear();
-
-    const toSort = wrestlers.filter(w => {
-      const byCompany  = selectedCompanies.includes(w.company);
-      const byDivision = divisionFilter === 'All' || w.division === divisionFilter;
-      const byIgnore   = !ignoreSet.current.has(w.id ?? w.name);
-      return byCompany && byDivision && byIgnore;
-    });
-
-    const randomized = shuffleArray(toSort);
-
-    // 1) estimate total comparisons in O(1)
-    const estimate = countComparisons(toSort.length);
-    setTotalComparisons(estimate);
-    setCompletedComparisons(0);
-
-    // 2) wrap compareWithCache so each decision ticks the progress
-    const realCompare = async (a, b) => {
-    const winner = await compareWithCache(a, b);
-    setCompletedComparisons(c => c + 1);
-    return winner;
-    };
-
-    const sorted = await fordJohnsonSort(randomized, realCompare);
-    setResult(sorted);
-    setCurrentPair(null);
-    setSorting(false);
-  }
-
   // Preview filtering
   const filtered = wrestlers.filter(w => {
     const byCompany  = selectedCompanies.includes(w.company);
     const byDivision = divisionFilter === 'All' || w.division === divisionFilter;
-    const byIgnore   = !ignoreSet.current.has(w.id ?? w.name);
+    const byIgnore   = !ignoredSet.has(w.id ?? w.name);
     return byCompany && byDivision && byIgnore;
   });
 
   // Final results minus ignored
   const filteredResult = result
-    ? result.filter(w => !ignoreSet.current.has(w.id ?? w.name))
+    ? result.filter(w => !ignoredSet.has(w.id ?? w.name))
     : [];
 
   return (
@@ -270,14 +171,25 @@ export default function Home() {
         </div>
 
         {!result && !sorting && (
-          <Button
-            variant="primary"
-            className="d-block mx-auto my-3"
-            onClick={handleStart}
-            disabled={!selectedCompanies.length}
-          >
+        <Button
+          variant="primary"
+          className="d-block mx-auto my-3"
+          disabled={!selectedCompanies.length}
+          onClick={() => {
+            // build the list you want to sort:
+            const toSort = shuffleArray(
+              wrestlers.filter(w => {
+                const byCompany  = selectedCompanies.includes(w.company);
+                const byDivision = divisionFilter === 'All'
+                  || w.division === divisionFilter;
+                return byCompany && byDivision;
+              })
+            );
+            handleStart(toSort);
+          }}
+        >
           Start
-          </Button>
+        </Button>
         )}
 
         {sorting && (
