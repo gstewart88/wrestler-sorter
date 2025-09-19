@@ -80,7 +80,7 @@ export default function Home() {
     const other = ignored === currentPair.a ? currentPair.b : currentPair.a;
     const resolve = awaiting;
     setAwaiting(null);
-    setCurrentPair(null);
+    // setCurrentPair(null);
     resolve(other);
   }
 
@@ -89,7 +89,7 @@ export default function Home() {
     if (!awaiting) return;
     const resolve = awaiting;
     setAwaiting(null);
-    setCurrentPair(null);
+    // setCurrentPair(null);
     resolve(chosen);
   }
 
@@ -122,6 +122,7 @@ export default function Home() {
 
     const sorted = await fordJohnsonSort(randomized, realCompare);
     setResult(sorted);
+    setCurrentPair(null);
     setSorting(false);
   }
 
@@ -261,12 +262,12 @@ export default function Home() {
           </Button>
         )}
 
-        {sorting && currentPair && (
+        {sorting && (
           <>
           <div className="comparison-backdrop" />
           <ComparisonPrompt
-            a={currentPair.a}
-            b={currentPair.b}
+            a={currentPair?.a}
+            b={currentPair?.b}
             onChoose={handleChoice}
             onIgnore={handleIgnore}
             totalComparisons={totalComparisons}
