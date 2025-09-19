@@ -244,9 +244,9 @@ export default function Home() {
         {/* Instruction panel */}
         <div className="instructions-panel mb-4">
           <ul className="instructions list-unstyled text-center">
-            <li>Use filters for company and division.</li>
-            <li>Choose ignore to remove wrestler from consideration.</li>
-            <li>Answer A v B to determine your favourite wrestlers!</li>
+            <li>Use filters to create the list to choose from.</li>
+            <li>Choose ignore to remove a wrestler from the list.</li>
+            <li>Answer A v B to determine your Fave Five!</li>
           </ul>
         </div>
 
@@ -257,7 +257,7 @@ export default function Home() {
             onClick={handleStart}
             disabled={!selectedCompanies.length}
           >
-          Start Sorting
+          Start
           </Button>
         )}
 
