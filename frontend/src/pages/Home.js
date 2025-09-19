@@ -265,6 +265,7 @@ export default function Home() {
             <li>Use filters to create the list to choose from.</li>
             <li>Choose ignore to remove a wrestler from the list.</li>
             <li>Answer A v B to determine your Fave Five!</li>
+            <li>Warning: A large list of wrestlers means a lot more comparisons</li>
           </ul>
         </div>
 
