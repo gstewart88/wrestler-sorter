@@ -41,6 +41,7 @@
   The white/dark prompt card
 ─────────────────────────────────────────────*/
 .comparison-box {
+  position: relative;
   background: var(--prompt-bg);
   padding: calc(var(--gap) * 1.5);
   border-radius: var(--radius);
