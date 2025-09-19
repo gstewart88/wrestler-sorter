@@ -51,6 +51,7 @@
   box-shadow: 0 8px 24px var(--card-shadow);
   border: 1px solid var(--card-border);
   color: var(--text);
+  margin-top: 1.5rem;
 }
 
 /* Title inside prompt */

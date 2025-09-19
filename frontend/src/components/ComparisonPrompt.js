@@ -31,7 +31,7 @@ export default function ComparisonPrompt({
         label={`${percent}%`}
         className="mb-3"
       />
-      <div></div>
+
           <div
             className="option"
             onClick={() => onChoose(a)}
