@@ -24,14 +24,12 @@ export default function ComparisonPrompt({
           ✕
         </button>
         <h3>Who do you prefer?</h3>
-        <div className="options">
-
       <ProgressBar
         now={percent}
         label={`${percent}%`}
         className="mb-3"
       />
-
+          <div className="options">
           <div
             className="option"
             onClick={() => onChoose(a)}

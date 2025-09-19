@@ -61,6 +61,16 @@
   color: var(--primary);
 }
 
+/* push the two wrestler‐cards down off the bar */
+.comparison-box .options {
+  margin-top: var(--gap);  /* default is 1rem; bump to 1.5rem if you want more */
+}
+
+/* optional: if you want extra space under the bar itself */
+.comparison-box .progress {
+  margin-bottom: var(--gap);
+}
+
 /*─────────────────────────────────────────────
   Option cards
 ─────────────────────────────────────────────*/
