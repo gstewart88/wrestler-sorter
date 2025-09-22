@@ -18,6 +18,7 @@ export default function Home() {
   const [selectedCompanies, setSelected]     = useState(['Raw']);
   const [divisionFilter, setDivisionFilter]  = useState('All');
   const [showAll, setShowAll]                = useState(false);
+  const [removedPreview, setRemovedPreview]  = useState(new Set());
   const { wrestlers, companies } = useWrestlers();
 
     // Sorting flow from custom hook
@@ -37,7 +38,30 @@ export default function Home() {
   // UI state
   const [filterOpen, setFilterOpen]     = useState(false);
 
+  // Toggle preview removal
+  const togglePreview = w => {
+  const id = w.id ?? w.name;
+  setRemovedPreview(prev => {
+    const next = new Set(prev);
+    if (next.has(id)) next.delete(id);
+    else next.add(id);
+    return next;
+    });
+  };
+
   // Toggle a company filter
+
+  // Toggle preview‐level removal
+  const togglePreview = w => {
+    const id = w.id ?? w.name;
+    setRemovedPreview(prev => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  };
+
   const toggleCompany = c => {
     setSelected(prev =>
       prev.includes(c) ? prev.filter(x => x !== c) : [...prev, c]
@@ -49,8 +73,14 @@ export default function Home() {
     const byCompany  = selectedCompanies.includes(w.company);
     const byDivision = divisionFilter === 'All' || w.division === divisionFilter;
     const byIgnore   = !ignoredSet.has(w.id ?? w.name);
+    const byPreview  = !removedPreview.has(w.id ?? w.name);
     return byCompany && byDivision && byIgnore;
   });
+
+  // Preview list excludes preview-removed
+  const previewList = filtered.filter(
+    w => !removedPreview.has(w.id ?? w.name)
+  );
 
   // Final results minus ignored
   const filteredResult = result
@@ -175,18 +205,7 @@ export default function Home() {
           variant="primary"
           className="d-block mx-auto my-3"
           disabled={!selectedCompanies.length}
-          onClick={() => {
-            // build the list you want to sort:
-            const toSort = shuffleArray(
-              wrestlers.filter(w => {
-                const byCompany  = selectedCompanies.includes(w.company);
-                const byDivision = divisionFilter === 'All'
-                  || w.division === divisionFilter;
-                return byCompany && byDivision;
-              })
-            );
-            handleStart(toSort);
-          }}
+          onClick={() => handleStart(shuffleArray(filtered))}
         >
           Start
         </Button>
@@ -217,8 +236,12 @@ export default function Home() {
 
           {!sorting && !result && (
             <>
-              <h3 className="mt-4">Preview ({filtered.length})</h3>
-              <WrestlerGrid wrestlers={filtered} />
+          <h3 className="mt-4">Preview ({filtered.length})</h3>
+          <WrestlerGrid
+            wrestlers={filtered}
+            removedSet={removedPreview}
+            onToggleRemove={togglePreview}
+          />
             </>
           )}
         </Col>

@@ -54,7 +54,7 @@
   object-fit: cover;
   display: block;
   border-radius: var(--radius);
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition: filter 0.2s ease;
 }
 
 .card-img-top {
@@ -62,4 +62,34 @@
   height: 160px;        /* locked height */
   object-fit: contain;  /* letterbox if image is taller or wider */
   background: #f5f5f5;  /* behind the letterbox bars */
+}
+
+.wrestler-cell {
+  position: relative;
+  cursor: default;
+}
+
+.wrestler-cell.removed img {
+  filter: brightness(40%);
+}
+
+.remove-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.remove-btn:hover {
+  background: rgba(255, 255, 255, 1);
 }
