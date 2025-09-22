@@ -1,3 +1,5 @@
+/* src/components/WrestlerGrid.css */
+
 /* Grid container: responsive cards centered */
 .wrestler-grid {
   display: grid;
@@ -22,13 +24,14 @@
   background: var(--bg);
 }
 
-/* Image: fill the container, cover & crop */
+/* Image: fill the container, cover & crop from the top */
 .wrestler-image {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;    /* ← ensures top of image is always visible */
   transition: transform 0.3s ease;
 }
 
