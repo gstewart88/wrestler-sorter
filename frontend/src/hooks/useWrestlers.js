@@ -1,4 +1,7 @@
+// src/hooks/useWrestlers.js
+
 import { useState, useEffect } from 'react';
+import { IMAGES_CDN } from '../config';
 
 export default function useWrestlers() {
   const [wrestlers, setWrestlers] = useState([]);
@@ -25,12 +28,23 @@ export default function useWrestlers() {
       )
     )
       .then(arrays => {
-        const all = arrays.flat();
+        // flatten all arrays into one
+        const allRaw = arrays.flat();
+
+        // rewrite each wrestler’s imageURL to point at our CDN using the uniform filename
+        const all = allRaw.map(w => {
+          return {
+            ...w,
+            imageURL: `${IMAGES_CDN}/${w.filename}`
+          };
+        });
+
         setWrestlers(all);
 
+        // extract unique, non-empty company names
         const uniqueCompanies = [
-          ...new Set(all.map(w => w.company))
-        ].filter(Boolean);
+          ...new Set(all.map(w => w.company).filter(Boolean))
+        ];
         setCompanies(uniqueCompanies);
       })
       .catch(err => {
