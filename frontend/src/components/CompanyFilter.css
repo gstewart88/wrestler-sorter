@@ -54,3 +54,8 @@
   flex: 1;
   color: var(--text);
 }
+
+.company-filter .form-check-input:indeterminate {
+  background-color: var(--panel-bg);
+  border-color: var(--text);
+}

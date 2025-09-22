@@ -68,6 +68,14 @@ export default function Home() {
     w => !removedPreview.has(w.id ?? w.name)
   );
 
+  // Compute how many per-company remain vs. total
+  const companyStats = companies.reduce((acc, company) => {
+    const total   = filtered.filter(w => w.company === company).length;
+    const shown   = previewList.filter(w => w.company === company).length;
+    acc[company]  = { total, shown };
+    return acc;
+  }, {});
+
   // Final results minus ignored
   const filteredResult = result
     ? result.filter(w => !ignoredSet.has(w.id ?? w.name))
@@ -87,6 +95,7 @@ export default function Home() {
           <CompanyFilter
             companies={companies}
             selected={selectedCompanies}
+            stats={companyStats}
             onToggle={toggleCompany}
           />
           <hr />
@@ -130,11 +139,12 @@ export default function Home() {
             <Offcanvas.Title>Filters</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <CompanyFilter
-              companies={companies}
-              selected={selectedCompanies}
-              onToggle={toggleCompany}
-            />
+          <CompanyFilter
+            companies={companies}
+            selected={selectedCompanies}
+            stats={companyStats}
+            onToggle={toggleCompany}
+          />
             <hr />
             <div className="division-filter">
               <div><strong>Division</strong></div>

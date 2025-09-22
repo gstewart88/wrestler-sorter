@@ -69,10 +69,6 @@
   cursor: default;
 }
 
-.wrestler-cell.removed img {
-  filter: brightness(40%);
-}
-
 .remove-btn {
   position: absolute;
   top: 4px;
