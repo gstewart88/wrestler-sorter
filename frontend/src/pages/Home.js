@@ -49,10 +49,25 @@ export default function Home() {
     });
   };
 
+  // Toggle a company filter.
+  // When turning it back on, undo any preview‐removals for that company.
   const toggleCompany = c => {
-    setSelected(prev =>
-      prev.includes(c) ? prev.filter(x => x !== c) : [...prev, c]
-    );
+    const isOn = selectedCompanies.includes(c);
+
+    if (isOn) {
+      // Switch off: simply remove from selectedCompanies
+      setSelected(prev => prev.filter(x => x !== c));
+    } else {
+      // Switch on: restore all removed-preview items for company c
+      setRemovedPreview(prevRemovals => {
+        const next = new Set(prevRemovals);
+        wrestlers
+          .filter(w => w.company === c)
+          .forEach(w => next.delete(w.id ?? w.name));
+        return next;
+      });
+      setSelected(prev => [...prev, c]);
+    }
   };
 
   // Base filtering (ignores only company/division/ignore)
