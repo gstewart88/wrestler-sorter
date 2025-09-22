@@ -22,7 +22,9 @@ export default function useWrestlers() {
       parts.map(key =>
         fetch(`${process.env.PUBLIC_URL}/${key}.json`)
           .then(res => {
-            if (!res.ok) throw new Error(`Failed to load ${key}.json`);
+            if (!res.ok) {
+              throw new Error(`Failed to load ${key}.json`);
+            }
             return res.json();
           })
       )
@@ -31,13 +33,11 @@ export default function useWrestlers() {
         // flatten all arrays into one
         const allRaw = arrays.flat();
 
-        // rewrite each wrestler’s imageURL to point at our CDN using the uniform filename
-        const all = allRaw.map(w => {
-          return {
-            ...w,
-            imageURL: `${IMAGES_CDN}/${w.filename}`
-          };
-        });
+        // rewrite imageURL to point at our CDN using the uniform filename in JSON
+        const all = allRaw.map(w => ({
+          ...w,
+          imageURL: `${IMAGES_CDN}/${w.imageURL}`
+        }));
 
         setWrestlers(all);
 
