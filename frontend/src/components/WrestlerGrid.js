@@ -25,7 +25,6 @@ export default function WrestlerGrid({ wrestlers, removedSet = new Set(), onTogg
                   'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png';
               }}
             />
-
             <button
               className="remove-btn"
               onClick={e => {
@@ -36,6 +35,9 @@ export default function WrestlerGrid({ wrestlers, removedSet = new Set(), onTogg
             >
               ×
             </button>
+            <div className="wrestler-name">
+            {w.name}
+          </div>
           </div>
         );
       })}

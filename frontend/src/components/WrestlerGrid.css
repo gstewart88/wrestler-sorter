@@ -3,30 +3,16 @@
 /* Container takes all available width */
 .wrestler-grid {
   display: grid;
-  gap: 0.5rem;                       /* tighter spacing */
-  padding: var(--gap);
-  /* fixed 120px columns, wrap as needed */
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(120px, 120px)
-  );
-  justify-content: center;           /* center the entire grid */
-  justify-items: center;             /* center each cell inside its track */
- }
-
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 16px;
+}
 /* 1) Fix your cell to a consistent square (or whatever ratio) */
 .wrestler-cell {
-  position: relative;
-  width: 120px;
-  height: 120px;
-  /* margin: var(--gap) auto;  remove or shrink this */
-  margin: 0;               /* now cells align flush within the grid */
-  background-color: #7a759e;
-  border-radius: var(--radius);
-  overflow: hidden;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* 2) Make the IMG fill the cell but keep its aspect ratio */
@@ -40,21 +26,29 @@
   transform: translate(-50%, -50%);
 }
 
-.wrestler-cell:hover,
-.wrestler-cell:focus-within {
-  transform: scale(1.05);
+.wrestler-cell:hover {
+  transform: translateY(-4px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  z-index: 1;
+}
+
+.wrestler-cell.removed .wrestler-image {
+  filter: brightness(40%);
 }
 
 /* Image fills its cell, cropping if needed */
 .wrestler-image {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  display: block;
-  border-radius: var(--radius);
-  transition: filter 0.2s ease;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.wrestler-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.2;
 }
 
 .card-img-top {
