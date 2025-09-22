@@ -1,3 +1,5 @@
+/* src/components/CompanyFilter.css */
+
 /* Container */
 .company-filter {
   display: flex;
@@ -17,104 +19,68 @@
   display: block;
 }
 
-/* Each row (checkbox + label) */
+/* Each checkbox row */
 .company-filter .form-check {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 8px;
-  position: relative; /* for indeterminate dash */
+  position: relative; /* needed for label‐pseudo and input‐pseudo containment */
 }
 
-/* Push the checkbox to the right */
-.company-filter .form-check-input {
-  order: 2;
-  margin-left: auto;
-}
-
-/* Label holds the text; reserve space for the logo */
+/* Label: logo via ::before, name flush left */
 .company-filter .form-check-label {
   order: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
   padding-left: 32px; /* 24px logo + 8px gap */
   margin-bottom: 0;   /* override bootstrap */
 }
 
-/* Inject each logo via the label ::before */
+/* Inject the logo */
+.company-filter .form-check-label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Company‐specific logos */
 .company-filter .form-check-label[for="company-AEW"]::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/All_Elite_Wrestling_logo_2023.png/1600px-All_Elite_Wrestling_logo_2023.png') no-repeat center/contain;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/All_Elite_Wrestling_logo_2023.png/1600px-All_Elite_Wrestling_logo_2023.png');
 }
-
 .company-filter .form-check-label[for="company-Raw"]::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/WWE_RAW_Logo.png') no-repeat center/contain;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/WWE_RAW_Logo.png');
 }
-
 .company-filter .form-check-label[for="company-Smackdown"]::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/WWE_SmackDown_%282024%29_Logo.svg/2560px-WWE_SmackDown_%282024%29_Logo.svg.png') no-repeat center/contain;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/WWE_SmackDown_%282024%29_Logo.svg/2560px-WWE_SmackDown_%282024%29_Logo.svg.png');
 }
-
 .company-filter .form-check-label[for="company-NJPW"]::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  background: url('https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/New_Japan_Pro_Wrestling_Logo_2.svg/1280px-New_Japan_Pro_Wrestling_Logo_2.svg.png') no-repeat center/contain;
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/New_Japan_Pro_Wrestling_Logo_2.svg/1280px-New_Japan_Pro_Wrestling_Logo_2.svg.png');
 }
-
 .company-filter .form-check-label[for="company-Stardom"]::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Stardom_2021_logo.svg/260px-Stardom_2021_logo.svg.png') no-repeat center/contain;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Stardom_2021_logo.svg/260px-Stardom_2021_logo.svg.png');
 }
-
 .company-filter .form-check-label[for="company-Marigold"]::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  background: url('https://dsf-marigold.com/wp-content/themes/marigold/assets/images/mg_logo2.png') no-repeat center/contain;
+  background-image: url('https://dsf-marigold.com/wp-content/themes/marigold/assets/images/mg_logo2.png');
+}
+.company-filter .form-check-label[for="company-TJPW"]::before {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/TJPW_logo.svg/480px-TJPW_logo.svg.png?20230218193820');
 }
 
-.company-filter .form-check-label[for="company-TJPW"]::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/TJPW_logo.svg/480px-TJPW_logo.svg.png?20230218193820') no-repeat center/contain;
+/* Checkbox on the right */
+.company-filter .form-check-input {
+  order: 2;
+  margin-left: auto;
+  position: relative; /* ensure indeterminate dash is positioned inside */
+  z-index: 1;
 }
 
 /* Indeterminate (dash) styling */
@@ -133,9 +99,10 @@
   background: var(--text);
   transform: translate(-50%, -50%);
   border-radius: 1px;
+  z-index: 2;
 }
 
-/* Mirror same layout for division filters (radios) */
+/* Mirror this layout for division filters if desired */
 .division-filter .form-check {
   display: flex;
   align-items: center;
@@ -143,12 +110,12 @@
   margin-bottom: 8px;
 }
 
-.division-filter .form-check-input {
-  order: 2;
-  margin-left: auto;
-}
-
 .division-filter .form-check-label {
   order: 1;
   margin-bottom: 0;
+}
+
+.division-filter .form-check-input {
+  order: 2;
+  margin-left: auto;
 }
