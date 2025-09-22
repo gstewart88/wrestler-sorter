@@ -1,14 +1,17 @@
-// src/components/WrestlerGrid.js
 import React from 'react';
 import './WrestlerGrid.css';
 
-export default function WrestlerGrid({ wrestlers, removedSet = new Set(), onToggleRemove = () => {} }) {
+export default function WrestlerGrid({
+  wrestlers,
+  removedSet = new Set(),
+  onToggleRemove = () => {}
+}) {
   return (
     <div className="wrestler-grid">
       {wrestlers.map(w => {
-        const id      = w.id ?? w.name;
-        const removed = removedSet.has(id);
-        const imageURL = w.imageURL;
+        const id        = w.id ?? w.name;
+        const removed   = removedSet.has(id);
+        const imageURL  = w.imageURL;
 
         return (
           <div
@@ -25,6 +28,7 @@ export default function WrestlerGrid({ wrestlers, removedSet = new Set(), onTogg
                   'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png';
               }}
             />
+
             <button
               className="remove-btn"
               onClick={e => {
@@ -35,9 +39,10 @@ export default function WrestlerGrid({ wrestlers, removedSet = new Set(), onTogg
             >
               ×
             </button>
+
             <div className="wrestler-name">
-            {w.name}
-          </div>
+              {w.name}
+            </div>
           </div>
         );
       })}
