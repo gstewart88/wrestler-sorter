@@ -38,20 +38,7 @@ export default function Home() {
   // UI state
   const [filterOpen, setFilterOpen]     = useState(false);
 
-  // Toggle preview removal
-  const togglePreview = w => {
-  const id = w.id ?? w.name;
-  setRemovedPreview(prev => {
-    const next = new Set(prev);
-    if (next.has(id)) next.delete(id);
-    else next.add(id);
-    return next;
-    });
-  };
-
   // Toggle a company filter
-
-  // Toggle preview‐level removal
   const togglePreview = w => {
     const id = w.id ?? w.name;
     setRemovedPreview(prev => {
