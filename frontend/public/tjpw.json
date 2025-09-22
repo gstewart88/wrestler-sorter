@@ -1,5 +1,65 @@
 [
   {
+    "name": "Arisu Endo",
+    "company": "TJPW",
+    "imageURL": "https://i0.wp.com/joshicity.com/wp-content/uploads/2021/03/arisu.jpg",
+    "division": "Women's"
+  },
+  {
+    "name": "Chika Nanase",
+    "company": "TJPW",
+    "imageURL": "https://i0.wp.com/joshicity.com/wp-content/uploads/2024/04/chikananase.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Haru Kazashiro",
+    "company": "TJPW",
+    "imageURL": "https://dramaticddt.wordpress.com/wp-content/uploads/2025/05/harukazashiro.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Haruna Neko",
+    "company": "TJPW",
+    "imageURL": "https://image.asset.wrestle-universe.com/2NbmMyW21YRD7oqSgEKhVv/2NbmMyW21YRD7oqSgEKhVv?dpr=1&fit=clip&format=webply&width=1110",
+    "division": "Women's"
+  },
+  {
+    "name": "HIMAWARI",
+    "company": "TJPW",
+    "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeTOSPf8nddpzFyAdvkxy4bDU6ILODA_N_ig&s",
+    "division": "Women's"
+  },
+  {
+    "name": "Hyper Misao",
+    "company": "TJPW",
+    "imageURL": "",
+    "division": "Women's"
+  },
+  {
+    "name": "Kaya Toribami",
+    "company": "TJPW",
+    "imageURL": "",
+    "division": "Women's"
+  },
+  {
+    "name": "Kira Summer",
+    "company": "TJPW",
+    "imageURL": "",
+    "division": "Women's"
+  },
+  {
+    "name": "Mahiro Kiryu",
+    "company": "TJPW",
+    "imageURL": "",
+    "division": "Women's"
+  },
+  {
+    "name": "Mifu Ashida",
+    "company": "TJPW",
+    "imageURL": "",
+    "division": "Women's"
+  },
+  {
     "name": "Miu Watanabe",
     "company": "TJPW",
     "imageURL": "https://static.wikia.nocookie.net/prowrestling/images/4/4d/Miu_Watanabe_4.png",
@@ -17,6 +77,18 @@
     "imageURL": "https://i0.wp.com/joshicity.com/wp-content/uploads/2021/09/miyu.png",
     "division": "Women's"
   },
+  {
+    "name": "Mizuki",
+    "company": "TJPW",
+    "imageURL": "https://i0.wp.com/joshicity.com/wp-content/uploads/2021/09/mizuki.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Moka Miyamoto",
+    "company": "TJPW",
+    "imageURL": "",
+    "division": "Women's"
+  },
  {
     "name": "Pom Harajuku",
     "company": "TJPW",
@@ -24,9 +96,27 @@
     "division": "Women's"
   },
   {
-    "name": "Wakana Uehara",
+    "name": "Raku",
     "company": "TJPW",
-    "imageURL": "https://i0.wp.com/joshicity.com/wp-content/uploads/2023/07/wakana.png",
+    "imageURL": "https://i0.wp.com/joshicity.com/wp-content/uploads/2021/09/raku.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Ren Konatsu",
+    "company": "TJPW",
+    "imageURL": "",
+    "division": "Women's"
+  },
+  {
+    "name": "Rika Tatsumi",
+    "company": "TJPW",
+    "imageURL": "",
+    "division": "Women's"
+  },
+  {
+    "name": "Shino Suzuki",
+    "company": "TJPW",
+    "imageURL": "",
     "division": "Women's"
   },
   {
@@ -36,9 +126,45 @@
     "division": "Women's"
   },
   {
-    "name": "Raku",
+    "name": "Suzume",
     "company": "TJPW",
-    "imageURL": "https://i0.wp.com/joshicity.com/wp-content/uploads/2021/09/raku.png",
+    "imageURL": "",
+    "division": "Women's"
+  },
+  {
+    "name": "Toga",
+    "company": "TJPW",
+    "imageURL": "",
+    "division": "Women's"
+  },
+  {
+    "name": "Uta Takami",
+    "company": "TJPW",
+    "imageURL": "",
+    "division": "Women's"
+  },
+  {
+    "name": "Wakana Uehara",
+    "company": "TJPW",
+    "imageURL": "https://i0.wp.com/joshicity.com/wp-content/uploads/2023/07/wakana.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Yuki Aino",
+    "company": "TJPW",
+    "imageURL": "",
+    "division": "Women's"
+  },
+  {
+    "name": "Yuki Arai",
+    "company": "TJPW",
+    "imageURL": "",
+    "division": "Women's"
+  },
+  {
+    "name": "Yuki Kamifuku",
+    "company": "TJPW",
+    "imageURL": "",
     "division": "Women's"
   }
 ]
