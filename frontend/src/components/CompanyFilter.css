@@ -1,3 +1,6 @@
+/* src/components/CompanyFilter.css */
+
+/* Container */
 .company-filter {
   display: flex;
   flex-direction: column;
@@ -11,51 +14,63 @@
 }
 
 /* Heading */
-.company-filter h2 {
-  margin-top: 0;
+.company-filter strong {
   margin-bottom: 0.5rem;
-  color: var(--text);
+  display: block;
 }
 
-/* Each item */
-.company-item {
+/* Each checkbox row */
+.company-filter .form-check {
   display: flex;
   align-items: center;
-  width: 100%;
+  justify-content: space-between;
   margin-bottom: 8px;
-  cursor: pointer;
-  color: var(--text);
 }
 
-/* Checkbox spacing */
-.company-item input {
-  margin-right: 6px;
+/* Tuck the input on the right */
+.company-filter .form-check-input {
+  order: 2;
+  margin-left: auto;
 }
 
-/* When checked, remove grayscale/filter */
-.company-item input:checked + .company-logo,
-.company-item input:checked + .company-logo + .company-name {
-  opacity: 1;
-  filter: none;
+/* Keep the label flush left */
+.company-filter .form-check-label {
+  order: 1;
+  margin-bottom: 0; /* override bootstrap vertical spacing */
 }
 
-/* Logo styling */
-.company-logo {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-  margin-right: 8px;
-  filter: grayscale(80%);
-  transition: filter 0.3s, opacity 0.3s;
-}
-
-/* Company name text (after the input) */
-.company-item .company-name {
-  flex: 1;
-  color: var(--text);
-}
-
+/* Indeterminate (dash) styling */
 .company-filter .form-check-input:indeterminate {
   background-color: var(--panel-bg);
   border-color: var(--text);
+}
+
+/* You can style the dash if you like, e.g.: */
+.company-filter .form-check-input:indeterminate::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.6em;
+  height: 0.1em;
+  background: var(--text);
+  transform: translate(-50%, -50%);
+  border-radius: 1px;
+}
+
+.division-filter .form-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.division-filter .form-check-input {
+  order: 2;
+  margin-left: auto;
+}
+
+.division-filter .form-check-label {
+  order: 1;
+  margin-bottom: 0;
 }
