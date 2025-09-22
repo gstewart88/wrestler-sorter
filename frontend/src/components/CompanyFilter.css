@@ -45,7 +45,6 @@
   border-color: var(--text);
 }
 
-/* You can style the dash if you like, e.g.: */
 .company-filter .form-check-input:indeterminate::before {
   content: '';
   position: absolute;
@@ -58,6 +57,14 @@
   border-radius: 1px;
 }
 
+.company-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin-right: 8px;
+}
+
+/* Mirror the same layout for division filters */
 .division-filter .form-check {
   display: flex;
   align-items: center;
