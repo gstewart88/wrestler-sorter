@@ -2,31 +2,31 @@
   {
     "name": "Akira Kurogane",
     "company": "Stardom",
-    "imageURL": "AkiraKuroganeStardom.jpg",
+    "imageURL": "AkiraKuroganeStardom.png",
     "division": "Women's"
   },
   {
     "name": "Ami Sohrei",
     "company": "Stardom",
-    "imageURL": "AmiSohreiStardom.jpg",
+    "imageURL": "AmiSohreiStardom.png",
     "division": "Women's"
   },
   {
     "name": "Anne Kanaya",
     "company": "Stardom",
-    "imageURL": "AnneKanayaStardom.jpg",
+    "imageURL": "AnneKanayaStardom.png",
     "division": "Women's"
   },
   {
     "name": "Aya Sakura",
     "company": "Stardom",
-    "imageURL": "AyaSakuraStardom.jpg",
+    "imageURL": "AyaSakuraStardom.png",
     "division": "Women's"
   },
   {
     "name": "AZM",
     "company": "Stardom",
-    "imageURL": "AZMStardom.jpg",
+    "imageURL": "AZMStardom.png",
     "division": "Women's"
   },
   {
@@ -38,7 +38,7 @@
   {
     "name": "Bea Priestley",
     "company": "Stardom",
-    "imageURL": "BeaPriestleyStardom.jpg",
+    "imageURL": "BeaPriestleyStardom.png",
     "division": "Women's"
   },
   {
@@ -50,19 +50,19 @@
   {
     "name": "Ema Maishima",
     "company": "Stardom",
-    "imageURL": "EmaMaishimaStardom.jpg",
+    "imageURL": "EmaMaishimaStardom.png",
     "division": "Women's"
   },
   {
     "name": "Fukigen Death",
     "company": "Stardom",
-    "imageURL": "FukigenDeathStardom.jpg",
+    "imageURL": "FukigenDeathStardom.png",
     "division": "Women's"
   },
   {
     "name": "Hanako",
     "company": "Stardom",
-    "imageURL": "HanakoStardom.jpg",
+    "imageURL": "HanakoStardom.png",
     "division": "Women's"
   },
   {
@@ -74,13 +74,13 @@
   {
     "name": "Hazuki",
     "company": "Stardom",
-    "imageURL": "HazukiStardom.jpg",
+    "imageURL": "HazukiStardom.png",
     "division": "Women's"
   },
   {
     "name": "Hina",
     "company": "Stardom",
-    "imageURL": "HinaStardom.jpg",
+    "imageURL": "HinaStardom.png",
     "division": "Women's"
   },
   {
@@ -92,85 +92,91 @@
   {
     "name": "Kikyo Furusawa",
     "company": "Stardom",
-    "imageURL": "KikyoFurusawaStardom.jpg",
+    "imageURL": "KikyoFurusawaStardom.png",
     "division": "Women's"
   },
   {
     "name": "Koguma",
     "company": "Stardom",
-    "imageURL": "KogumaStardom.jpg",
+    "imageURL": "KogumaStardom.png",
     "division": "Women's"
   },
   {
     "name": "Konami",
     "company": "Stardom",
-    "imageURL": "KonamiStardom.jpg",
+    "imageURL": "KonamiStardom.png",
     "division": "Women's"
   },
   {
     "name": "Lady C",
     "company": "Stardom",
-    "imageURL": "LadyCStardom.jpg",
+    "imageURL": "LadyCStardom.png",
     "division": "Women's"
   },
   {
     "name": "Maika",
     "company": "Stardom",
-    "imageURL": "MaikaStardom.jpg",
+    "imageURL": "MaikaStardom.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Matoi Hamabe",
+    "company": "Stardom",
+    "imageURL": "MatoiHamabeStardom.png",
     "division": "Women's"
   },
   {
     "name": "Mei Seira",
     "company": "Stardom",
-    "imageURL": "MeiSeiraStardom.jpg",
+    "imageURL": "MeiSeiraStardom.png",
     "division": "Women's"
   },
   {
     "name": "Miyu Amasaki",
     "company": "Stardom",
-    "imageURL": "MiyuAmasakiStardom.jpg",
+    "imageURL": "MiyuAmasakiStardom.png",
     "division": "Women's"
   },
   {
     "name": "Momo Kohgo",
     "company": "Stardom",
-    "imageURL": "MomoKohgoStardom.jpg",
+    "imageURL": "MomoKohgoStardom.png",
     "division": "Women's"
   },
   {
     "name": "Momo Watanabe",
     "company": "Stardom",
-    "imageURL": "MomoWatanabeStardom.jpg",
+    "imageURL": "MomoWatanabeStardom.png",
     "division": "Women's"
   },
   {
     "name": "Natsuko Tora",
     "company": "Stardom",
-    "imageURL": "NatsukoToraStardom.jpg",
+    "imageURL": "NatsukoToraStardom.png",
     "division": "Women's"
   },
   {
     "name": "Natsupoi",
     "company": "Stardom",
-    "imageURL": "NatsupoiStardom.jpg",
+    "imageURL": "NatsupoiStardom.png",
     "division": "Women's"
   },
   {
     "name": "Ranna Yagami",
     "company": "Stardom",
-    "imageURL": "RannaYagamiStardom.jpg",
+    "imageURL": "RannaYagamiStardom.png",
     "division": "Women's"
   },
   {
     "name": "Rian",
     "company": "Stardom",
-    "imageURL": "RianStardom.jpg",
+    "imageURL": "RianStardom.png",
     "division": "Women's"
   },
   {
     "name": "Rina",
     "company": "Stardom",
-    "imageURL": "RinaStardom.jpg",
+    "imageURL": "RinaStardom.png",
     "division": "Women's"
   },
   {
@@ -182,19 +188,19 @@
   {
     "name": "Ruaka",
     "company": "Stardom",
-    "imageURL": "RuakaStardom.jpg",
+    "imageURL": "RuakaStardom.png",
     "division": "Women's"
   },
   {
     "name": "Sayaka Kurara",
     "company": "Stardom",
-    "imageURL": "SayakaStardom.jpg",
+    "imageURL": "SayakaStardom.png",
     "division": "Women's"
   },
   {
     "name": "Saori Anou",
     "company": "Stardom",
-    "imageURL": "SaoriAnouStardom.jpg",
+    "imageURL": "SaoriAnouStardom.png",
     "division": "Women's"
   }, 
   {
