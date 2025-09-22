@@ -1,14 +1,38 @@
 [
   {
-    "name": "Mayu Iwatani",
+    "name": "Chiaki",
     "company": "Marigold",
-    "imageURL": "MayuIwataniMarigold.webp",
+    "imageURL": "ChiakiMarigold.webp",
     "division": "Women's"
   },
   {
-    "name": "Utami",
+    "name": "Chika Goto",
     "company": "Marigold",
-    "imageURL": "UtamiHayashishitaMarigold.webp",
+    "imageURL": "ChikaGotoMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Gigaton",
+    "company": "Marigold",
+    "imageURL": "GigatonMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Hummingbird",
+    "company": "Marigold",
+    "imageURL": "HummingbirdMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Kizuna Tanaka",
+    "company": "Marigold",
+    "imageURL": "KizunaTanakaMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Komomo Minami",
+    "company": "Marigold",
+    "imageURL": "KomomoMinamiMarigold.webp",
     "division": "Women's"
   },
   {
@@ -18,9 +42,123 @@
     "division": "Women's"
   },
   {
+    "name": "Mai Sakurai",
+    "company": "Marigold",
+    "imageURL": "MaiSakuraiMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Mayu Iwatani",
+    "company": "Marigold",
+    "imageURL": "MayuIwataniMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Megaton",
+    "company": "Marigold",
+    "imageURL": "MegatonMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Miku Aono",
+    "company": "Marigold",
+    "imageURL": "MikuAonoMarigold.webp",
+    "division": "Women's"
+  },
+  {
     "name": "Mirai",
     "company": "Marigold",
     "imageURL": "MiraiMarigold.webp",
     "division": "Women's"
-  }
+  },
+  {
+    "name": "Misa Matsui",
+    "company": "Marigold",
+    "imageURL": "MisaMatsuiMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Nagisa Nozaki",
+    "company": "Marigold",
+    "imageURL": "NagisaNozakiMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Nagisa Tachibana",
+    "company": "Marigold",
+    "imageURL": "NagisaTachibanaMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Nanae Takahashi",
+    "company": "Marigold",
+    "imageURL": "NanaeTakahashiMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Nao Ishikawa",
+    "company": "Marigold",
+    "imageURL": "NaoIshikawaMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Natsumi Showzuki",
+    "company": "Marigold",
+    "imageURL": "NatsumiShowzukiMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Rea Sato",
+    "company": "Marigold",
+    "imageURL": "ReaSetoMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Riara",
+    "company": "Marigold",
+    "imageURL": "RiaraMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Ryoko Sakimura",
+    "company": "Marigold",
+    "imageURL": "RyokoSakimuraMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Seri Yamaoka",
+    "company": "Marigold",
+    "imageURL": "SeriYamaokaMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Shinno",
+    "company": "Marigold",
+    "imageURL": "ShinnoMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Utami",
+    "company": "Marigold",
+    "imageURL": "UtamiHayashishitaMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Victoria Yuzuki",
+    "company": "Marigold",
+    "imageURL": "VictoriaYuzukiMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Yuuka Yamazaki",
+    "company": "Marigold",
+    "imageURL": "YuukaYamazakiMarigold.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Yuuki Minami",
+    "company": "Marigold",
+    "imageURL": "YuukiMinamiMarigold.webp",
+    "division": "Women's"
+  },
 ]
