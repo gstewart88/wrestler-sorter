@@ -1,36 +1,81 @@
-/* Container: a responsive, centered grid */
+/* Grid container: responsive cards centered */
 .wrestler-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 24px;
   justify-items: center;
 }
 
-/* Each card: vertical stack, centered */
+/* Card wrapper: controls max width & positioning */
 .wrestler-cell {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  cursor: default;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Portrait: large, circular, fixed aspect */
-.wrestler-image {
   width: 100%;
   max-width: 160px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 50%;
 }
 
-/* “Remove” button in top-right */
+/* Fixed aspect-ratio container with rounded corners */
+.wrestler-image-wrap {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--bg);
+}
+
+/* Image: fill the container, cover & crop */
+.wrestler-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Bottom gradient overlay */
+.wrestler-image-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+}
+
+/* Name caption on top of gradient */
+.wrestler-name {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  padding: 0 4px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Hover zoom + shadow */
+.wrestler-cell:hover .wrestler-image {
+  transform: scale(1.05);
+}
+.wrestler-cell:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Dimmed when removed */
+.wrestler-cell.removed .wrestler-image {
+  filter: brightness(40%);
+}
+
+/* Remove button styling */
 .remove-btn {
   position: absolute;
   top: 4px;
   right: 4px;
+  z-index: 2;
   width: 24px;
   height: 24px;
   border: none;
@@ -46,24 +91,4 @@
 
 .remove-btn:hover {
   background: rgba(255, 255, 255, 1);
-}
-
-/* Name caption, glued immediately under the image */
-.wrestler-name {
-  margin-top: 8px;
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--text);
-  line-height: 1.2;
-}
-
-/* Subtle “lift” on hover */
-.wrestler-cell:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Dim removed portraits */
-.wrestler-cell.removed .wrestler-image {
-  filter: brightness(40%);
 }
