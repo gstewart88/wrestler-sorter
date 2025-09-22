@@ -55,12 +55,11 @@ export default function Home() {
     );
   };
 
-  // Preview filtering
+  // Base filtering (ignores only company/division/ignore)
   const filtered = wrestlers.filter(w => {
     const byCompany  = selectedCompanies.includes(w.company);
     const byDivision = divisionFilter === 'All' || w.division === divisionFilter;
     const byIgnore   = !ignoredSet.has(w.id ?? w.name);
-    const byPreview  = !removedPreview.has(w.id ?? w.name);
     return byCompany && byDivision && byIgnore;
   });
 
@@ -192,7 +191,7 @@ export default function Home() {
           variant="primary"
           className="d-block mx-auto my-3"
           disabled={!selectedCompanies.length}
-          onClick={() => handleStart(shuffleArray(filtered))}
+          onClick={() => handleStart(shuffleArray(previewList))}
         >
           Start
         </Button>
@@ -223,9 +222,11 @@ export default function Home() {
 
           {!sorting && !result && (
             <>
-          <h3 className="mt-4">Preview ({filtered.length})</h3>
-          <WrestlerGrid
-            wrestlers={filtered}
+              <h3 className="mt-4">
+                Preview ({previewList.length} of {filtered.length})
+              </h3>
+              <WrestlerGrid
+                wrestlers={previewList}
             removedSet={removedPreview}
             onToggleRemove={togglePreview}
           />
