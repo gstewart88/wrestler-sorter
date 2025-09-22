@@ -79,9 +79,7 @@ export default function Home() {
   });
 
   // Preview list excludes preview-removed
-  const previewList = filtered.filter(
-    w => !removedPreview.has(w.id ?? w.name)
-  );
+  const previewList = filtered.filter(w => !removedPreview.has(w.id ?? w.name));
 
   // Compute how many per-company remain vs. total
   const companyStats = companies.reduce((acc, company) => {
@@ -215,7 +213,7 @@ export default function Home() {
         <Button
           variant="primary"
           className="d-block mx-auto my-3"
-          disabled={!selectedCompanies.length}
+          disabled={!selectedCompanies.length || previewList.length === 0}
           onClick={() => handleStart(shuffleArray(previewList))}
         >
           Start
