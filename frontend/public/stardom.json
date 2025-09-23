@@ -44,7 +44,7 @@
   {
     "name": "Bozilla",
     "company": "Stardom",
-    "imageURL": "BozillaStardom.jpg",
+    "imageURL": "BozillaStardom.png",
     "division": "Women's"
   },
   {
@@ -68,7 +68,7 @@
   {
     "name": "Hanan",
     "company": "Stardom",
-    "imageURL": "HananStardom.jpg",
+    "imageURL": "HananStardom.png",
     "division": "Women's"
   },
   {
@@ -218,31 +218,31 @@
   {
     "name": "Saya Iida",
     "company": "Stardom",
-    "imageURL": "SayaIidaStardom.jpg",
+    "imageURL": "SayaIidaStardom.png",
     "division": "Women's"
   },
   {
     "name": "Saya Kamitani",
     "company": "Stardom",
-    "imageURL": "SayaKamitaniStardom.jpg",
+    "imageURL": "SayaKamitaniStardom.png",
     "division": "Women's"
   },
   {
     "name": "Starlight Kid",
     "company": "Stardom",
-    "imageURL": "SLKStardom.jpg",
+    "imageURL": "SLKStardom.png",
     "division": "Women's"
   },
   {
     "name": "Suzu Suzuki",
     "company": "Stardom",
-    "imageURL": "SuzuSuzukiStardom.jpg",
+    "imageURL": "SuzuSuzukiStardom.png",
     "division": "Women's"
   },
   {
     "name": "Syuri",
     "company": "Stardom",
-    "imageURL": "SyuriStardom.jpg",
+    "imageURL": "SyuriStardom.png",
     "division": "Women's"
   },
   {
@@ -254,25 +254,25 @@
   {
     "name": "Waka Tsukiyama",
     "company": "Stardom",
-    "imageURL": "WakaTsukiyamaStardom.jpg",
+    "imageURL": "WakaTsukiyamaStardom.png",
     "division": "Women's"
   },
   {
     "name": "Xena",
     "company": "Stardom",
-    "imageURL": "XenaStardom.jpg",
+    "imageURL": "XenaStardom.png",
     "division": "Women's"
   },
   {
     "name": "Yuna Mizumori",
     "company": "Stardom",
-    "imageURL": "YunaMizumoriStardom.jpg",
+    "imageURL": "YunaMizumoriStardom.png",
     "division": "Women's"
   },
   {
     "name": "Yuria Hime",
     "company": "Stardom",
-    "imageURL": "YuriaHimeStardom.jpg",
+    "imageURL": "YuriaHimeStardom.png",
     "division": "Women's"
   }
 ]
