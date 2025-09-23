@@ -10,12 +10,14 @@ export default function useWrestlers() {
   useEffect(() => {
     const parts = [
       'aew',
+      'tna',
       'marigold',
       'njpw',
       'stardom',
       'tjpw',
       'raw',
-      'smackdown'
+      'smackdown',
+      'nxt'
     ];
 
     Promise.all(
