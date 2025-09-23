@@ -1,8 +1,38 @@
 [
   {
+    "name": "Alex Zayne",
+    "company": "NJPW",
+    "imageURL": "AlexZayneNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Bad Dude Tito",
+    "company": "NJPW",
+    "imageURL": "BadDudeTitoNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Callum Newman",
+    "company": "NJPW",
+    "imageURL": "CallumNewmanNJPW.png",
+    "division": "Men's"
+  },
+  {
     "name": "Chase Owens",
     "company": "NJPW",
     "imageURL": "ChaseOwensNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Clark Connors",
+    "company": "NJPW",
+    "imageURL": "ClarkeConnorsNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Daiki Nagai",
+    "company": "NJPW",
+    "imageURL": "DaikiNagaiNJPW.png",
     "division": "Men's"
   },
   {
@@ -12,15 +42,57 @@
     "division": "Men's"
   },
   {
+    "name": "Dick Togo",
+    "company": "NJPW",
+    "imageURL": "DickTogoNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Don Fale",
+    "company": "NJPW",
+    "imageURL": "DonFaleNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "DOUKI",
+    "company": "NJPW",
+    "imageURL": "DoukiNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Drilla Moloney",
+    "company": "NJPW",
+    "imageURL": "DrillaMoloneyNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "El Desperado",
+    "company": "NJPW",
+    "imageURL": "ElDesperadoNJPW.png",
+    "division": "Men's"
+  },
+  {
     "name": "El Phantasmo",
     "company": "NJPW",
     "imageURL": "ElPhantasmoNJPW.png",
     "division": "Men's"
   },
   {
-    "name": "Evil",
+    "name": "EVIL",
     "company": "NJPW",
     "imageURL": "EvilNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Francesco Akira",
+    "company": "NJPW",
+    "imageURL": "FrancescoAkiraNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Fred Rosser",
+    "company": "NJPW",
+    "imageURL": "FredRosserNJPW.png",
     "division": "Men's"
   },
   {
@@ -30,15 +102,165 @@
     "division": "Men's"
   },
   {
+    "name": "Gedo",
+    "company": "NJPW",
+    "imageURL": "GedoNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Great-O-Khan",
+    "company": "NJPW",
+    "imageURL": "GreatOKhanNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Hartley Jackson",
+    "company": "NJPW",
+    "imageURL": "HartleyJacksonNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "HENARE",
+    "company": "NJPW",
+    "imageURL": "HenareNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Hiromu Takahashi",
+    "company": "NJPW",
+    "imageURL": "HiromuTakahashiNJPW.png",
+    "division": "Men's"
+  },
+  {
     "name": "Hirooki Goto",
     "company": "NJPW",
     "imageURL": "HirokiGotoNJPW.png",
     "division": "Men's"
   },
   {
+    "name": "Hiroshi Tanahashi",
+    "company": "NJPW",
+    "imageURL": "HiroshiTanahashiNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Hiroyoshi Tenzan",
+    "company": "NJPW",
+    "imageURL": "HiroyoshiTenzanNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Jado",
+    "company": "NJPW",
+    "imageURL": "JadoNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Jake Lee",
+    "company": "NJPW",
+    "imageURL": "JakeLeeNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Jakob Austin Young",
+    "company": "NJPW",
+    "imageURL": "JakobAustinYoungNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Jorel Nelson",
+    "company": "NJPW",
+    "imageURL": "JorelNelsonNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Katsuya Murashima",
+    "company": "NJPW",
+    "imageURL": "KatsuyaMurashimaNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Kosei Fujita",
+    "company": "NJPW",
+    "imageURL": "KoseiFujitaNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Kushida",
+    "company": "NJPW",
+    "imageURL": "KushidaNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Manabu Nakanishi",
+    "company": "NJPW",
+    "imageURL": "ManabuNakanishiNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Masatora Yasuda",
+    "company": "NJPW",
+    "imageURL": "MasatoraYasudaNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Master Wato",
+    "company": "NJPW",
+    "imageURL": "MasterWatoNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Mikey Nicholls",
+    "company": "NJPW",
+    "imageURL": "MikeyNichollsNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Oleg Boltin",
+    "company": "NJPW",
+    "imageURL": "OlegBoltinNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "OSKAR",
+    "company": "NJPW",
+    "imageURL": "OskarNJPW.png",
+    "division": "Men's"
+  },
+  {
     "name": "Ren Narita",
     "company": "NJPW",
     "imageURL": "RenNaritaNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Robbie Eagles",
+    "company": "NJPW",
+    "imageURL": "RobbieEaglesNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Robbie X",
+    "company": "NJPW",
+    "imageURL": "RobbieXNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Royce Isaacs",
+    "company": "NJPW",
+    "imageURL": "RoyceIsaacsNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Ryohei Oiwa",
+    "company": "NJPW",
+    "imageURL": "RyoheiOiwaNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Ryusuke Taguchi",
+    "company": "NJPW",
+    "imageURL": "RyusukeTaguchiNJPW.png",
     "division": "Men's"
   },
   {
@@ -54,9 +276,27 @@
     "division": "Men's"
   },
   {
+    "name": "Shane Haste",
+    "company": "NJPW",
+    "imageURL": "ShaneHasteNJPW.png",
+    "division": "Men's"
+  },
+  {
     "name": "Shingo Takagi",
     "company": "NJPW",
     "imageURL": "ShingoTakagiNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Sho",
+    "company": "NJPW",
+    "imageURL": "ShoNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Shoma Kato",
+    "company": "NJPW",
+    "imageURL": "ShomaKatoNJPW.png",
     "division": "Men's"
   },
   {
@@ -72,9 +312,57 @@
     "division": "Men's"
   },
   {
+    "name": "Taiji Ishimori",
+    "company": "NJPW",
+    "imageURL": "TaijiIshimoriNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Taka Michinoku",
+    "company": "NJPW",
+    "imageURL": "TakaMichinokuNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Tatsuya Matsumoto",
+    "company": "NJPW",
+    "imageURL": "TatsuyaMatsumotoNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Templario",
+    "company": "NJPW",
+    "imageURL": "TemplarioNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "The DKC",
+    "company": "NJPW",
+    "imageURL": "TheDKCNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Titan",
+    "company": "NJPW",
+    "imageURL": "TitanNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "TJP",
+    "company": "NJPW",
+    "imageURL": "TJPNJPW.png",
+    "division": "Men's"
+  },
+  {
     "name": "Togi Makabe",
     "company": "NJPW",
     "imageURL": "TogiMakabeNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Tomoaki Honma",
+    "company": "NJPW",
+    "imageURL": "TomoakiHonmaNJPW.png",
     "division": "Men's"
   },
   {
@@ -90,9 +378,21 @@
     "division": "Men's"
   },
   {
+    "name": "Yoh",
+    "company": "NJPW",
+    "imageURL": "YohNJPW.png",
+    "division": "Men's"
+  },
+  {
     "name": "Yoshi Hashi",
     "company": "NJPW",
     "imageURL": "YoshiHashiNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Yoshinobu Kanemaru",
+    "company": "NJPW",
+    "imageURL": "YoshinobuKanemaruNJPW.png",
     "division": "Men's"
   },
   {
@@ -108,6 +408,18 @@
     "division": "Men's"
   },
   {
+    "name": "Yujiro Takahashi",
+    "company": "NJPW",
+    "imageURL": "YujiroTakahashiNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Yuto Ice",
+    "company": "NJPW",
+    "imageURL": "YutoIceNJPW.png",
+    "division": "Men's"
+  },
+  {
     "name": "Yuya Uemura",
     "company": "NJPW",
     "imageURL": "YuyaUemuraNJPW.png",
@@ -120,69 +432,9 @@
     "division": "Men's"
   },
   {
-    "name": "Douki",
+    "name": "Zane Jay",
     "company": "NJPW",
-    "imageURL": "DoukiNJPW.png",
-    "division": "Men's"
-  },
-  {
-    "name": "El Desperado",
-    "company": "NJPW",
-    "imageURL": "ElDesperadoNJPW.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Gedo",
-    "company": "NJPW",
-    "imageURL": "GedoNJPW.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Hiromu Takahashi",
-    "company": "NJPW",
-    "imageURL": "HiromuTakahashiNJPW.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Kushida",
-    "company": "NJPW",
-    "imageURL": "KushidaNJPW.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Ryusuke Taguchi",
-    "company": "NJPW",
-    "imageURL": "RyusukeTaguchiNJPW.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Sho",
-    "company": "NJPW",
-    "imageURL": "ShoNJPW.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Taiji Ishimori",
-    "company": "NJPW",
-    "imageURL": "TaijiIshimoriNJPW.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Yoh",
-    "company": "NJPW",
-    "imageURL": "YohNJPW.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Hiroshi Tanahashi",
-    "company": "NJPW",
-    "imageURL": "HiroshiTanahashiNJPW.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Great-O-Khan",
-    "company": "NJPW",
-    "imageURL": "GreatOKhanNJPW.png",
+    "imageURL": "ZaneJayNJPW.png",
     "division": "Men's"
   }
 ]
