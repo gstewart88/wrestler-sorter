@@ -1,0 +1,14 @@
+[  
+  {
+    "name": "Sol Ruca",
+    "company": "NXT",
+    "imageURL": "SolRucaNXT.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Trick Williams",
+    "company": "NXT",
+    "imageURL": "TrickWilliamsNXT.webp",
+    "division": "Men's"
+  }
+]
