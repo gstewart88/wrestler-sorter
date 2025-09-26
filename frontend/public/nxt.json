@@ -20,7 +20,7 @@
   {
     "name": "Brinley Reece",
     "company": "NXT",
-    "imageURL": "BrinleyReeceNXT.webp",
+    "imageURL": "BrinleyReeceNXT.png",
     "division": "Women's"
   },
   {
@@ -50,7 +50,7 @@
   {
     "name": "Karmen Petrovic",
     "company": "NXT",
-    "imageURL": "KarmenPetrovicNXT.webp",
+    "imageURL": "KarmenPetrovicNXT.png",
     "division": "Women's"
   },
   {
@@ -74,7 +74,7 @@
   {
     "name": "Nikkita Lyons",
     "company": "NXT",
-    "imageURL": "NikkitaLyonsNXT.webp",
+    "imageURL": "NikkitaLyonsNXT.png",
     "division": "Women's"
   },
   {
@@ -128,13 +128,13 @@
   {
     "name": "Brooks Jensen",
     "company": "NXT",
-    "imageURL": "AndreChaseNXT.webp",
+    "imageURL": "BrooksJensenNXT.webp",
     "division": "Men's"
   },
   {
     "name": "Channing Lorenzo",
     "company": "NXT",
-    "imageURL": "ChanningLorenzoNXT.webp",
+    "imageURL": "ChanningLorenzoNXT.png",
     "division": "Men's"
   },
   {
@@ -186,9 +186,9 @@
     "division": "Men's"
   },
   {
-    "name": "Tye Dillinger",
+    "name": "Shawn Spears",
     "company": "NXT",
-    "imageURL": "TyeDillingerNXT.webp",
+    "imageURL": "ShawnSpearsNXT.png",
     "division": "Men's"
   },
   {
