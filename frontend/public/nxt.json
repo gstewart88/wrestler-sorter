@@ -128,7 +128,7 @@
   {
     "name": "Brooks Jensen",
     "company": "NXT",
-    "imageURL": "BrooksJensenNXT.webp",
+    "imageURL": "BrooksJensenNXT.png",
     "division": "Men's"
   },
   {
@@ -138,9 +138,33 @@
     "division": "Men's"
   },
   {
+    "name": "Charlie Dempsey",
+    "company": "NXT",
+    "imageURL": "CharlieDempseyNXT.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Dion Lennox",
+    "company": "NXT",
+    "imageURL": "DionLennoxNXT.webp",
+    "division": "Men's"
+  },
+  {
     "name": "Ethan Page",
     "company": "NXT",
     "imageURL": "EthanPageNXT.webp",
+    "division": "Men's"
+  },
+  {
+    "name": "Hank Walker",
+    "company": "NXT",
+    "imageURL": "HankWalkerNXT.webp",
+    "division": "Men's"
+  },
+  {
+    "name": "Je'Von Evans",
+    "company": "NXT",
+    "imageURL": "JeVonEvansNXT.webp",
     "division": "Men's"
   },
   {
@@ -156,6 +180,12 @@
     "division": "Men's"
   },
   {
+    "name": "Myles Borne",
+    "company": "NXT",
+    "imageURL": "MylesBorneNXT.webp",
+    "division": "Men's"
+  },
+  {
     "name": "Noam Dar",
     "company": "NXT",
     "imageURL": "NoamDarNXT.webp",
@@ -168,9 +198,33 @@
     "division": "Men's"
   },
   {
+    "name": "Osiris Griffin",
+    "company": "NXT",
+    "imageURL": "OsirisGriffinNXT.webp",
+    "division": "Men's"
+  },
+  {
     "name": "Ricky Saints",
     "company": "NXT",
     "imageURL": "RickySaintsNXT.webp",
+    "division": "Men's"
+  },
+  {
+    "name": "Shawn Spears",
+    "company": "NXT",
+    "imageURL": "ShawnSpearsNXT.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Tank Ledger",
+    "company": "NXT",
+    "imageURL": "TankLedgerNXT.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Tavion Heights",
+    "company": "NXT",
+    "imageURL": "TavionHeightsNXT.webp",
     "division": "Men's"
   },
   {
@@ -183,12 +237,6 @@
     "name": "Trick Williams",
     "company": "NXT",
     "imageURL": "TrickWilliamsNXT.webp",
-    "division": "Men's"
-  },
-  {
-    "name": "Shawn Spears",
-    "company": "NXT",
-    "imageURL": "ShawnSpearsNXT.png",
     "division": "Men's"
   },
   {
