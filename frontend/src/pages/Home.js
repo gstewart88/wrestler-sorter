@@ -9,9 +9,7 @@ import WrestlerGrid     from '../components/WrestlerGrid';
 import ResultsList      from '../components/ResultsList';
 import useSorter from '../hooks/useSorter';
 import shuffleArray from '../utils/shuffleArray';
-
 import './Home.css';
-import Header from '../components/Header';
 
 export default function Home() {
   // Data & filter state
@@ -93,11 +91,8 @@ export default function Home() {
   const filteredResult = result
     ? result.filter(w => !ignoredSet.has(w.id ?? w.name))
     : [];
-
-  return (
-    <>
-      <Header />
-      <Row className="g-0 home-container">
+     return (
+    <Row className="g-0 home-container">
         {/* Desktop sidebar */}
         <Col
           xs={12}
@@ -257,6 +252,5 @@ export default function Home() {
           )}
         </Col>
       </Row>
-    </>
   );
 }

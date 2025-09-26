@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import siteLogoLight from '../assets/logo2.png';
 import siteLogoDark  from '../assets/logo.png';
 import bookerTLogo from '../assets/bookert.png';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 export default function Header() {
@@ -26,7 +27,7 @@ export default function Header() {
 
   return (
     <header className="page-header d-flex justify-content-between align-items-center px-3 py-2">
-      {/* Your new site logo */}
+      {/* Site logo */}
         <picture>
             <source
                 srcSet={siteLogoDark}
@@ -38,6 +39,11 @@ export default function Header() {
                 className="site-logo"
             />
         </picture>
+
+      <nav className="p-3 border-bottom">
+        <Link to="/" className="me-3">Home</Link>
+        <Link to="/promotions">Promotions</Link>
+      </nav>
 
       <div className="logo-container" onClick={handleLogoClick}>
         <img
