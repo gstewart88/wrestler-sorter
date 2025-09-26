@@ -1,0 +1,248 @@
+[  
+  {
+    "name": "Adriana Rizzo",
+    "company": "NXT",
+    "imageURL": "AdrianaRizzoNXT.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Arianna Grace",
+    "company": "NXT",
+    "imageURL": "AriannaGraceNXT.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Blake Monroe",
+    "company": "NXT",
+    "imageURL": "BlakeMonroeNXT.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Brinley Reece",
+    "company": "NXT",
+    "imageURL": "BrinleyReeceNXT.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Izzi Dame",
+    "company": "NXT",
+    "imageURL": "IzziDameNXT.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Jacy Jayne",
+    "company": "NXT",
+    "imageURL": "JacyJayneNXT.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Jaida Parker",
+    "company": "NXT",
+    "imageURL": "JaidaParkerNXT.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Jordynne Grace",
+    "company": "NXT",
+    "imageURL": "JordynneGraceNXT.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Karmen Petrovic",
+    "company": "NXT",
+    "imageURL": "KarmenPetrovicNXT.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Kelani Jordan",
+    "company": "NXT",
+    "imageURL": "KelaniJordanNXT.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Lash Legend",
+    "company": "NXT",
+    "imageURL": "LashLegendNXT.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Lola Vice",
+    "company": "NXT",
+    "imageURL": "LolaViceNXT.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Nikkita Lyons",
+    "company": "NXT",
+    "imageURL": "NikkitaLyonsNXT.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Sol Ruca",
+    "company": "NXT",
+    "imageURL": "SolRucaNXT.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Stevie Turner",
+    "company": "NXT",
+    "imageURL": "StevieTurnerNXT.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Tatum Paxley",
+    "company": "NXT",
+    "imageURL": "TatumPaxleyNXT.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Thea Hail",
+    "company": "NXT",
+    "imageURL": "TheaHailNXT.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Wendy Choo",
+    "company": "NXT",
+    "imageURL": "WendyChooNXT.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Wren Sinclair",
+    "company": "NXT",
+    "imageURL": "WrenSinclairNXT.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Zaria",
+    "company": "NXT",
+    "imageURL": "ZariaNXT.webp",
+    "division": "Women's"
+  },
+  {
+    "name": "Andre Chase",
+    "company": "NXT",
+    "imageURL": "AndreChaseNXT.webp",
+    "division": "Men's"
+  },
+  {
+    "name": "Brooks Jensen",
+    "company": "NXT",
+    "imageURL": "BrooksJensenNXT.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Channing Lorenzo",
+    "company": "NXT",
+    "imageURL": "ChanningLorenzoNXT.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Charlie Dempsey",
+    "company": "NXT",
+    "imageURL": "CharlieDempseyNXT.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Dion Lennox",
+    "company": "NXT",
+    "imageURL": "DionLennoxNXT.webp",
+    "division": "Men's"
+  },
+  {
+    "name": "Ethan Page",
+    "company": "NXT",
+    "imageURL": "EthanPageNXT.webp",
+    "division": "Men's"
+  },
+  {
+    "name": "Hank Walker",
+    "company": "NXT",
+    "imageURL": "HankWalkerNXT.webp",
+    "division": "Men's"
+  },
+  {
+    "name": "Je'Von Evans",
+    "company": "NXT",
+    "imageURL": "JeVonEvansNXT.webp",
+    "division": "Men's"
+  },
+  {
+    "name": "Josh Briggs",
+    "company": "NXT",
+    "imageURL": "JoshBriggsNXT.webp",
+    "division": "Men's"
+  },
+  {
+    "name": "Lexis King",
+    "company": "NXT",
+    "imageURL": "LexisKingNXT.webp",
+    "division": "Men's"
+  },
+  {
+    "name": "Myles Borne",
+    "company": "NXT",
+    "imageURL": "MylesBorneNXT.webp",
+    "division": "Men's"
+  },
+  {
+    "name": "Noam Dar",
+    "company": "NXT",
+    "imageURL": "NoamDarNXT.webp",
+    "division": "Men's"
+  },
+  {
+    "name": "Oba Femi",
+    "company": "NXT",
+    "imageURL": "ObaFemiNXT.webp",
+    "division": "Men's"
+  },
+  {
+    "name": "Osiris Griffin",
+    "company": "NXT",
+    "imageURL": "OsirisGriffinNXT.webp",
+    "division": "Men's"
+  },
+  {
+    "name": "Ricky Saints",
+    "company": "NXT",
+    "imageURL": "RickySaintsNXT.webp",
+    "division": "Men's"
+  },
+  {
+    "name": "Shawn Spears",
+    "company": "NXT",
+    "imageURL": "ShawnSpearsNXT.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Tank Ledger",
+    "company": "NXT",
+    "imageURL": "TankLedgerNXT.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Tavion Heights",
+    "company": "NXT",
+    "imageURL": "TavionHeightsNXT.webp",
+    "division": "Men's"
+  },
+  {
+    "name": "Tony D'Angelo",
+    "company": "NXT",
+    "imageURL": "TonyDAngeloNXT.webp",
+    "division": "Men's"
+  },
+  {
+    "name": "Trick Williams",
+    "company": "NXT",
+    "imageURL": "TrickWilliamsNXT.webp",
+    "division": "Men's"
+  },
+  {
+    "name": "Wes Lee",
+    "company": "NXT",
+    "imageURL": "WesLeeNXT.webp",
+    "division": "Men's"
+  }
+]
