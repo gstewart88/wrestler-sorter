@@ -26,37 +26,25 @@ export default function Header() {
   };
 
   return (
-    <header className="page-header d-flex justify-content-between align-items-center px-3 py-2">
-      {/* Site logo */}
-        <picture>
-            <source
-                srcSet={siteLogoDark}
-                media="(prefers-color-scheme: dark)"
-            />
-             <img
-                src={siteLogoLight}
-                alt="Fave Five"
-                className="site-logo"
-            />
-        </picture>
+  <header className="page-header d-flex justify-content-between align-items-center px-3 py-2">
 
-      <nav className="p-3 border-bottom">
-        <Link to="/" className="me-3">Home</Link>
-        <Link to="/promotions">Promotions</Link>
+    <div className="header-left d-flex align-items-center">
+      <picture>
+        <source srcSet={siteLogoDark} media="(prefers-color-scheme: dark)" />
+        <img src={siteLogoLight} alt="Fave Five" className="site-logo" />
+      </picture>
+
+      <nav className="navMenu" role="navigation" aria-label="Primary">
+        <Link to="/" className="nav-link">Home</Link>
+        <Link to="/promotions" className="nav-link">Promotions</Link>
+        <span className="dot" aria-hidden="true" />
       </nav>
+    </div>
 
-      <div className="logo-container" onClick={handleLogoClick}>
-        <img
-          src={bookerTLogo}
-          alt="Booker T"
-          className="header-logo"
-        />
-        {showQuote && (
-          <div className="speech-bubble">
-            {currentQuote}
-          </div>
-        )}
-      </div>
-    </header>
-  );
+    <div className="logo-container" onClick={handleLogoClick} role="button" tabIndex={0} /* keyboard support */>
+      <img src={bookerTLogo} alt="Booker T" className="header-logo" />
+      {showQuote && <div className="speech-bubble">{currentQuote}</div>}
+    </div>
+  </header>
+);
 }

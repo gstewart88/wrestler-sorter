@@ -77,3 +77,56 @@
   border-style: solid;
   border-color: transparent transparent transparent var(--accent-blue);
 }
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between logo and nav */
+}
+
+/* nav sits inline to the right of the logo */
+.navMenu {
+  position: static;
+  transform: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  pointer-events: auto;
+  margin-left: 6px; /* small breathing room from the logo */
+}
+
+.navMenu a,
+.navMenu .nav-link {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.0rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  /* width removed so text hugs the link */
+  transition: color 0.18s ease-in-out, transform 0.18s ease-in-out;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.navMenu a:hover,
+.navMenu a:focus,
+.navMenu .nav-link:hover,
+.navMenu .nav-link:focus {
+  color: #fddb3a;
+  outline: none;
+  background: rgba(255,255,255,0.03);
+}
+
+/* mobile: collapse to normal flow so nothing overlaps */
+@media (max-width: 520px) {
+  .header-left {
+    gap: 8px;
+  }
+  .navMenu {
+    position: static;
+    margin-left: 8px;
+    gap: 8px;
+    font-size: 0.95rem;
+  }
+}

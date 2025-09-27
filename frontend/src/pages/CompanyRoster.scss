@@ -11,6 +11,12 @@
     margin: 0 0 1rem 0;
   }
 
+  .company-header h1 {
+  margin: 0 auto;          /* centers this flex item */
+  text-align: center;
+  white-space: nowrap;     /* optional: prevent wrapping if you want a single line */
+}
+
   /* ensure back-button looks like a compact control */
   .back-button {
     display: inline-flex;
