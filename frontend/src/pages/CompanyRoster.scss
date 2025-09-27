@@ -4,38 +4,46 @@
   color: #fff;
 
   .company-header {
-    position: relative;     /* keep it in normal flow */
-    z-index: 2;             /* above grid if needed */
-    margin: 0 0 1rem 0;     /* push the grid down */
-    padding: 0.25rem 0;     /* visual breathing room */
-    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* keep header from overlapping grid */
+    margin: 0 0 1rem 0;
   }
 
+  /* ensure back-button looks like a compact control */
   .back-button {
-    display: inline-block;
-    margin-bottom: 0;
-    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.04);
     color: #fff;
-    opacity: 0.95;
-    &:hover { text-decoration: underline; opacity: 1; }
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background .15s ease, transform .12s ease;
   }
 
   h1 { margin: 0; color: #fff; }
 }
 
-/* Two-column layout: left = hex grid, right = details */
+/* Two-column layout */
 .roster-layout {
   display: flex;
   gap: 1rem;
   align-items: stretch;
-  /* remove a fixed subtraction so layout uses available space after
-     app-level padding. Use min-height so layout can grow on small screens */
   min-height: calc(100vh - var(--app-header-height, 0px) - 3rem);
   padding-top: 0;
   box-sizing: border-box;
 }
 
-/* Left column occupies left half */
+/* Left column
+   Responsive hex sizing:
+   - --l controls the hex cell size
+   - it uses clamp() so hexes shrink smoothly as the viewport narrows
+   - at mobile breakpoint (600px) we stop shrinking here and apply a fixed small size;
+     you'll provide mobile-specific rules later if you want layout changes. */
 .hex-grid {
   width: 50%;
   min-width: 320px;
@@ -43,12 +51,17 @@
   padding: 1rem;
   background: #262626;
   border-radius: 6px;
-  --l:  calc(100vmin / var(--n-cols));
+
+  /* responsive size for hex cells
+     - min 72px, preferred based on viewport, max 160px
+     - tweak the numeric values (72 / 160) to taste */
+  --l: clamp(72px, calc((100vw - 360px) / var(--n-cols)), 160px);
   --hl: calc(0.5 * var(--l));
   --ri: calc(0.5 * sqrt(3) * var(--l));
+
   display: grid;
   place-content: center;
-  grid-template: repeat(var(--n-rows), var(--l))/ repeat(var(--n-cols), var(--ri));
+  grid-template: repeat(var(--n-rows), var(--l)) / repeat(var(--n-cols), var(--ri));
   grid-gap: var(--hl) 0;
   overflow: auto;
   padding-bottom: 2rem;
@@ -56,7 +69,8 @@
   margin-top: 0;
 }
 
-/* Hex cell */
+/* Hex cell: shows per-cell background as frame behind the image.
+   Image itself is not colorized; selected state reveals more background. */
 .hex-cell {
   position: relative;
   overflow: hidden;
@@ -65,60 +79,69 @@
   transform: scale(0.95);
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   cursor: pointer;
-  transition: transform .25s ease, box-shadow .25s ease, z-index .05s linear;
+  transition: transform .20s ease, padding .18s ease, box-shadow .22s ease, z-index .01s linear;
 
+  /* show palette color behind the image; padding creates the visible frame */
+  padding: 8px;                /* visible frame thickness */
+  box-sizing: border-box;
+  background: rgba(var(--hex-r, 240), var(--hex-g, 240), var(--hex-b, 240), 0.12);
+
+  /* image sits above the colored background; image is NOT tinted */
   img {
+    position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: 50% 0%; /* top tip alignment (adjust if needed) */
     display: block;
-    transition: transform .7s, filter .35s;
-    filter: brightness(0.7);
+    transition: transform .6s ease, filter .25s ease;
+    filter: brightness(0.98); /* keep image natural but slightly balanced */
+    border-radius: 6px;
   }
 
-  &:hover img { transform: scale(1.05); filter: brightness(1); }
-  &:focus { outline: none; transform: scale(0.98); }
+  &:hover img { transform: scale(1.03); }
+  &:focus { outline: none; transform: scale(0.99); }
 
-  /* thin dark border for selected state (keeps existing look) */
+  /* empty placeholder cell */
+  &.empty {
+    background: rgba(255,255,255,0.03);
+    padding: 0;
+  }
+
+  /* selected state: reveal more background, lift, and add subtle glow
+     NOTE: image color is not modified here (no color tint/overlay) */
+  &.selected {
+    padding: 14px; /* reveal larger frame when selected */
+    transform: scale(1.03);
+    z-index: 10;
+    box-shadow: 0 10px 28px rgba(var(--hex-r, 48), var(--hex-g, 190), var(--hex-b, 255), 0.12),
+                0 14px 38px rgba(0,0,0,0.55);
+  }
+
+  /* keep image unchanged color-wise when selected */
+  &.selected img {
+    /* no filter or color change here; only subtle scale for emphasis */
+    transform: scale(1.03);
+  }
+
+  /* selected border on top for clarity (no colour change of the image) */
   &.selected::before {
     content: "";
     position: absolute;
-    inset: 0;
+    inset: 6px;
     pointer-events: none;
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-    border: 4px solid #000;
-    transform: scale(1.02);
-    z-index: 3;
-    transition: border-color .2s ease, transform .2s ease;
-  }
-
-  /* Visual "light up" / halo and emphasis when selected */
-  &.selected {
-    transform: scale(1.03);
-    z-index: 8; /* bring selected above neighbors */
-    /* box-shadow acts as a glow; the clip-path still shapes the element */
-    box-shadow:
-      0 0 24px 8px rgba(48, 190, 255, 0.18), /* colored glow */
-      0 12px 28px rgba(0,0,0,0.5);            /* depth shadow */
-    transition: transform .18s ease, box-shadow .25s ease, z-index .01s;
-  }
-
-  /* brighten & slightly scale the image when selected */
-  &.selected img {
-    filter: brightness(1.12) saturate(1.12);
-    transform: scale(1.03);
+    clip-path: inherit;
+    z-index: 11;
+    border-radius: 4px;
   }
 }
 
-.hex-cell.empty {
-  background: rgba(255,255,255,0.03);
-}
-
-/* Right column now shares the same background as the left */
+/* Right column */
 .detail-panel {
   width: 50%;
   padding: 1.5rem;
-  background: #262626; /* matched to .hex-grid */
+  background: #262626;
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
   overflow: auto;
@@ -128,10 +151,11 @@
   color: #fff;
 }
 
-/* Detail image and text styling adapted for dark background */
+/* reduced detail image size (75% of previous 420px -> 315px earlier; current choice 320->240)
+   adapt to your desired final visual */
 .detail-image-wrap {
   width: 100%;
-  max-width: 420px;
+  max-width: 320px; /* you already lowered this earlier; keep or reduce further */
   aspect-ratio: 3/4;
   overflow: hidden;
   border-radius: 6px;
@@ -145,6 +169,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  object-position: 50% 0%;
 }
 
 .detail-name {
@@ -160,7 +185,7 @@
   width: 100%;
 }
 
-/* Responsive: stack on narrow viewports */
+/* Responsive: stack on narrower viewports and further size adjustments */
 @media (max-width: 900px) {
   .roster-layout {
     flex-direction: column;
@@ -171,11 +196,40 @@
     width: 100%;
   }
   .hex-grid { height: 60vh; }
-  /* reduce glow intensity on small screens */
+
+  .hex-cell {
+    padding: 8px;
+  }
+
   .hex-cell.selected {
-    box-shadow:
-      0 0 12px 4px rgba(48, 190, 255, 0.16),
-      0 8px 16px rgba(0,0,0,0.45);
+    padding: 10px;
     transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(var(--hex-r, 48), var(--hex-g, 190), var(--hex-b, 255), 0.10);
+  }
+
+  .hex-cell.selected::before { inset: 4px; border-width: 1px; }
+}
+
+/* Mobile breakpoint where you will apply different CSS later.
+   Here we clamp the hex cell to a smaller fixed size so they stop shrinking below this width. */
+@media (max-width: 600px) {
+  .hex-grid {
+    --l: 72px; /* fixed small hex size on mobile; change later when you provide mobile rules */
+    --hl: calc(0.5 * var(--l));
+    --ri: calc(0.5 * sqrt(3) * var(--l));
+  }
+
+  /* tighten padding so hexes are more compact on small screens */
+  .hex-cell {
+    padding: 6px;
+    transform: scale(0.98);
+  }
+  .hex-cell.selected {
+    padding: 8px;
+    transform: scale(1.02);
+  }
+
+  .detail-image-wrap {
+    max-width: 280px;
   }
 }

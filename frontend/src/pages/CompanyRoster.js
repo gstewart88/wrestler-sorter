@@ -4,6 +4,26 @@ import { useParams, Link } from 'react-router-dom';
 import useWrestlers from '../hooks/useWrestlers';
 import './CompanyRoster.scss';
 
+const PALETTE = [
+  '#FFD166','#EF476F','#06D6A0','#118AB2',
+  '#073B4C','#F4A261','#9D4EDD','#FF7A5A'
+];
+
+function hexToRgb(hex) {
+  const cleaned = hex.replace('#', '');
+  const bigint = parseInt(cleaned, 16);
+  if (cleaned.length === 3) {
+    const r = (bigint >> 8) & 0xf;
+    const g = (bigint >> 4) & 0xf;
+    const b = bigint & 0xf;
+    return { r: r * 17, g: g * 17, b: b * 17 };
+  }
+  const r = (bigint >> 16) & 255;
+  const g = (bigint >> 8) & 255;
+  const b = bigint & 255;
+  return { r, g, b };
+}
+
 export default function CompanyRoster() {
   const { slug } = useParams();
   const { wrestlers } = useWrestlers();
@@ -34,28 +54,51 @@ export default function CompanyRoster() {
   const containerRef = useRef(null);
   const [cols, setCols] = useState(4);
 
+  const [cellSize, setCellSize] = useState({ l: 160, ri: Math.floor((0.5 * Math.sqrt(3) * 160)) });
+
   useEffect(() => {
     const CELL_PX = 160; // adjust minimum visual hex width
-    function updateCols() {
-      const width = containerRef.current?.offsetWidth || window.innerWidth / 2;
+    function updateColsAndSize() {
+      const width = containerRef.current?.offsetWidth || Math.max(320, window.innerWidth / 2);
       const newCols = Math.max(1, Math.floor((width - 20) / CELL_PX));
       setCols(newCols);
+      const nColsMin = Math.max(1, newCols);
+      const nColsMax = nColsMin + 1;
+      const totalGridCols = 2 * nColsMax;
+
+      const usableWidth = Math.max(40, width - 8);
+      const ri = Math.floor(usableWidth / totalGridCols);
+      const l = Math.max(36, Math.floor((2 * ri) / Math.sqrt(3)));
+
+      setCellSize({ l, ri });
     }
-    updateCols();
-    window.addEventListener('resize', updateCols);
-    return () => window.removeEventListener('resize', updateCols);
+    updateColsAndSize();
+    window.addEventListener('resize', updateColsAndSize);
+    return () => window.removeEventListener('resize', updateColsAndSize);
   }, []);
 
-  // rows/hex-grid math
-  const rows = Math.max(1, Math.ceil(uniqueList.length / Math.max(1, cols)));
   const n_cols_min = Math.max(1, cols);
   const n_cols_max = n_cols_min + 1;
+  const rowsArray = []; // array of rows, each row is an array of items or null slots
+  let idx = 0;
+  let rowIndex = 0;
+  while (idx < uniqueList.length) {
+    const capacity = (rowIndex % 2 === 0) ? n_cols_min : n_cols_max;
+    const rowItems = uniqueList.slice(idx, idx + capacity);
+    const filledRow = Array.from({ length: capacity }).map((_, i) => rowItems[i] ?? null);
+    rowsArray.push(filledRow);
+    idx += capacity;
+    rowIndex += 1;
+  }
+
+  const rowsUsed = rowsArray.length;
   const n_cols_sum = n_cols_min + n_cols_max;
-  const n = Math.ceil(0.5 * rows) * n_cols_min + Math.floor(0.5 * rows) * n_cols_max;
 
   const gridVars = {
-    '--n-rows': rows,
-    '--n-cols': 2 * n_cols_max
+    '--n-rows': rowsUsed,
+    '--n-cols': 2 * n_cols_max,
+    '--l': `${cellSize.l}px`,
+    '--ri': `${cellSize.ri}px`
   };
 
   // selection state
@@ -64,11 +107,16 @@ export default function CompanyRoster() {
     setSelected(uniqueList[0] || null);
   }, [slug, wrestlers]); // reset when company changes or roster updates
 
+  // computed promotions URL on the same origin
+  const promotionsHref = `${window.location.origin}/wrestler-sorter#/promotions`;
+
   if (!uniqueList.length) {
     return (
       <div className="company-roster">
-        <Link to="/" className="back-button">← Back Home</Link>
-        <h1>{company} Roster</h1>
+        <div className="company-header">
+          <Link to="/" className="back-button">← Back</Link>
+          <h1>Roster | {company}</h1>
+        </div>
         <p>No wrestlers found for {company}.</p>
       </div>
     );
@@ -77,8 +125,8 @@ export default function CompanyRoster() {
   return (
     <div className="company-roster">
       <div className="company-header">
-        <Link to="/" className="back-button">← Back Home</Link>
-        <h1>{company} Roster</h1>
+        <Link to="/" className="back-button">← Back</Link>
+        <h1>Roster | {company}</h1>
       </div>
 
       <div className="roster-layout">
@@ -94,40 +142,54 @@ export default function CompanyRoster() {
             }
           `}</style>
 
-          {Array.from({ length: n }).map((_, i) => {
-            const wrestler = uniqueList[i];
-            if (!wrestler) {
-              return <div className="hex-cell empty" key={i} aria-hidden="true" />;
-            }
-
-            const handleKeyDown = e => {
-              if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                setSelected(wrestler);
+          {rowsArray.flatMap((row, rIdx) =>
+            row.map((wrestler, cIdx) => {
+              const key = `r${rIdx}-c${cIdx}`;
+              if (!wrestler) {
+                return <div className="hex-cell empty" key={key} aria-hidden="true" />;
               }
-            };
 
-            const isSelected = selected && (selected.name === wrestler.name || selected.imageURL === wrestler.imageURL);
+              const handleKeyDown = e => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  setSelected(wrestler);
+                }
+              };
 
-            return (
-              <div
-                key={i}
-                className={`hex-cell${isSelected ? ' selected' : ''}`}
-                role="button"
-                tabIndex={0}
-                onClick={() => setSelected(wrestler)}
-                onKeyDown={handleKeyDown}
-                aria-pressed={isSelected}
-                title={wrestler.name}
-              >
-                <img
-                  src={wrestler.imageURL}
-                  alt={wrestler.name}
-                  onError={e => { e.currentTarget.src = 'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png'; }}
-                />
-              </div>
-            );
-          })}
+              const isSelected = selected && (selected.name === wrestler.name || selected.imageURL === wrestler.imageURL);
+
+              // pick palette color and expose as CSS vars
+              const paletteIndex = (rIdx * Math.max(1, n_cols_max) + cIdx) % PALETTE.length;
+              const paletteColor = PALETTE[paletteIndex];
+              const { r, g, b } = hexToRgb(paletteColor);
+              const styleVars = {
+                '--hex-bg': paletteColor,
+                '--hex-r': r,
+                '--hex-g': g,
+                '--hex-b': b
+              };
+
+              return (
+                <div
+                  key={key}
+                  className={`hex-cell${isSelected ? ' selected' : ''}`}
+                  role="button"
+                  tabIndex={0}
+                  onClick={() => setSelected(wrestler)}
+                  onKeyDown={handleKeyDown}
+                  aria-pressed={isSelected}
+                  title={wrestler.name}
+                  style={styleVars}
+                >
+                  <img
+                    src={wrestler.imageURL}
+                    alt={wrestler.name}
+                    onError={e => { e.currentTarget.src = 'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png'; }}
+                  />
+                </div>
+              );
+            })
+          )}
         </div>
 
         <aside className="detail-panel" aria-live="polite">
