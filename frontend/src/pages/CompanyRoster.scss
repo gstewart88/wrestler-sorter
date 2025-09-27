@@ -38,12 +38,7 @@
   box-sizing: border-box;
 }
 
-/* Left column
-   Responsive hex sizing:
-   - --l controls the hex cell size
-   - it uses clamp() so hexes shrink smoothly as the viewport narrows
-   - at mobile breakpoint (600px) we stop shrinking here and apply a fixed small size;
-     you'll provide mobile-specific rules later if you want layout changes. */
+/* Left column */
 .hex-grid {
   width: 50%;
   min-width: 320px;
@@ -51,17 +46,12 @@
   padding: 1rem;
   background: #262626;
   border-radius: 6px;
-
-  /* responsive size for hex cells
-     - min 72px, preferred based on viewport, max 160px
-     - tweak the numeric values (72 / 160) to taste */
-  --l: clamp(72px, calc((100vw - 360px) / var(--n-cols)), 160px);
+  --l:  calc(100vmin / var(--n-cols));
   --hl: calc(0.5 * var(--l));
   --ri: calc(0.5 * sqrt(3) * var(--l));
-
   display: grid;
   place-content: center;
-  grid-template: repeat(var(--n-rows), var(--l)) / repeat(var(--n-cols), var(--ri));
+  grid-template: repeat(var(--n-rows), var(--l))/ repeat(var(--n-cols), var(--ri));
   grid-gap: var(--hl) 0;
   overflow: auto;
   padding-bottom: 2rem;
@@ -93,7 +83,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 50% 0%; /* top tip alignment (adjust if needed) */
+    object-position: 50% 0%; /* top tip alignment */
     display: block;
     transition: transform .6s ease, filter .25s ease;
     filter: brightness(0.98); /* keep image natural but slightly balanced */
@@ -125,13 +115,13 @@
     transform: scale(1.03);
   }
 
-  /* selected border on top for clarity (no colour change of the image) */
+  /* selected border on top for clarity */
   &.selected::before {
     content: "";
     position: absolute;
     inset: 6px;
     pointer-events: none;
-    clip-path: inherit;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
     z-index: 11;
     border-radius: 4px;
   }
@@ -151,11 +141,9 @@
   color: #fff;
 }
 
-/* reduced detail image size (75% of previous 420px -> 315px earlier; current choice 320->240)
-   adapt to your desired final visual */
 .detail-image-wrap {
   width: 100%;
-  max-width: 320px; /* you already lowered this earlier; keep or reduce further */
+  max-width: 320px;
   aspect-ratio: 3/4;
   overflow: hidden;
   border-radius: 6px;
@@ -169,7 +157,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  object-position: 50% 0%;
+  object-position: 50% 0%; /* top tip alignment */
 }
 
 .detail-name {
@@ -185,7 +173,7 @@
   width: 100%;
 }
 
-/* Responsive: stack on narrower viewports and further size adjustments */
+/* Responsive */
 @media (max-width: 900px) {
   .roster-layout {
     flex-direction: column;
@@ -210,29 +198,6 @@
   .hex-cell.selected::before { inset: 4px; border-width: 1px; }
 }
 
-/* Mobile breakpoint where you will apply different CSS later.
-   Here we clamp the hex cell to a smaller fixed size so they stop shrinking below this width. */
-@media (max-width: 600px) {
-  .hex-grid {
-    --l: 72px; /* fixed small hex size on mobile; change later when you provide mobile rules */
-    --hl: calc(0.5 * var(--l));
-    --ri: calc(0.5 * sqrt(3) * var(--l));
-  }
-
-  /* tighten padding so hexes are more compact on small screens */
-  .hex-cell {
-    padding: 6px;
-    transform: scale(0.98);
-  }
-  .hex-cell.selected {
-    padding: 8px;
-    transform: scale(1.02);
-  }
-
-  .detail-image-wrap {
-    max-width: 280px;
-  }
-}
 /* Mobile phone-style shell (only active at small widths) */
 @media (max-width: 520px) {
   .company-roster {
@@ -249,19 +214,24 @@
     flex-direction: column;
     background: #000;
     color: #fff;
+    position: relative;
+    overflow: hidden;
   }
 
   .mobile-top {
     height: 48px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 6px 10px;
     gap: 8px;
     z-index: 30;
   }
 
   .mobile-back {
+    position: absolute;
+    left: 8px;
+    top: 6px;
     color: #fff;
     text-decoration: none;
     font-size: 20px;
@@ -272,31 +242,38 @@
     justify-content: center;
     background: rgba(255,255,255,0.04);
     border-radius: 8px;
+    z-index: 40;
   }
 
   .mobile-title {
-    flex: 1;
     text-align: center;
     font-weight: 600;
     font-size: 14px;
+    z-index: 30;
   }
 
+  /* Move hamburger to bottom-right and keep it above the image area */
   .mobile-hamburger {
-    width: 36px;
-    height: 36px;
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    width: 44px;
+    height: 44px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 3px;
     border: none;
     background: rgba(255,255,255,0.04);
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 6px;
+    z-index: 45;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
   }
   .mobile-hamburger span {
     display: block;
     height: 2px;
-    width: 14px;
+    width: 16px;
     background: #fff;
     transition: transform .28s ease, opacity .28s ease;
   }
@@ -304,8 +281,9 @@
   .mobile-hamburger.open span:nth-child(2) { opacity: 0; }
   .mobile-hamburger.open span:nth-child(3) { transform: translateY(-5px) rotate(-45deg); }
 
+  /* Image area fills available space; roster is positioned absolutely at bottom */
   .mobile-image-area {
-    flex: 1 1 auto;
+    height: calc(100vh - 48px); /* full height under the top bar */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -322,8 +300,7 @@
 
   .mobile-image-wrap {
     width: 100%;
-    max-width: 420px;
-    height: 60%;
+    height: 100%;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -347,10 +324,17 @@
     opacity: 0;
     transition: opacity .28s ease;
     pointer-events: none;
+    z-index: 34;
   }
   .mobile-image-area.lifted .mobile-overlay { opacity: 1; }
 
+  /* Roster panel is taken out of flow and sits over the bottom of the image.
+     When closed it is translated down and not visible; when open it slides up. */
   .mobile-roster {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
     height: 40%;
     background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.06));
     display: grid;
@@ -360,8 +344,12 @@
     transform: translateY(100%);
     transition: transform 320ms cubic-bezier(.4,0,.2,1);
     overflow-y: auto;
+    z-index: 40;
+    box-shadow: 0 -8px 24px rgba(0,0,0,0.45);
+    will-change: transform;
+    pointer-events: none;
   }
-  .mobile-roster.open { transform: translateY(0); }
+  .mobile-roster.open { transform: translateY(0); pointer-events: auto; }
 
   .mobile-tile {
     width: 100%;
