@@ -110,11 +110,24 @@ export default function CompanyRoster() {
   // computed promotions URL on the same origin
   const promotionsHref = `${window.location.origin}/wrestler-sorter#/promotions`;
 
+  // Mobile detection + mobile UI state
+  const [isMobile, setIsMobile] = useState(() => typeof window !== 'undefined' && window.innerWidth <= 520);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  useEffect(() => {
+    function onResize() {
+      const nowMobile = window.innerWidth <= 520;
+      setIsMobile(nowMobile);
+      if (!nowMobile) setMobileMenuOpen(false);
+    }
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
+
   if (!uniqueList.length) {
     return (
       <div className="company-roster">
         <div className="company-header">
-          <Link to="/" className="back-button">← Back</Link>
+          <a className="back-button" href={promotionsHref}>← Back</a>
           <h1>Roster | {company}</h1>
         </div>
         <p>No wrestlers found for {company}.</p>
@@ -122,10 +135,72 @@ export default function CompanyRoster() {
     );
   }
 
+  // Mobile rendering: compact phone-like shell (does not affect desktop)
+  if (isMobile) {
+    return (
+      <div className="company-roster mobile-shell">
+        <div className="mobile-top">
+          <a className="mobile-back" href={promotionsHref} aria-label="Back">←</a>
+          <div className="mobile-title">Roster | {company}</div>
+          <button
+            className={`mobile-hamburger${mobileMenuOpen ? ' open' : ''}`}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-roster"
+            onClick={() => setMobileMenuOpen(v => !v)}
+            type="button"
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+        </div>
+
+        <div className={`mobile-image-area${mobileMenuOpen ? ' lifted' : ''}`}>
+          <div className="mobile-image-wrap">
+            <img
+              src={selected?.imageURL}
+              alt={selected?.name || 'Selected wrestler'}
+              onError={e => { e.currentTarget.src = 'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png'; }}
+            />
+            <div className="mobile-overlay" onClick={() => setMobileMenuOpen(false)} />
+          </div>
+        </div>
+
+        <div
+          id="mobile-roster"
+          className={`mobile-roster${mobileMenuOpen ? ' open' : ''}`}
+          onClick={() => setMobileMenuOpen(false)}
+        >
+          {uniqueList.map((w, i) => {
+            const isSel = selected && (selected.name === w.name || selected.imageURL === w.imageURL);
+            const paletteColor = PALETTE[i % PALETTE.length];
+            const { r, g, b } = hexToRgb(paletteColor);
+            const styleVars = { '--hex-r': r, '--hex-g': g, '--hex-b': b };
+            return (
+              <button
+                key={i}
+                className={`mobile-tile${isSel ? ' selected' : ''}`}
+                style={styleVars}
+                onClick={(e) => { e.stopPropagation(); setSelected(w); setMobileMenuOpen(false); }}
+                aria-pressed={isSel}
+                title={w.name}
+              >
+                <img src={w.imageURL}
+                  alt={w.name}
+                  onError={e => { e.currentTarget.src = 'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png'; }}
+                />
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="company-roster">
       <div className="company-header">
-        <Link to="/" className="back-button">← Back</Link>
+        <a className="back-button" href={promotionsHref}>← Back</a>
         <h1>Roster | {company}</h1>
       </div>
 
