@@ -277,8 +277,8 @@ export default function CompanyRoster() {
                   alt={selected.name}
                   onError={e => { e.currentTarget.src = 'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png'; }}
                 />
+                <div className="detail-name">{selected.name}</div>
               </div>
-              <h2 className="detail-name">{selected.name}</h2>
               <div className="detail-bio">
                 {selected.bio ? selected.bio : <em>No bio available.</em>}
               </div>
