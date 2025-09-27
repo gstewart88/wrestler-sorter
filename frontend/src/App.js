@@ -1,20 +1,36 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';  // ① pull in Bootstrap
+// src/App.js
+import React, { useLayoutEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Promotions from './pages/Promotions';
+import CompanyRoster from './pages/CompanyRoster';
 import './App.css';
 
 export default function App() {
+  useLayoutEffect(() => {
+    const setHeaderHeight = () => {
+      const headerEl = document.querySelector('header');
+      const h = headerEl ? headerEl.getBoundingClientRect().height : 0;
+      document.documentElement.style.setProperty('--app-header-height', `${h}px`);
+    };
+    setHeaderHeight();
+    window.addEventListener('resize', setHeaderHeight);
+    return () => window.removeEventListener('resize', setHeaderHeight);
+  }, []);
+
   return (
     <Container fluid className="p-0">
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/promotions" element={<Promotions />} />
-      </Routes>
+      <main className="app-main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/promotions" element={<Promotions />} />
+          <Route path="/company/:slug" element={<CompanyRoster />} />
+        </Routes>
+      </main>
     </Container>
   );
 }

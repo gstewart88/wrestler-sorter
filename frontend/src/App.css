@@ -1,11 +1,21 @@
 /* src/App.css */
 
+:root{
+  /* sensible defaults for your theme variables; adjust as needed */
+  --bg-page: #111;
+  --bg-surface: #1f1f1f;
+  --border-color: rgba(255,255,255,0.06);
+  --text: #fff;
+  --primary: #61dafb;
+}
+
+/* Keep App-level background */
 .App {
   text-align: center;
-  /* give App its page-background in case App-header isn’t full-height */
   background: var(--bg-page);
 }
 
+/* Logo / animation left as-is */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -17,34 +27,43 @@
   }
 }
 
-.App-header {
-  /* swap from #282c34 → your surface or gradient */
+/* Header: make it a compact bar and fixed so we can
+   reliably measure its height and offset the routed content */
+.App-header,
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
   background: var(--bg-surface);
-  /* optional subtle gradient instead:
-     background: var(--grad-light);
-  */
   border-bottom: 1px solid var(--border-color);
 
-  min-height: 100vh;
+  /* compact header sizing */
+  padding: 0.6rem 1rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
-  font-size: calc(10px + 2vmin);
+  font-size: calc(12px + 0.6vmin);
   color: var(--text);
 }
 
+/* link styles */
 .App-link {
-  /* use your primary or one of your accents */
   color: var(--primary);
 }
 
+/* Main routed area: use the measured header height (set via App.js)
+   so page content is pushed down exactly once */
+.app-main {
+  box-sizing: border-box;
+  padding-top: var(--app-header-height, 0px);
+}
+
+/* keep old spin keyframes */
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }

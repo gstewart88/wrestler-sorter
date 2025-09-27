@@ -11,8 +11,12 @@
   }
 }
 
-/* 2) Page header background uses the accent‐blue var */
 .page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   background: var(--accent-blue);
   border-bottom: 1px solid var(--border-color);
   color: var(--text);

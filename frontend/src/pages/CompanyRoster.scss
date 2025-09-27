@@ -1,0 +1,181 @@
+/* src/pages/CompanyRoster.scss */
+.company-roster {
+  padding: 1rem;
+  color: #fff;
+
+  .company-header {
+    position: relative;     /* keep it in normal flow */
+    z-index: 2;             /* above grid if needed */
+    margin: 0 0 1rem 0;     /* push the grid down */
+    padding: 0.25rem 0;     /* visual breathing room */
+    background: transparent;
+  }
+
+  .back-button {
+    display: inline-block;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.95;
+    &:hover { text-decoration: underline; opacity: 1; }
+  }
+
+  h1 { margin: 0; color: #fff; }
+}
+
+/* Two-column layout: left = hex grid, right = details */
+.roster-layout {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+  /* remove a fixed subtraction so layout uses available space after
+     app-level padding. Use min-height so layout can grow on small screens */
+  min-height: calc(100vh - var(--app-header-height, 0px) - 3rem);
+  padding-top: 0;
+  box-sizing: border-box;
+}
+
+/* Left column occupies left half */
+.hex-grid {
+  width: 50%;
+  min-width: 320px;
+  box-sizing: border-box;
+  padding: 1rem;
+  background: #262626;
+  border-radius: 6px;
+  --l:  calc(100vmin / var(--n-cols));
+  --hl: calc(0.5 * var(--l));
+  --ri: calc(0.5 * sqrt(3) * var(--l));
+  display: grid;
+  place-content: center;
+  grid-template: repeat(var(--n-rows), var(--l))/ repeat(var(--n-cols), var(--ri));
+  grid-gap: var(--hl) 0;
+  overflow: auto;
+  padding-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  margin-top: 0;
+}
+
+/* Hex cell */
+.hex-cell {
+  position: relative;
+  overflow: hidden;
+  grid-column-end: span 2;
+  margin: calc(-1 * var(--hl)) 0;
+  transform: scale(0.95);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  cursor: pointer;
+  transition: transform .25s ease, box-shadow .25s ease, z-index .05s linear;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .7s, filter .35s;
+    filter: brightness(0.7);
+  }
+
+  &:hover img { transform: scale(1.05); filter: brightness(1); }
+  &:focus { outline: none; transform: scale(0.98); }
+
+  /* thin dark border for selected state (keeps existing look) */
+  &.selected::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    border: 4px solid #000;
+    transform: scale(1.02);
+    z-index: 3;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+
+  /* Visual "light up" / halo and emphasis when selected */
+  &.selected {
+    transform: scale(1.03);
+    z-index: 8; /* bring selected above neighbors */
+    /* box-shadow acts as a glow; the clip-path still shapes the element */
+    box-shadow:
+      0 0 24px 8px rgba(48, 190, 255, 0.18), /* colored glow */
+      0 12px 28px rgba(0,0,0,0.5);            /* depth shadow */
+    transition: transform .18s ease, box-shadow .25s ease, z-index .01s;
+  }
+
+  /* brighten & slightly scale the image when selected */
+  &.selected img {
+    filter: brightness(1.12) saturate(1.12);
+    transform: scale(1.03);
+  }
+}
+
+.hex-cell.empty {
+  background: rgba(255,255,255,0.03);
+}
+
+/* Right column now shares the same background as the left */
+.detail-panel {
+  width: 50%;
+  padding: 1.5rem;
+  background: #262626; /* matched to .hex-grid */
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+/* Detail image and text styling adapted for dark background */
+.detail-image-wrap {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  margin-bottom: 1rem;
+  background: #111;
+}
+
+.detail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.detail-name {
+  margin: 0.25rem 0 0.75rem;
+  color: #fff;
+}
+
+.detail-bio {
+  color: #dcdcdc;
+  max-width: 700px;
+  text-align: left;
+  line-height: 1.4;
+  width: 100%;
+}
+
+/* Responsive: stack on narrow viewports */
+@media (max-width: 900px) {
+  .roster-layout {
+    flex-direction: column;
+    height: auto;
+    min-height: auto;
+  }
+  .hex-grid, .detail-panel {
+    width: 100%;
+  }
+  .hex-grid { height: 60vh; }
+  /* reduce glow intensity on small screens */
+  .hex-cell.selected {
+    box-shadow:
+      0 0 12px 4px rgba(48, 190, 255, 0.16),
+      0 8px 16px rgba(0,0,0,0.45);
+    transform: scale(1.02);
+  }
+}
