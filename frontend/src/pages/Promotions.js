@@ -10,6 +10,11 @@ const promotions = [
     img: 'https://pm1.aminoapps.com/9281/dec154040146a9c27f61c48b0e4a6ce74534468er1-900-600v2_hq.jpg'
   },
   {
+    name: 'Marigold',
+    slug: 'Marigold',
+    img: 'https://monthlypuroresu.com/wp-content/uploads/2025/04/Utami-Hayashishita-champion-2-a.jpg'
+  },
+  {
     name: 'Smackdown',
     slug: 'smackdown',
     img: 'https://www.usanetwork.com/sites/usablog/files/2024/08/smackdown-cody-rhodes.jpg'
