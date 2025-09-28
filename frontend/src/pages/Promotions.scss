@@ -17,7 +17,7 @@
     width: calc(50% - 0.5rem);
     border-radius: 6px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
     background: #fff;
 
     img {
@@ -101,31 +101,35 @@
   text-align: left;
 }
 
-/* Mobile-only overrides: stack cards vertically as horizontal strips */
+/* ——————————————
+   Mobile-only overrides
+   Two columns, images shrink to fit, titles horizontal, no animation
+   —————————————— */
 @media (max-width: 520px) {
   .promotions-container {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
-    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin: 0.5rem;
     transform: none;
-    overflow-y: auto;
+    overflow: visible;
   }
 
-  .promo-card {
+  .promotions-container .promo-card {
     flex: none;
     width: 100%;
     height: auto;
-    margin: 0 0 1rem 0;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-    overflow: hidden;
+    margin: 0;
+    border-radius: 4px;
+    box-shadow: none;
+    transition: none;
 
     img {
       width: 100%;
-      height: 200px;
+      height: auto;
       object-fit: cover;
+      transition: none;
+      filter: none;
     }
 
     .card__head {
@@ -136,11 +140,20 @@
       min-width: auto;
       width: 100%;
       text-align: center;
-      background: rgba(255, 30, 173, 0.75);
+      background: rgba(0, 0, 0, 0.6);
       color: #fff;
-      padding: 0.5rem;
-      font-size: 1.1rem;
+      padding: 0.25rem;
+      font-size: 0.9rem;
       white-space: normal;
+      transition: none;
+    }
+
+    &:hover {
+      flex-grow: none;
+
+      .card__head {
+        transform: none;
+      }
     }
   }
 }
