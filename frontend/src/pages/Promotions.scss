@@ -1,3 +1,5 @@
+// src/pages/Promotions.scss
+
 .promotions-container {
   display: flex;
   justify-content: center;
@@ -11,12 +13,27 @@
     transition: all 1s ease-in-out;
     height: 75vmin;
     position: relative;
+    cursor: pointer;
+    width: calc(50% - 0.5rem);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    background: #fff;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1s ease-in-out;
+      filter: grayscale(100%);
+    }
+
     .card__head {
       color: black;
       background: rgba(255, 30, 173, 0.75);
-      padding: 0.5em;
+      padding: 0.5rem;
       transform: rotate(-90deg);
-      transform-origin: 0% 0%;
+      transform-origin: 0 0;
       transition: all 0.5s ease-in-out;
       min-width: 100%;
       text-align: center;
@@ -25,24 +42,16 @@
       left: 0;
       font-size: 1em;
       white-space: nowrap;
+      font-weight: bold;
     }
-
-    .promo-card {
-  cursor: pointer;
-  width: calc(50% - 0.5rem); /* two-per-row feel; adjust as needed */
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-  background: #fff; /* or your theme surface */
-  img { width: 100%; height: 140px; object-fit: cover; display: block; }
-  .card__head { padding: 0.5rem; font-weight: bold; text-align: center; }
-}
 
     &:hover {
       flex-grow: 10;
+
       img {
         filter: grayscale(0);
       }
+
       .card__head {
         text-align: center;
         top: calc(100% - 2em);
@@ -52,13 +61,7 @@
         transform: rotate(0deg) skew(-5deg);
       }
     }
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: all 1s ease-in-out;
-      filter: grayscale(100%);
-    }
+
     &:not(:nth-child(5)) {
       margin-right: 1em;
     }
@@ -71,7 +74,6 @@
   align-items: flex-start;
 }
 
-/* left column */
 .promotions-list {
   width: 50%;
   display: flex;
@@ -79,8 +81,6 @@
   gap: 1rem;
 }
 
-
-/* right column (detail) */
 .promotions-detail {
   width: 50%;
   display: flex;
@@ -90,15 +90,57 @@
   justify-content: flex-start;
 }
 
-/* Make the preview card slightly larger */
 .preview-card {
   width: 100%;
   max-width: 420px;
 }
 
-/* small bio area under preview */
 .promotions-detail-bio {
   color: #666;
   max-width: 420px;
   text-align: left;
+}
+
+/* ——————————————
+   Mobile: full-screen horizontal scroller
+   —————————————— */
+@media (max-width: 520px) {
+  .promotions-container {
+    /* fill entire viewport under header */
+    height: calc(100vh - var(--app-header-height, 0px));
+    margin: 0;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow-x: auto;
+    overflow-y: hidden;
+    transform: skew(5deg); /* keep the desktop skew */
+  }
+
+  .promo-card {
+    flex: 0 0 80vw;       /* each card is 80% of viewport width */
+    height: 100%;         /* fill container height */
+    margin: 0 1rem 0 0;   /* horizontal gutter */
+    width: auto;
+    border-radius: 0;     /* flush edges */
+    box-shadow: none;
+  }
+
+  .promo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .promo-card .card__head {
+    /* keep the rotated name bar but adjust sizing */
+    bottom: 1rem;
+    left: 1rem;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    background: rgba(255, 30, 173, 0.75);
+    color: black;
+    padding: 0.5rem;
+    min-width: auto;
+    white-space: nowrap;
+  }
 }
