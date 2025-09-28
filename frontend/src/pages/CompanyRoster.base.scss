@@ -1,0 +1,207 @@
+// src/pages/_CompanyRoster.base.scss
+@import '../styles/variables';
+
+/* Page wrapper */
+.company-roster {
+  padding: $spacing-md;
+  color: $color-cr-text;
+  box-sizing: border-box;
+}
+
+/* Header */
+.company-header {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+  margin-bottom: $spacing-md;
+
+  h1 {
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    color: $color-cr-text;
+  }
+}
+
+/* Back-button */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: $radius-md;
+  background: rgba(255,255,255,0.04);
+  color: $color-cr-text;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background $transition-fast, transform $transition-fast;
+}
+
+/* Layout container */
+.roster-layout {
+  display: flex;
+  gap: $spacing-md;
+  align-items: flex-start;
+  min-height: calc(100vh - var(--app-header-height) - 3rem);
+  box-sizing: border-box;
+}
+
+/* Hex grid core */
+.hex-grid {
+  flex: 1 1 auto;
+  min-width: 320px;
+  padding: $spacing-md;
+  background: $color-cr-panel-bg;
+  border-radius: $radius-md;
+  box-shadow: $shadow-base;
+
+  --l:  calc(100vmin / var(--n-cols));
+  --hl: calc(0.5 * var(--l));
+  --ri: calc(0.5 * sqrt(3) * var(--l));
+
+  display: grid;
+  place-content: center;
+  grid-template:
+    repeat(var(--n-rows), var(--l))
+    / repeat(var(--n-cols), var(--ri));
+  grid-gap: var(--hl) 0;
+  overflow: auto;
+  padding-bottom: $spacing-lg;
+}
+
+/* Hex cell core */
+.hex-cell {
+  position: relative;
+  overflow: hidden;
+  grid-column-end: span 2;
+  margin: calc(-1 * var(--hl)) 0;
+  transform: scale(0.95);
+  clip-path: polygon(
+    50% 0, 100% 25%, 100% 75%,
+    50% 100%, 0 75%, 0 25%
+  );
+  cursor: pointer;
+  transition:
+    transform $transition-med,
+    padding  $transition-fast,
+    box-shadow $transition-med,
+    z-index   .01s linear;
+  padding: $spacing-sm;
+  background: rgba(
+    var(--hex-r, 240),
+    var(--hex-g, 240),
+    var(--hex-b, 240),
+    0.12
+  );
+  box-sizing: border-box;
+
+  /* image inside cell */
+  .hex-cell & img,
+  img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 0%;
+    display: block;
+    transition: transform 0.6s ease, filter 0.25s ease;
+    filter: brightness(0.98);
+    border-radius: $radius-md;
+  }
+
+  &:hover img { transform: scale(1.03); }
+  &:focus     { outline: none; transform: scale(0.99); }
+
+  &.empty {
+    background: rgba(255,255,255,0.03);
+    padding: 0;
+  }
+
+  &.selected {
+    padding: $spacing-md;
+    transform: scale(1.03);
+    z-index: 10;
+    box-shadow:
+      0 10px 28px rgba(var(--hex-r,48),var(--hex-g,190),var(--hex-b,255),0.12),
+      0 14px 38px rgba(0,0,0,0.55);
+
+    img { transform: scale(1.03); }
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: $spacing-xs;
+      pointer-events: none;
+      clip-path: polygon(
+        50% 0, 100% 25%, 100% 75%,
+        50% 100%, 0 75%, 0 25%
+      );
+      z-index: 11;
+      border-radius: $radius-sm;
+    }
+  }
+}
+
+/* Detail panel core */
+.detail-panel {
+  position: sticky;
+  top: calc(var(--app-header-height) + $spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $spacing-lg;
+  background: $color-cr-detail-bg;
+  border-radius: $radius-md;
+  box-shadow: $shadow-base;
+  color: $color-cr-text;
+  box-sizing: border-box;
+}
+
+/* Detail image + name core */
+.detail-image-wrap {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 3/4;
+  position: relative;
+  overflow: hidden;
+  border-radius: $radius-md;
+  box-shadow: $shadow-strong;
+  margin-bottom: $spacing-md;
+  background: $color-cr-image-bg;
+}
+
+.detail-image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0%;
+  display: block;
+}
+
+.detail-image-wrap .detail-name {
+  position: absolute;
+  z-index: 3;
+  left: $spacing-xs;
+  right: $spacing-xs;
+  bottom: $spacing-xs;
+  margin: 0;
+  padding: 0 $spacing-xs;
+  color: $color-cr-text;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.detail-bio {
+  width: 100%;
+  max-width: 700px;
+  color: $color-cr-muted;
+  line-height: 1.4;
+}

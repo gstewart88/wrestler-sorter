@@ -1,6 +1,6 @@
 // src/pages/CompanyRoster.js
-import React, { useRef, useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import React, { useRef, useState, useEffect, useMemo } from 'react';
+import { useParams } from 'react-router-dom';
 import useWrestlers from '../hooks/useWrestlers';
 import './CompanyRoster.scss';
 
@@ -48,7 +48,16 @@ export default function CompanyRoster() {
     const key = (w.imageURL && w.imageURL.trim()) || w.name || JSON.stringify(w);
     if (!uniqueMap.has(key)) uniqueMap.set(key, w);
   });
-  const uniqueList = Array.from(uniqueMap.values());
+ const uniqueList = useMemo(() => {
+  const map = new Map();
+  wrestlers
+    .filter(w => w.company === company)
+    .forEach(w => {
+      const key = (w.imageURL && w.imageURL.trim()) || w.name || JSON.stringify(w);
+      if (!map.has(key)) map.set(key, w);
+    });
+  return Array.from(map.values());
+}, [wrestlers, company]);
 
   // Responsive column logic
   const containerRef = useRef(null);
@@ -104,8 +113,8 @@ export default function CompanyRoster() {
   // selection state
   const [selected, setSelected] = useState(uniqueList[0] || null);
   useEffect(() => {
-    setSelected(uniqueList[0] || null);
-  }, [slug, wrestlers]); // reset when company changes or roster updates
+  setSelected(uniqueList[0] || null);
+  }, [uniqueList]);
 
   // computed promotions URL on the same origin
   const promotionsHref = `${window.location.origin}/wrestler-sorter#/promotions`;

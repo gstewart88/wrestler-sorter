@@ -1,0 +1,34 @@
+// Colors
+$color-cr-panel-bg:    #262626 !default;  // hex grid & detail panel background
+$color-cr-detail-bg:   #262626 !default;
+$color-cr-text:        #ffffff !default;
+$color-cr-muted:       #dcdcdc !default;
+$color-cr-image-bg:    #111111 !default;
+
+// Accent / primary (used elsewhere, e.g. header accent)
+$color-primary:        #007bff !default;
+
+// Spacing
+$spacing-xs:           0.25rem !default;
+$spacing-sm:           0.5rem  !default;
+$spacing-md:           1rem    !default;
+$spacing-lg:           1.5rem  !default;
+
+// Border radii
+$radius-sm:            4px     !default;
+$radius-md:            6px     !default;
+$radius-lg:            10px    !default;
+
+// Shadows
+$shadow-base:          0 4px 12px rgba(0,0,0,0.5)  !default;
+$shadow-strong:        0 6px 18px rgba(0,0,0,0.35) !default;
+
+// Transitions
+$transition-fast:      0.12s ease  !default;
+$transition-med:       0.20s ease  !default;
+$transition-long:      0.32s ease  !default;
+
+// Breakpoints
+$bp-mobile:            520px  !default;
+$bp-tablet:            900px  !default;
+$bp-desktop:           1280px !default;

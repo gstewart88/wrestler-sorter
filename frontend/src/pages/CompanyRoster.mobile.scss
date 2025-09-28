@@ -1,0 +1,37 @@
+// src/pages/CompanyRoster.mobile.scss
+@import '../styles/variables';
+
+@media (max-width: $bp-tablet) {
+  .roster-layout {
+    flex-direction: column;
+  }
+  .hex-grid {
+    width: 100%;
+    height: 60vh;
+  }
+  .detail-panel {
+    width: 100%;
+  }
+  .hex-cell {
+    padding: $spacing-sm;
+  }
+  .hex-cell.selected {
+    padding: $spacing-sm;
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(var(--hex-r, 48), var(--hex-g, 190), var(--hex-b, 255), 0.10);
+  }
+  .hex-cell.selected::before {
+    inset: 4px;
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .company-roster {
+    padding: $spacing-sm;
+  }
+  .company-header {
+    display: none;
+  }
+
+  /* Mobile shell styles… paste your existing .mobile-shell, .mobile-top, etc. here */
+}
