@@ -54,7 +54,7 @@ export default function ResultsList({ result, showAll, onToggle }) {
         <h3>Fave 5</h3>
         {renderList(fave5)}
         <h3>Hated 5</h3>
-        {renderList(hated5, result.length - 4)}
+        {renderList(hated5, 1)}
         <button className="btn btn-link" onClick={onToggle}>
           Show All {result.length}
         </button>
