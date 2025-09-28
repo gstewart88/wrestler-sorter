@@ -35,3 +35,89 @@
 
   /* Mobile shell styles… paste your existing .mobile-shell, .mobile-top, etc. here */
 }
+/* mobile-only simple layout */
+@media (max-width: $bp-mobile) {
+  /* hide old phone-shell if still present */
+  .mobile-shell { display: none !important; }
+
+  .mobile-simple {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: $color-cr-panel-bg;
+    color: $color-cr-text;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  /* top area: image fills, bio scrolls under it if long */
+  .simple-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background: $color-cr-image-bg;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 50vh;
+      object-fit: cover;
+      object-position: 50% 0;
+      display: block;
+    }
+
+    .simple-bio {
+      padding: $spacing-md;
+      color: $color-cr-text;
+      line-height: 1.4;
+      flex: 1;
+      overflow-y: auto;
+      background: $color-cr-panel-bg;
+    }
+  }
+
+  /* bottom horizontal roster */
+  .simple-roster {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    padding: 0 $spacing-sm;
+    gap: $spacing-sm;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.5);
+  }
+
+  .simple-tile {
+    flex: 0 0 auto;
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: $radius-md;
+  }
+
+  .simple-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .simple-tile.selected {
+    outline: 2px solid $color-primary;
+  }
+
+  /* ensure the bottom roster never overlaps the simple-main's scrollbars */
+  .mobile-simple {
+    padding-bottom: 100px;
+  }
+}

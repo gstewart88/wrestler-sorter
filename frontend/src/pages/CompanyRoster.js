@@ -146,65 +146,61 @@ export default function CompanyRoster() {
 
   // Mobile rendering: compact phone-like shell (does not affect desktop)
   if (isMobile) {
-    return (
-      <div className="company-roster mobile-shell">
-        <div className="mobile-top">
-          <a className="mobile-back" href={promotionsHref} aria-label="Back">←</a>
-          <div className="mobile-title">Roster | {company}</div>
-          <button
-            className={`mobile-hamburger${mobileMenuOpen ? ' open' : ''}`}
-            aria-expanded={mobileMenuOpen}
-            aria-controls="mobile-roster"
-            onClick={() => setMobileMenuOpen(v => !v)}
-            type="button"
-          >
-            <span />
-            <span />
-            <span />
-          </button>
-        </div>
-
-        <div className={`mobile-image-area${mobileMenuOpen ? ' lifted' : ''}`}>
-          <div className="mobile-image-wrap">
-            <img
-              src={selected?.imageURL}
-              alt={selected?.name || 'Selected wrestler'}
-              onError={e => { e.currentTarget.src = 'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png'; }}
-            />
-            <div className="mobile-overlay" onClick={() => setMobileMenuOpen(false)} />
-          </div>
-        </div>
-
-        <div
-          id="mobile-roster"
-          className={`mobile-roster${mobileMenuOpen ? ' open' : ''}`}
-          onClick={() => setMobileMenuOpen(false)}
-        >
-          {uniqueList.map((w, i) => {
-            const isSel = selected && (selected.name === w.name || selected.imageURL === w.imageURL);
-            const paletteColor = PALETTE[i % PALETTE.length];
-            const { r, g, b } = hexToRgb(paletteColor);
-            const styleVars = { '--hex-r': r, '--hex-g': g, '--hex-b': b };
-            return (
-              <button
-                key={i}
-                className={`mobile-tile${isSel ? ' selected' : ''}`}
-                style={styleVars}
-                onClick={(e) => { e.stopPropagation(); setSelected(w); setMobileMenuOpen(false); }}
-                aria-pressed={isSel}
-                title={w.name}
-              >
-                <img src={w.imageURL}
-                  alt={w.name}
-                  onError={e => { e.currentTarget.src = 'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png'; }}
-                />
-              </button>
-            );
-          })}
+  return (
+    <div className="company-roster mobile-simple">
+      {/* Main image & bio */}
+      <div className="simple-main">
+        <img
+          src={selected?.imageURL}
+          alt={selected?.name || 'Selected wrestler'}
+          onError={e => {
+            e.currentTarget.src =
+              'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png';
+          }}
+        />
+        <div className="simple-bio">
+          {selected?.bio ? selected.bio : <em>No bio available.</em>}
         </div>
       </div>
-    );
-  }
+
+      {/* Fixed horizontal roster at bottom */}
+      <div className="simple-roster" role="navigation" aria-label="Select wrestler">
+        {uniqueList.map((w, i) => {
+          const isSel =
+            selected &&
+            (selected.name === w.name || selected.imageURL === w.imageURL);
+          const paletteColor = PALETTE[i % PALETTE.length];
+          const { r, g, b } = hexToRgb(paletteColor);
+          const styleVars = {
+            '--hex-r': r,
+            '--hex-g': g,
+            '--hex-b': b,
+          };
+
+          return (
+            <button
+              key={i}
+              className={`simple-tile${isSel ? ' selected' : ''}`}
+              style={styleVars}
+              onClick={() => setSelected(w)}
+              aria-pressed={isSel}
+              title={w.name}
+            >
+              <img
+                src={w.imageURL}
+                alt={w.name}
+                onError={e => {
+                  e.currentTarget.src =
+                    'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png';
+                }}
+              />
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
 
   return (
     <div className="company-roster">
