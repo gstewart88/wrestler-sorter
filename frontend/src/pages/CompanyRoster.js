@@ -121,12 +121,10 @@ export default function CompanyRoster() {
 
   // Mobile detection + mobile UI state
   const [isMobile, setIsMobile] = useState(() => typeof window !== 'undefined' && window.innerWidth <= 520);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   useEffect(() => {
     function onResize() {
       const nowMobile = window.innerWidth <= 520;
       setIsMobile(nowMobile);
-      if (!nowMobile) setMobileMenuOpen(false);
     }
     window.addEventListener('resize', onResize);
     return () => window.removeEventListener('resize', onResize);
@@ -150,6 +148,7 @@ export default function CompanyRoster() {
     <div className="company-roster mobile-simple">
       {/* Main image & bio */}
       <div className="simple-main">
+        <div className="simple-name">{selected?.name}</div>
         <img
           src={selected?.imageURL}
           alt={selected?.name || 'Selected wrestler'}

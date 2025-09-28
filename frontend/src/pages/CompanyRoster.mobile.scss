@@ -58,6 +58,16 @@
     overflow-y: auto;
     background: $color-cr-image-bg;
 
+    /* new wrestler name header */
+    .simple-name {
+      padding: $spacing-sm $spacing-md;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-align: center;
+      background: $color-cr-panel-bg;
+      color: $color-cr-text;
+    }
+
     img {
       width: 100%;
       height: auto;
