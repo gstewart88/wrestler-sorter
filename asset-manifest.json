@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/wrestler-sorter/static/css/main.8afd8259.css",
-    "main.js": "/wrestler-sorter/static/js/main.3e53b17e.js",
+    "main.css": "/wrestler-sorter/static/css/main.4f337d29.css",
+    "main.js": "/wrestler-sorter/static/js/main.8cb4dc2a.js",
     "static/js/453.0a2f7822.chunk.js": "/wrestler-sorter/static/js/453.0a2f7822.chunk.js",
     "static/media/bookert.png": "/wrestler-sorter/static/media/bookert.deb29c1f70b815b5ffd6.png",
     "static/media/logo.png": "/wrestler-sorter/static/media/logo.325d02d404042ac9a895.png",
     "static/media/logo2.png": "/wrestler-sorter/static/media/logo2.5f1762448b7867adfd96.png",
     "index.html": "/wrestler-sorter/index.html",
-    "main.8afd8259.css.map": "/wrestler-sorter/static/css/main.8afd8259.css.map",
-    "main.3e53b17e.js.map": "/wrestler-sorter/static/js/main.3e53b17e.js.map",
+    "main.4f337d29.css.map": "/wrestler-sorter/static/css/main.4f337d29.css.map",
+    "main.8cb4dc2a.js.map": "/wrestler-sorter/static/js/main.8cb4dc2a.js.map",
     "453.0a2f7822.chunk.js.map": "/wrestler-sorter/static/js/453.0a2f7822.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8afd8259.css",
-    "static/js/main.3e53b17e.js"
+    "static/css/main.4f337d29.css",
+    "static/js/main.8cb4dc2a.js"
   ]
 }
