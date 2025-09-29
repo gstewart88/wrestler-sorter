@@ -90,7 +90,8 @@ export default function ResultsList({ result, showAll, onToggle }) {
           onClick={() =>
             exportRef(
               mobileRef,
-              { backgroundColor: null },
+              { backgroundColor: null,
+                scale: 1 },
               'mobile-fave-hated.png'
             )
           }

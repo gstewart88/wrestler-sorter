@@ -186,7 +186,8 @@
   z-index: 3;
   left: $spacing-xs;
   right: $spacing-xs;
-  bottom: $spacing-xs;
+  bottom: 0;
+  height: 10%;
   margin: 0;
   padding: 0 $spacing-xs;
   color: $color-cr-text;
@@ -197,6 +198,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
 }
 
 .detail-bio {
