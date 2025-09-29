@@ -32,5 +32,47 @@ export default function useHtml2CanvasExport() {
     [downloadBlob]
   );
 
-  return { exportRef };
+  const shareRef = useCallback(
+    async (ref, opts = {}, filename = 'export.png', shareMeta = {}) => {
+      if (!ref.current) {
+        console.warn('Nothing to share—missing ref.');
+        return;
+      }
+      // 1. render canvas
+      const canvas = await html2canvas(ref.current, {
+        useCORS:    true,
+        allowTaint: false,
+        scale:      1,
+        ...opts,
+      });
+
+      // 2. to Blob
+      canvas.toBlob(async blob => {
+        if (!blob) return;
+
+        // wrap in File for Web Share API
+        const file = new File([blob], filename, { type: blob.type });
+
+        // 3. native share if available
+        if (navigator.canShare?.({ files: [file] })) {
+          try {
+            await navigator.share({
+              files: [file],
+              title: shareMeta.title,
+              text:  shareMeta.text,
+            });
+            return;
+          } catch (err) {
+            console.warn('Share API error, falling back to download', err);
+          }
+        }
+
+        // 4. fallback download
+        downloadBlob(blob, filename);
+      });
+    },
+    [downloadBlob],
+  );
+
+  return { exportRef, shareRef };
 }

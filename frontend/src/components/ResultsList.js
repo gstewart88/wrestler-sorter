@@ -8,7 +8,7 @@ import './ResultsList.css';
 export default function ResultsList({ result, showAll, onToggle }) {
   const listRef   = useRef(null);
   const mobileRef = useRef(null);
-  const { exportRef } = useHtml2CanvasExport();
+  const { exportRef, shareRef } = useHtml2CanvasExport();
 
   if (!result || !result.length) return null;
 
@@ -88,11 +88,15 @@ export default function ResultsList({ result, showAll, onToggle }) {
         <button
           className="btn btn-outline-success"
           onClick={() =>
-            exportRef(
+              shareRef(
               mobileRef,
               { backgroundColor: null,
                 scale: 1 },
-              'mobile-fave-hated.png'
+              'fave-hated.png',
+              {
+                title: 'My Favorite & Most Hated Five',
+                text:  'Check out my Fave Five wrestling lineup!',
+              }
             )
           }
         >
