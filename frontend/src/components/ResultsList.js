@@ -96,7 +96,7 @@ export default function ResultsList({ result, showAll, onToggle }) {
             )
           }
         >
-          Export
+          Share
         </button>
       </div>
     </>
