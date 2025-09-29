@@ -30,8 +30,8 @@ export default function Header() {
 
     <div className="header-left d-flex align-items-center">
       <picture>
-        <source srcSet={siteLogoDark} media="(prefers-color-scheme: dark)" />
-        <img src={siteLogoLight} alt="Fave Five" className="site-logo" />
+        <source srcSet={siteLogoLight} media="(prefers-color-scheme: dark)" />
+        <img src={siteLogoDark} alt="Fave Five" className="site-logo" />
       </picture>
 
       <nav className="navMenu" role="navigation" aria-label="Primary">

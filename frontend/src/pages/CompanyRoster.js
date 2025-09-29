@@ -148,6 +148,7 @@ export default function CompanyRoster() {
     <div className="company-roster mobile-simple">
       {/* Main image & bio */}
       <div className="simple-main">
+        <a className="back-button" href={promotionsHref}>← Back</a>
         <div className="simple-name">{selected?.name}</div>
         <img
           src={selected?.imageURL}

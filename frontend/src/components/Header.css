@@ -2,12 +2,12 @@
 
 /* 1) Accent‐blue variable with light/dark overrides */
 :root {
-  --accent-blue: #007bff;  /* light‐mode header bg */
+  --accent-blue: #d7dce1;  /* light‐mode header bg */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent-blue: #003366;  /* dark‐mode header bg */
+    --accent-blue: #000000;  /* dark‐mode header bg */
   }
 }
 
