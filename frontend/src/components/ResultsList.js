@@ -13,9 +13,9 @@ export default function ResultsList({ result, showAll, onToggle }) {
   // HIDE Home.js’s instructions when we mount, unhide on unmount
   useEffect(() => {
     const instr = document.querySelector('.instructions-panel');
-    if (instr) instr.classList.add('d-none');
+    if (instr) instr.classList.add('instructions-panel--hidden');
     return () => {
-      if (instr) instr.classList.remove('d-none');
+      if (instr) instr.classList.remove('instructions-panel--hidden');
     };
   }, []);
 
@@ -50,6 +50,7 @@ export default function ResultsList({ result, showAll, onToggle }) {
   const listView = showAll || result.length <= 10
     ? (
       <div ref={listRef} className="results-container">
+        <h3>Full List</h3>
         {renderList(result)}
         {result.length > 10 && (
           <button className="btn btn-link" onClick={onToggle}>

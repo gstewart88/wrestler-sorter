@@ -28,7 +28,7 @@
      object-fit: cover; */
 }
 
-.d-none {
+.instructions-panel--hidden {
   display: none !important;
 }
 
