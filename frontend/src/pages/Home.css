@@ -92,6 +92,11 @@
     transform: translateX(-100%);
   }
 
+  .offcanvas,
+  .offcanvas-backdrop {
+    z-index: 3500 !important;
+  }
+
   .sidebar.open {
     transform: translateX(0);
   }

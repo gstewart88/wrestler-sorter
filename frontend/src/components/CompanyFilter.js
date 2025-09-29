@@ -42,7 +42,6 @@ function CompanyCheckbox({
     />
   );
 }
-
 /**
  * Renders the list of company filters, each with three possible states:
  *  • checked      = all wrestlers from this company are in the preview
