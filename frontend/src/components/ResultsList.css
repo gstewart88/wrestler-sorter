@@ -28,6 +28,10 @@
      object-fit: cover; */
 }
 
+.d-none {
+  display: none !important;
+}
+
 .result-info {
   text-align: center;
 }

@@ -1,6 +1,6 @@
 // src/components/ResultsList.js
 
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import MobileMockup    from './MobileMockup';
 import useHtml2CanvasExport from '../hooks/useHtml2CanvasExport';
 import './ResultsList.css';
@@ -9,6 +9,15 @@ export default function ResultsList({ result, showAll, onToggle }) {
   const listRef   = useRef(null);
   const mobileRef = useRef(null);
   const { exportRef, shareRef } = useHtml2CanvasExport();
+
+  // HIDE Home.js’s instructions when we mount, unhide on unmount
+  useEffect(() => {
+    const instr = document.querySelector('.instructions-panel');
+    if (instr) instr.classList.add('d-none');
+    return () => {
+      if (instr) instr.classList.remove('d-none');
+    };
+  }, []);
 
   if (!result || !result.length) return null;
 
