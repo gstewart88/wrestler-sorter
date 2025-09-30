@@ -37,7 +37,7 @@
   {
     "name": "Azusa Inaba",
     "company": "Stardom",
-    "imageURL": "AzusaInabaStardom.webp",
+    "imageURL": "AzusaInabaStardom.png",
     "division": "Women's",
     "bio": ""
   },
@@ -100,7 +100,7 @@
   {
     "name": "Itsuki Aoki",
     "company": "Stardom",
-    "imageURL": "ItsukiAokiStardom.webp",
+    "imageURL": "ItsukiAokiStardom.png",
     "division": "Women's",
     "bio": ""
   },
@@ -212,7 +212,7 @@
   {
     "name": "Rina Yamashita",
     "company": "Stardom",
-    "imageURL": "RinaYamashitaStardom.webp",
+    "imageURL": "RinaYamashitaStardom.png",
     "division": "Women's",
     "bio": ""
   },
@@ -247,7 +247,7 @@
   {
     "name": "Sareee",
     "company": "Stardom",
-    "imageURL": "SareeeStardom.webp",
+    "imageURL": "SareeeStardom.png",
     "division": "Women's",
     "bio": ""
   },
@@ -289,7 +289,7 @@
   {
     "name": "Tomoka Inaba",
     "company": "Stardom",
-    "imageURL": "TomokaInabaStardom.webp",
+    "imageURL": "TomokaInabaStardom.png",
     "division": "Women's",
     "bio": ""
   },

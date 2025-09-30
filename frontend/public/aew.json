@@ -2,7 +2,7 @@
   {
     "name": "Action Andretti",
     "company": "AEW",
-    "imageURL": "ActionAndrettiAEW.webp",
+    "imageURL": "ActionAndrettiAEW.png",
     "division": "Men's"
   },
   {
@@ -20,13 +20,13 @@
   {
     "name": "Alex Windsor",
     "company": "AEW",
-    "imageURL": "AlexWindsorAEW.webp",
+    "imageURL": "AlexWindsorAEW.png",
     "division": "Women's"
   },
   {
     "name": "Anna Jay",
     "company": "AEW",
-    "imageURL": "AnnaJayAEW.webp",
+    "imageURL": "AnnaJayAEW.png",
     "division": "Women's"
   },
   {
@@ -74,7 +74,7 @@
   {
     "name": "Brody King",
     "company": "AEW",
-    "imageURL": "BrodyKingAEW.webp",
+    "imageURL": "BrodyKingAEW.png",
     "division": "Men's"
   },
   {
@@ -128,7 +128,7 @@
   {
     "name": "Colten Gunn",
     "company": "AEW",
-    "imageURL": "ColtenGunnAEW.webp",
+    "imageURL": "ColtenGunnAEW.png",
     "division": "Men's"
   },
   {
@@ -176,7 +176,7 @@
   {
     "name": "Dr. Britt Baker, D.M.D.",
     "company": "AEW",
-    "imageURL": "BrittBakerAEW.webp",
+    "imageURL": "BrittBakerAEW.png",
     "division": "Women's"
   },
   {
@@ -206,7 +206,7 @@
   {
     "name": "Griff Garrison",
     "company": "AEW",
-    "imageURL": "GriffGarrisonAEW.webp",
+    "imageURL": "GriffGarrisonAEW.png",
     "division": "Men's"
   },
   {
@@ -248,31 +248,31 @@
   {
     "name": "Jamie Hayter",
     "company": "AEW",
-    "imageURL": "JamieHayterAEW.webp",
+    "imageURL": "JamieHayterAEW.png",
     "division": "Women's"
   },
   {
     "name": "Jay Lethal",
     "company": "AEW",
-    "imageURL": "JayLethalAEW.webp",
+    "imageURL": "JayLethalAEW.png",
     "division": "Men's"
   },
   {
     "name": "Jay White",
     "company": "AEW",
-    "imageURL": "JayWhiteAEW.webp",
+    "imageURL": "JayWhiteAEW.png",
     "division": "Men's"
   },
   {
     "name": "Jeff Jarrett",
     "company": "AEW",
-    "imageURL": "JeffJarrettAEW.webp",
+    "imageURL": "JeffJarrettAEW.png",
     "division": "Men's"
   },
   {
     "name": "John Silver",
     "company": "AEW",
-    "imageURL": "JohnSilverAEW.webp",
+    "imageURL": "JohnSilverAEW.png",
     "division": "Men's"
   },
   {
@@ -302,7 +302,7 @@
   {
     "name": "Kazuchika Okada",
     "company": "AEW",
-    "imageURL": "KazuchikaOkadaAEW.webp",
+    "imageURL": "KazuchikaOkadaAEW.png",
     "division": "Men's"
   },
   {
@@ -320,19 +320,19 @@
   {
     "name": "Kiera Hogan",
     "company": "AEW",
-    "imageURL": "KieraHoganAEW.webp",
+    "imageURL": "KieraHoganAEW.png",
     "division": "Women's"
   },
   {
     "name": "Kip Sabian",
     "company": "AEW",
-    "imageURL": "KipSabianAEW.webp",
+    "imageURL": "KipSabianAEW.png",
     "division": "Men's"
   },
   {
     "name": "Konosuke Takeshita",
     "company": "AEW",
-    "imageURL": "KonosukeTakeshitaAEW.webp",
+    "imageURL": "KonosukeTakeshitaAEW.png",
     "division": "Men's"
   },
   {
@@ -344,13 +344,13 @@
   {
     "name": "Kris Statlander",
     "company": "AEW",
-    "imageURL": "KrisStatlanderAEW.webp",
+    "imageURL": "KrisStatlanderAEW.png",
     "division": "Women's"
   },
   {
     "name": "Kyle Fletcher",
     "company": "AEW",
-    "imageURL": "KyleFletcherAEW.webp",
+    "imageURL": "KyleFletcherAEW.png",
     "division": "Men's"
   },
   {
@@ -362,13 +362,13 @@
   {
     "name": "Leila Grey",
     "company": "AEW",
-    "imageURL": "LeilaGreyAEW.webp",
+    "imageURL": "LeilaGreyAEW.png",
     "division": "Women's"
   },
   {
     "name": "Lio Rush",
     "company": "AEW",
-    "imageURL": "LioRushAEW.webp",
+    "imageURL": "LioRushAEW.png",
     "division": "Men's"
   },
   {
@@ -380,13 +380,13 @@
   {
     "name": "Madison Rayne",
     "company": "AEW",
-    "imageURL": "MadisonRayneAEW.webp",
+    "imageURL": "MadisonRayneAEW.png",
     "division": "Women's"
   },
   {
     "name": "Mansoor",
     "company": "AEW",
-    "imageURL": "MansoorAEW.webp",
+    "imageURL": "MansoorAEW.png",
     "division": "Men's"
   },
   {
@@ -398,7 +398,7 @@
   {
     "name": "Mark Briscoe",
     "company": "AEW",
-    "imageURL": "MarkBriscoeAEW.webp",
+    "imageURL": "MarkBriscoeAEW.png",
     "division": "Men's"
   },
   {
@@ -410,25 +410,25 @@
   {
     "name": "Mason Madden",
     "company": "AEW",
-    "imageURL": "MasonMaddenAEW.webp",
+    "imageURL": "MasonMaddenAEW.png",
     "division": "Men's"
   },
   {
     "name": "Matt Jackson",
     "company": "AEW",
-    "imageURL": "MattJacksonAEW.webp",
+    "imageURL": "MattJacksonAEW.png",
     "division": "Men's"
   },
   {
     "name": "Matt Menard",
     "company": "AEW",
-    "imageURL": "MattMenardAEW.webp",
+    "imageURL": "MattMenardAEW.png",
     "division": "Men's"
   },
   {
     "name": "Matt Sydal",
     "company": "AEW",
-    "imageURL": "MattSydalAEW.webp",
+    "imageURL": "MattSydalAEW.png",
     "division": "Men's"
   },
   {
@@ -464,7 +464,7 @@
   {
     "name": "Mina Shirakawa",
     "company": "AEW",
-    "imageURL": "MinaShirakawaAEW.webp",
+    "imageURL": "MinaShirakawaAEW.png",
     "division": "Women's"
   },
   {
@@ -482,7 +482,7 @@
   {
     "name": "Nick Jackson",
     "company": "AEW",
-    "imageURL": "NickJacksonAEW.webp",
+    "imageURL": "NickJacksonAEW.png",
     "division": "Men's"
   },
   {
@@ -494,7 +494,7 @@
   {
     "name": "Nyla Rose",
     "company": "AEW",
-    "imageURL": "NylaRoseAEW.webp",
+    "imageURL": "NylaRoseAEW.png",
     "division": "Women's"
   },
   {
@@ -506,7 +506,7 @@
   {
     "name": "Pac",
     "company": "AEW",
-    "imageURL": "PacAEW.webp",
+    "imageURL": "PacAEW.png",
     "division": "Men's"
   },
   {
@@ -536,7 +536,7 @@
   {
     "name": "Red Velvet",
     "company": "AEW",
-    "imageURL": "RedVelvetAEW.webp",
+    "imageURL": "RedVelvetAEW.png",
     "division": "Women's"
   },
   {
@@ -548,7 +548,7 @@
   {
     "name": "Riho",
     "company": "AEW",
-    "imageURL": "RihoAEW.webp",
+    "imageURL": "RihoAEW.png",
     "division": "Women's"
   },
   {
@@ -560,7 +560,7 @@
   {
     "name": "Ruby Soho",
     "company": "AEW",
-    "imageURL": "RubySohoAEW.webp",
+    "imageURL": "RubySohoAEW.png",
     "division": "Women's"
   },
   {
@@ -578,13 +578,13 @@
   {
     "name": "Samoa Joe",
     "company": "AEW",
-    "imageURL": "SamoaJoeAEW.webp",
+    "imageURL": "SamoaJoeAEW.png",
     "division": "Men's"
   },
   {
     "name": "Scorpio Sky",
     "company": "AEW",
-    "imageURL": "ScorpioSkyAEW.webp",
+    "imageURL": "ScorpioSkyAEW.png",
     "division": "Men's"
   },
   {
@@ -596,13 +596,13 @@
   {
     "name": "Shelton Benjamin",
     "company": "AEW",
-    "imageURL": "SheltonBenjaminAEW.webp",
+    "imageURL": "SheltonBenjaminAEW.png",
     "division": "Men's"
   },
   {
     "name": "Skye Blue",
     "company": "AEW",
-    "imageURL": "SkyeBlueAEW.webp",
+    "imageURL": "SkyeBlueAEW.png",
     "division": "Women's"
   },
   {
@@ -614,7 +614,7 @@
   {
     "name": "Tay Melo",
     "company": "AEW",
-    "imageURL": "TayMeloAEW.webp",
+    "imageURL": "TayMeloAEW.png",
     "division": "Women's"
   },
   {
@@ -632,7 +632,7 @@
   {
     "name": "The Blade",
     "company": "AEW",
-    "imageURL": "TheBladeAEW.webp",
+    "imageURL": "TheBladeAEW.png",
     "division": "Men's"
   },
   {
@@ -644,13 +644,13 @@
   {
     "name": "Thunder Rosa",
     "company": "AEW",
-    "imageURL": "ThunderRosaAEW.webp",
+    "imageURL": "ThunderRosaAEW.png",
     "division": "Women's"
   },
   {
     "name": "Toni Storm",
     "company": "AEW",
-    "imageURL": "ToniStormAEW.webp",
+    "imageURL": "ToniStormAEW.png",
     "division": "Women's"
   },
   {
@@ -674,19 +674,19 @@
   {
     "name": "Wardlow",
     "company": "AEW",
-    "imageURL": "WardlowAEW.webp",
+    "imageURL": "WardlowAEW.png",
     "division": "Men's"
   },
   {
     "name": "Wheeler Yuta",
     "company": "AEW",
-    "imageURL": "WheelerYutaAEW.webp",
+    "imageURL": "WheelerYutaAEW.png",
     "division": "Men's"
   },
   {
     "name": "Will Ospreay",
     "company": "AEW",
-    "imageURL": "WillOspreayAEW.webp",
+    "imageURL": "WillOspreayAEW.png",
     "division": "Men's"
   },
   {
