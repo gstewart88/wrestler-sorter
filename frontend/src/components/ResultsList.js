@@ -63,7 +63,7 @@ export default function ResultsList({ result, showAll, onToggle }) {
   );
 
   // Decide which list block to show
-  const listView = showAll || result.length <= 10
+  const listView = showAll || result.length <= 9
     ? (
       <div ref={listRef} className="results-container">
         <h3>Full List</h3>
