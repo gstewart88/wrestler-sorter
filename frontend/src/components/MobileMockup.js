@@ -90,6 +90,7 @@ const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
               fontSize:     '44px',
               margin:       0,
               marginBottom: '16px',
+              textAlign:    'center',
               color,
             }}
           >
@@ -145,8 +146,8 @@ const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
                         height:       '100px',
                         overflow:     'hidden',
                         borderRadius: '8px',
-                        marginBottom: '24px',
                         border:       `4px solid ${color}`,
+                        alignSelf:    'center',
                         }}
                     >
                   <img
