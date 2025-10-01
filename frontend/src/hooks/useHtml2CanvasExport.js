@@ -63,6 +63,10 @@ export default function useHtml2CanvasExport() {
             });
             return;
           } catch (err) {
+            // if user cancelled, err.name === 'AbortError' → do nothing
+            if (err.name === 'AbortError') {
+              return;
+            }
             console.warn('Share API error, falling back to download', err);
           }
         }

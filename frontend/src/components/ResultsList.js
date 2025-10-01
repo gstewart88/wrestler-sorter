@@ -128,6 +128,18 @@ export default function ResultsList({ result, showAll, onToggle }) {
         >
           Share
         </button>
+        <button
+          className="btn btn-outline-primary"
+          onClick={() =>
+            exportRef(
+              mobileRef,
+              { backgroundColor: null, scale: 1 },
+              'fave-hated.png'
+            )
+          }
+        >
+          Download
+        </button>
       </div>
     </>
   );
