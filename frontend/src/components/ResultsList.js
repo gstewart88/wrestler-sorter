@@ -10,13 +10,29 @@ export default function ResultsList({ result, showAll, onToggle }) {
   const mobileRef = useRef(null);
   const { exportRef, shareRef } = useHtml2CanvasExport();
 
-  // HIDE Home.js’s instructions when we mount, unhide on unmount
+   // hide Home.js’s instructions AND filter controls while this is up
   useEffect(() => {
-    const instr = document.querySelector('.instructions-panel');
-    if (instr) instr.classList.add('instructions-panel--hidden');
-    return () => {
-      if (instr) instr.classList.remove('instructions-panel--hidden');
-    };
+  // grab the three elements we want to hide
+  const instr     = document.querySelector('.instructions-panel');
+  const sidebar   = document.querySelector('.sidebar');
+  const filterBtn = document.querySelector('button.d-md-none.mb-3');
+
+  // stash each element’s original inline state/value
+  const originalInstrDisplay   = instr?.style.display;
+  const origSidebarClasses     = sidebar?.className;
+  const originalBtnDisplay     = filterBtn?.style.display;
+
+  // hide them
+  if (instr)     instr.style.display             = 'none';
+  if (sidebar)   sidebar.classList.remove('d-md-block');
+  if (filterBtn) filterBtn.style.display         = 'none';
+
+  return () => {
+    // restore on unmount
+    if (instr)     instr.style.display           = originalInstrDisplay;
+    if (sidebar)   sidebar.className             = origSidebarClasses;
+    if (filterBtn) filterBtn.style.display       = originalBtnDisplay;
+  };
   }, []);
 
   if (!result || !result.length) return null;

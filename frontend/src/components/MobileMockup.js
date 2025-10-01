@@ -140,6 +140,15 @@ const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
                   }}
                 >
                   <span>{w.name}</span>
+                  <div style={{
+                        width:        '100px',
+                        height:       '100px',
+                        overflow:     'hidden',
+                        borderRadius: '8px',
+                        marginBottom: '24px',
+                        border:       `4px solid ${color}`,
+                        }}
+                    >
                   <img
                   src={w.imageURL}
                   crossOrigin="anonymous"
@@ -150,12 +159,12 @@ const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
                     )
                   }
                   style={{
-                    width:        '100px',
-                    height:       '100px',
-                    objectFit:    'cover',
-                    borderRadius: '4px',
+                    width:        '100%',
+                    height:       '100%',
+                    objectFit:    'contain',
                   }}
                 />
+                </div>
                 </div>
               </li>
             ))}
