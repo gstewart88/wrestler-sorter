@@ -38,14 +38,14 @@ const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
 
     {/* 2. Top wrestler image (fixed aspect, contain) */}
     <div
-      style={{
-        width:        '350px',
-        height:       '350px',
-        overflow:     'hidden',
-        borderRadius: '8px',
-        marginBottom: '24px',
-        margin:       '0 auto',
-        border:       `4px solid #2e7d32`,
+        style={{
+        width:             '350px',
+        height:            '350px',
+        overflow:          'hidden',
+        borderRadius:      '8px',
+        marginBottom:      '24px',
+        margin:            '0 auto',
+        border:            `4px solid #2e7d32`,
       }}
     >
       <img
@@ -58,8 +58,8 @@ const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
           )
         }
         style={{
-          width:      '100%',
-          height:     '100%',
+          width:           '100%',
+          height:          '100%',
           objectFit:       'cover',
           objectPosition:  'top center',
         }}
@@ -163,13 +163,13 @@ const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
       ))}
     </div>
 
-        <div
+    <div
       style={{
-        width:        '350px',
-        height:       '350px',
-        overflow:     'hidden',
-        borderRadius: '8px',
-        margin:       '0 auto',
+        width:             '350px',
+        height:            '350px',
+        overflow:          'hidden',
+        borderRadius:      '8px',
+        margin:            '0 auto',
       }}
     >
       <img
@@ -182,10 +182,11 @@ const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
           )
         }
         style={{
-          width:      '100%',
-          height:     '100%',
-          objectFit:  'contain',
-          border:     `4px solid #e03e3e`,
+          width:           '100%',
+          height:          '100%',
+          objectFit:       'cover',
+          objectPosition:  'top center',
+          border:          `4px solid #e03e3e`,
         }}
       />
     </div>
