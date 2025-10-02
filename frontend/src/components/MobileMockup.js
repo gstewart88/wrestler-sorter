@@ -142,31 +142,19 @@ const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
                   }}
                 >
                   <span>{w.name}</span>
-                  <div style={{
-                        width:        '100px',
-                        height:       '100px',
-                        overflow:     'hidden',
-                        borderRadius: '8px',
-                        border:       `4px solid ${color}`,
-                        alignSelf:    'center',
-                        }}
-                    >
-                  <img
-                  src={w.imageURL}
-                  crossOrigin="anonymous"
-                  alt={w.name}
-                  onError={e =>
-                    (e.currentTarget.src =
-                      'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png'
-                    )
-                  }
-                  style={{
-                    width:        '100%',
-                    height:      'auto',
-                    display:     'block',
-                  }}
-                />
-                </div>
+                <div
+                style={{
+                  width:             '100px',
+                  height:            '100px',
+                  borderRadius:      '8px',
+                  alignSelf:         'center',
+                  border:            `4px solid ${color}`,
+                  backgroundImage:   `url(${w.imageURL})`,
+                  backgroundSize:    'cover',
+                  backgroundPosition:'top center',
+                  backgroundRepeat:  'no-repeat',
+                }}
+              />
                 </div>
               </li>
             ))}
