@@ -7,8 +7,8 @@ const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
     ref={ref}
     style={{
       position:       'absolute',
-      top:            -9999,
-      left:           -9999,
+      top:            200,
+      left:           200,
       width:          '1080px',
       height:         '1920px',
       padding:        '16px',
@@ -162,8 +162,8 @@ const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
                   }
                   style={{
                     width:        '100%',
-                    height:       '100%',
-                    objectFit:    'contain',
+                    height:      'auto',
+                    display:     'block',
                   }}
                 />
                 </div>
