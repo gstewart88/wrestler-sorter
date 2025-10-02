@@ -46,24 +46,12 @@ const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
         marginBottom:      '24px',
         margin:            '0 auto',
         border:            `4px solid #2e7d32`,
+        backgroundImage:   `url(${top.imageURL})`,
+        backgroundSize:    'cover',
+        backgroundPosition:'top center',
+        backgroundRepeat:  'no-repeat',
       }}
     >
-      <img
-        src={top.imageURL}
-        crossOrigin="anonymous"
-        alt={top.name}
-        onError={e =>
-          (e.currentTarget.src =
-            'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png'
-          )
-        }
-        style={{
-          width:           '100%',
-          height:          '100%',
-          objectFit:       'cover',
-          objectPosition:  'top center',
-        }}
-      />
     </div>
     <div
     style={{
@@ -162,7 +150,6 @@ const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
         </div>
       ))}
     </div>
-
     <div
       style={{
         width:             '350px',
@@ -170,26 +157,13 @@ const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
         overflow:          'hidden',
         borderRadius:      '8px',
         margin:            '0 auto',
+        backgroundImage:   `url(${hated5[0].imageURL})`,
+        backgroundSize:    'cover',
+        backgroundPosition:'top center',
+        backgroundRepeat:  'no-repeat',
+        border:            `4px solid #e03e3e`,
       }}
-    >
-      <img
-        src={hated5[0].imageURL}
-        crossOrigin="anonymous"
-        alt={hated5[0].name}
-        onError={e =>
-          (e.currentTarget.src =
-            'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png'
-          )
-        }
-        style={{
-          width:           '100%',
-          height:          '100%',
-          objectFit:       'cover',
-          objectPosition:  'top center',
-          border:          `4px solid #e03e3e`,
-        }}
-      />
-    </div>
+    />
     <div
     style={{
         fontSize:       '36px',
