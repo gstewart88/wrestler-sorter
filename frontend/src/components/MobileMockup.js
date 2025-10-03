@@ -70,7 +70,7 @@ const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
       }}
     >
       {[
-        { title: 'Favorite Five', items: fave5,  color: '#2e7d32' },
+        { title: 'Favourite Five', items: fave5,  color: '#2e7d32' },
         { title: 'Most Hated Five',  items: hated5, color: '#e03e3e' },
       ].map(({ title, items, color }) => (
         <div key={title} style={{ flex: 1, overflowY: 'auto' }}>
