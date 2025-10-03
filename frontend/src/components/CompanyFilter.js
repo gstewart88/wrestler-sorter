@@ -12,6 +12,7 @@ import './CompanyFilter.css';
   Stardom:  'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Stardom_2021_logo.svg/260px-Stardom_2021_logo.svg.png',
   Marigold: 'https://dsf-marigold.com/wp-content/themes/marigold/assets/images/mg_logo2.png',
   TJPW:     'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/TJPW_logo.svg/480px-TJPW_logo.svg.png?20230218193820',
+  CMLL:     'https://static.wikia.nocookie.net/prowrestling/images/c/c9/CMLLlogo2018.png'
 };
 
 /**
