@@ -1,6 +1,7 @@
 // src/components/ResultsList.js
 
 import React, { useRef, useEffect } from 'react';
+import { FaRedo, FaShareAlt, FaDownload } from 'react-icons/fa';
 import MobileMockup    from './MobileMockup';
 import useHtml2CanvasExport from '../hooks/useHtml2CanvasExport';
 import './ResultsList.css';
@@ -112,42 +113,45 @@ export default function ResultsList({ result, showAll, onToggle }) {
         className="position-fixed bottom-0 end-0 m-3 d-flex flex-column gap-2"
         style={{ zIndex: 1100 }}
       >
-        <button
-          className="btn btn-outline-secondary"
-          onClick={() => window.location.reload()}
-        >
-          Restart
-        </button>
+      <button
+        className="btn btn-outline-secondary"
+        onClick={() => window.location.reload()}
+        aria-label="Restart"
+      >
+        <FaRedo size={20} />
+      </button>
 
-        <button
-          className="btn btn-outline-success"
-          onClick={() =>
-            shareRef(
-              mobileRef,
-              { backgroundColor: null, scale: 1 },
-              'fave-hated.png',
-              {
-                title: 'My Favorite & Most Hated Five',
-                text:  'Check out my Fave Five wrestling lineup!',
-              }
-            )
-          }
-        >
-          Share
-        </button>
+      <button
+        className="btn btn-outline-success"
+        onClick={() =>
+          shareRef(
+            mobileRef,
+            { backgroundColor: null, scale: 1 },
+            'fave-hated.png',
+            {
+              title: 'My Favorite & Most Hated Five',
+              text:  'Check out my Fave Five wrestling lineup!',
+            }
+          )
+        }
+        aria-label="Share"
+      >
+        <FaShareAlt size={20} />
+      </button>
 
-        <button
-          className="btn btn-outline-primary"
-          onClick={() =>
-            exportRef(
-              mobileRef,
-              { backgroundColor: null, scale: 1 },
-              'fave-hated.png'
-            )
-          }
-        >
-          Download
-        </button>
+      <button
+        className="btn btn-outline-primary"
+        onClick={() =>
+          exportRef(
+            mobileRef,
+            { backgroundColor: null, scale: 1 },
+            'fave-hated.png'
+          )
+        }
+        aria-label="Download"
+      >
+        <FaDownload size={20} />
+      </button>
       </div>
     </>
   );
