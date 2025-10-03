@@ -58,7 +58,7 @@
   {
     "name": "Bárbaro Cavernario",
     "company": "CMLL",
-    "imageURL": "BarbaroCavernario.png",
+    "imageURL": "BarbaroCavernarioCMLL.png",
     "division": "Men's",
     "bio":""
   },
@@ -574,13 +574,6 @@
     "bio":""
   },
   {
-    "name": "La Comandante",
-    "company": "CMLL",
-    "imageURL": "LaComandanteCMLL.png",
-    "division": "Women's",
-    "bio":""
-  },
-  {
     "name": "La Catalina",
     "company": "CMLL",
     "imageURL": "LaCatalinaCMLL.png",
@@ -651,13 +644,6 @@
     "bio":""
   },
   {
-    "name": "La Seductora",
-    "company": "CMLL",
-    "imageURL": "LaSeductoraCMLL.png",
-    "division": "Women's",
-    "bio":""
-  },
-  {
     "name": "Silueta",
     "company": "CMLL",
     "imageURL": "SiluetaCMLL.png",
@@ -675,13 +661,6 @@
     "name": "Tiffany",
     "company": "CMLL",
     "imageURL": "TiffanyCMLL.png",
-    "division": "Women's",
-    "bio":""
-  },
-  {
-    "name": "La Vaquerita",
-    "company": "CMLL",
-    "imageURL": "LaVaqueritaCMLL.png",
     "division": "Women's",
     "bio":""
   },
