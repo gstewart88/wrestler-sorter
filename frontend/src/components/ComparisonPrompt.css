@@ -165,7 +165,7 @@
   background: var(--prompt-bg);
   border-radius: var(--radius);
   position: relative;
-  z-index: 1001;
+  z-index: 5001;
   border: 1px solid var(--card-border);
 }
 
