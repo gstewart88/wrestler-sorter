@@ -1,31 +1,48 @@
 /* src/components/ResultsList.css */
+:root {
+  --footer-height: 4rem;   /* adjust this to whatever your footer ends up being */
+}
 
 .results-container {
   margin-top: var(--gap);
   text-align: center;
+  padding-bottom: var(--footer-height);
 }
 
-.results-list { 
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: calc(var(--gap) * 2);
-    padding:0; 
+.results-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--gap);
+  padding: 0;
+  list-style: none;
 }
 
-.results-item { 
-    display:flex; 
-    flex-direction: row; 
-    align-items:center; 
-    width: auto;           /* let each row size to its contents */
-    gap: var(--gap);
-    padding: var(--gap) 0; /* vertical spacing between rows */
+.results-item {
+  display: grid;
+  grid-template-areas:
+    "number image info";
+  grid-template-columns: auto 80px 1fr;
+  column-gap: var(--gap);
+  grid-auto-rows: min-content;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: var(--gap) var(--gap) var(--gap) calc(var(--gap) * 0.5);
+  background: var(--accent-blue);
+  align-items: center;
+}
+
+.results-item::before {
+  grid-area: number;
+  margin-right: var(--gap);
 }
 
 .result-thumb {
-  width: auto;            
-  height: 160px;         
-  object-fit: contain;    
+  grid-area: image;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  object-position: top;
 }
 
 .instructions-panel--hidden {
@@ -33,11 +50,8 @@
 }
 
 .result-info {
+  grid-area: info;
   text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: var(--gap);
 }
 
 .result-name {
@@ -101,7 +115,7 @@
 .two-column {
   display: flex;
   justify-content: center;  /* center both columns as a group */
-  gap: var(--gap);
+  gap: calc(var(--gap) * 2);
   flex-wrap: wrap;          /* stack them on very narrow screens */
 }
 
@@ -124,4 +138,38 @@
 .mobile-mockup li::before {
   display: none !important;
   content: none !important;
+}
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--footer-height);
+  padding: var(--gap);
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+  background: var(--accent-blue);
+  display: flex;
+  justify-content: flex-end;        /* push buttons to the right */
+  gap: var(--gap);
+  z-index: 1100;                    /* above sidebar, below modals */
+  border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 500px) {
+  .results-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .results-item {
+    grid-template-areas:
+      "number image"
+      "info   info";
+    grid-template-columns: auto 1fr;
+    gap: var(--gap);
+  }
+
+  .result-info {
+    text-align: center;
+    margin-top: var(--gap);
+  }
 }

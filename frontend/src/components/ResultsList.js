@@ -69,11 +69,6 @@ export default function ResultsList({ result, showAll, onToggle }) {
       <div ref={listRef} className="results-container full-list">
         <h3>Full List</h3>
         {renderList(result)}
-        {result.length > 9 && (
-          <button className="btn btn-link" onClick={onToggle}>
-            Show Top 5 & Bottom 5
-          </button>
-        )}
       </div>
     )
     : (
@@ -89,10 +84,6 @@ export default function ResultsList({ result, showAll, onToggle }) {
             {renderList(hated5, 1)}
           </div>
         </div>
-
-        <button className="btn btn-link mt-3" onClick={onToggle}>
-          Show All {result.length}
-        </button>
       </div>
     );
 
@@ -109,10 +100,20 @@ export default function ResultsList({ result, showAll, onToggle }) {
       />
 
       {/* Bottom-right: Restart, Share & Download stacked */}
-      <div
-        className="position-fixed bottom-0 end-0 m-3 d-flex flex-column gap-2"
-        style={{ zIndex: 1100 }}
-      >
+      <footer className="app-footer">
+
+        {result.length > 9 && (
+          <button
+            className="btn btn-link me-auto"
+            onClick={onToggle}
+            aria-label="Toggle View"
+          >
+            {showAll || result.length <= 9
+              ? 'Show Top 5 & Bottom 5'
+              : `Show All ${result.length}`}
+          </button>
+        )}
+
       <button
         className="btn btn-outline-secondary"
         onClick={() => window.location.reload()}
@@ -152,7 +153,7 @@ export default function ResultsList({ result, showAll, onToggle }) {
       >
         <FaDownload size={20} />
       </button>
-      </div>
+      </footer>
     </>
   );
 }
