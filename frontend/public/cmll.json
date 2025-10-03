@@ -301,37 +301,9 @@
     "bio":""
   },
   {
-    "name": "Olímpico",
-    "company": "CMLL",
-    "imageURL": "OlimpicoCMLL.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
-    "name": "Oro Jr.",
-    "company": "CMLL",
-    "imageURL": "OroJrCMLL.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
-    "name": "Pegasso",
-    "company": "CMLL",
-    "imageURL": "PegassoCMLL.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
     "name": "Pólvora",
     "company": "CMLL",
     "imageURL": "PolvoraCMLL.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
-    "name": "Retro",
-    "company": "CMLL",
-    "imageURL": "RetroCMLL.png",
     "division": "Men's",
     "bio":""
   },
@@ -357,13 +329,6 @@
     "bio":""
   },
   {
-    "name": "Rugido",
-    "company": "CMLL",
-    "imageURL": "RugidoCMLL.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
     "name": "Sagrado",
     "company": "CMLL",
     "imageURL": "SagradoCMLL.png",
@@ -371,30 +336,9 @@
     "bio":""
   },
   {
-    "name": "Sangre Imperial",
-    "company": "CMLL",
-    "imageURL": "SangreImperialCMLL.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
-    "name": "Sensei",
-    "company": "CMLL",
-    "imageURL": "SenseiCMLL.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
     "name": "Shockercito",
     "company": "CMLL",
     "imageURL": "ShockercitoCMLL.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
-    "name": "Soberano Jr.",
-    "company": "CMLL",
-    "imageURL": "SoberanoJrCMLL.png",
     "division": "Men's",
     "bio":""
   },
@@ -409,13 +353,6 @@
     "name": "Star Black",
     "company": "CMLL",
     "imageURL": "StarBlackCMLL.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
-    "name": "Stigma",
-    "company": "CMLL",
-    "imageURL": "StigmaCMLL.png",
     "division": "Men's",
     "bio":""
   },
