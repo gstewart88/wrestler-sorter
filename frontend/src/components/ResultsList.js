@@ -54,7 +54,7 @@ export default function ResultsList({ result, showAll, onToggle }) {
             onError={e => (e.currentTarget.src = 'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png')}
           />
           <div className="result-info">
-            <div className="result-name">{i + start}. {w.name}</div>
+            <div className="result-name">{w.name}</div>
             <div className="result-company">({w.company})</div>
           </div>
         </li>
@@ -65,10 +65,10 @@ export default function ResultsList({ result, showAll, onToggle }) {
   // Decide which list block to show
   const listView = showAll || result.length <= 9
     ? (
-      <div ref={listRef} className="results-container">
+      <div ref={listRef} className="results-container full-list">
         <h3>Full List</h3>
         {renderList(result)}
-        {result.length > 10 && (
+        {result.length > 9 && (
           <button className="btn btn-link" onClick={onToggle}>
             Show Top 5 & Bottom 5
           </button>
@@ -77,11 +77,19 @@ export default function ResultsList({ result, showAll, onToggle }) {
     )
     : (
       <div ref={listRef} className="results-container">
-        <h3>Fave 5</h3>
-        {renderList(fave5)}
-        <h3>Hated 5</h3>
-        {renderList(hated5, 1)}
-        <button className="btn btn-link" onClick={onToggle}>
+        <div className="two-column">
+          <div className="column">
+            <h3>Fave 5</h3>
+            {renderList(fave5)}
+          </div>
+
+          <div className="column">
+            <h3>Hated 5</h3>
+            {renderList(hated5, 1)}
+          </div>
+        </div>
+
+        <button className="btn btn-link mt-3" onClick={onToggle}>
           Show All {result.length}
         </button>
       </div>
@@ -99,25 +107,24 @@ export default function ResultsList({ result, showAll, onToggle }) {
         hated5={hated5}
       />
 
-      {/* Bottom-left: Restart */}
-      <div className="position-fixed bottom-0 start-0 m-3">
+      {/* Bottom-right: Restart, Share & Download stacked */}
+      <div
+        className="position-fixed bottom-0 end-0 m-3 d-flex flex-column gap-2"
+        style={{ zIndex: 1100 }}
+      >
         <button
           className="btn btn-outline-secondary"
           onClick={() => window.location.reload()}
         >
           Restart
         </button>
-      </div>
 
-      {/* Bottom-right: Export */}
-      <div className="position-fixed bottom-0 end-0 m-3">
         <button
           className="btn btn-outline-success"
           onClick={() =>
-              shareRef(
+            shareRef(
               mobileRef,
-              { backgroundColor: null,
-                scale: 1 },
+              { backgroundColor: null, scale: 1 },
               'fave-hated.png',
               {
                 title: 'My Favorite & Most Hated Five',
@@ -128,6 +135,7 @@ export default function ResultsList({ result, showAll, onToggle }) {
         >
           Share
         </button>
+
         <button
           className="btn btn-outline-primary"
           onClick={() =>

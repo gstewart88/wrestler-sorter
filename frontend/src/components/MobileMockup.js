@@ -3,7 +3,7 @@
 import React, { forwardRef } from 'react';
 
 const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
-  <div
+  <div className="mobile-mockup"
     ref={ref}
     style={{
       position:       'absolute',
