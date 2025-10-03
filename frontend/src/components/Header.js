@@ -37,7 +37,7 @@ export default function Header() {
       <nav className="navMenu" role="navigation" aria-label="Primary">
         <Link to="/" className="nav-link">Home</Link>
         <Link to="/promotions" className="nav-link">Promotions</Link>
-        <span className="dot" aria-hidden="true" />
+        <Link to="/events" className="nav-link">Events</Link>
       </nav>
     </div>
 

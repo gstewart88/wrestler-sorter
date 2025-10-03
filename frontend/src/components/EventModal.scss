@@ -1,0 +1,62 @@
+// src/components/EventModal.scss
+@import '../styles/variables';
+
+.event-modal-backdrop {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.event-modal-content {
+  background: $color-cr-detail-bg;
+  padding: $spacing-lg;
+  border-radius: $radius-md;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: $shadow-strong;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: $spacing-xs;
+  right: $spacing-xs;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: $color-cr-text;
+  cursor: pointer;
+}
+
+.modal-events-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-bottom: $spacing-md;
+    padding-bottom: $spacing-sm;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+
+    .promo-tag {
+      display: inline-block;
+      margin-top: $spacing-xs;
+      padding: $spacing-xs  $spacing-sm;
+      background: rgba(0,0,0,0.1);
+      border-radius: $radius-sm;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+
+    .modal-event-city {
+      margin-top: $spacing-xs;
+      color: $color-cr-muted;
+      font-size: 0.9rem;
+    }
+  }
+}

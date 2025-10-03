@@ -1,0 +1,14 @@
+[
+  {
+    "promotion": "AEW",
+    "date": "2025-10-15",
+    "name": "Dynamite",
+    "city": "Chicago, IL"
+  },
+  {
+    "promotion": "WWE_Raw",
+    "date": "2025-10-18",
+    "name": "Raw",
+    "city": "Manchester, UK"
+  }
+]

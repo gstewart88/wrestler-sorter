@@ -1,0 +1,64 @@
+// src/pages/Events.scss
+
+.react-calendar {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* base tile styling */
+.react-calendar__tile {
+  position: relative;
+  padding: 0.5rem 0.25rem;
+}
+
+/* color-code backgrounds by promotion */
+.react-calendar__tile.promo-aew {
+  background-color: #FFD166 !important;
+  color: #000;    
+}
+
+/* example for WWE Raw */
+.react-calendar__tile.promo-wwe_raw {
+  background-color: #EF476F !important;
+  color: #fff;
+}
+
+/* NJPW */
+.react-calendar__tile.promo-njpw {
+  background-color: #118AB2 !important;
+  color: #fff;
+}
+
+// src/pages/Events.scss
+.events-page {
+  padding: 1rem;
+
+  .filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      label {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+
+        input[type='checkbox'] {
+          width: 1rem;
+          height: 1rem;
+        }
+      }
+
+      select {
+        padding: 0.25rem 0.5rem;
+      }
+    }
+  }
+}

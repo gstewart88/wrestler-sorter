@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Promotions from './pages/Promotions';
+import Events from './pages/Events';
 import CompanyRoster from './pages/CompanyRoster';
 import './App.css';
 
@@ -28,6 +29,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/promotions" element={<Promotions />} />
+          <Route path="/events" element={<Events />} />
           <Route path="/company/:slug" element={<CompanyRoster />} />
         </Routes>
       </main>
