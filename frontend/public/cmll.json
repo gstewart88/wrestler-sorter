@@ -1,0 +1,695 @@
+[
+  {
+    "name": "Akuma",
+    "company": "CMLL",
+    "imageURL": "AkumaCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Ángel de Oro",
+    "company": "CMLL",
+    "imageURL": "AngeldeOroCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Apocalipsis",
+    "company": "CMLL",
+    "imageURL": "ApocalipsisCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Arkalis",
+    "company": "CMLL",
+    "imageURL": "ArkalisCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Atlantis",
+    "company": "CMLL",
+    "imageURL": "AtlantisCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Atlantis Jr.",
+    "company": "CMLL",
+    "imageURL": "AtlantisJrCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Audaz",
+    "company": "CMLL",
+    "imageURL": "AudazCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Averno",
+    "company": "CMLL",
+    "imageURL": "AvernoCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Bárbaro Cavernario",
+    "company": "CMLL",
+    "imageURL": "BarbaroCavernario.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Bengala",
+    "company": "CMLL",
+    "imageURL": "BengalaCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Black Panther",
+    "company": "CMLL",
+    "imageURL": "BlackPantherCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Blue Panther",
+    "company": "CMLL",
+    "imageURL": "BluePantherCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Blue Panther Jr.",
+    "company": "CMLL",
+    "imageURL": "BluePantherJrCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Cancerbero",
+    "company": "CMLL",
+    "imageURL": "CancerberoCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Cholo",
+    "company": "CMLL",
+    "imageURL": "CholoCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "El Coyote",
+    "company": "CMLL",
+    "imageURL": "ElCoyoteCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Dark Magic",
+    "company": "CMLL",
+    "imageURL": "DarkMagicCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Disturbio",
+    "company": "CMLL",
+    "imageURL": "DisturbioCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Dragón Rojo Jr.",
+    "company": "CMLL",
+    "imageURL": "DragonRojoJrCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Dulce Gardenia",
+    "company": "CMLL",
+    "imageURL": "DulceGardeniaCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Eléctrico",
+    "company": "CMLL",
+    "imageURL": "ElectricoCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "El Felino",
+    "company": "CMLL",
+    "imageURL": "ElFelinoCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Ephesto",
+    "company": "CMLL",
+    "imageURL": "EphestoCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Esfinge",
+    "company": "CMLL",
+    "imageURL": "EsfingeCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Espanto Jr.",
+    "company": "CMLL",
+    "imageURL": "EspantoJrCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Euforia",
+    "company": "CMLL",
+    "imageURL": "EuforiaCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Espiritu Negro",
+    "company": "CMLL",
+    "imageURL": "EspirituNegroCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Felino Jr.",
+    "company": "CMLL",
+    "imageURL": "FelinoJrCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Flip Gordon",
+    "company": "CMLL",
+    "imageURL": "FlipGordonCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Fuego",
+    "company": "CMLL",
+    "imageURL": "FuegoCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Futuro",
+    "company": "CMLL",
+    "imageURL": "FuturoCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Gran Guerrero",
+    "company": "CMLL",
+    "imageURL": "GranGuerreroCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Guerrero Maya Jr.",
+    "company": "CMLL",
+    "imageURL": "GuerreroMayaJrCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Halcón Suriano Jr.",
+    "company": "CMLL",
+    "imageURL": "HalconSurianoJrCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "El Hijo del Villano III",
+    "company": "CMLL",
+    "imageURL": "ElHijodelVillanoIIICMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Inquisidor",
+    "company": "CMLL",
+    "imageURL": "InquisidorCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Kraneo",
+    "company": "CMLL",
+    "imageURL": "KraneoCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Leono",
+    "company": "CMLL",
+    "imageURL": "LeonoCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Luciferno",
+    "company": "CMLL",
+    "imageURL": "LucifernoCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Magia Blanca",
+    "company": "CMLL",
+    "imageURL": "MagiaBlancaCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Magnus",
+    "company": "CMLL",
+    "imageURL": "MagnusCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Máscara Dorada",
+    "company": "CMLL",
+    "imageURL": "MascaraDoradaCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Mephisto",
+    "company": "CMLL",
+    "imageURL": "MephistoCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Misterioso Jr.",
+    "company": "CMLL",
+    "imageURL": "MisteriosoJrCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Místico",
+    "company": "CMLL",
+    "imageURL": "MisticoCMLL.png",
+    "division": "Men's",
+    "bio":"Initially working as Místico, he later signed with WWE, where he was known under the name Sin Cara (Spanish for 'Without Face' or 'Faceless'). Upon his return to Mexico, he worked under the name Myzteziz in AAA, before settling on the ring name Carístico upon returning to CMLL in 2015. In 2021, he regained the Místico name, due to his successor and tag team partner Místico II leaving CMLL."
+  },
+  {
+    "name": "Niebla Roja",
+    "company": "CMLL",
+    "imageURL": "NieblaRojaCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Neón",
+    "company": "CMLL",
+    "imageURL": "NeonCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Nitro",
+    "company": "CMLL",
+    "imageURL": "NitroCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Okumura",
+    "company": "CMLL",
+    "imageURL": "OkumuraCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Olímpico",
+    "company": "CMLL",
+    "imageURL": "OlimpicoCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Oro Jr.",
+    "company": "CMLL",
+    "imageURL": "OroJrCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Pegasso",
+    "company": "CMLL",
+    "imageURL": "PegassoCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Pólvora",
+    "company": "CMLL",
+    "imageURL": "PolvoraCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Principe Diamante",
+    "company": "CMLL",
+    "imageURL": "PrincipeDiamanteCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Príncipe Odín Jr.",
+    "company": "CMLL",
+    "imageURL": "PrincipeOdinJrCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Retro",
+    "company": "CMLL",
+    "imageURL": "RetroCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Rey Bucanero",
+    "company": "CMLL",
+    "imageURL": "ReyBucaneroCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Rey Cometa",
+    "company": "CMLL",
+    "imageURL": "ReyCometaCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Robin",
+    "company": "CMLL",
+    "imageURL": "RobinCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Rugido",
+    "company": "CMLL",
+    "imageURL": "RugidoCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Sagrado",
+    "company": "CMLL",
+    "imageURL": "SagradoCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Sangre Imperial",
+    "company": "CMLL",
+    "imageURL": "SangreImperialCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Sensei",
+    "company": "CMLL",
+    "imageURL": "SenseiCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Shockercito",
+    "company": "CMLL",
+    "imageURL": "ShockercitoCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Soberano Jr.",
+    "company": "CMLL",
+    "imageURL": "SoberanoJrCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Star Jr.",
+    "company": "CMLL",
+    "imageURL": "StarJrCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Star Black",
+    "company": "CMLL",
+    "imageURL": "StarBlackCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Stigma",
+    "company": "CMLL",
+    "imageURL": "StigmaCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Stuka Jr.",
+    "company": "CMLL",
+    "imageURL": "StukaJrCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Súper Astro Jr.",
+    "company": "CMLL",
+    "imageURL": "SuperAstroJrCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Templario",
+    "company": "CMLL",
+    "imageURL": "TemplarioCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "El Terrible",
+    "company": "CMLL",
+    "imageURL": "ElTerribleCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Titán",
+    "company": "CMLL",
+    "imageURL": "TitanCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Último Guerrero",
+    "company": "CMLL",
+    "imageURL": "UltimoGuerreroCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Universo 2000 Jr.",
+    "company": "CMLL",
+    "imageURL": "Universo2000JrCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Valiente",
+    "company": "CMLL",
+    "imageURL": "ValienteCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Virus",
+    "company": "CMLL",
+    "imageURL": "VirusCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Volador Jr.",
+    "company": "CMLL",
+    "imageURL": "VoladorJrCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "Zandokan Jr.",
+    "company": "CMLL",
+    "imageURL": "ZandokanJrCMLL.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
+    "name": "La Amapola",
+    "company": "CMLL",
+    "imageURL": "LaAmapolaCMLL.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "Andromeda",
+    "company": "CMLL",
+    "imageURL": "AndromedaCMLL.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "Avispa Dorada",
+    "company": "CMLL",
+    "imageURL": "AvispaDoradaCMLL.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "La Comandante",
+    "company": "CMLL",
+    "imageURL": "LaComandanteCMLL.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "La Catalina",
+    "company": "CMLL",
+    "imageURL": "LaCatalinaCMLL.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "La Jarochita",
+    "company": "CMLL",
+    "imageURL": "LaJarochitaCMLL.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "La Magnifica",
+    "company": "CMLL",
+    "imageURL": "LaMagnificaCMLL.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "La Metálica",
+    "company": "CMLL",
+    "imageURL": "LaMetalicaCMLL.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "Lluvia",
+    "company": "CMLL",
+    "imageURL": "LluviaCMLL.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "Marcela",
+    "company": "CMLL",
+    "imageURL": "MarcelaCMLL.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "Persephone",
+    "company": "CMLL",
+    "imageURL": "PersephoneCMLL.png",
+    "division": "Women's",
+    "bio":"She has also wrestled as Perse and Black Widow. Initially performing under a mask, she voluntarily removed her mask in 2023, which is unusual for Mexican wrestlers who typically only unmask after losing it in a match."
+  },
+  {
+    "name": "Princesa Sugehit",
+    "company": "CMLL",
+    "imageURL": "PrincesaSugehitCMLL.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "Reyna Isis",
+    "company": "CMLL",
+    "imageURL": "ReynaIsisCMLL.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "Sanely",
+    "company": "CMLL",
+    "imageURL": "SanelyCMLL.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "La Seductora",
+    "company": "CMLL",
+    "imageURL": "LaSeductoraCMLL.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "Silueta",
+    "company": "CMLL",
+    "imageURL": "SiluetaCMLL.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "Skadi",
+    "company": "CMLL",
+    "imageURL": "SkadiCMLL.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "Tiffany",
+    "company": "CMLL",
+    "imageURL": "TiffanyCMLL.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "La Vaquerita",
+    "company": "CMLL",
+    "imageURL": "LaVaqueritaCMLL.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "Zeuxis",
+    "company": "CMLL",
+    "imageURL": "ZeuxisCMLL.png",
+    "division": "Women's",
+    "bio":""
+  }
+]
