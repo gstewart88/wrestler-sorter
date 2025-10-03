@@ -155,6 +155,15 @@
   border-top: 1px solid var(--border-color);
 }
 
+.app-footer .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* reset any weird line-height or extra descender space */
+  line-height: 1;
+  vertical-align: middle;
+}
+
 @media (max-width: 576px) {
   /* one card per row, fill container */
   .results-list {
