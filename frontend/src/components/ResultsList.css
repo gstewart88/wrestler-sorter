@@ -155,21 +155,42 @@
   border-top: 1px solid var(--border-color);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
+  /* one card per row, fill container */
   .results-list {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: 1fr;
+    max-width: 360px;      /* or whatever your ideal card max is */
+    margin: 0 auto;        /* center the column */
+    width: 100%;
   }
 
+  /* stack name under image, keep number + image on top row */
   .results-item {
     grid-template-areas:
       "number image"
       "info   info";
     grid-template-columns: auto 1fr;
-    gap: var(--gap);
+    column-gap: var(--gap);
+    width: 100%;
   }
 
+  /* give the info block some breathing room below the image */
   .result-info {
-    text-align: center;
     margin-top: var(--gap);
+  }
+
+  /* if you’re in the two-column “Fave 5 / Hated 5” mode, stack&center them */
+  .two-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* horizontal center */
+    gap: var(--gap);
+    max-width: 360px;         /* same max as above for consistency */
+    margin: 0 auto;
+  }
+
+  /* each column should fill that centered wrapper */
+  .column {
+    width: 100%;
   }
 }
