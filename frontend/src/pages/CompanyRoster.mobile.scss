@@ -59,14 +59,31 @@
     background: $color-cr-image-bg;
 
     /* new wrestler name header */
-    .simple-name {
-      padding: $spacing-sm $spacing-md;
-      font-size: 1.2rem;
-      font-weight: 600;
-      text-align: center;
-      background: $color-cr-panel-bg;
+    .simple-header {
+    display: flex;
+    align-items: center;
+    padding: $spacing-sm $spacing-md;  /* match your old .simple-name padding */
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: $color-cr-panel-bg;
+    color: $color-cr-text;
+
+    /* push the name to the right of the button */
+    .back-btn {
+      background: transparent;
+      border: none;
       color: $color-cr-text;
+      font-size: 1.2rem;
+      line-height: 1;
+      margin-right: $spacing-sm;
+      cursor: pointer;
     }
+
+    .simple-name {
+      flex: 1;            /* take up remaining space */
+      text-align: center; /* or left if you prefer */
+    }
+}
 
     img {
       width: 100%;
@@ -127,7 +144,6 @@
     outline: 2px solid $color-primary;
   }
 
-  /* ensure the bottom roster never overlaps the simple-main's scrollbars */
   .mobile-simple {
     padding-bottom: 100px;
   }
