@@ -17,7 +17,8 @@ export default function useWrestlers() {
       'tjpw',
       'raw',
       'smackdown',
-      'nxt'
+      'nxt',
+      'cmll'
     ];
 
     Promise.all(
