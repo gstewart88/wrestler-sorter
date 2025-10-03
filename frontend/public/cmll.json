@@ -196,20 +196,6 @@
     "bio":""
   },
   {
-    "name": "Flip Gordon",
-    "company": "CMLL",
-    "imageURL": "FlipGordonCMLL.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
-    "name": "Fuego",
-    "company": "CMLL",
-    "imageURL": "FuegoCMLL.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
     "name": "Futuro",
     "company": "CMLL",
     "imageURL": "FuturoCMLL.png",
@@ -560,16 +546,16 @@
     "bio":""
   },
   {
-    "name": "Andromeda",
+    "name": "Avispa Dorada",
     "company": "CMLL",
-    "imageURL": "AndromedaCMLL.png",
+    "imageURL": "AvispaDoradaCMLL.png",
     "division": "Women's",
     "bio":""
   },
   {
-    "name": "Avispa Dorada",
+    "name": "Kira",
     "company": "CMLL",
-    "imageURL": "AvispaDoradaCMLL.png",
+    "imageURL": "KiraCMLL.png",
     "division": "Women's",
     "bio":""
   },
