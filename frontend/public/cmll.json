@@ -189,13 +189,6 @@
     "bio":""
   },
   {
-    "name": "Felino Jr.",
-    "company": "CMLL",
-    "imageURL": "FelinoJrCMLL.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
     "name": "Futuro",
     "company": "CMLL",
     "imageURL": "FuturoCMLL.png",
@@ -227,27 +220,6 @@
     "name": "El Hijo del Villano III",
     "company": "CMLL",
     "imageURL": "ElHijodelVillanoIIICMLL.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
-    "name": "Inquisidor",
-    "company": "CMLL",
-    "imageURL": "InquisidorCMLL.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
-    "name": "Kraneo",
-    "company": "CMLL",
-    "imageURL": "KraneoCMLL.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
-    "name": "Leono",
-    "company": "CMLL",
-    "imageURL": "LeonoCMLL.png",
     "division": "Men's",
     "bio":""
   },
@@ -353,20 +325,6 @@
     "name": "Pólvora",
     "company": "CMLL",
     "imageURL": "PolvoraCMLL.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
-    "name": "Principe Diamante",
-    "company": "CMLL",
-    "imageURL": "PrincipeDiamanteCMLL.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
-    "name": "Príncipe Odín Jr.",
-    "company": "CMLL",
-    "imageURL": "PrincipeOdinJrCMLL.png",
     "division": "Men's",
     "bio":""
   },
