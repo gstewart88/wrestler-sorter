@@ -29,7 +29,7 @@
   align-items: center;
   justify-content: center;
   animation: fadeIn var(--transition);
-  z-index: 2000;
+  z-index: 3002;
 }
 
 @keyframes fadeIn {
@@ -158,21 +158,6 @@
 /*─────────────────────────────────────────────
   Ensure the prompt container scrolls if tall
 ─────────────────────────────────────────────*/
-.comparison-prompt {
-  max-height: 90vh;
-  overflow-y: auto;
-  padding: 1rem;
-  background: var(--prompt-bg);
-  border-radius: var(--radius);
-  position: relative;
-  z-index: 5001;
-  border: 1px solid var(--card-border);
-}
-
-/* Tighten progress bar spacing */
-.comparison-prompt .progress {
-  margin-bottom: 0.75rem;
-}
 
 .exit-btn {
   position: absolute;
