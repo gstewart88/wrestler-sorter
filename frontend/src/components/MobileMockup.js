@@ -175,7 +175,7 @@ const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
     <div
       style={{
         textAlign:  'center',
-        fontSize:   '14px',
+        fontSize:   '36px',
         color:      '#666',
         marginTop:  '24px',
       }}
