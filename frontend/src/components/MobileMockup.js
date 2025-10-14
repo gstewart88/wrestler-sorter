@@ -180,7 +180,7 @@ const MobileMockup = forwardRef(({ top, fave5, hated5 }, ref) => (
         marginTop:  '24px',
       }}
     >
-      Made with Fave-Five.app
+      Made at favefive.co.uk
     </div>
   </div>
 ));
