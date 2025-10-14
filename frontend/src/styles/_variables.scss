@@ -1,3 +1,136 @@
+/* -------------------
+   Theme color maps
+   ------------------- */
+$theme-light: (
+  cr-panel-bg:   #f8f9fa,
+  cr-detail-bg:  #ffffff,
+  cr-text:       #222222,
+  cr-muted:      #666666,
+  cr-image-bg:   #f0f0f0,
+  border-color:  #e6e6e6,
+);
+
+$theme-dark: (
+  cr-panel-bg:   #262626,
+  cr-detail-bg:  #262626,
+  cr-text:       #ffffff,
+  cr-muted:      #dcdcdc,
+  cr-image-bg:   #111111,
+  border-color:  #373737,
+);
+
+/* -------------------
+   Emit CSS custom properties
+   ------------------- */
+:root {
+  // default to light theme variables
+  @each $k, $v in $theme-light {
+    --#{$k}: #{$v};
+  }
+  --promo-head-bg: rgba(0, 0, 0, 0.5);
+  --promo-head-color: #ffffff;
+}
+
+/* prefer user's dark scheme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    @each $k, $v in $theme-dark {
+      --#{$k}: #{$v};
+    }
+  }
+}
+
+/* explicit class toggle (higher specificity than media) */
+.theme-dark {
+  @each $k, $v in $theme-dark {
+    --#{$k}: #{$v};
+  }
+}
+
+/* -------------------
+   Small overrides to theme existing selectors without editing them
+   (adjust the selectors below to target other rules if you want)
+   ------------------- */
+
+/* footer background / border used in App or ResultsList */
+.app-footer {
+  background: var(--accent-blue) !important;
+  border-top-color: var(--border-color) !important;
+  color: var(--cr-text) !important;
+}
+
+/* promotion card title background / text */
+.promo-card .card__head {
+  background: rgba(0,0,0,0.5); /* default fallback for visibility */
+  background: var(--promo-head-bg, rgba(0,0,0,0.5));
+  color: var(--cr-text) !important;
+
+  color: var(--promo-head-color) !important;
+}
+
+/* promotions detail text */
+.promotions-detail-bio {
+  color: var(--cr-muted) !important;
+}
+
+/* company roster panel backgrounds and text */
+.company-roster,
+.hex-grid,
+.detail-panel,
+.promotions-container {
+  background-color: var(--cr-panel-bg) !important;
+  color: var(--cr-text) !important;
+}
+
+/* detail name / bio */
+.detail-name {
+  color: #ffffff,
+}
+
+
+.detail-bio,
+.detail-empty {
+  color: var(--cr-text) !important;
+}
+
+/* Theme-aware tweaks for back-button and page header */
+.back-button,
+.back-button:link,
+.back-button:visited {
+  color: var(--cr-text) !important;      /* black in light, white in dark */
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Optional: make back-button look like a subtle pill in light mode,
+   and slightly translucent in dark mode for contrast */
+:root .back-button {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+}
+.theme-dark .back-button {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Header / page title (e.g., "Roster | Company") */
+.company-header,
+.company-header h1 {
+  color: var(--cr-text) !important;      /* text uses theme text color */
+}
+
+/* If the header includes smaller metadata / subtitle, use muted color */
+.company-header .subtitle,
+.company-header small,
+.company-header p {
+  color: var(--cr-muted) !important;
+}
+
 // Colors
 $color-cr-panel-bg:    #262626 !default;  // hex grid & detail panel background
 $color-cr-detail-bg:   #262626 !default;

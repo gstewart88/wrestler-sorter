@@ -18,7 +18,7 @@
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-    background: #fff;
+    // background: #fff;
 
     img {
       width: 100%;
@@ -29,7 +29,7 @@
     }
 
     .card__head {
-      color: black;
+      // color: black;
       background: rgba(255, 30, 173, 0.75);
       padding: 0.5rem;
       transform: rotate(-90deg);
@@ -55,7 +55,7 @@
       .card__head {
         text-align: center;
         top: calc(100% - 2em);
-        color: white;
+        // color: white;
         background: rgba(0, 0, 0, 0.5);
         font-size: 2em;
         transform: rotate(0deg) skew(-5deg);
@@ -141,8 +141,8 @@
       min-width: auto;
       width: 100%;
       text-align: center;
-      background: rgba(0, 0, 0, 0.6);
-      color: #fff;
+      // background: rgba(0, 0, 0, 0.6);
+      // color: #fff;
       padding: 0.25rem;
       font-size: 0.9rem;
       white-space: normal;

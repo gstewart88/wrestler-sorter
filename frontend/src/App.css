@@ -2,11 +2,20 @@
 
 :root{
   /* sensible defaults for your theme variables; adjust as needed */
-  --bg-page: #111;
-  --bg-surface: #1f1f1f;
+  --bg-page: #FFF;
+  --bg-surface: #ffffff;
   --border-color: rgba(255,255,255,0.06);
-  --text: #fff;
+  --text: #111;
   --primary: #61dafb;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-page: #111;
+    --bg-surface: #1f1f1f;
+    --border-color: rgba(255,255,255,0.06);
+    --text: #fff;
+    --primary: #61dafb;
+  }
 }
 
 /* Keep App-level background */

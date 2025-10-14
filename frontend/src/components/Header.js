@@ -25,6 +25,15 @@ export default function Header() {
     setTimeout(() => setShowQuote(false), 5000);
   };
 
+   const handleHomeClick = (e) => {
+    const h = window.location.hash || '';
+    if (h === '#/' || h === '#' || h === '') {
+      // prevent react-router Link navigation and force a full page reload
+      e.preventDefault();
+      window.location.reload();
+    }
+  };
+
   return (
   <header className="page-header d-flex justify-content-between align-items-center px-3 py-2">
 
@@ -35,7 +44,7 @@ export default function Header() {
       </picture>
 
       <nav className="navMenu" role="navigation" aria-label="Primary">
-        <Link to="/" className="nav-link">Home</Link>
+        <Link to="/" className="nav-link" onClick={handleHomeClick}>Home</Link>
         <Link to="/promotions" className="nav-link">Promotions</Link>
         <span className="dot" aria-hidden="true" />
       </nav>
