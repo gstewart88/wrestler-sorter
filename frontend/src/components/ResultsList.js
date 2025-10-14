@@ -6,7 +6,17 @@ import MobileMockup    from './MobileMockup';
 import useHtml2CanvasExport from '../hooks/useHtml2CanvasExport';
 import './ResultsList.css';
 
-export default function ResultsList({ result, showAll, onToggle }) {
+function formatElapsed(ms) {
+  if (!ms && ms !== 0) return '';
+  const totalSec = Math.floor(ms / 1000);
+  const hh = Math.floor(totalSec / 3600);
+  const mm = Math.floor((totalSec % 3600) / 60);
+  const ss = totalSec % 60;
+  if (hh > 0) return `${hh}:${String(mm).padStart(2,'0')}:${String(ss).padStart(2,'0')}`;
+  return `${mm}:${String(ss).padStart(2,'0')}`;
+}
+
+export default function ResultsList({ result, showAll, onToggle, summary = null }) {
   const listRef   = useRef(null);
   const mobileRef = useRef(null);
   const { exportRef, shareRef } = useHtml2CanvasExport();
@@ -91,6 +101,8 @@ export default function ResultsList({ result, showAll, onToggle }) {
     <>
       {listView}
 
+
+
       {/* off-screen mobile mockup for html2canvas */}
       <MobileMockup
         ref={mobileRef}
@@ -101,7 +113,7 @@ export default function ResultsList({ result, showAll, onToggle }) {
 
       {/* Bottom-right: Restart, Share & Download stacked */}
       <footer className="app-footer">
-
+        <div className="footer-left">  
         {result.length > 9 && (
           <button
             className="btn btn-link me-auto"
@@ -113,7 +125,20 @@ export default function ResultsList({ result, showAll, onToggle }) {
               : `Show All ${result.length}`}
           </button>
         )}
-
+        </div>
+      <div className="footer-center"> 
+      {summary && (
+        <div className="results-summary" role="status" aria-live="polite">
+          <span className="full-text">
+            <strong>You made {summary.choices} choices</strong> in <strong>{formatElapsed(summary.elapsedMs)}</strong>
+          </span>
+          <span className="compact-text" aria-hidden="true">
+            <strong>{summary.choices}</strong> in <strong>{formatElapsed(summary.elapsedMs)}</strong>
+          </span>
+        </div>
+      )}
+      </div>
+      <div className="footer-right">
       <button
         className="btn btn-outline-secondary"
         onClick={() => window.location.reload()}
@@ -153,6 +178,7 @@ export default function ResultsList({ result, showAll, onToggle }) {
       >
         <FaDownload size={20} />
       </button>
+      </div>
       </footer>
     </>
   );

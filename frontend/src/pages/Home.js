@@ -12,6 +12,10 @@ import shuffleArray from '../utils/shuffleArray';
 import './Home.css';
 
 export default function Home() {
+
+  const [startTime, setStartTime] = useState(null); // ms since epoch
+  const [finalSummary, setFinalSummary] = useState(null); // { choices, elapsedMs }
+
   // Data & filter state
   const [selectedCompanies, setSelected]     = useState(['Raw']);
   const [divisionFilter, setDivisionFilter]  = useState('All');
@@ -86,6 +90,19 @@ export default function Home() {
     acc[company]  = { total, shown };
     return acc;
   }, {});
+
+  // when result becomes available, compute elapsed and capture choices
+  React.useEffect(() => {
+    if (result && startTime) {
+      const end = Date.now();
+      setFinalSummary({
+        choices: completedComparisons ?? 0,
+        elapsedMs: Math.max(0, end - startTime)
+      });
+      // clear startTime so repeated views won't reuse it
+      setStartTime(null);
+    }
+  }, [result, startTime, completedComparisons]);
 
   // Final results minus ignored
   const filteredResult = result
@@ -209,7 +226,11 @@ export default function Home() {
           variant="primary"
           className="d-block mx-auto my-3"
           disabled={!selectedCompanies.length || previewList.length === 0}
-          onClick={() => handleStart(shuffleArray(previewList))}
+          onClick={() => {
+            setStartTime(Date.now());
+            setFinalSummary(null);
+            handleStart(shuffleArray(previewList));
+          }}
         >
           Start
         </Button>
@@ -235,6 +256,7 @@ export default function Home() {
               result={filteredResult}
               showAll={showAll}
               onToggle={() => setShowAll(x => !x)}
+              summary={finalSummary}
             />
           )}
 

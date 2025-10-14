@@ -3,6 +3,29 @@
   --footer-height: 4rem;   /* adjust this to whatever your footer ends up being */
 }
 
+.app-footer { display: flex; align-items: center; justify-content: space-between; padding: 0 12px; }
+.footer-left, .footer-right { flex: 0 0 auto; }
+.footer-center { flex: 1 1 auto; text-align: center; }
+.footer-right { display: flex; gap: var(--gap); }
+
+/* center the line inside footer or container */
+.results-summary {
+  display: block;
+  text-align: center;
+  margin: 12px 0;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  white-space: nowrap; /* try to keep it on one line when possible */
+}
+
+/* by default show full sentence, hide compact variant */
+.results-summary .full-text {
+  display: inline;
+}
+.results-summary .compact-text {
+  display: none;
+}
+
 .results-container {
   margin-top: var(--gap);
   text-align: center;
@@ -201,5 +224,15 @@
   /* each column should fill that centered wrapper */
   .column {
     width: 100%;
+  }
+
+  .results-summary {
+    white-space: normal; /* allow wrapping */
+  }
+  .results-summary .full-text {
+    display: none;
+  }
+  .results-summary .compact-text {
+    display: inline;
   }
 }
