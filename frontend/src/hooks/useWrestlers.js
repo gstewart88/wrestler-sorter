@@ -18,7 +18,7 @@ export default function useWrestlers() {
       'raw',
       'smackdown',
       'nxt',
-      'cmll'
+      // 'cmll'
     ];
 
     Promise.all(

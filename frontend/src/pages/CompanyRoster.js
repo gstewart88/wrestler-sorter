@@ -38,7 +38,7 @@ export default function CompanyRoster() {
     tjpw: 'TJPW',
     njpw: 'NJPW',
     marigold: 'Marigold',
-    cmll: 'CMLL',
+    // cmll: 'CMLL',
   };
   const company = slugToName[slug] || slug;
   const roster = wrestlers.filter(w => w.company === company);

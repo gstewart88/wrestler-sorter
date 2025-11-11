@@ -80,9 +80,9 @@
 .company-filter .form-check-label[for="company-TJPW"]::before {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/TJPW_logo.svg/480px-TJPW_logo.svg.png?20230218193820');
 }
-.company-filter .form-check-label[for="company-CMLL"]::before {
+/* .company-filter .form-check-label[for="company-CMLL"]::before {
   background-image: url('https://static.wikia.nocookie.net/prowrestling/images/c/c9/CMLLlogo2018.png');
-}
+} */
 
 /* Checkbox on the right */
 .company-filter .form-check-input {

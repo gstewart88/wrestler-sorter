@@ -44,11 +44,11 @@ const promotions = [
     slug: 'nxt',
     img: 'https://wrestlingnews.co/wp-content/uploads/2025/05/hq-Oba-Femi-21_2025-05-26_00-40-57.jpg'
   },
-  {
-    name: 'CMLL',
-    slug: 'cmll',
-    img: 'https://www.luchawiki.org/images/2/2c/Cmllheavy_granguerrero.jpg'
-  },
+  // {
+  //   name: 'CMLL',
+  //   slug: 'cmll',
+  //   img: 'https://www.luchawiki.org/images/2/2c/Cmllheavy_granguerrero.jpg'
+  // },
   {
     name: 'NJPW',
     slug: 'njpw',
