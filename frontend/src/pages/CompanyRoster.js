@@ -29,15 +29,15 @@ export default function CompanyRoster() {
   const { wrestlers } = useWrestlers();
 
   const slugToName = {
+    aew: 'AEW',
+    marigold: 'Marigold',
+    njpw: 'NJPW',
+    nxt: 'NXT',
     raw: 'Raw',
     smackdown: 'Smackdown',
-    aew: 'AEW',
-    tna: 'TNA',
-    nxt: 'NXT',
     stardom: 'Stardom',
     tjpw: 'TJPW',
-    njpw: 'NJPW',
-    marigold: 'Marigold',
+    tna: 'TNA'
     // cmll: 'CMLL',
   };
   const company = slugToName[slug] || slug;
