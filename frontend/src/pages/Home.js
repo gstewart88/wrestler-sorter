@@ -17,7 +17,7 @@ export default function Home() {
   const [finalSummary, setFinalSummary] = useState(null); // { choices, elapsedMs }
 
   // Data & filter state
-  const [selectedCompanies, setSelected]     = useState(['Raw']);
+  const [selectedCompanies, setSelected]     = useState(['Stardom']);
   const [divisionFilter, setDivisionFilter]  = useState('All');
   const [showAll, setShowAll]                = useState(false);
   const [removedPreview, setRemovedPreview]  = useState(new Set());
