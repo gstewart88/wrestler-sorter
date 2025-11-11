@@ -41,7 +41,11 @@ export default function useWrestlers() {
           ...w,
           imageURL: `${IMAGES_CDN}/${w.imageURL}`
         }));
-
+          const ids = all.map(w => (w.id ?? w.name) + '');
+          const dup = ids.find((id, i) => ids.indexOf(id) !== i);
+          if (dup) {
+          console.warn('useWrestlers: duplicate wrestler id detected:', dup, ids.filter((id, i) => ids.indexOf(id) !== i));
+          }
         setWrestlers(all);
 
         // extract unique, non-empty company names
