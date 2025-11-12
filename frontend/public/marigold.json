@@ -105,12 +105,6 @@
     "bio":""
   },
   {
-    "name": "Nanae Takahashi",
-    "company": "Marigold",
-    "imageURL": "NanaeTakahashiMarigold.png",
-    "division": "Women's"
-  },
-  {
     "name": "Nao Ishikawa",
     "company": "Marigold",
     "imageURL": "NaoIshikawaMarigold.png",
@@ -154,6 +148,13 @@
     "name": "Shinno",
     "company": "Marigold",
     "imageURL": "ShinnoMarigold.png",
+    "division": "Women's",
+    "bio":""
+  },
+    {
+    "name": "Syoko Koshino",
+    "company": "Marigold",
+    "imageURL": "SyokoKoshinoMarigold.png",
     "division": "Women's",
     "bio":""
   },
