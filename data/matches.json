@@ -1,0 +1,50 @@
+[
+    { 
+        "id": "njpw-2017-okada-omega", 
+        "title": "Okada vs Omega", 
+        "date": "2017-01-04", 
+        "promotion": "NJPW",
+        "card": "Wrestle Kingdom", 
+        "where": "Tokyo Dome",  
+        "location": "Tokyo, Japan", 
+        "won": 5,
+        "cagematch": 9.80,
+        "short": "A short intro sentence for list view.", 
+        "thumbnail": "/images/thumbs/njpw-2017-okada-omega.jpg", 
+        "background": "Longer background text about the match build.", 
+        "spoiler": "Detailed analysis and outcomes.", 
+        "order": 1 
+    },
+    { 
+        "id": "wwe-1997-bret-austin", 
+        "title": "Okada vs Omega", 
+        "date": "1997-03-23", 
+        "promotion": "WWE",
+        "card": "Wrestlemania 13", 
+        "where": "Rosemont Horizon",  
+        "location": "Rosemont, Illinois", 
+        "won": 5,
+        "cagematch": 9.63,
+        "short": "A short intro sentence for list view.", 
+        "thumbnail": "/images/thumbs/wwe-1997-bret-austin.jpg", 
+        "background": "Longer background text about the match build.", 
+        "spoiler": "Detailed analysis and outcomes.", 
+        "order": 2 
+    },
+    { 
+        "id": "njpw-2018-okada-omega", 
+        "title": "Okada vs Omega", 
+        "date": "2018-06-09", 
+        "promotion": "NJPW",
+        "card": "Dominion", 
+        "where": "Osaka-Jo Hall",  
+        "location": "Osaka, Japan", 
+        "won": 5,
+        "cagematch": 9.79,
+        "short": "A short intro sentence for list view.", 
+        "thumbnail": "/images/thumbs/njpw-2018-okada-omega.jpg", 
+        "background": "Longer background text about the match build.", 
+        "spoiler": "Detailed analysis and outcomes.", 
+        "order": 3
+    }
+]
