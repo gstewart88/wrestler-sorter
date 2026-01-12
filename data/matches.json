@@ -1,7 +1,7 @@
 [
     { 
         "id": "njpw-2017-okada-omega", 
-        "title": "Okada vs Omega", 
+        "title": "Kazuchika Okada vs Kenny Omega", 
         "date": "2017-01-04", 
         "promotion": "NJPW",
         "card": "Wrestle Kingdom", 
@@ -17,7 +17,7 @@
     },
     { 
         "id": "wwe-1997-bret-austin", 
-        "title": "Okada vs Omega", 
+        "title": "Bret Hart vs Steve Austin", 
         "date": "1997-03-23", 
         "promotion": "WWE",
         "card": "Wrestlemania 13", 
@@ -33,7 +33,7 @@
     },
     { 
         "id": "njpw-2018-okada-omega", 
-        "title": "Okada vs Omega", 
+        "title": "Kazuchika Okada vs Kenny Omega", 
         "date": "2018-06-09", 
         "promotion": "NJPW",
         "card": "Dominion", 
