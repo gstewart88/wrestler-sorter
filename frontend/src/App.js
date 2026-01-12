@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Promotions from './pages/Promotions';
 import CompanyRoster from './pages/CompanyRoster';
+import MatchesPage from './pages/MatchesPage';
 import './App.css';
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/promotions" element={<Promotions />} />
           <Route path="/company/:slug" element={<CompanyRoster />} />
+          <Route path="/matches" element={<MatchesPage />} />
         </Routes>
       </main>
     </Container>

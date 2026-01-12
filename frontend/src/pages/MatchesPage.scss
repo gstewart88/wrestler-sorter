@@ -1,0 +1,3 @@
+.matches-page { padding: 1rem; } 
+.matches-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; } 
+.pagination { display:flex; gap:1rem; align-items:center; justify-content:center; margin-top:1rem; }
