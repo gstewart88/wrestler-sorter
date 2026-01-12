@@ -7,37 +7,32 @@ const promotions = [
   {
     name: 'AEW',
     slug: 'aew',
-    img: 'https://static.wixstatic.com/media/815952_edf4c83f122546e79e01bf047caf2024~mv2.jpg/v1/fill/w_568,h_320,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/815952_edf4c83f122546e79e01bf047caf2024~mv2.jpg'
+    img: 'https://www.si.com/.image/t_share/MTkzOTA4OTU5MzM2MjExOTUy/mjf-aew-championship.jpg'
   },
-  // {
-  //   name: 'CMLL',
-  //   slug: 'cmll',
-  //   img: 'https://www.luchawiki.org/images/2/2c/Cmllheavy_granguerrero.jpg'
-  // },
   {
     name: 'Marigold',
     slug: 'Marigold',
-    img: 'https://monthlypuroresu.com/wp-content/uploads/2025/04/Utami-Hayashishita-champion-2-a.jpg'
+    img: 'https://substackcdn.com/image/fetch/$s_!iSWo!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F47c77c2a-6c75-47f5-8027-e8a11fe90a10_2048x1072.jpeg'
   },
   {
     name: 'NJPW',
     slug: 'njpw',
-    img: 'https://www.wrestlinginc.com/img/gallery/why-wrestling-fans-shouldnt-expect-to-see-zack-sabre-jr-join-aew-or-wwe/l-intro-1736504530.jpg'
+    img: 'https://img.solowrestling.com/images/136/136715-yotaglobal.jpg'
   },
   {
     name: 'NXT',
     slug: 'nxt',
-    img: 'https://wrestlingnews.co/wp-content/uploads/2025/05/hq-Oba-Femi-21_2025-05-26_00-40-57.jpg'
+    img: 'https://www.wrestlezone.com/wp-content/uploads/sites/8/2025/07/jacy-jayne-tna-slammiversary.jpg'
   },
   {
     name: 'Raw',
     slug: 'raw',
-    img: 'https://www.wrestlingattitude.com/wp-content/uploads/2024/01/Seth-Rollins-NEW-1.jpg'
+    img: 'https://www.tpww.net/wp-content/uploads/2025/11/CM-Punk-2.jpg'
   },
   {
     name: 'Smackdown',
     slug: 'smackdown',
-    img: 'https://www.usanetwork.com/sites/usablog/files/2024/08/smackdown-cody-rhodes.jpg'
+    img: 'https://assets.newsweek.com/wp-content/uploads/2025/08/2619048-wwe-drew-mcintyre-wrestlemania.jpg?w=1600&quality=80&webp=1'
   },
   {
     name: 'Stardom',
@@ -47,12 +42,12 @@ const promotions = [
   {
     name: 'TJPW',
     slug: 'tjpw',
-    img: 'https://pm1.aminoapps.com/9281/dec154040146a9c27f61c48b0e4a6ce74534468er1-900-600v2_hq.jpg'
+    img: 'https://catch-news.fr/images/2025/08/24/miu-watanabe-s-adjuge-la-tokyo-princess-cup-2025.jpg'
   },
   {
     name: 'TNA',
     slug: 'tna',
-    img: 'https://cdn.wrestletalk.com/wp-content/uploads/2025/05/trick-williams-tna-world-champion-may-26-b.jpg'
+    img: 'https://www.wrestleview.com/wp-content/uploads/2025/11/kaztnachamp-1160x653.jpg'
   }
 ];
 
