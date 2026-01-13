@@ -20,24 +20,29 @@ export default function MatchesPage() {
   const currentPage = Number.isNaN(pageParam) || pageParam < 1 ? 1 : pageParam;
   const base = process.env.PUBLIC_URL || '';
 
-  useEffect(() => {
-    setLoading(true);
-    fetch(base + '/data/matches.json')
-      .then(r => {
-        if (!r.ok) throw new Error('Failed to load matches JSON');
-        return r.json();
-      })
-      .then(arr => {
-        // ensure stable ordering
-        arr.sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
-        setMatches(arr);
-      })
-      .catch(err => {
-        console.error('Failed to load matches JSON', err);
-        setMatches([]);
-      })
-      .finally(() => setLoading(false));
-  }, []);
+    useEffect(() => { 
+        const controller = new AbortController(); 
+        const signal = controller.signal; 
+        
+        setLoading(true); 
+        fetch(base + '/data/matches.json', { signal }) 
+            .then(r => { 
+                if (!r.ok) throw new Error('Failed to load matches JSON'); 
+                return r.json(); 
+            }) 
+            .then(arr => { 
+                arr.sort((a, b) => (a.order ?? 0) - (b.order ?? 0)); 
+                setMatches(arr); 
+            }) 
+            .catch(err => { 
+                if (err.name === 'AbortError') return; 
+                console.error('Failed to load matches JSON', err); 
+                setMatches([]); 
+            }) 
+            .finally(() => setLoading(false)); 
+            
+        return () => controller.abort(); 
+    }, [base]);
 
   const totalPages = Math.max(1, Math.ceil(matches.length / PAGE_SIZE));
   const pageItems = useMemo(() => {

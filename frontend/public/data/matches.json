@@ -10,7 +10,7 @@
         "won": 5,
         "cagematch": 9.80,
         "short": "A short intro sentence for list view.", 
-        "thumbnail": "/images/thumbs/njpw-2017-okada-omega.jpg", 
+        "thumbnail": "/matches/njpw-2017-okada-omega.jpeg", 
         "background": "Longer background text about the match build.", 
         "spoiler": "Detailed analysis and outcomes.", 
         "order": 1 
@@ -26,7 +26,7 @@
         "won": 5,
         "cagematch": 9.63,
         "short": "A short intro sentence for list view.", 
-        "thumbnail": "/images/thumbs/wwe-1997-bret-austin.jpg", 
+        "thumbnail": "/matches/wwe-1997-bret-austin.jpg", 
         "background": "Longer background text about the match build.", 
         "spoiler": "Detailed analysis and outcomes.", 
         "order": 2 
@@ -42,7 +42,7 @@
         "won": 5,
         "cagematch": 9.79,
         "short": "A short intro sentence for list view.", 
-        "thumbnail": "/images/thumbs/njpw-2018-okada-omega.jpg", 
+        "thumbnail": "/matches/njpw-2018-okada-omega.jpeg", 
         "background": "Longer background text about the match build.", 
         "spoiler": "Detailed analysis and outcomes.", 
         "order": 3
@@ -50,20 +50,20 @@
     {
         "id": "njpw-2017-okada-shibata",
         "title": "Kazuchika Okada (c) vs Katsuyori Shibata",
-"date": "2017-04-09",
-"promotion": "NJPW",
-"card": "Sakura Genesis 2017",
-"where": "Ryogoku Kokugikan",
-"location": "Tokyo, Japan",
-"won": null,
-"cagematch": 9.77,
-"short": "",
-"thumbnail": "",
-"background": "",
-"spoiler": "",
-"order": 4
-},
-{
+        "date": "2017-04-09",
+        "promotion": "NJPW",
+        "card": "Sakura Genesis 2017",
+        "where": "Ryogoku Kokugikan",
+        "location": "Tokyo, Japan",
+        "won": null,
+        "cagematch": 9.77,
+        "short": "",
+        "thumbnail": "",
+        "background": "",
+        "spoiler": "",
+        "order": 4
+    },
+    {
 "id": "njpw-2017-okada-omega-dominion",
 "title": "Kazuchika Okada (c) vs Kenny Omega",
 "date": "2017-06-11",
