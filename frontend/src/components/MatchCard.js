@@ -1,39 +1,23 @@
 // src/components/MatchCard.js
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './MatchCard.scss';
+import { IMAGES_CDN } from '../config';
 
 export default function MatchCard({ match }) {
-  const watchedKey = `match:watched:${match.id}`;
-  const spoilerKey = `match:spoiler:${match.id}`;
-
-  const [watched, setWatched] = useState(() => localStorage.getItem(watchedKey) === '1');
-  const [spoilerRevealed, setSpoilerRevealed] = useState(() => localStorage.getItem(spoilerKey) === '1');
-
-  useEffect(() => {
-    try {
-      localStorage.setItem(watchedKey, watched ? '1' : '0');
-    } catch (e) {
-      // ignore storage errors in private mode
-    }
-  }, [watched, watchedKey]);
-
-  useEffect(() => {
-    try {
-      localStorage.setItem(spoilerKey, spoilerRevealed ? '1' : '0');
-    } catch (e) {
-      // ignore storage errors in private mode
-    }
-  }, [spoilerRevealed, spoilerKey]);
+  const src = `${IMAGES_CDN}/${(match.imageURL || '').replace(/^\/+/, '')}`;
 
   return (
-    <article className="match-card">
+    <article className="match-card match-card--compact" aria-labelledby={`match-title-${match.id}`}>
       <div className="thumb">
         <img
-          src={match.thumbnail}
+          src={src}
           alt={`${match.title} thumbnail`}
           loading="lazy"
           decoding="async"
-          onError={e => {
+          width="320"
+          height="180"
+          onError={(e) => {
             e.currentTarget.onerror = null;
             e.currentTarget.src = 'https://catch-news.fr/images/2025/08/24/miu-watanabe-s-adjuge-la-tokyo-princess-cup-2025.jpg';
           }}
@@ -41,29 +25,22 @@ export default function MatchCard({ match }) {
       </div>
 
       <div className="meta">
-        <h3>{match.title}</h3>
-        <div className="sub">{match.promotion} • {match.card} • {match.date}</div>
-        <p className="short">{match.short}</p>
-
-        <div className="controls">
-          <button onClick={() => setWatched(true)} disabled={watched}>Mark as watched</button>
-          <button
-            onClick={() => setSpoilerRevealed(true)}
-            disabled={spoilerRevealed}
-            aria-expanded={spoilerRevealed}
-          >
-            Reveal Spoiler
-          </button>
+        <h3 id={`match-title-${match.id}`}>{match.title}</h3>
+        <div className="sub" aria-hidden="false">
+          <span className="promotion">{match.promotion}</span>
+          <span className="sep"> • </span>
+          <span className="card">{match.card}</span>
+          <span className="sep"> • </span>
+          <time className="date" dateTime={match.date}>{match.date}</time>
         </div>
 
-        <section className="background">
-          <h4>Background</h4>
-          <p>{match.background}</p>
-        </section>
+        <p className="short">{match.short}</p>
 
-        <section className={`spoiler ${spoilerRevealed ? 'revealed' : 'hidden'}`} aria-hidden={!spoilerRevealed}>
-          {!spoilerRevealed ? <div className="spoiler-warning">Spoiler hidden</div> : <p>{match.spoiler}</p>}
-        </section>
+        <div className="cta">
+          <Link to={`/matches/${match.id}`} className="btn btn-primary read-more" aria-label={`Read more about ${match.title}`}>
+            Read More
+          </Link>
+        </div>
       </div>
     </article>
   );
