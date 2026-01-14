@@ -1,0 +1,70 @@
+// src/pages/MatchDetail.scss
+$muted: #6b7280;
+$gap: 1rem;
+
+.match-detail {
+  padding: 1.5rem;
+
+  .sub {
+    color: $muted;
+    margin-top: 0.25rem;
+    font-size: 0.95rem;
+  }
+
+  .detail-grid {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: $gap;
+    align-items: start;
+    margin-top: 1rem;
+
+    @media (max-width: 880px) {
+      grid-template-columns: 1fr;
+    }
+
+    .detail-image {
+      border-radius: 8px;
+      overflow: hidden;
+      background: #f6f7fb;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    .detail-body {
+      h3 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        color: #222;
+        line-height: 1.5;
+      }
+
+      ul {
+        padding-left: 1.25rem;
+      }
+
+      pre {
+        background: #f8f9fb;
+        padding: 0.6rem;
+        border-radius: 6px;
+        overflow-x: auto;
+        font-size: 0.95rem;
+      }
+    }
+  }
+
+  // small back link
+  .mp-btn-link {
+    color: #0b5fff;
+    text-decoration: none;
+    padding: 0;
+    &:hover { text-decoration: underline; }
+  }
+}

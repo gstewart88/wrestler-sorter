@@ -8,8 +8,8 @@ export default function MatchCard({ match }) {
   const src = `${IMAGES_CDN}/${(match.imageURL || '').replace(/^\/+/, '')}`;
 
   return (
-    <article className="match-card match-card--compact" aria-labelledby={`match-title-${match.id}`}>
-      <div className="thumb">
+    <article className="mp-match-card match-card--compact" aria-labelledby={`match-title-${match.id}`}>
+      <div className="mp-thumb">
         <img
           src={src}
           alt={`${match.title} thumbnail`}
@@ -24,9 +24,9 @@ export default function MatchCard({ match }) {
         />
       </div>
 
-      <div className="meta">
+      <div className="mp-meta">
         <h3 id={`match-title-${match.id}`}>{match.title}</h3>
-        <div className="sub" aria-hidden="false">
+        <div className="mp-sub" aria-hidden="false">
           <span className="promotion">{match.promotion}</span>
           <span className="sep"> • </span>
           <span className="card">{match.card}</span>
@@ -34,10 +34,10 @@ export default function MatchCard({ match }) {
           <time className="date" dateTime={match.date}>{match.date}</time>
         </div>
 
-        <p className="short">{match.short}</p>
+        <p className="mp-short">{match.short}</p>
 
-        <div className="cta">
-          <Link to={`/matches/${match.id}`} className="btn btn-primary read-more" aria-label={`Read more about ${match.title}`}>
+        <div className="mp-cta">
+          <Link to={`/matches/${match.id}`} className="mp-btn mp-btn-primary read-more" aria-label={`Read more about ${match.title}`}>
             Read More
           </Link>
         </div>
