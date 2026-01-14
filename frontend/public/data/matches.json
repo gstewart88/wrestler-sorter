@@ -9,10 +9,10 @@
         "location": "Tokyo, Japan", 
         "won": 5,
         "cagematch": 9.80,
-        "short": "A short intro sentence for list view.", 
+        "short": "Okada vs. Omega — 60 minutes of wrestling perfection", 
         "imageURL": "/matches/njpw-2017-okada-omega.jpeg", 
-        "background": "Longer background text about the match build.", 
-        "spoiler": "Detailed analysis and outcomes.", 
+        "background": "Okada vs. Omega at Wrestle Kingdom 11 was the culmination of Kenny Omega's G1 Climax 2016 victory and months of escalating rivalry with Kazuchika Okada, headlining NJPW's Tokyo Dome show on 4 January 2017 where Okada successfully defended the IWGP Heavyweight Championship in a widely praised, near-classic main event.\n\nKenny Omega earned the title shot by winning the 2016 G1 Climax, becoming the first non-Japanese winner of that tournament's modern era and securing the right to challenge for the IWGP Heavyweight Championship. Kazuchika Okada entered Wrestle Kingdom 11 as the reigning IWGP Heavyweight Champion, established as NJPW's top star after a dominant run that included multiple high-profile title defenses.\n\nThe rivalry was fueled by factional tensions, Omega as a leading figure in Bullet Club and Okada as the centerpiece of CHAOS, which produced repeated confrontations in multi-man matches, tag bouts, and promotional segments throughout late 2016. Those encounters sharpened the personal stakes: Omega's aggressive, boundary-pushing style and Okada's composed, championship-level psychology created a clear contrast that promoters and fans framed as a generational and stylistic clash.\n\nPromos and in-ring moments in the months before January amplified anticipation. Omega's G1 victory gave him momentum and legitimacy; Okada's long title reign and status as NJPW's “ace” made the match a test of whether a new international star could unseat the company's established leader.",
+        "spoiler": "Okada retained the IWGP Heavyweight Championship at Wrestle Kingdom 11, but the match's immediate aftermath was to intensify and extend the Okada-Omega rivalry, elevate Kenny Omega's international profile, and set up a string of high-stakes rematches that became one of modern NJPW's defining series.\n\nThe match was widely praised by fans and critics for its pacing, dramatic near-falls, and sustained intensity, and it immediately boosted Kenny Omega's standing as a legitimate main-event star while reinforcing Kazuchika Okada's status as NJPW's top champion. The Tokyo Dome main event drew attention beyond Japan, helping NJPW reach a broader international audience and increasing demand for further encounters between the two men.\n\nPromoters capitalized on the rivalry: ticket demand and international interest increased for shows featuring either man, and the series helped NJPW expand its global footprint through streaming and media coverage. For Omega, the sustained spotlight contributed to his eventual status as a global star beyond NJPW; for Okada, the matches reinforced his role as the company's “ace” and a performer capable of carrying multi-match sagas\n\nThe WK11 bout did not settle the rivalry; instead it served as the opening chapter of a multi-match saga that culminated in further classics and a title change later in the series, cementing both wrestlers' reputations and influencing booking approaches to long-term rivalries in modern pro wrestling.", 
         "order": 1 
     },
     { 
@@ -330,7 +330,7 @@
         "won": null,
         "cagematch": 9.59,
         "short": "",
-        "imageURL": "",
+        "imageURL": "/matches/nxtuk-2019-walter-bate.jpg",
         "background": "",
         "spoiler": "",
         "order": 21
@@ -346,7 +346,7 @@
         "won": null,
         "cagematch": 9.75,
         "short": "",
-        "imageURL": "",
+        "imageURL": "/matches/njpw-2017-omega-naito.jpg",
         "background": "",
         "spoiler": "",
         "order": 22
@@ -362,7 +362,7 @@
         "won": null,
         "cagematch": 9.57,
         "short": "",
-        "imageURL": "",
+        "imageURL": "/matches/njpw-2022-okada-ospreay.jpg",
         "background": "",
         "spoiler": "",
         "order": 23
@@ -374,15 +374,15 @@
         "promotion": "WWE",
         "card": "WrestleMania 21",
         "where": "Staples Center",
-"location": "Los Angeles, California",
-"won": null,
-"cagematch": 9.48,
-"short": "",
-"imageURL": "",
-"background": "",
-"spoiler": "",
-"order": 24
-},
+        "location": "Los Angeles, California",
+        "won": null,
+        "cagematch": 9.48,
+        "short": "",
+        "imageURL": "/matches/wwe-2005-angle-michaels.jpg",
+        "background": "",
+        "spoiler": "",
+        "order": 24
+    },
 {
 "id": "ajpw-1995-supergeneration-hda-vs-sga",
 "title": "Super Generation Army (Kenta Kobashi/Mitsuharu Misawa) vs Holy Demon Army (Akira Taue/Toshiaki Kawada)",
