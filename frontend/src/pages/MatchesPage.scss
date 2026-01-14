@@ -13,7 +13,7 @@ $mp-shadow: 0 6px 18px rgba(20, 24, 30, 0.06);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: $mp-gap;
-    align-items: start;
+    align-items: stretch;
   }
 
   .mp-match-card {
