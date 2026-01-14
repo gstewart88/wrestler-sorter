@@ -58,7 +58,7 @@
         "won": null,
         "cagematch": 9.77,
         "short": "",
-        "imageURL": "njpw-2017-okada-shibata.jpg",
+        "imageURL": "/matches/njpw-2017-okada-shibata.jpg",
         "background": "",
         "spoiler": "",
         "order": 4
@@ -74,7 +74,7 @@
         "won": null,
         "cagematch": 9.68,
         "short": "",
-        "imageURL": "/matches/njpw-2017-dominion-okada-omega.jpeg",
+        "imageURL": "/matches/njpw-2017-dominion-okada-omega.jpg",
         "background": "",
         "spoiler": "",
         "order": 5
@@ -122,7 +122,7 @@
         "won": null,
         "cagematch": 9.63,
         "short": "",
-        "imageURL": "/matches/wwe-2011-cena-punk.jpeg",
+        "imageURL": "/matches/wwe-2011-cena-punk.jpg",
         "background": "",
         "spoiler": "",
         "order": 8
@@ -138,7 +138,7 @@
         "won": null,
         "cagematch": 9.58,
         "short": "",
-        "imageURL": "/matches/wwe-2001-TLC-2.jpeg",
+        "imageURL": "/matches/wwe-2001-TLC-2.jpg",
         "background": "",
         "spoiler": "",
         "order": 9
@@ -170,7 +170,7 @@
         "won": null,
         "cagematch": 9.64,
         "short": "",
-        "imageURL": "/matches/njpw-2017-nakamura-ibushi.jpeg", 
+        "imageURL": "/matches/njpw-2017-nakamura-ibushi.jpg", 
         "background": "",
         "spoiler": "",
         "order": 11
@@ -202,7 +202,7 @@
         "won": null,
         "cagematch": 9.66,
         "short": "",
-        "imageURL": "/matches/tna-2005-daniels-styles-joe.jpeg",
+        "imageURL": "/matches/tna-2005-daniels-styles-joe.jpg",
         "background": "",
         "spoiler": "",
         "order": 13
@@ -250,7 +250,7 @@
         "won": null,
         "cagematch": 9.72,
         "short": "",
-        "imageURL": "/matches/ajpw-1994-misawa-kawada.jpeg",
+        "imageURL": "/matches/ajpw-1994-misawa-kawada.jpg",
         "background": "",
         "spoiler": "",
         "order": 16
@@ -298,7 +298,7 @@
         "won": null,
         "cagematch": 9.77,
         "short": "",
-        "imageURL": "/matches/njpw-2023-ospreay-omega.jpeg",
+        "imageURL": "/matches/njpw-2023-ospreay-omega.jpg",
         "background": "",
         "spoiler": "",
         "order": 19
@@ -314,7 +314,7 @@
         "won": null,
         "cagematch": 9.60,
         "short": "",
-        "imageURL": "/matches/aew-2023-mjf-danielson.jpeg",
+        "imageURL": "/matches/aew-2023-mjf-danielson.jpg",
         "background": "",
         "spoiler": "",
         "order": 20
