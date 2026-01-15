@@ -34,6 +34,11 @@
   box-sizing: border-box;
 }
 
+.match-detail, 
+.article-wrapper { 
+  margin-top: 2rem !important; /* moves the whole article down */ 
+}
+
 .mp-detail-image,
 .detail-image {
   display: flex;

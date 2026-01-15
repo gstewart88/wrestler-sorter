@@ -77,26 +77,22 @@ export default function MatchDetail() {
     <Container className="py-4">
       {/* Header styled to match CompanyRoster's header layout:
           a back link and an h1 on the same row (CSS class 'company-header' expected) */}
-      <div className="company-header" role="banner" style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
-        <a
-          className="back-button"
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
+      <div className="company-header" role="banner"> 
+        <button
+          type="button"
+          className="back-button" 
+          onClick={() => { 
             // prefer history back, fallback to a safe href
             if (window.history.length > 1) navigate(-1);
-            else window.location.href = fallbackHref;
-          }}
-          aria-label="Back"
-          style={{ textDecoration: 'none', color: 'inherit' }}
-        >
-          ← Back
-        </a>
-
-        <h1 style={{ margin: 0, fontSize: '1.25rem', lineHeight: 1.15, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-          {match.title}
-        </h1>
-      </div>
+             else window.location.href = fallbackHref;
+              }}
+               aria-label="Back" 
+              > 
+                ← Back 
+              </button>
+                
+              <h1 className="company-title">{match.title}</h1> 
+            </div>
 
       <article className="match-detail" style={{ marginTop: 0 }}>
         <div
@@ -121,7 +117,7 @@ export default function MatchDetail() {
               }}
             />
 
-            <div
+          <div
               className="info-grid"
               style={{
                 display: 'grid',
