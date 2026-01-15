@@ -1,71 +1,72 @@
-/* Title centered while back button stays left */
-.company-header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center; /* centers the title horizontally */
-  padding: 0.25rem 0.5rem;
+/* Color variables default to dark-mode values so existing dark UI is unchanged */
+:root {
+  --left-bg: #000;           /* left column background (dark) */
+  --info-bg: #fff;           /* info grid background (white) */
+  --page-bg: #000;           /* page/article background */
+  --title-color: #fff;       /* title text color in dark mode */
+  --text-color: #fff;        /* primary text color in dark mode */
+  --muted-color: #9aa0a6;    /* muted text in dark mode */
+  --accent: #0b5fff;         /* accent / link color */
+  --card-radius: 8px;
 }
 
-/* keep the back button visually left but out of the normal flow */
-.company-header .back-button {
-  position: absolute;
-  left: 0.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-  text-decoration: none;
-  color: inherit;
-  padding: 0.25rem 0.5rem;
-  border-radius: 6px;
+/* Light mode via user preference */
+@media (prefers-color-scheme: light) {
+  :root {
+    --left-bg: #ffffff;      /* left column becomes white */
+    --info-bg: #f8f9fb;      /* subtle card background */
+    --page-bg: #ffffff;      /* page background */
+    --title-color: #111827;  /* dark title color */
+    --text-color: #111827;   /* primary text color */
+    --muted-color: #6b7280;  /* muted text for light mode */
+    --accent: #0b5fff;
+  }
 }
 
-/* center the H1 and allow truncation on narrow screens */
-.company-header h1 {
-  margin: 0;
-  text-align: center;
-  font-size: 1.25rem;
-  line-height: 1.15;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
-  max-width: calc(100% - 96px); /* leave room for back button */
-  box-sizing: border-box;
+/* Optional manual toggle class for sites that let users switch modes */
+.light-mode {
+  --left-bg: #ffffff;
+  --info-bg: #f8f9fb;
+  --page-bg: #ffffff;
+  --title-color: #111827;
+  --text-color: #111827;
+  --muted-color: #6b7280;
 }
 
-.match-detail, 
-.article-wrapper { 
+/* Use the variables in your existing selectors */
+.match-detail {
+  background: var(--page-bg);
   margin-top: 2rem !important; /* moves the whole article down */ 
 }
 
+/* Left column */
 .mp-detail-image,
 .detail-image {
+  background: var(--left-bg);
+  border-radius: var(--card-radius);
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  background: #000;      
-  border-radius: 8px;
-  overflow: hidden;
-  min-height: 0; 
-  padding: 0;           
+  min-height: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* Ensure the image itself fills the width and keeps natural height */
+/* Image */
 .detail-image img,
 .mp-detail-image img {
   width: 100%;
   height: auto;
   display: block;
   object-fit: cover;
-  background: #000; /* avoids flash of white while loading */
+  background: var(--left-bg);
 }
 
+/* Info grid pinned to bottom */
 .mp-info-grid,
 .info-grid {
   // margin-top: auto;
-  background: #fff;
+  background: var(--info-bg);
   border-top: 1px solid rgba(0,0,0,0.06);
   padding: 0.75rem;
   display: grid;
@@ -73,58 +74,84 @@
   gap: 0.5rem;
 }
 
-.mp-info-cell,
-.info-cell {
-  margin: 0;
-  padding: 0;
+/* Text colors */
+.info-cell,
+.mp-info-cell {
+  color: var(--muted-color);
   font-size: 0.85rem;
-  color: #6b7280;
 }
 
-/* Mobile: single column layout, image/info block full width and placed above the body */
+.info-value,
+.info-label {
+  color: var(--text-color);
+}
+
+/* Header title */
+.company-title,
+.company-header h1 {
+  color: var(--title-color);
+}
+
+/* Back button accent */
+.company-header .back-button,
+.back-button {
+  color: var(--accent);
+}
+
+/* Defensive inline-style override remains */
+.detail-image[style*="background"],
+.detail-image[style*="background-color"] {
+  background-color: var(--left-bg) !important;
+  background: var(--left-bg) !important;
+}
+
+/* Mobile: ensure left block and image truly fill the width */
 @media (max-width: 880px) {
-  .mp-detail-grid,
-  .detail-grid {
+  /* single column layout */
+  .detail-grid,
+  .mp-detail-grid {
     grid-template-columns: 1fr !important;
     gap: 0.75rem;
   }
 
-  /* ensure the left block appears before the body on mobile */
-  .mp-detail-image,
-  .detail-image {
-    order: 0;
-    width: 100%;
+  /* make the left block stretch to the container width */
+  .detail-image,
+  .mp-detail-image {
+    order: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    align-self: stretch !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
 
-  .mp-detail-body,
-  .detail-body {
-    order: 1;
-    width: 100%;
+  /* force the image to fill the block and remove any inline constraints */
+  .detail-image img,
+  .mp-detail-image img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: cover !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: var(--left-bg, #000) !important;
   }
 
-  /* allow the title to wrap on small screens */
-  .company-header h1,
-  .company-header .mp-title {
-    white-space: normal;
-    text-align: center;
+  /* override any inline style on the image element that sets width/height */
+  .detail-image img[style],
+  .mp-detail-image img[style] {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
   }
-}
 
-/* Small defensive rules to avoid inherited padding/margins causing white gaps */
-.mp-detail-image *,
-.detail-image * {
-  box-sizing: border-box;
-}
-
-
-.match-detail {
-  background: #000000;
-}
-
-
-/* Defensive overrides if any inline style remains setting white background */ 
-.detail-image[style*="background"], 
-.detail-image[style*="background-color"] { 
-  background-color: #000 !important; 
-  background: #000 !important; 
+  /* remove horizontal padding from immediate container that could shrink the image */
+  .company-header + .match-detail,
+  .company-header + article,
+  .detail-grid > .detail-image {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
