@@ -70,59 +70,91 @@ export default function MatchDetail() {
 
   const infoValue = (v) => (v === undefined || v === null || v === '' ? '—' : String(v));
 
+  // If you want a same-origin fallback link (like CompanyRoster used), compute it here.
+  const fallbackHref = `${window.location.origin}/matches`;
+
   return (
     <Container className="py-4">
-      <Button variant="link" onClick={() => navigate(-1)} className="mb-3 mp-back-link">← Back</Button>
+      {/* Header styled to match CompanyRoster's header layout:
+          a back link and an h1 on the same row (CSS class 'company-header' expected) */}
+      <div className="company-header" role="banner" style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
+        <a
+          className="back-button"
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            // prefer history back, fallback to a safe href
+            if (window.history.length > 1) navigate(-1);
+            else window.location.href = fallbackHref;
+          }}
+          aria-label="Back"
+          style={{ textDecoration: 'none', color: 'inherit' }}
+        >
+          ← Back
+        </a>
 
-      <article className="match-detail mp-match-detail">
-        <header className="mp-header">
-          <h1 className="mp-title">{match.title}</h1>
-          <div className="mp-sub text-muted">
-            <span>{match.promotion}</span>
-            <span> • </span>
-            <span>{match.card}</span>
-            <span> • </span>
-            <time dateTime={match.date}>{match.date}</time>
-          </div>
-        </header>
+        <h1 style={{ margin: 0, fontSize: '1.25rem', lineHeight: 1.15, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+          {match.title}
+        </h1>
+      </div>
 
-        <div className="mp-detail-grid">
-          <div className="mp-detail-image" aria-hidden={false}>
+      <article className="match-detail" style={{ marginTop: 0 }}>
+        <div
+          className="detail-grid"
+          style={{
+            display: 'grid',
+            gridTemplateColumns: '360px 1fr',
+            gap: '1rem',
+            alignItems: 'start'
+          }}
+        >
+          <div className="detail-image" style={{ borderRadius: 8, overflow: 'hidden', background: '#f6f7fb', display: 'flex', flexDirection: 'column' }}>
             <img
               src={src}
               alt={match.title}
               loading="lazy"
               decoding="async"
+              style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }}
               onError={(e) => {
                 e.currentTarget.onerror = null;
-                e.currentTarget.src = 'https://catch-news.fr/images/2025/08/24/miu-watanabe-s-adjuge-la-tokyo-princess-cup-2025.jpg';
+                e.currentTarget.src = 'https://static.wikia.nocookie.net/cjdm-wrestling/images/0/0a/Vacant_Superstar.png';
               }}
             />
 
-            <div className="mp-info-grid" role="group" aria-label="Match information">
-              <div className="mp-info-cell">
-                <div className="mp-info-label">Where</div>
-                <div className="mp-info-value">{infoValue(match.where)}</div>
+            <div
+              className="info-grid"
+              style={{
+                display: 'grid',
+                gridTemplateColumns: '1fr 1fr',
+                gap: '0.5rem',
+                padding: '0.75rem',
+                background: '#fff',
+                borderTop: '1px solid rgba(0,0,0,0.04)'
+              }}
+            >
+              <div style={{ fontSize: '0.85rem', color: '#6b7280' }}>
+                <div style={{ fontWeight: 600, marginBottom: 4 }}>Where</div>
+                <div>{infoValue(match.where)}</div>
               </div>
 
-              <div className="mp-info-cell">
-                <div className="mp-info-label">Location</div>
-                <div className="mp-info-value">{infoValue(match.location)}</div>
+              <div style={{ fontSize: '0.85rem', color: '#6b7280' }}>
+                <div style={{ fontWeight: 600, marginBottom: 4 }}>Location</div>
+                <div>{infoValue(match.location)}</div>
               </div>
 
-              <div className="mp-info-cell">
-                <div className="mp-info-label">Won</div>
-                <div className="mp-info-value">{infoValue(match.won)}</div>
+              <div style={{ fontSize: '0.85rem', color: '#6b7280' }}>
+                <div style={{ fontWeight: 600, marginBottom: 4 }}>Won</div>
+                <div>{infoValue(match.won)}</div>
               </div>
 
-              <div className="mp-info-cell">
-                <div className="mp-info-label">Cage Match</div>
-                <div className="mp-info-value">{infoValue(match.cagematch)}</div>
+              <div style={{ fontSize: '0.85rem', color: '#6b7280' }}>
+                <div style={{ fontWeight: 600, marginBottom: 4 }}>Cage Match</div>
+                <div>{infoValue(match.cagematch)}</div>
               </div>
             </div>
           </div>
 
-          <div className="mp-detail-body">
+          <div className="detail-body" style={{ minWidth: 0 }}>
             {match.short && (
               <>
                 <h3>Summary</h3>
@@ -134,15 +166,6 @@ export default function MatchDetail() {
               <>
                 <h3>Full Details</h3>
                 <p>{match.full}</p>
-              </>
-            )}
-
-            {match.competitors && (
-              <>
-                <h3>Competitors</h3>
-                <ul>
-                  {match.competitors.map((c, i) => <li key={i}>{c}</li>)}
-                </ul>
               </>
             )}
 
@@ -160,6 +183,7 @@ export default function MatchDetail() {
               </>
             )}
 
+            {/* Render any other fields generically (exclude known keys) */}
             {Object.keys(match).map((k) => {
               if ([
                 'id',
@@ -170,7 +194,6 @@ export default function MatchDetail() {
                 'imageURL',
                 'short',
                 'full',
-                'competitors',
                 'background',
                 'spoiler',
                 'order',
@@ -181,9 +204,9 @@ export default function MatchDetail() {
               ].includes(k)) return null;
 
               return (
-                <div className="mp-generic-field" key={k}>
-                  <h4>{k}</h4>
-                  <pre className="mp-generic-pre">{String(match[k])}</pre>
+                <div key={k} style={{ marginTop: '0.75rem' }}>
+                  <h4 style={{ margin: 0, marginBottom: '0.35rem' }}>{k}</h4>
+                  <pre style={{ whiteSpace: 'pre-wrap', background: '#f8f9fb', padding: '0.6rem', borderRadius: 6 }}>{String(match[k])}</pre>
                 </div>
               );
             })}

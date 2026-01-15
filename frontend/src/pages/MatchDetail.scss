@@ -1,128 +1,125 @@
-/* src/pages/MatchDetail.scss
-   Namespaced styles for MatchDetail to avoid collisions with global styles.
-*/
+/* Title centered while back button stays left */
+.company-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centers the title horizontally */
+  padding: 0.25rem 0.5rem;
+}
 
-$mp-gap: 1rem;
-$mp-muted: #6b7280;
-$mp-radius: 8px;
-$mp-shadow: 0 6px 18px rgba(20, 24, 30, 0.06);
-$mp-bg: #f6f7fb;
-$mp-card-bg: #fff;
+/* keep the back button visually left but out of the normal flow */
+.company-header .back-button {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
 
-.mp-match-detail {
-  /* push the header down to avoid being hidden under a fixed top menu */
-  .mp-header {
-    margin-top: 1.75rem;
-    margin-bottom: 0.5rem;
+/* center the H1 and allow truncation on narrow screens */
+.company-header h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.15;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: calc(100% - 96px); /* leave room for back button */
+  box-sizing: border-box;
+}
 
-    .mp-title {
-      margin: 0;
-      font-size: 1.6rem;
-      line-height: 1.15;
-      word-break: break-word;
-    }
+.mp-detail-image,
+.detail-image {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background: #000;      
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 0; 
+  padding: 0;           
+  box-sizing: border-box;
+}
 
-    .mp-sub {
-      color: $mp-muted;
-      margin-top: 0.25rem;
-      font-size: 0.95rem;
-    }
+/* Ensure the image itself fills the width and keeps natural height */
+.detail-image img,
+.mp-detail-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  background: #000; /* avoids flash of white while loading */
+}
+
+.mp-info-grid,
+.info-grid {
+  // margin-top: auto;
+  background: #fff;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  padding: 0.75rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.mp-info-cell,
+.info-cell {
+  margin: 0;
+  padding: 0;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* Mobile: single column layout, image/info block full width and placed above the body */
+@media (max-width: 880px) {
+  .mp-detail-grid,
+  .detail-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem;
   }
 
-  .mp-detail-grid {
-    display: grid;
-    grid-template-columns: 360px 1fr;
-    gap: $mp-gap;
-    align-items: start;
-    margin-top: 0.75rem;
-
-    @media (max-width: 880px) {
-      grid-template-columns: 1fr;
-    }
+  /* ensure the left block appears before the body on mobile */
+  .mp-detail-image,
+  .detail-image {
+    order: 0;
+    width: 100%;
   }
 
-  .mp-detail-image {
-    border-radius: $mp-radius;
-    overflow: hidden;
-    background: $mp-bg;
-    display: flex;
-    flex-direction: column;
-
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: cover;
-      aspect-ratio: 16 / 9;
-    }
-
-    .mp-info-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.5rem;
-      padding: 0.75rem;
-      background: $mp-card-bg;
-      border-top: 1px solid rgba(0, 0, 0, 0.04);
-    }
-
-    .mp-info-cell {
-      font-size: 0.85rem;
-      color: $mp-muted;
-
-      .mp-info-label {
-        font-weight: 600;
-        margin-bottom: 4px;
-      }
-
-      .mp-info-value {
-        color: #222;
-        word-break: break-word;
-      }
-    }
+  .mp-detail-body,
+  .detail-body {
+    order: 1;
+    width: 100%;
   }
 
-  .mp-detail-body {
-    min-width: 0;
-    display: block;
-
-    h3 {
-      margin-top: 0;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      color: #222;
-      line-height: 1.5;
-    }
-
-    ul {
-      padding-left: 1.25rem;
-    }
-
-    .mp-generic-field {
-      margin-top: 0.75rem;
-
-      h4 {
-        margin: 0 0 0.35rem 0;
-        font-size: 0.95rem;
-      }
-    }
-
-    .mp-generic-pre {
-      white-space: pre-wrap;
-      background: #f8f9fb;
-      padding: 0.6rem;
-      border-radius: 6px;
-      overflow-x: auto;
-      font-size: 0.95rem;
-    }
+  /* allow the title to wrap on small screens */
+  .company-header h1,
+  .company-header .mp-title {
+    white-space: normal;
+    text-align: center;
   }
+}
 
-  /* small back link styling (keeps Bootstrap .btn-link behavior but scoped) */
-  .mp-back-link {
-    color: #0b5fff;
-    text-decoration: none;
-    padding: 0;
-    &:hover { text-decoration: underline; }
-  }
+/* Small defensive rules to avoid inherited padding/margins causing white gaps */
+.mp-detail-image *,
+.detail-image * {
+  box-sizing: border-box;
+}
+
+
+.match-detail {
+  background: #000000;
+}
+
+
+/* Defensive overrides if any inline style remains setting white background */ 
+.detail-image[style*="background"], 
+.detail-image[style*="background-color"] { 
+  background-color: #000 !important; 
+  background: #000 !important; 
 }
