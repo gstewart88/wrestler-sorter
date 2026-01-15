@@ -1,67 +1,125 @@
-// src/pages/MatchDetail.scss
-$muted: #6b7280;
-$gap: 1rem;
+/* src/pages/MatchDetail.scss
+   Namespaced styles for MatchDetail to avoid collisions with global styles.
+*/
 
-.match-detail {
-  padding: 1.5rem;
+$mp-gap: 1rem;
+$mp-muted: #6b7280;
+$mp-radius: 8px;
+$mp-shadow: 0 6px 18px rgba(20, 24, 30, 0.06);
+$mp-bg: #f6f7fb;
+$mp-card-bg: #fff;
 
-  .sub {
-    color: $muted;
-    margin-top: 0.25rem;
-    font-size: 0.95rem;
+.mp-match-detail {
+  /* push the header down to avoid being hidden under a fixed top menu */
+  .mp-header {
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+
+    .mp-title {
+      margin: 0;
+      font-size: 1.6rem;
+      line-height: 1.15;
+      word-break: break-word;
+    }
+
+    .mp-sub {
+      color: $mp-muted;
+      margin-top: 0.25rem;
+      font-size: 0.95rem;
+    }
   }
 
-  .detail-grid {
+  .mp-detail-grid {
     display: grid;
     grid-template-columns: 360px 1fr;
-    gap: $gap;
+    gap: $mp-gap;
     align-items: start;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
 
     @media (max-width: 880px) {
       grid-template-columns: 1fr;
     }
+  }
 
-    .detail-image {
-      border-radius: 8px;
-      overflow: hidden;
-      background: #f6f7fb;
+  .mp-detail-image {
+    border-radius: $mp-radius;
+    overflow: hidden;
+    background: $mp-bg;
+    display: flex;
+    flex-direction: column;
 
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-      }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 16 / 9;
     }
 
-    .detail-body {
-      h3 {
-        margin-top: 0;
-        margin-bottom: 0.5rem;
+    .mp-info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      padding: 0.75rem;
+      background: $mp-card-bg;
+      border-top: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+    .mp-info-cell {
+      font-size: 0.85rem;
+      color: $mp-muted;
+
+      .mp-info-label {
+        font-weight: 600;
+        margin-bottom: 4px;
       }
 
-      p {
+      .mp-info-value {
         color: #222;
-        line-height: 1.5;
-      }
-
-      ul {
-        padding-left: 1.25rem;
-      }
-
-      pre {
-        background: #f8f9fb;
-        padding: 0.6rem;
-        border-radius: 6px;
-        overflow-x: auto;
-        font-size: 0.95rem;
+        word-break: break-word;
       }
     }
   }
 
-  // small back link
-  .mp-btn-link {
+  .mp-detail-body {
+    min-width: 0;
+    display: block;
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: #222;
+      line-height: 1.5;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    .mp-generic-field {
+      margin-top: 0.75rem;
+
+      h4 {
+        margin: 0 0 0.35rem 0;
+        font-size: 0.95rem;
+      }
+    }
+
+    .mp-generic-pre {
+      white-space: pre-wrap;
+      background: #f8f9fb;
+      padding: 0.6rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-size: 0.95rem;
+    }
+  }
+
+  /* small back link styling (keeps Bootstrap .btn-link behavior but scoped) */
+  .mp-back-link {
     color: #0b5fff;
     text-decoration: none;
     padding: 0;
