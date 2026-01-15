@@ -12,6 +12,7 @@ export default function MatchDetail() {
   const [match, setMatch] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [spoilerVisible, setSpoilerVisible] = useState(false);
 
   useEffect(() => {
     let mounted = true;
@@ -172,11 +173,33 @@ export default function MatchDetail() {
               </>
             )}
 
+                {/* Result / Spoiler: hidden by default, revealed by user */}
             {match.spoiler && (
-              <>
-                <h3>Result / Spoiler</h3>
-                <p>{match.spoiler}</p>
-              </>
+              <section className="result-section">
+                {!spoilerVisible && (
+                <button
+                  type="button"
+                  className="reveal-spoiler"
+                  aria-expanded={String(spoilerVisible)}
+                  aria-controls="spoiler-content"
+                  onClick={() => setSpoilerVisible(true)}
+                >
+                  I've watched it
+                  </button>
+                  )}
+
+                  {spoilerVisible && (
+                    <div
+                    id="spoiler-content" 
+                    className="spoiler-content" 
+                    role="region" 
+                    aria-hidden={String(!spoilerVisible)} 
+                    >
+                    <h3>Aftermath</h3> 
+                    <p>{match.spoiler}</p> 
+                    </div> 
+                  )}
+                    </section>
             )}
 
             {/* Render any other fields generically (exclude known keys) */}
