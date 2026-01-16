@@ -5,6 +5,95 @@ import { Container, Button } from 'react-bootstrap';
 import { IMAGES_CDN } from '../config';
 import './MatchDetail.scss';
 
+function VideoEmbed({ video, title = 'Match video' }) { 
+  if (!video) return null; 
+  
+  const asString = String(video).trim(); 
+  
+  // If the JSON contains a raw iframe HTML string, render it directly. 
+  if (asString.startsWith('<iframe')) { 
+    return ( 
+    <div className="video-wrapper" aria-label={title} dangerouslySetInnerHTML={{ __html: asString }} /> 
+  ); 
+} 
+
+// Otherwise treat the value as a URL and attempt to build a safe embed src. 
+try { 
+  const url = new URL(asString); 
+  const host = url.hostname.replace(/^www\./, '').toLowerCase(); 
+  
+  // YouTube handling (youtube.com/watch?v= or youtu.be/) 
+  if (host.includes('youtube.com') || host === 'youtu.be') { 
+    // Try to extract a video id 
+    let id = null; 
+    if (host === 'youtu.be') { 
+      id = url.pathname.slice(1); 
+    } else { 
+      id = url.searchParams.get('v') || null; 
+      if (!id) { 
+        // handle /embed/ID or /v/ID 
+        const m = url.pathname.match(/\/(?:embed|v)\/([A-Za-z0-9_-]{6,})/); 
+        if (m) id = m[1]; 
+      } 
+    } 
+    if (id) { 
+      const src = `https://www.youtube.com/embed/${id}?rel=0`; 
+      return ( 
+      <div className="video-wrapper" aria-label={title}> 
+      <iframe 
+        title={title} 
+        src={src} 
+        // frameBorder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowFullScreen 
+        /> 
+        </div> 
+        ); 
+      } 
+    } 
+    
+    // Dailymotion handling (dailymotion.com/video/ID or dai.ly/ID) 
+    if (host.includes('dailymotion.com') || host === 'dai.ly') { 
+      let id = null; 
+      if (host === 'dai.ly') { 
+        id = url.pathname.slice(1); 
+      } else { 
+        const m = url.pathname.match(/\/video\/([A-Za-z0-9]+)/); 
+        if (m) id = m[1]; 
+      } 
+      if (id) { 
+        const src = `https://www.dailymotion.com/embed/video/${id}`; 
+        return ( 
+        <div className="video-wrapper" aria-label={title}> 
+        <iframe 
+        title={title} 
+        src={src} 
+        // frameBorder="0" 
+        allow="autoplay; fullscreen" 
+        allowFullScreen 
+        /> 
+        </div> 
+        ); 
+      } 
+    } 
+    // Generic iframe-friendly provider fallback: embed the URL in an iframe 
+    return ( 
+    <div className="video-wrapper" aria-label={title}> 
+    <iframe 
+    title={title} 
+    src={asString} 
+    // frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen 
+    /> 
+    </div> 
+    ); 
+  } catch (e) { 
+    // If URL parsing fails, don't render anything 
+    return null; 
+  } 
+}
+
 export default function MatchDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -73,6 +162,17 @@ export default function MatchDetail() {
 
   // If you want a same-origin fallback link (like CompanyRoster used), compute it here.
   const fallbackHref = `${window.location.origin}/matches`;
+
+  const renderText = (text) => { 
+    if (!text && text !== '') return null; 
+    return String(text) 
+      .split('\n\n') 
+      .map((para, i) => ( 
+        <p key={i} style={{ whiteSpace: 'pre-wrap', marginTop: i === 0 ? 0 : '0.75rem' }}> 
+          {para} 
+        </p> 
+      )); 
+  };
 
   return (
     <Container className="py-4">
@@ -152,12 +252,12 @@ export default function MatchDetail() {
           </div>
 
           <div className="detail-body" style={{ minWidth: 0 }}>
-            {match.short && (
+            {/* {match.short && (
               <>
                 <h3>Summary</h3>
                 <p>{match.short}</p>
               </>
-            )}
+            )} */}
 
             {match.full && (
               <>
@@ -173,7 +273,15 @@ export default function MatchDetail() {
               </>
             )}
 
-                {/* Result / Spoiler: hidden by default, revealed by user */}
+            {/* Video block (renders YouTube / Dailymotion / iframe / URL) */} 
+            {match.video && ( 
+              <> 
+                <h3>Video</h3> 
+                <VideoEmbed video={match.video} title={`${match.title} video`} /> 
+              </> 
+            )}
+
+            {/* Result / Spoiler: hidden by default, revealed by user */}
             {match.spoiler && (
               <section className="result-section">
                 {!spoilerVisible && (
@@ -219,7 +327,8 @@ export default function MatchDetail() {
                 'where',
                 'location',
                 'won',
-                'cagematch'
+                'cagematch',
+                'video'
               ].includes(k)) return null;
 
               return (

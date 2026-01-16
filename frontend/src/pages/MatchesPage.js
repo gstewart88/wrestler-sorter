@@ -157,10 +157,6 @@ export default function MatchesPage() {
           </ButtonGroup>
         </div>
       </nav>
-
-      <footer className="mt-4 small text-muted">
-        <Link to="/matches">View all</Link>
-      </footer>
     </Container>
   );
 }

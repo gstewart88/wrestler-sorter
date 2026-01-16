@@ -28,13 +28,11 @@ export default function MatchCard({ match }) {
         <h3 id={`match-title-${match.id}`}>{match.title}</h3>
         <div className="mp-sub" aria-hidden="false">
           <span className="promotion">{match.promotion}</span>
-          <span className="sep"> • </span>
           <span className="card">{match.card}</span>
-          <span className="sep"> • </span>
           <time className="date" dateTime={match.date}>{match.date}</time>
         </div>
 
-        <p className="mp-short">{match.short}</p>
+        {/* <p className="mp-short">{match.short}</p> */}
 
         <div className="mp-cta">
           <Link to={`/matches/${match.id}`} className="mp-btn mp-btn-primary read-more" aria-label={`Read more about ${match.title}`}>
