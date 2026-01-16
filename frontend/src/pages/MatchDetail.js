@@ -44,7 +44,7 @@ try {
         title={title} 
         src={src} 
         // frameBorder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowFullScreen 
         /> 
         </div> 
@@ -68,8 +68,7 @@ try {
         <iframe 
         title={title} 
         src={src} 
-        // frameBorder="0" 
-        allow="autoplay; fullscreen" 
+        allow="fullscreen" 
         allowFullScreen 
         /> 
         </div> 
@@ -83,7 +82,7 @@ try {
     title={title} 
     src={asString} 
     // frameBorder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowFullScreen 
     /> 
     </div> 
