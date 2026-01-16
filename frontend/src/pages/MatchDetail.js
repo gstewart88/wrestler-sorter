@@ -230,8 +230,8 @@ export default function MatchDetail() {
               }}
             >
               <div style={{ fontSize: '0.85rem', color: '#6b7280' }}>
-                <div style={{ fontWeight: 600, marginBottom: 4 }}>Where</div>
-                <div>{infoValue(match.where)}</div>
+                <div style={{ fontWeight: 600, marginBottom: 4 }}>Venue</div>
+                <div>{infoValue(match.venue)}</div>
               </div>
 
               <div style={{ fontSize: '0.85rem', color: '#6b7280' }}>
@@ -324,7 +324,7 @@ export default function MatchDetail() {
                 'background',
                 'spoiler',
                 'order',
-                'where',
+                'venue',
                 'location',
                 'won',
                 'cagematch',
