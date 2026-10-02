@@ -85,6 +85,13 @@
     "bio":""
   },
   {
+    "name": "Mirai",
+    "company": "Marigold",
+    "imageURL": "MiraiMarigold.png",
+    "division": "Women's",
+    "bio": "She was affected by the Great East Japan Earthquake when she was in elementary school. After watching a charity martial arts and professional wrestling event for reconstruction, she decided to become a professional wrestler and started learning judo. After graduating from high school, she moved to Tokyo and made her debut in Tokyo Joshi Pro Wrestling."
+  },
+  {
     "name": "Moka Miyamoto",
     "company": "Other",
     "imageURL": "MokaMiyamotoTJPW.png",
@@ -96,6 +103,19 @@
     "company": "Other",
     "imageURL": "NikkiCrossWWE.png",
     "division": "Women's"
+  },
+  {
+    "name": "Riara",
+    "company": "Other",
+    "imageURL": "RiaraMarigold.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Ryoko Sakimura",
+    "company": "Other",
+    "imageURL": "RyokoSakimuraMarigold.png",
+    "division": "Women's",
+    "bio":""
   },
   {
     "name": "Saki Kashima",
