@@ -12,12 +12,6 @@
     "division": "Women's"
   },
   {
-    "name": "Blake Monroe",
-    "company": "NXT",
-    "imageURL": "BlakeMonroeNXT.png",
-    "division": "Women's"
-  },
-  {
     "name": "Brinley Reece",
     "company": "NXT",
     "imageURL": "BrinleyReeceNXT.png",
@@ -42,12 +36,6 @@
     "division": "Women's"
   },
   {
-    "name": "Jordynne Grace",
-    "company": "NXT",
-    "imageURL": "JordynneGraceNXT.png",
-    "division": "Women's"
-  },
-  {
     "name": "Karmen Petrovic",
     "company": "NXT",
     "imageURL": "KarmenPetrovicNXT.png",
@@ -60,39 +48,15 @@
     "division": "Women's"
   },
   {
-    "name": "Lash Legend",
-    "company": "NXT",
-    "imageURL": "LashLegendNXT.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Lola Vice",
-    "company": "NXT",
-    "imageURL": "LolaViceNXT.png",
-    "division": "Women's"
-  },
-  {
     "name": "Nikkita Lyons",
     "company": "NXT",
     "imageURL": "NikkitaLyonsNXT.png",
     "division": "Women's"
   },
   {
-    "name": "Sol Ruca",
-    "company": "NXT",
-    "imageURL": "SolRucaNXT.png",
-    "division": "Women's"
-  },
-  {
     "name": "Stevie Turner",
     "company": "NXT",
     "imageURL": "StevieTurnerNXT.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Tatum Paxley",
-    "company": "NXT",
-    "imageURL": "TatumPaxleyNXT.png",
     "division": "Women's"
   },
   {
@@ -150,21 +114,9 @@
     "division": "Men's"
   },
   {
-    "name": "Ethan Page",
-    "company": "NXT",
-    "imageURL": "EthanPageNXT.png",
-    "division": "Men's"
-  },
-  {
     "name": "Hank Walker",
     "company": "NXT",
     "imageURL": "HankWalkerNXT.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Je'Von Evans",
-    "company": "NXT",
-    "imageURL": "JeVonEvansNXT.png",
     "division": "Men's"
   },
   {
@@ -192,21 +144,9 @@
     "division": "Men's"
   },
   {
-    "name": "Oba Femi",
-    "company": "NXT",
-    "imageURL": "ObaFemiNXT.png",
-    "division": "Men's"
-  },
-  {
     "name": "Osiris Griffin",
     "company": "NXT",
     "imageURL": "OsirisGriffinNXT.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Ricky Saints",
-    "company": "NXT",
-    "imageURL": "RickySaintsNXT.png",
     "division": "Men's"
   },
   {
@@ -231,18 +171,6 @@
     "name": "Tony D'Angelo",
     "company": "NXT",
     "imageURL": "TonyDAngeloNXT.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Trick Williams",
-    "company": "NXT",
-    "imageURL": "TrickWilliamsNXT.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Wes Lee",
-    "company": "NXT",
-    "imageURL": "WesLeeNXT.png",
     "division": "Men's"
   }
 ]

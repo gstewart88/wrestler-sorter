@@ -23,28 +23,10 @@
     "imageURL": "AlexaBlissWWE.png",
     "division": "Women's"
   },
-  {
-    "name": "Alex Shelley",
-    "company": "Smackdown",
-    "imageURL": "AlexShelleyWWE.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Andrade",
-    "company": "Smackdown",
-    "imageURL": "AndradeWWE.png",
-    "division": "Men's"
-  },
  {
     "name": "Angel",
     "company": "Smackdown",
     "imageURL": "AngelGarzaWWE.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Angelo Dawkins",
-    "company": "Smackdown",
-    "imageURL": "AngeloDawkinsWWE.png",
     "division": "Men's"
   },
   {
@@ -77,6 +59,12 @@
     "imageURL": "BiancaBelairWWE.png",
     "division": "Women's"
   },
+    {
+    "name": "Blake Monroe",
+    "company": "Smackdown",
+    "imageURL": "BlakeMonroeNXT.png",
+    "division": "Women's"
+  },
   {
     "name": "Brock Lesnar",
     "company": "Smackdown",
@@ -106,12 +94,6 @@
     "company": "Smackdown",
     "imageURL": "ChelseaGreenWWE.png",
     "division": "Women's"
-  },
-  {
-    "name": "Chris Sabin",
-    "company": "Smackdown",
-    "imageURL": "ChrisSabinWWE.png",
-    "division": "Men's"
   },
   {
     "name": "Cody Rhodes",
@@ -156,12 +138,6 @@
     "division": "Women's"
   },
   {
-    "name": "Jacob Fatu",
-    "company": "Smackdown",
-    "imageURL": "JacobFatuWWE.png",
-    "division": "Men's"
-  },
-  {
     "name": "Jade Cargill",
     "company": "Smackdown",
     "imageURL": "JadeCargillWWE.png",
@@ -174,21 +150,9 @@
     "division": "Men's"
   },
   {
-    "name": "Jimmy Uso",
-    "company": "Smackdown",
-    "imageURL": "JimmyUsoWWE.png",
-    "division": "Men's"
-  },
-  {
     "name": "Joe Gacy",
     "company": "Smackdown",
     "imageURL": "JoeGacyWWE.png",
-    "division": "Men's"
-  },
-  {
-    "name": "John Cena",
-    "company": "Smackdown",
-    "imageURL": "JohnCenaWWE.png",
     "division": "Men's"
   },
   {
@@ -220,12 +184,6 @@
     "company": "Smackdown",
     "imageURL": "MichinWWE.png",
     "division": "Women's"
-  },
-  {
-    "name": "Montez Ford",
-    "company": "Smackdown",
-    "imageURL": "MontezFordWWE.png",
-    "division": "Men's"
   },
   {
     "name": "Nathan Frazer",
@@ -276,15 +234,10 @@
     "division": "Men's"
   },
   {
-    "name": "Roman Reigns",
-    "company": "Smackdown",
-    "imageURL": "RomanReignsWWE.png",
-    "division": "Men's"
-  },
-  {
     "name": "Sami Zayn",
     "company": "Smackdown",
-    "imageURL": "SamiZaynWWE.png"
+    "imageURL": "SamiZaynWWE.png",
+    "division": "Men's"
   },
   {
     "name": "Santos Escobar",
@@ -351,5 +304,65 @@
     "company": "Smackdown",
     "imageURL": "ZelinaVegaWWE.png",
     "division": "Women's"
+  },
+  {
+    "name": "CM Punk",
+    "company": "Smackdown",
+    "imageURL": "CMPunkWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Erik",
+    "company": "Smackdown",
+    "imageURL": "ErikWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Finn Balor",
+    "company": "Smackdown",
+    "imageURL": "FinnBalorWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Gunther",
+    "company": "Smackdown",
+    "imageURL": "GuntherWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Ivar",
+    "company": "Smackdown",
+    "imageURL": "IvarWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Jordynne Grace",
+    "company": "Smackdown",
+    "imageURL": "JordynneGraceNXT.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Lash Legend",
+    "company": "Smackdown",
+    "imageURL": "LashLegendNXT.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Ricky Saints",
+    "company": "Smackdown",
+    "imageURL": "RickySaintsNXT.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Tatum Paxley",
+    "company": "Smackdown",
+    "imageURL": "TatumPaxleyNXT.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Trick Williams",
+    "company": "Smackdown",
+    "imageURL": "TrickWilliamsNXT.png",
+    "division": "Men's"
   }
 ]

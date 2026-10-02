@@ -133,6 +133,12 @@
     "bio":""
   },
   {
+    "name": "Clark Connors",
+    "company": "AEW",
+    "imageURL": "ClarkConnorsNJPW.png",
+    "division": "Men's"
+  },
+  {
     "name": "Claudio Castagnoli",
     "company": "AEW",
     "imageURL": "ClaudioCastagnoliAEW.png",
@@ -763,6 +769,12 @@
     "bio":""
   },
   {
+    "name": "Trey Miguel",
+    "company": "AEW",
+    "imageURL": "TreyMiguelTNA.png",
+    "division": "Men's"
+  },
+  {
     "name": "Truth Magnum",
     "company": "AEW",
     "imageURL": "TruthMagnumAEW.png",
@@ -791,6 +803,12 @@
     "bio":""
   },
   {
+    "name": "Wes Lee",
+    "company": "AEW",
+    "imageURL": "WesLeeNXT.png",
+    "division": "Men's"
+  },
+  {
     "name": "Wheeler Yuta",
     "company": "AEW",
     "imageURL": "WheelerYutaAEW.png",
@@ -817,5 +835,59 @@
     "imageURL": "YukaSakazakiAEW.png",
     "division": "Women's",
     "bio":""
+  },
+  {
+    "name": "Zachary Wentz",
+    "company": "AEW",
+    "imageURL": "ZacharyWentzTNA.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Alex Shelley",
+    "company": "AEW",
+    "imageURL": "AlexShelleyWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Andrade",
+    "company": "AEW",
+    "imageURL": "AndradeWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Chris Sabin",
+    "company": "AEW",
+    "imageURL": "ChrisSabinWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Dani Luna",
+    "company": "AEW",
+    "imageURL": "DaniLunaTNA.png",
+    "division": "Women's"
+  },
+  {
+    "name": "David Finlay",
+    "company": "AEW",
+    "imageURL": "DavidFinlayNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Gabe Kidd",
+    "company": "AEW",
+    "imageURL": "GabeKiddNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Kofi Kingston",
+    "company": "AEW",
+    "imageURL": "KofiKingstonWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Xavier Woods",
+    "company": "AEW",
+    "imageURL": "XavierWoodsWWE.png",
+    "division": "Men's"
   }
 ]
