@@ -1,129 +1,129 @@
 [
   {
     "name": "Adriana Rizzo",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "AdrianaRizzoNXT.png",
     "division": "Women's"
   },
   {
     "name": "Alba Fyre",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "AlbaFyreWWE.png",
     "division": "Women's"
   },
   {
     "name": "Aleister Black",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "AleisterBlackWWE.png",
     "division": "Men's"
   },
   {
     "name": "Apollo Crews",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "ApolloCrewsWWE.png",
     "division": "Men's"
   },
   {
     "name": "Brock Lesnar",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "BrockLesnarWWE.png",
     "division": "Men's"
   },
   {
     "name": "Erick Rowan",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "ErickRowanWWE.png",
     "division": "Men's"
   },
   {
     "name": "Hiroshi Tanahashi",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "HiroshiTanahashiNJPW.png",
     "division": "Men's"
   },
   {
     "name": "Hiroyoshi Tenzan",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "HiroyoshiTenzanNJPW.png",
     "division": "Men's"
   },
   {
     "name": "John Cena",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "JohnCenaWWE.png",
     "division": "Men's"
   },
   {
     "name": "Manabu Nakanishi",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "ManabuNakanishiNJPW.png",
     "division": "Men's"
   },
   {
     "name": "Kairi Sane",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "KairiSaneWWE.png",
     "division": "Women's"
   },
   {
     "name": "Killer Kelly",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "KillerKellyTNA.png",
     "division": "Women's"
   },
   {
     "name": "Stevie Turner",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "StevieTurnerNXT.png",
     "division": "Women's"
   },
   {
     "name": "Madison Rayne",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "MadisonRayneAEW.png",
     "division": "Women's",
     "bio":""
   },
   {
     "name": "Nikki Cross",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "NikkiCrossWWE.png",
     "division": "Women's"
   },
   {
     "name": "Saki Kashima",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "SakiKashimaStardom.png",
     "division": "Women's",
     "bio": "She debuted as a member of Stardom's second generation in its inaugural year. She disappeared for a while due to circumstances, but made her return for the first time in five years at the Korakuen Hall event on March 28, 2018. On January 3, 2020, at the Shinkiba 1stRING event, she betrayed Mayu Iwatani and joined Oedo Tai. At the Ota Ward General Gymnasium event on May 27, 2023, she won a three-way High Speed ​​Championship match to become the first singles champion. She was expelled from Oedo Tai in June of the same year, but was picked up by Akari and joined God's Eye. She has scored numerous come-from-behind victories with her skillful roll-up technique. She is also renowned for her beauty."
   },
   {
     "name": "Sami Callihan",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "SamiCallihanTNA.png",
     "division": "Men's"
   },
   {
     "name": "Santos Escobar",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "SantosEscobarWWE.png",
     "division": "Men's"
   },
   {
     "name": "Sheamus",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "SheamusWWE.png",
     "division": "Men's"
   },
   {
     "name": "Tonga Loa",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "TongaLoaWWE.png",
     "division": "Men's"
   },
   {
     "name": "Uncle Howdy",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "UncleHowdyWWE.png",
     "division": "Men's"
   },
@@ -135,20 +135,20 @@
   },
   {
     "name": "Xelina Vega",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "ZelinaVegaWWE.png",
     "division": "Women's"
   },
   {
     "name": "Xena",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "XenaStardom.png",
     "division": "Women's",
     "bio": ""
   },
   {
     "name": "Zoey Stark",
-    "company": "Legends",
+    "company": "Other",
     "imageURL": "ZoeyStarkWWE.png",
     "division": "Women's"
   }

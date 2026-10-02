@@ -10,7 +10,7 @@ export default function useWrestlers() {
   useEffect(() => {
     const parts = [
       'aew',
-      'legends',
+      'other',
       'marigold',
       'njpw',
       'nxt',
