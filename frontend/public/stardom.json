@@ -245,26 +245,12 @@
     "bio": ""
   },
   {
-    "name": "Sayaka Kurara",
-    "company": "Stardom",
-    "imageURL": "SayakaStardom.png",
-    "division": "Women's",
-    "bio": "She made her debut less than a year and a half after starting to watch professional wrestling. On January 3, 2024, she competed in the Rookie of Stardom 2023 at the Yokohama Budokan, but lost to Hanako in her first match. Still winless two months after her debut, she entered the Cinderella Tournament on March 9th, where she won by disqualification against Natsuko Tora's poison mist in the first round. Despite her disappointment, it was her first professional victory. She aspired to join COSMIC ANGELS, and finally joined the group along with Sakura Aya at the Korakuen Hall event on April 12th. Nakano Tam praised her, saying, 'She has the qualities of a genius idol.'"
-  },
-  {
     "name": "Saori Anou",
     "company": "Stardom",
     "imageURL": "SaoriAnouStardom2.png",
     "division": "Women's",
     "bio": "She moved to Tokyo from Shiga Prefecture with the aim of becoming an actress, and after working on stage and other stages, debuted with Actress Girls in 2015. She then became the ace of the organization, becoming the first AGW champion at the Korakuen Hall event on November 15, 2018. After leaving the organization in December 2019, she became a freelancer, working for OZ Academy and Ice Ribbon. On April 2, 2023, she was called up by KAIRI for the Korakuen Hall event, making her first appearance in Stardom in six years. On December 29 of the same year, she defeated MIRAI at the Ryogoku Kokugikan event to become the Wonder Champion for the first time. In May 2025, she held a 10th anniversary event with Natsupoi."
   }, 
-  {
-    "name": "Sareee",
-    "company": "Stardom",
-    "imageURL": "SareeeStardom.png",
-    "division": "Women's",
-    "bio": "Sareee is a Japanese joshi professional wrestler primarily performing in Japan as a freelancer, and she is the IWGP Women's Champion in her first reign. She is the producer and booker of Sareee-ISM, a promotion of self-produced shows. She is also signed to the American promotion Sukeban, where she performs under the ring name Sareee Bomb and is the Sukeban World Champion in her first reign."
-  },
   {
     "name": "Saya Iida",
     "company": "Stardom",
@@ -278,6 +264,13 @@
     "imageURL": "SayaKamitaniStardom.png",
     "division": "Women's",
     "bio": "After working as a support dancer for EXILE and as a part-time AKB member, she made her professional wrestling debut in 2019. Her outstanding athleticism drew attention and she was named Rookie of the Year in 2019. She joined Queen's Quest at the Shinkiba 1stRING tournament on February 16, 2020, after being recruited by Utami Hayashishita. She won her first Cinderella Tournament in 2021, and on December 29 of the same year, she defeated Tam Nakano at the Ryogoku Kokugikan tournament to become the Wonder Champion for the first time. She holds the record for the most defenses of the title, with 15 titles. She was eliminated as a 'solo QQ' in a unit expulsion match at the Yoyogi tournament on June 22, 2024, but suddenly joined HATE at the Sapporo tournament on July 28."
+  },
+  {
+    "name": "Sayaka Kurara",
+    "company": "Stardom",
+    "imageURL": "SayakaStardom.png",
+    "division": "Women's",
+    "bio": "She made her debut less than a year and a half after starting to watch professional wrestling. On January 3, 2024, she competed in the Rookie of Stardom 2023 at the Yokohama Budokan, but lost to Hanako in her first match. Still winless two months after her debut, she entered the Cinderella Tournament on March 9th, where she won by disqualification against Natsuko Tora's poison mist in the first round. Despite her disappointment, it was her first professional victory. She aspired to join COSMIC ANGELS, and finally joined the group along with Sakura Aya at the Korakuen Hall event on April 12th. Nakano Tam praised her, saying, 'She has the qualities of a genius idol.'"
   },
   {
     "name": "Starlight Kid",

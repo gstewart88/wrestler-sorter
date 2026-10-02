@@ -85,6 +85,13 @@
     "bio":""
   },
   {
+    "name": "Moka Miyamoto",
+    "company": "Other",
+    "imageURL": "MokaMiyamotoTJPW.png",
+    "division": "Women's",
+    "bio": "She became interested in professional wrestling through the influence of her younger brother and joined Tokyo Joshi Pro-Wrestling. In high school, she studied Shotokan karate and holds a shodan (first-degree black belt), which is why she sometimes uses straight punches and 'kawara-wari' (tile-breaking) moves during her matches. At the Ota City General Gymnasium event on July 21, she defeated her contemporary, Suzume, to win the International Princess Championship. This marked the first title of her career, but she later had to take an extended leave due to poor health, which led to her relinquishing the belt."
+  },
+  {
     "name": "Nikki Cross",
     "company": "Other",
     "imageURL": "NikkiCrossWWE.png",
@@ -110,6 +117,13 @@
     "division": "Men's"
   },
   {
+    "name": "Sareee",
+    "company": "Other",
+    "imageURL": "SareeeStardom.png",
+    "division": "Women's",
+    "bio": "Sareee is a Japanese joshi professional wrestler primarily performing in Japan as a freelancer, and she is the IWGP Women's Champion in her first reign. She is the producer and booker of Sareee-ISM, a promotion of self-produced shows. She is also signed to the American promotion Sukeban, where she performs under the ring name Sareee Bomb and is the Sukeban World Champion in her first reign."
+  },
+  {
     "name": "Sheamus",
     "company": "Other",
     "imageURL": "SheamusWWE.png",
@@ -129,7 +143,7 @@
   },
   {
     "name": "Wendy Choo",
-    "company": "NXT",
+    "company": "Other",
     "imageURL": "WendyChooNXT.png",
     "division": "Women's"
   },

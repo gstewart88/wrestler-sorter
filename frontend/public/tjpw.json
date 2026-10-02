@@ -35,13 +35,6 @@
     "bio": "The new hero defending love and peace in Tokyo Joshi Pro-Wrestling. Known for her lengthy pre-match promos and cunning in-ring tactics. Her self-produced shows, 'HYPE!', have received high praise, taking place three times in total: May 2023, April 2024, and June 2025. She also actively competes as part of the tag team 'Kyōraku Kyōmei' with Shoko Nakajima, having captured the Princess Tag Team Championship on March 16th at Ota City General Gymnasium. She is currently on a dominant defense streak, having defeated 'Hakuchumu' on July 21st at Ota City General Gymnasium."
   },
   {
-    "name": "Kaya Toribami",
-    "company": "TJPW",
-    "imageURL": "KayaToribamiTJPW.png",
-    "division": "Women's",
-    "bio": "She's a masked wrestler who debuted at 'CyberFight Festival 2021.' Her motif isn't a phoenix or a crow, but a cassowary. Recently, her birthday and blood type were revealed. She excels at acrobatic movements, and her 'Sentouchoryu' (Fighting Bird Style) is a must-see. On June 7th in Shinagawa, she challenged Shoko Nakajima for her MLW World Women's Featherweight Championship, Nakajima being the one who inspired her to enter the pro wrestling world. Her nickname is Torippy."
-  },
-  {
     "name": "Kira Summer",
     "company": "TJPW",
     "imageURL": "KiraSummerTJPW.png",
@@ -84,11 +77,11 @@
     "bio": "Debuting in 2012, this wrestler became a regular on Tokyo Joshi Pro-Wrestling shows starting in April 2017, and officially joined the promotion in November 2020. Her spinning body attack, the 'Uzuame', garnered over 100 million views on social media, leading to her being featured in various media outlets. On January 4th at Korakuen Hall, she defeated Miyu Watanabe to win her second Princess of Princess Championship. She is currently on a dominant championship run, having successfully defended her title against Rika Tatsumi on March 16th at Ota City General Gymnasium, Miyu Yamashita on April 18th in Las Vegas, and Yuki Arai on July 21st at Ota City General Gymnasium."
   },
   {
-    "name": "Moka Miyamoto",
+    "name": "Momo Sato",
     "company": "TJPW",
-    "imageURL": "MokaMiyamotoTJPW.png",
+    "imageURL": "MomoSatoTJPW.png",
     "division": "Women's",
-    "bio": "She became interested in professional wrestling through the influence of her younger brother and joined Tokyo Joshi Pro-Wrestling. In high school, she studied Shotokan karate and holds a shodan (first-degree black belt), which is why she sometimes uses straight punches and 'kawara-wari' (tile-breaking) moves during her matches. At the Ota City General Gymnasium event on July 21, she defeated her contemporary, Suzume, to win the International Princess Championship. This marked the first title of her career, but she later had to take an extended leave due to poor health, which led to her relinquishing the belt."
+    "bio": "A 15-year-old high school freshman who is also active as a member of the idol group 'Harajuku LAND.' Showing immense potential from a young age, she was once a member of the kids' class at the Pro-Wrestling HEAT-UP dojo, and even had the experience of stepping into the ring at Korakuen Hall for an exhibition showcase when she was only in the fifth grade. After competing in the Ironman Heavymetalweight Championship Battle Royal at the Ryogoku Kokugikan show on March 29th, she officially joined Tokyo Joshi Pro-Wrestling as a trainee to pursue her dream of becoming a full-time professional wrestler. Her older brother is Daichi Sato of DDT Pro-Wrestling."
   },
  {
     "name": "Pom Harajuku",
@@ -119,11 +112,25 @@
     "bio": "Her ring name utilizes her real name, Rika, with President Sanshiro Takagi famously stating, 'When you say Rika, it has to be Tatsumi Rika', and thus naming her. She has honed her inherent 'crazy fight' style, sometimes even showing a psychopathic side by putting her hands around opponents' necks. At Ota City General Gymnasium on March 16th this year, she was defeated by Mizuki, failing to reclaim the Princess of Princess Championship, but her love for Mizuppyon remains unchanged."
   },
   {
+    "name": "Sakura Hattori",
+    "company": "TJPW",
+    "imageURL": "SakuraHattoriTJPW.webp",
+    "division": "Women's",
+    "bio": "She's a masked wrestler who debuted at 'CyberFight Festival 2021.' Her motif isn't a phoenix or a crow, but a cassowary. Recently, her birthday and blood type were revealed. She excels at acrobatic movements, and her 'Sentouchoryu' (Fighting Bird Style) is a must-see. On June 7th in Shinagawa, she challenged Shoko Nakajima for her MLW World Women's Featherweight Championship, Nakajima being the one who inspired her to enter the pro wrestling world. Her nickname is Torippy."
+  },
+  {
     "name": "Shino Suzuki",
     "company": "TJPW",
     "imageURL": "ShinoSuzukiTJPW.png",
     "division": "Women's",
     "bio": "She's the green-themed member of Up Up Girls (Pro-Wrestling). Although she had a job as a bus tour guide, she couldn't give up her dream of becoming an idol, so she applied for and passed the audition to become a new member of Up Up Girls (Pro-Wrestling), making her pro wrestling debut. In this year's tag tournament, she's teamed up with her fellow trainee/rookie HIMAWARI. She's also known to give tour guidance/commentary during matches."
+  },
+  {
+    "name": "Shion Kanzaki",
+    "company": "TJPW",
+    "imageURL": "ShionKanzakiTJPW.png",
+    "division": "Women's",
+    "bio": "She was a member of the kendo club during her junior high school years. After graduating from high school, she formed a band with local friends, serving as the lead vocalist and guitarist. Although she took an office job in her hometown after the band dissolved, she could not let go of her passion for professional wrestling—a sport she had been familiar with since childhood due to her family's influence—and decided to transition into the ring. Her entrance theme, 'Saisei' (Rebirth), is a self-produced work for which she handled the lyrics, composition, and vocals herself. During the promotional campaign for the March 29th event at Ryogoku Kokugikan, she held a street performance in front of Shinjuku Takashimaya, where she performed the full version of the song live for fans."
   },
   {
     "name": "Shoko Nakajima",
