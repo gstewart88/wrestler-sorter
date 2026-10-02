@@ -7,6 +7,12 @@
     "division": "Men's"
   }, 
   {
+    "name": "Angelo Dawkins",
+    "company": "Raw",
+    "imageURL": "AngeloDawkinsWWE.png",
+    "division": "Men's"
+  },
+  {
     "name": "Austin Theory",
     "company": "Raw",
     "imageURL": "AustinTheoryWWE.png",
@@ -23,6 +29,12 @@
     "name": "Bron Breakker",
     "company": "Raw",
     "imageURL": "BronBreakkerWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Bronco Nima",
+    "company": "Raw",
+    "imageURL": "BroncoNimaWWE.png",
     "division": "Men's"
   },
   {
@@ -50,6 +62,12 @@
     "division": "Men's"
   },
   {
+    "name": "Danhausen",
+    "company": "Raw",
+    "imageURL": "DanhausenWWE.png",
+    "division": "Men's"
+  },
+  {
     "name": "Dominik Mysterio",
     "company": "Raw",
     "imageURL": "DominikMysterioWWE.png",
@@ -68,9 +86,39 @@
     "division": "Men's"
   },
   {
+    "name": "Ethan Page",
+    "company": "Raw",
+    "imageURL": "EthanPageNXT.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Jacob Fatu",
+    "company": "Raw",
+    "imageURL": "JacobFatuWWE.png",
+    "division": "Men's"
+  },
+  {
     "name": "JD McDonagh",
     "company": "Raw",
     "imageURL": "JDMcDonaghWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Je'Von Evans",
+    "company": "Raw",
+    "imageURL": "JeVonEvansNXT.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Jey Uso",
+    "company": "Raw",
+    "imageURL": "JeyUsoWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Jimmy Uso",
+    "company": "Raw",
+    "imageURL": "JimmyUsoWWE.png",
     "division": "Men's"
   },
   {
@@ -80,9 +128,21 @@
     "division": "Men's"
   },
   {
+    "name": "Joe Hendry",
+    "company": "Raw",
+    "imageURL": "JoeHendryTNA.png",
+    "division": "Men's"
+  },
+  {
     "name": "Julius Creed",
     "company": "Raw",
     "imageURL": "JuliusCreedWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "LA Knight",
+    "company": "Raw",
+    "imageURL": "LAKnightWWE.png",
     "division": "Men's"
   },
   {
@@ -92,9 +152,27 @@
     "division": "Men's"
   },
   {
+    "name": "Lucien Price",
+    "company": "Raw",
+    "imageURL": "LucienPriceWWE.png",
+    "division": "Men's"
+  },
+  {
     "name": "Ludwig Kaiser",
     "company": "Raw",
     "imageURL": "LudwigKaiserWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Montez Ford",
+    "company": "Raw",
+    "imageURL": "MontezFordWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Oba Femi",
+    "company": "Raw",
+    "imageURL": "ObaFemiNXT.png",
     "division": "Men's"
   },
   {
@@ -122,6 +200,19 @@
     "division": "Men's"
   },
   {
+    "name": "Roman Reigns",
+    "company": "Raw",
+    "imageURL": "RomanReignsWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Royce Keys",
+    "company": "Raw",
+    "imageURL": "PowerhouseHobbsAEW.png",
+    "division": "Men's",
+    "bio":""
+  },
+  {
     "name": "Rusev",
     "company": "Raw",
     "imageURL": "RusevWWE.png",
@@ -131,6 +222,12 @@
     "name": "Seth Rollins",
     "company": "Raw",
     "imageURL": "SethRollinsWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Solo Sikoa",
+    "company": "Raw",
+    "imageURL": "SoloSikoaWWE.png",
     "division": "Men's"
   },
   {
@@ -170,9 +267,21 @@
     "division": "Women's"
   },
   {
+    "name": "Jaida Parker",
+    "company": "Raw",
+    "imageURL": "JaidaParkerNXT.png",
+    "division": "Women's"
+  },
+  {
     "name": "Liv Morgan",
     "company": "Raw",
     "imageURL": "LivMorganWWE.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Lola Vice",
+    "company": "Raw",
+    "imageURL": "LolaViceNXT.png",
     "division": "Women's"
   },
   {
@@ -224,81 +333,15 @@
     "division": "Women's"
   },
   {
-    "name": "Stephanie Vaquer",
-    "company": "Raw",
-    "imageURL": "StephanieVaquerWWE.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Angelo Dawkins",
-    "company": "Raw",
-    "imageURL": "AngeloDawkinsWWE.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Jacob Fatu",
-    "company": "Raw",
-    "imageURL": "JacobFatuWWE.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Jimmy Uso",
-    "company": "Raw",
-    "imageURL": "JimmyUsoWWE.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Montez Ford",
-    "company": "Raw",
-    "imageURL": "MontezFordWWE.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Roman Reigns",
-    "company": "Raw",
-    "imageURL": "RomanReignsWWE.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Ethan Page",
-    "company": "Raw",
-    "imageURL": "EthanPageNXT.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Je'Von Evans",
-    "company": "Raw",
-    "imageURL": "JeVonEvansNXT.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Oba Femi",
-    "company": "Raw",
-    "imageURL": "ObaFemiNXT.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Lola Vice",
-    "company": "Raw",
-    "imageURL": "LolaViceNXT.png",
-    "division": "Women's"
-  },
-  {
     "name": "Sol Ruca",
     "company": "Raw",
     "imageURL": "SolRucaNXT.png",
     "division": "Women's"
   },
   {
-    "name": "Jaida Parker",
+    "name": "Stephanie Vaquer",
     "company": "Raw",
-    "imageURL": "JaidaParkerNXT.png",
+    "imageURL": "StephanieVaquerWWE.png",
     "division": "Women's"
-  },
-  {
-    "name": "Joe Hendry",
-    "company": "Raw",
-    "imageURL": "JoeHendryTNA.png",
-    "division": "Men's"
   }
 ]
