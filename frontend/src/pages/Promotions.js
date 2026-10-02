@@ -37,7 +37,7 @@ const promotions = [
   {
     name: 'Stardom',
     slug: 'stardom',
-    img: 'https://monthlypuroresu.com/wp-content/uploads/2025/05/saya-kamitani-4.jpg'
+    img: 'https://cdn.jsdelivr.net/gh/gstewart88/wrestler-images@main/images/promotions/Stardom/SuzuSuzukiChampion.jpg'
   },
   {
     name: 'TJPW',

@@ -294,5 +294,11 @@
     "company": "Raw",
     "imageURL": "SolRucaNXT.png",
     "division": "Women's"
+  },
+  {
+    "name": "Joe Hendry",
+    "company": "Raw",
+    "imageURL": "JoeHendryTNA.png",
+    "division": "Men's"
   }
 ]

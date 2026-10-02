@@ -48,12 +48,6 @@
     "division": "Men's"
   },
   {
-    "name": "Jake Something",
-    "company": "TNA",
-    "imageURL": "JakeSomethingTNA.png",
-    "division": "Men's"
-  },
-  {
     "name": "Jason Hotch",
     "company": "TNA",
     "imageURL": "JasonHotchTNA.png",
@@ -69,12 +63,6 @@
     "name": "Jeff Hardy",
     "company": "TNA",
     "imageURL": "JeffHardyTNA.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Joe Hendry",
-    "company": "TNA",
-    "imageURL": "JoeHendryTNA.png",
     "division": "Men's"
   },
   {
@@ -114,21 +102,9 @@
     "division": "Men's"
   },
   {
-    "name": "Matt Cardona",
-    "company": "TNA",
-    "imageURL": "MattCardonaTNA.png",
-    "division": "Men's"
-  },
-  {
     "name": "Matt Hardy",
     "company": "TNA",
     "imageURL": "MattHardyTNA.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Mike Santana",
-    "company": "TNA",
-    "imageURL": "MikeSantanaTNA.png",
     "division": "Men's"
   },
   {
@@ -141,12 +117,6 @@
     "name": "Mustafa Ali",
     "company": "TNA",
     "imageURL": "MustafaAliTNA.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Myron Reed",
-    "company": "TNA",
-    "imageURL": "MyronReedTNA.png",
     "division": "Men's"
   },
   {
@@ -174,9 +144,9 @@
     "division": "Men's"
   },
   {
-    "name": "Sami Callihan",
+    "name": "Samuel Shaw",
     "company": "TNA",
-    "imageURL": "SamiCallihanTNA.png",
+    "imageURL": "DexterLumisWWE.png",
     "division": "Men's"
   },
   {
@@ -246,10 +216,11 @@
     "division": "Women's"
   },
   {
-    "name": "Killer Kelly",
+    "name": "Kiera Hogan",
     "company": "TNA",
-    "imageURL": "KillerKellyTNA.png",
-    "division": "Women's"
+    "imageURL": "KieraHoganAEW.png",
+    "division": "Women's",
+    "bio":""
   },
   {
     "name": "KiLynn King",
@@ -273,12 +244,6 @@
     "name": "Mara Sade",
     "company": "TNA",
     "imageURL": "MaraSadeTNA.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Masha Slamovich",
-    "company": "TNA",
-    "imageURL": "MashaSlamovichTNA.png",
     "division": "Women's"
   },
   {
@@ -309,12 +274,6 @@
     "name": "Tasha Steelz",
     "company": "TNA",
     "imageURL": "TashaSteelzTNA.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Tessa Blanchard",
-    "company": "TNA",
-    "imageURL": "TessaBlanchardTNA.png",
     "division": "Women's"
   },
   {

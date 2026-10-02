@@ -873,5 +873,17 @@
     "company": "AEW",
     "imageURL": "XavierWoodsWWE.png",
     "division": "Men's"
+  },
+  {
+    "name": "Myron Reed",
+    "company": "AEW",
+    "imageURL": "MyronReedTNA.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Jake Doyle",
+    "company": "AEW",
+    "imageURL": "JakeSomethingTNA.png",
+    "division": "Men's"
   }
 ]

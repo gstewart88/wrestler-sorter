@@ -299,5 +299,11 @@
     "company": "Smackdown",
     "imageURL": "TrickWilliamsNXT.png",
     "division": "Men's"
+  },
+  {
+    "name": "Matt Cardona",
+    "company": "Smackdown",
+    "imageURL": "MattCardonaTNA.png",
+    "division": "Men's"
   }
 ]

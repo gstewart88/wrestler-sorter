@@ -178,5 +178,11 @@
     "company": "NXT",
     "imageURL": "TonyDAngeloNXT.png",
     "division": "Men's"
+  },
+  {
+    "name": "Cruz Montana",
+    "company": "NXT",
+    "imageURL": "MikeSantanaTNA.png",
+    "division": "Men's"
   }
 ]
