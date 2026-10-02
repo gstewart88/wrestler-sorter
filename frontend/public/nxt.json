@@ -1,11 +1,5 @@
 [  
   {
-    "name": "Adriana Rizzo",
-    "company": "NXT",
-    "imageURL": "AdrianaRizzoNXT.png",
-    "division": "Women's"
-  },
-  {
     "name": "Arianna Grace",
     "company": "NXT",
     "imageURL": "AriannaGraceNXT.png",
@@ -15,18 +9,6 @@
     "name": "Brinley Reece",
     "company": "NXT",
     "imageURL": "BrinleyReeceNXT.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Izzi Dame",
-    "company": "NXT",
-    "imageURL": "IzziDameNXT.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Jacy Jayne",
-    "company": "NXT",
-    "imageURL": "JacyJayneNXT.png",
     "division": "Women's"
   },
   {
@@ -54,21 +36,9 @@
     "division": "Women's"
   },
   {
-    "name": "Stevie Turner",
-    "company": "NXT",
-    "imageURL": "StevieTurnerNXT.png",
-    "division": "Women's"
-  },
-  {
     "name": "Thea Hail",
     "company": "NXT",
     "imageURL": "TheaHailNXT.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Wendy Choo",
-    "company": "NXT",
-    "imageURL": "WendyChooNXT.png",
     "division": "Women's"
   },
   {
@@ -132,6 +102,12 @@
     "division": "Men's"
   },
   {
+    "name": "Lizzy Rain",
+    "company": "NXT",
+    "imageURL": "LizzyRainNXT.png",
+    "division": "Women's"
+  },
+  {
     "name": "Myles Borne",
     "company": "NXT",
     "imageURL": "MylesBorneNXT.png",
@@ -184,5 +160,11 @@
     "company": "NXT",
     "imageURL": "MikeSantanaTNA.png",
     "division": "Men's"
+  },
+  {
+    "name": "Izzi Dame",
+    "company": "NXT",
+    "imageURL": "IzziDameNXT.png",
+    "division": "Women's"
   }
 ]

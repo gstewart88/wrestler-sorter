@@ -108,12 +108,6 @@
     "division": "Women's"
   },
   {
-    "name": "Joe Gacy",
-    "company": "Smackdown",
-    "imageURL": "JoeGacyWWE.png",
-    "division": "Men's"
-  },
-  {
     "name": "Johnny Gargano",
     "company": "Smackdown",
     "imageURL": "JohnnyGarganoWWE.png",
@@ -305,5 +299,23 @@
     "company": "Smackdown",
     "imageURL": "MattCardonaTNA.png",
     "division": "Men's"
+  },
+  {
+    "name": "Fallon Henley",
+    "company": "Smackdown",
+    "imageURL": "FallonHenleySmackdown.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Lainey Reid",
+    "company": "Smackdown",
+    "imageURL": "LaineyReidSmackdown.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Jacy Jayne",
+    "company": "Smackdown",
+    "imageURL": "JacyJayneNXT.png",
+    "division": "Women's"
   }
 ]
