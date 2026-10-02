@@ -54,31 +54,31 @@
 
 /* Company‐specific logos */
 .company-filter .form-check-label[for="company-AEW"]::before {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/All_Elite_Wrestling_logo_2023.png/1600px-All_Elite_Wrestling_logo_2023.png');
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/39/All_Elite_Wrestling_logo_2023.png');
 }
 .company-filter .form-check-label[for="company-Raw"]::before {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/WWE_RAW_Logo.png');
 }
 .company-filter .form-check-label[for="company-Smackdown"]::before {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/WWE_SmackDown_%282024%29_Logo.svg/2560px-WWE_SmackDown_%282024%29_Logo.svg.png');
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c9/WWE_SmackDown_%282024%29_Logo.svg');
 }
 .company-filter .form-check-label[for="company-NXT"]::before {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9e/NXT2024.jpg');
 }
 .company-filter .form-check-label[for="company-TNA"]::before {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/TNA_Wrestling_%282024%29_Logo.svg/1024px-TNA_Wrestling_%282024%29_Logo.svg.png');
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4a/TNA_Wrestling_%282024%29_Logo.svg');
 }
 .company-filter .form-check-label[for="company-NJPW"]::before {
-  background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/New_Japan_Pro_Wrestling_Logo_2.svg/1280px-New_Japan_Pro_Wrestling_Logo_2.svg.png');
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/1/1c/New_Japan_Pro_Wrestling_Logo_2.svg');
 }
 .company-filter .form-check-label[for="company-Stardom"]::before {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Stardom_2021_logo.svg/260px-Stardom_2021_logo.svg.png');
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1e/Stardom_2021_logo.svg');
 }
 .company-filter .form-check-label[for="company-Marigold"]::before {
   background-image: url('https://dsf-marigold.com/wp-content/themes/marigold/assets/images/mg_logo2.png');
 }
 .company-filter .form-check-label[for="company-TJPW"]::before {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/TJPW_logo.svg/480px-TJPW_logo.svg.png?20230218193820');
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/TJPW_logo.svg');
 }
 /* .company-filter .form-check-label[for="company-CMLL"]::before {
   background-image: url('https://static.wikia.nocookie.net/prowrestling/images/c/c9/CMLLlogo2018.png');
