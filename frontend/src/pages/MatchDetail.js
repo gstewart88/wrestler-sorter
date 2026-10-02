@@ -162,17 +162,6 @@ export default function MatchDetail() {
   // If you want a same-origin fallback link (like CompanyRoster used), compute it here.
   const fallbackHref = `${window.location.origin}/matches`;
 
-  const renderText = (text) => { 
-    if (!text && text !== '') return null; 
-    return String(text) 
-      .split('\n\n') 
-      .map((para, i) => ( 
-        <p key={i} style={{ whiteSpace: 'pre-wrap', marginTop: i === 0 ? 0 : '0.75rem' }}> 
-          {para} 
-        </p> 
-      )); 
-  };
-
   return (
     <Container className="py-4">
       {/* Header styled to match CompanyRoster's header layout:

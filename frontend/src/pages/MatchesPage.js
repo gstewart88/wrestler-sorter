@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Button, ButtonGroup } from 'react-bootstrap';
 import MatchCard from '../components/MatchCard';
 import './MatchesPage.scss'; // optional: create for page-specific styles
-import { Link } from 'react-router-dom';
 
 const PAGE_SIZE = 10;
 const base = process.env.PUBLIC_URL || '';
