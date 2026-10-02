@@ -22,5 +22,25 @@
     "company": "Legends",
     "imageURL": "ManabuNakanishiNJPW.png",
     "division": "Men's"
+  },
+  {
+    "name": "Kairi Sane",
+    "company": "Legends",
+    "imageURL": "KairiSaneWWE.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Saki Kashima",
+    "company": "Legends",
+    "imageURL": "SakiKashimaStardom.png",
+    "division": "Women's",
+    "bio": "She debuted as a member of Stardom's second generation in its inaugural year. She disappeared for a while due to circumstances, but made her return for the first time in five years at the Korakuen Hall event on March 28, 2018. On January 3, 2020, at the Shinkiba 1stRING event, she betrayed Mayu Iwatani and joined Oedo Tai. At the Ota Ward General Gymnasium event on May 27, 2023, she won a three-way High Speed ​​Championship match to become the first singles champion. She was expelled from Oedo Tai in June of the same year, but was picked up by Akari and joined God's Eye. She has scored numerous come-from-behind victories with her skillful roll-up technique. She is also renowned for her beauty."
+  },
+  {
+    "name": "Xena",
+    "company": "Stardom",
+    "imageURL": "XenaStardom.png",
+    "division": "Women's",
+    "bio": ""
   }
 ]
