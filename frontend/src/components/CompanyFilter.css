@@ -75,10 +75,10 @@
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1e/Stardom_2021_logo.svg');
 }
 .company-filter .form-check-label[for="company-Marigold"]::before {
-  background-image: url('https://dsf-marigold.com/wp-content/themes/marigold/assets/images/mg_logo2.png');
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/f/ff/Dream_Star_Fighting_Marigold_logo_2024.jpg');
 }
 .company-filter .form-check-label[for="company-TJPW"]::before {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/TJPW_logo.svg');
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9c/TJPW_logo.svg');
 }
 /* .company-filter .form-check-label[for="company-CMLL"]::before {
   background-image: url('https://static.wikia.nocookie.net/prowrestling/images/c/c9/CMLLlogo2018.png');
