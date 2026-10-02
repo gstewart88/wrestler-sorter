@@ -12,12 +12,6 @@
     "division": "Women's"
   },
   {
-    "name": "Jaida Parker",
-    "company": "NXT",
-    "imageURL": "JaidaParkerNXT.png",
-    "division": "Women's"
-  },
-  {
     "name": "Karmen Petrovic",
     "company": "NXT",
     "imageURL": "KarmenPetrovicNXT.png",
@@ -159,6 +153,12 @@
     "name": "Cruz Montana",
     "company": "NXT",
     "imageURL": "MikeSantanaTNA.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Grayson Waller",
+    "company": "Raw",
+    "imageURL": "GraysonWallerWWE.png",
     "division": "Men's"
   },
   {
