@@ -1,20 +1,8 @@
 [  
   {
-    "name": "Adriana Rizzo",
-    "company": "NXT",
-    "imageURL": "AdrianaRizzoNXT.png",
-    "division": "Women's"
-  },
-  {
     "name": "Arianna Grace",
     "company": "NXT",
     "imageURL": "AriannaGraceNXT.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Blake Monroe",
-    "company": "NXT",
-    "imageURL": "BlakeMonroeNXT.png",
     "division": "Women's"
   },
   {
@@ -24,27 +12,9 @@
     "division": "Women's"
   },
   {
-    "name": "Izzi Dame",
-    "company": "NXT",
-    "imageURL": "IzziDameNXT.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Jacy Jayne",
-    "company": "NXT",
-    "imageURL": "JacyJayneNXT.png",
-    "division": "Women's"
-  },
-  {
     "name": "Jaida Parker",
     "company": "NXT",
     "imageURL": "JaidaParkerNXT.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Jordynne Grace",
-    "company": "NXT",
-    "imageURL": "JordynneGraceNXT.png",
     "division": "Women's"
   },
   {
@@ -60,51 +30,15 @@
     "division": "Women's"
   },
   {
-    "name": "Lash Legend",
-    "company": "NXT",
-    "imageURL": "LashLegendNXT.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Lola Vice",
-    "company": "NXT",
-    "imageURL": "LolaViceNXT.png",
-    "division": "Women's"
-  },
-  {
     "name": "Nikkita Lyons",
     "company": "NXT",
     "imageURL": "NikkitaLyonsNXT.png",
     "division": "Women's"
   },
   {
-    "name": "Sol Ruca",
-    "company": "NXT",
-    "imageURL": "SolRucaNXT.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Stevie Turner",
-    "company": "NXT",
-    "imageURL": "StevieTurnerNXT.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Tatum Paxley",
-    "company": "NXT",
-    "imageURL": "TatumPaxleyNXT.png",
-    "division": "Women's"
-  },
-  {
     "name": "Thea Hail",
     "company": "NXT",
     "imageURL": "TheaHailNXT.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Wendy Choo",
-    "company": "NXT",
-    "imageURL": "WendyChooNXT.png",
     "division": "Women's"
   },
   {
@@ -150,21 +84,9 @@
     "division": "Men's"
   },
   {
-    "name": "Ethan Page",
-    "company": "NXT",
-    "imageURL": "EthanPageNXT.png",
-    "division": "Men's"
-  },
-  {
     "name": "Hank Walker",
     "company": "NXT",
     "imageURL": "HankWalkerNXT.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Je'Von Evans",
-    "company": "NXT",
-    "imageURL": "JeVonEvansNXT.png",
     "division": "Men's"
   },
   {
@@ -180,9 +102,21 @@
     "division": "Men's"
   },
   {
+    "name": "Lizzy Rain",
+    "company": "NXT",
+    "imageURL": "LizzyRainNXT.png",
+    "division": "Women's"
+  },
+  {
     "name": "Myles Borne",
     "company": "NXT",
     "imageURL": "MylesBorneNXT.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Naraku",
+    "company": "NXT",
+    "imageURL": "EvilNJPW.png",
     "division": "Men's"
   },
   {
@@ -192,21 +126,9 @@
     "division": "Men's"
   },
   {
-    "name": "Oba Femi",
-    "company": "NXT",
-    "imageURL": "ObaFemiNXT.png",
-    "division": "Men's"
-  },
-  {
     "name": "Osiris Griffin",
     "company": "NXT",
     "imageURL": "OsirisGriffinNXT.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Ricky Saints",
-    "company": "NXT",
-    "imageURL": "RickySaintsNXT.png",
     "division": "Men's"
   },
   {
@@ -234,15 +156,15 @@
     "division": "Men's"
   },
   {
-    "name": "Trick Williams",
+    "name": "Cruz Montana",
     "company": "NXT",
-    "imageURL": "TrickWilliamsNXT.png",
+    "imageURL": "MikeSantanaTNA.png",
     "division": "Men's"
   },
   {
-    "name": "Wes Lee",
+    "name": "Izzi Dame",
     "company": "NXT",
-    "imageURL": "WesLeeNXT.png",
-    "division": "Men's"
+    "imageURL": "IzziDameNXT.png",
+    "division": "Women's"
   }
 ]

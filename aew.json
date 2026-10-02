@@ -56,13 +56,6 @@
     "bio":""
   },
   {
-    "name": "Big Bill",
-    "company": "AEW",
-    "imageURL": "BigBillAEW.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
     "name": "Billie Starkz",
     "company": "AEW",
     "imageURL": "BillieStarkzAEW.png",
@@ -133,6 +126,12 @@
     "bio":""
   },
   {
+    "name": "Clark Connors",
+    "company": "AEW",
+    "imageURL": "ClarkConnorsNJPW.png",
+    "division": "Men's"
+  },
+  {
     "name": "Claudio Castagnoli",
     "company": "AEW",
     "imageURL": "ClaudioCastagnoliAEW.png",
@@ -154,7 +153,7 @@
     "bio":""
   },
   {
-    "name": "Cope",
+    "name": "Adam Copeland",
     "company": "AEW",
     "imageURL": "CopeAEW.png",
     "division": "Men's",
@@ -280,6 +279,12 @@
     "bio":""
   },
   {
+    "name": "Ilja Dragunov",
+    "company": "AEW",
+    "imageURL": "IljaDragunovWWE.png",
+    "division": "Men's"
+  },
+  {
     "name": "Jack Perry",
     "company": "AEW",
     "imageURL": "JackPerryAEW.png",
@@ -371,13 +376,6 @@
     "bio":""
   },
   {
-    "name": "Kiera Hogan",
-    "company": "AEW",
-    "imageURL": "KieraHoganAEW.png",
-    "division": "Women's",
-    "bio":""
-  },
-  {
     "name": "Kip Sabian",
     "company": "AEW",
     "imageURL": "KipSabianAEW.png",
@@ -438,13 +436,6 @@
     "company": "AEW",
     "imageURL": "LuchasaurusAEW.png",
     "division": "Men's",
-    "bio":""
-  },
-  {
-    "name": "Madison Rayne",
-    "company": "AEW",
-    "imageURL": "MadisonRayneAEW.png",
-    "division": "Women's",
     "bio":""
   },
   {
@@ -609,13 +600,6 @@
     "bio":""
   },
   {
-    "name": "Powerhouse Hobbs",
-    "company": "AEW",
-    "imageURL": "PowerhouseHobbsAEW.png",
-    "division": "Men's",
-    "bio":""
-  },
-  {
     "name": "Queen Aminata",
     "company": "AEW",
     "imageURL": "QueenAminataAEW.png",
@@ -756,11 +740,23 @@
     "bio":""
   },
   {
+    "name": "Tommaso Ciampa",
+    "company": "AEW",
+    "imageURL": "TommasoCiampaWWE.png",
+    "division": "Men's"
+  },
+  {
     "name": "Toni Storm",
     "company": "AEW",
     "imageURL": "ToniStormAEW.png",
     "division": "Women's",
     "bio":""
+  },
+  {
+    "name": "Trey Miguel",
+    "company": "AEW",
+    "imageURL": "TreyMiguelTNA.png",
+    "division": "Men's"
   },
   {
     "name": "Truth Magnum",
@@ -791,6 +787,12 @@
     "bio":""
   },
   {
+    "name": "Wes Lee",
+    "company": "AEW",
+    "imageURL": "WesLeeNXT.png",
+    "division": "Men's"
+  },
+  {
     "name": "Wheeler Yuta",
     "company": "AEW",
     "imageURL": "WheelerYutaAEW.png",
@@ -817,5 +819,71 @@
     "imageURL": "YukaSakazakiAEW.png",
     "division": "Women's",
     "bio":""
+  },
+  {
+    "name": "Zachary Wentz",
+    "company": "AEW",
+    "imageURL": "ZacharyWentzTNA.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Alex Shelley",
+    "company": "AEW",
+    "imageURL": "AlexShelleyWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Andrade",
+    "company": "AEW",
+    "imageURL": "AndradeWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Chris Sabin",
+    "company": "AEW",
+    "imageURL": "ChrisSabinWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Dani Luna",
+    "company": "AEW",
+    "imageURL": "DaniLunaTNA.png",
+    "division": "Women's"
+  },
+  {
+    "name": "David Finlay",
+    "company": "AEW",
+    "imageURL": "DavidFinlayNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Gabe Kidd",
+    "company": "AEW",
+    "imageURL": "GabeKiddNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Kofi Kingston",
+    "company": "AEW",
+    "imageURL": "KofiKingstonWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Xavier Woods",
+    "company": "AEW",
+    "imageURL": "XavierWoodsWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Myron Reed",
+    "company": "AEW",
+    "imageURL": "MyronReedTNA.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Jake Doyle",
+    "company": "AEW",
+    "imageURL": "JakeSomethingTNA.png",
+    "division": "Men's"
   }
 ]

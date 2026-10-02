@@ -24,21 +24,9 @@
     "division": "Men's"
   },
   {
-    "name": "Clark Connors",
-    "company": "NJPW",
-    "imageURL": "ClarkConnorsNJPW.png",
-    "division": "Men's"
-  },
-  {
     "name": "Daiki Nagai",
     "company": "NJPW",
     "imageURL": "DaikiNagaiNJPW.png",
-    "division": "Men's"
-  },
-  {
-    "name": "David Finlay",
-    "company": "NJPW",
-    "imageURL": "DavidFinlayNJPW.png",
     "division": "Men's"
   },
   {
@@ -78,12 +66,6 @@
     "division": "Men's"
   },
   {
-    "name": "EVIL",
-    "company": "NJPW",
-    "imageURL": "EvilNJPW.png",
-    "division": "Men's"
-  },
-  {
     "name": "Francesco Akira",
     "company": "NJPW",
     "imageURL": "FrancescoAkiraNJPW.png",
@@ -93,12 +75,6 @@
     "name": "Fred Rosser",
     "company": "NJPW",
     "imageURL": "FredRosserNJPW.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Gabe Kidd",
-    "company": "NJPW",
-    "imageURL": "GabeKiddNJPW.png",
     "division": "Men's"
   },
   {
@@ -126,27 +102,9 @@
     "division": "Men's"
   },
   {
-    "name": "Hiromu Takahashi",
-    "company": "NJPW",
-    "imageURL": "HiromuTakahashiNJPW.png",
-    "division": "Men's"
-  },
-  {
     "name": "Hirooki Goto",
     "company": "NJPW",
     "imageURL": "HirokiGotoNJPW.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Hiroshi Tanahashi",
-    "company": "NJPW",
-    "imageURL": "HiroshiTanahashiNJPW.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Hiroyoshi Tenzan",
-    "company": "NJPW",
-    "imageURL": "HiroyoshiTenzanNJPW.png",
     "division": "Men's"
   },
   {
@@ -165,6 +123,12 @@
     "name": "Jakob Austin Young",
     "company": "NJPW",
     "imageURL": "JakobAustinYoungNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Jeff Cobb",
+    "company": "NJPW",
+    "imageURL": "JCMateoWWE.png",
     "division": "Men's"
   },
   {
@@ -189,12 +153,6 @@
     "name": "Kushida",
     "company": "NJPW",
     "imageURL": "KushidaNJPW.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Manabu Nakanishi",
-    "company": "NJPW",
-    "imageURL": "ManabuNakanishiNJPW.png",
     "division": "Men's"
   },
   {
