@@ -138,6 +138,12 @@
     "division": "Men's"
   },
   {
+    "name": "Naraku",
+    "company": "NXT",
+    "imageURL": "EvilNJPW.png",
+    "division": "Men's"
+  },
+  {
     "name": "Noam Dar",
     "company": "NXT",
     "imageURL": "NoamDarNXT.png",

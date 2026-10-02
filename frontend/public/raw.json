@@ -1,10 +1,5 @@
 [
-  {
-    "name": "AJ Styles",
-    "company": "Raw",
-    "imageURL": "AJStylesWWE.png",
-    "division": "Men's"
-  },
+
   {
     "name": "Akira Tozawa",
     "company": "Raw",
@@ -17,6 +12,13 @@
     "imageURL": "AustinTheoryWWE.png",
     "division": "Men's"
   },   
+  {
+    "name": "Big Cass",
+    "company": "Raw",
+    "imageURL": "BigBillAEW.png",
+    "division": "Men's",
+    "bio":""
+  },
   {
     "name": "Bron Breakker",
     "company": "Raw",
@@ -69,12 +71,6 @@
     "name": "Grayson Waller",
     "company": "Raw",
     "imageURL": "GraysonWallerWWE.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Ilja Dragunov",
-    "company": "Raw",
-    "imageURL": "IljaDragunovWWE.png",
     "division": "Men's"
   },
   {
@@ -141,12 +137,6 @@
     "name": "Seth Rollins",
     "company": "Raw",
     "imageURL": "SethRollinsWWE.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Sheamus",
-    "company": "Raw",
-    "imageURL": "SheamusWWE.png",
     "division": "Men's"
   },
   {
@@ -243,12 +233,6 @@
     "name": "Stephanie Vaquer",
     "company": "Raw",
     "imageURL": "StephanieVaquerWWE.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Zoey Stark",
-    "company": "Raw",
-    "imageURL": "ZoeyStarkWWE.png",
     "division": "Women's"
   },
   {

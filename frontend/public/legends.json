@@ -1,5 +1,35 @@
 [
   {
+    "name": "Alba Fyre",
+    "company": "Legends",
+    "imageURL": "AlbaFyreWWE.png",
+    "division": "Women's"
+  },
+  {
+    "name": "Aleister Black",
+    "company": "Legends",
+    "imageURL": "AleisterBlackWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Apollo Crews",
+    "company": "Legends",
+    "imageURL": "ApolloCrewsWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Brock Lesnar",
+    "company": "Legends",
+    "imageURL": "BrockLesnarWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Erick Rowan",
+    "company": "Legends",
+    "imageURL": "ErickRowanWWE.png",
+    "division": "Men's"
+  },
+  {
     "name": "Hiroshi Tanahashi",
     "company": "Legends",
     "imageURL": "HiroshiTanahashiNJPW.png",
@@ -30,6 +60,19 @@
     "division": "Women's"
   },
   {
+    "name": "Madison Rayne",
+    "company": "Legends",
+    "imageURL": "MadisonRayneAEW.png",
+    "division": "Women's",
+    "bio":""
+  },
+  {
+    "name": "Nikki Cross",
+    "company": "Legends",
+    "imageURL": "NikkiCrossWWE.png",
+    "division": "Women's"
+  },
+  {
     "name": "Saki Kashima",
     "company": "Legends",
     "imageURL": "SakiKashimaStardom.png",
@@ -37,10 +80,46 @@
     "bio": "She debuted as a member of Stardom's second generation in its inaugural year. She disappeared for a while due to circumstances, but made her return for the first time in five years at the Korakuen Hall event on March 28, 2018. On January 3, 2020, at the Shinkiba 1stRING event, she betrayed Mayu Iwatani and joined Oedo Tai. At the Ota Ward General Gymnasium event on May 27, 2023, she won a three-way High Speed ​​Championship match to become the first singles champion. She was expelled from Oedo Tai in June of the same year, but was picked up by Akari and joined God's Eye. She has scored numerous come-from-behind victories with her skillful roll-up technique. She is also renowned for her beauty."
   },
   {
+    "name": "Santos Escobar",
+    "company": "Legends",
+    "imageURL": "SantosEscobarWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Sheamus",
+    "company": "Legends",
+    "imageURL": "SheamusWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Tonga Loa",
+    "company": "Legends",
+    "imageURL": "TongaLoaWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Uncle Howdy",
+    "company": "Legends",
+    "imageURL": "UncleHowdyWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Xelina Vega",
+    "company": "Legends",
+    "imageURL": "ZelinaVegaWWE.png",
+    "division": "Women's"
+  },
+  {
     "name": "Xena",
-    "company": "Stardom",
+    "company": "Legends",
     "imageURL": "XenaStardom.png",
     "division": "Women's",
     "bio": ""
+  },
+  {
+    "name": "Zoey Stark",
+    "company": "Legends",
+    "imageURL": "ZoeyStarkWWE.png",
+    "division": "Women's"
   }
 ]

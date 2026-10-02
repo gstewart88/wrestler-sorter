@@ -66,12 +66,6 @@
     "division": "Men's"
   },
   {
-    "name": "EVIL",
-    "company": "NJPW",
-    "imageURL": "EvilNJPW.png",
-    "division": "Men's"
-  },
-  {
     "name": "Francesco Akira",
     "company": "NJPW",
     "imageURL": "FrancescoAkiraNJPW.png",
@@ -108,12 +102,6 @@
     "division": "Men's"
   },
   {
-    "name": "Hiromu Takahashi",
-    "company": "NJPW",
-    "imageURL": "HiromuTakahashiNJPW.png",
-    "division": "Men's"
-  },
-  {
     "name": "Hirooki Goto",
     "company": "NJPW",
     "imageURL": "HirokiGotoNJPW.png",
@@ -135,6 +123,12 @@
     "name": "Jakob Austin Young",
     "company": "NJPW",
     "imageURL": "JakobAustinYoungNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Jeff Cobb",
+    "company": "NJPW",
+    "imageURL": "JCMateoWWE.png",
     "division": "Men's"
   },
   {
