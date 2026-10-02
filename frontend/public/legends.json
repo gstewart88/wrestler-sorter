@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Hiroshi Tanahashi",
+    "company": "Legends",
+    "imageURL": "HiroshiTanahashiNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Hiroyoshi Tenzan",
+    "company": "Legends",
+    "imageURL": "HiroyoshiTenzanNJPW.png",
+    "division": "Men's"
+  },
+  {
+    "name": "John Cena",
+    "company": "Legends",
+    "imageURL": "JohnCenaWWE.png",
+    "division": "Men's"
+  },
+  {
+    "name": "Manabu Nakanishi",
+    "company": "Legends",
+    "imageURL": "ManabuNakanishiNJPW.png",
+    "division": "Men's"
+  }
+]
