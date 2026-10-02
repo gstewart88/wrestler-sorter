@@ -192,18 +192,6 @@
     "division": "Men's"
   },
   {
-    "name": "Trey Miguel",
-    "company": "TNA",
-    "imageURL": "TreyMiguelTNA.png",
-    "division": "Men's"
-  },
-  {
-    "name": "Zachary Wentz",
-    "company": "TNA",
-    "imageURL": "ZacharyWentzTNA.png",
-    "division": "Men's"
-  },
-  {
     "name": "Alisha Edwards",
     "company": "TNA",
     "imageURL": "AlishaEdwardsTNA.png",
@@ -219,12 +207,6 @@
     "name": "Cassie Lee",
     "company": "TNA",
     "imageURL": "CassieLeeTNA.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Dani Luna",
-    "company": "TNA",
-    "imageURL": "DaniLunaTNA.png",
     "division": "Women's"
   },
   {
