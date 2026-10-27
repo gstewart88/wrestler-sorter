@@ -14,9 +14,9 @@
     "bio":"Active in gravure after being a finalist in Miss FLASH 2022. Proud of her tall height, she made her professional wrestling debut in Actress Girls as a 'fighting gravure actress.'"
   },
   {
-    "name": "Gigaton",
+    "name": "Erina Yamanaka",
     "company": "Marigold",
-    "imageURL": "GigatonMarigold.png",
+    "imageURL": "ErinaYamanakaMarigold.png",
     "division": "Women's",
     "bio":""
   },
@@ -35,18 +35,18 @@
     "bio":"Born a thoroughbred with her father being the professional wrestler Minoru Tanaka and her mother being the former professional wrestler Yumi Fukawa. She aimed to be a professional wrestler from her girlhood and joined Pro Wrestling WAVE in high school. She debuted at the same time as her graduation. She stands out with a cute look inherited from her mother and a submission like her father, and won the WAVE Certified Tag Championship."
   },
   {
-    "name": "Komomo Minami",
-    "company": "Marigold",
-    "imageURL": "KomomoMinamiMarigold.png",
-    "division": "Women's",
-    "bio":"She was set to debut as a Stardom trainee, but had to withdraw due to an injury. She returned to her hometown in Fukuoka, but moved back to Tokyo in April 2024 and became a trainee for Marigold. She made her long-awaited debut in a match against MIRAI on June 11."
-  },
-  {
     "name": "Kouki Amarei",
     "company": "Marigold",
     "imageURL": "KoukiAmareiMarigold.png",
     "division": "Women's",
     "bio": "She has a background in classical ballet and street dance. After working as a stage actress, she made her ring debut with Actwres girl'Z. She was quickly anticipated to be an ace candidate, and her tall, dignified presence makes her a shining knight representing the era. Upon joining Marigold, she took the ring name Amarei Kouki."
+  },
+  {
+    "name": "Komomo Minami",
+    "company": "Marigold",
+    "imageURL": "KomomoMinamiMarigold.png",
+    "division": "Women's",
+    "bio":"She was set to debut as a Stardom trainee, but had to withdraw due to an injury. She returned to her hometown in Fukuoka, but moved back to Tokyo in April 2024 and became a trainee for Marigold. She made her long-awaited debut in a match against MIRAI on June 11."
   },
   {
     "name": "Mai Sakurai",
@@ -77,11 +77,11 @@
     "bio":""
   },
   {
-    "name": "Mirai",
+    "name": "Minami Yuuki",
     "company": "Marigold",
-    "imageURL": "MiraiMarigold.png",
+    "imageURL": "MinamiYuukiMarigold.png",
     "division": "Women's",
-    "bio": "She was affected by the Great East Japan Earthquake when she was in elementary school. After watching a charity martial arts and professional wrestling event for reconstruction, she decided to become a professional wrestler and started learning judo. After graduating from high school, she moved to Tokyo and made her debut in Tokyo Joshi Pro Wrestling."
+    "bio":""
   },
   {
     "name": "Misa Matsui",
@@ -125,19 +125,6 @@
     "bio":""
   },
   {
-    "name": "Riara",
-    "company": "Marigold",
-    "imageURL": "RiaraMarigold.png",
-    "division": "Women's"
-  },
-  {
-    "name": "Ryoko Sakimura",
-    "company": "Marigold",
-    "imageURL": "RyokoSakimuraMarigold.png",
-    "division": "Women's",
-    "bio":""
-  },
-  {
     "name": "Seri Yamaoka",
     "company": "Marigold",
     "imageURL": "SeriYamaokaMarigold.png",
@@ -152,9 +139,9 @@
     "bio":""
   },
     {
-    "name": "Syoko Koshino",
+    "name": "Shoko Koshino",
     "company": "Marigold",
-    "imageURL": "SyokoKoshinoMarigold.png",
+    "imageURL": "ShokoKoshinoMarigold.png",
     "division": "Women's",
     "bio":""
   },
@@ -169,13 +156,6 @@
     "name": "Yuuka Yamazaki",
     "company": "Marigold",
     "imageURL": "YuukaYamazakiMarigold.png",
-    "division": "Women's",
-    "bio":""
-  },
-  {
-    "name": "Yuuki Minami",
-    "company": "Marigold",
-    "imageURL": "YuukiMinamiMarigold.png",
     "division": "Women's",
     "bio":""
   }
