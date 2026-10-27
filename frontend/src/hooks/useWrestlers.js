@@ -1,7 +1,7 @@
 // src/hooks/useWrestlers.js
 
 import { useState, useEffect } from 'react';
-import { IMAGES_CDN, IMAGE_VERSION } from './config';
+import { IMAGES_CDN, IMAGE_VERSION } from '../config';
 
 export default function useWrestlers() {
   const [wrestlers, setWrestlers] = useState([]);
