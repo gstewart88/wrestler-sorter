@@ -66,10 +66,11 @@
     "division": "Men's"
   },
   {
-    "name": "Manabu Nakanishi",
+    "name": "Keith Lee",
     "company": "Other",
-    "imageURL": "ManabuNakanishiNJPW.png",
-    "division": "Men's"
+    "imageURL": "KeithLeeAEW.png",
+    "division": "Men's",
+    "bio":""
   },
   {
     "name": "Kairi Sane",
@@ -95,6 +96,12 @@
     "imageURL": "MadisonRayneAEW.png",
     "division": "Women's",
     "bio":""
+  },
+  {
+    "name": "Manabu Nakanishi",
+    "company": "Other",
+    "imageURL": "ManabuNakanishiNJPW.png",
+    "division": "Men's"
   },
   {
     "name": "Mirai",
@@ -160,6 +167,13 @@
     "company": "Other",
     "imageURL": "SheamusWWE.png",
     "division": "Men's"
+  },
+  {
+    "name": "Tay Melo",
+    "company": "Other",
+    "imageURL": "TayMeloAEW.png",
+    "division": "Women's",
+    "bio":""
   },
   {
     "name": "Tonga Loa",
