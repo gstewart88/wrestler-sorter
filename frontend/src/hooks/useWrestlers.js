@@ -1,7 +1,7 @@
 // src/hooks/useWrestlers.js
 
 import { useState, useEffect } from 'react';
-import { IMAGES_CDN } from '../config';
+import { IMAGES_CDN, IMAGE_VERSION } from './config';
 
 export default function useWrestlers() {
   const [wrestlers, setWrestlers] = useState([]);
@@ -40,7 +40,7 @@ export default function useWrestlers() {
         // rewrite imageURL to point at our CDN using the uniform filename in JSON
         const all = allRaw.map(w => ({
           ...w,
-          imageURL: `${IMAGES_CDN}/${w.imageURL}`
+          imageURL: `${IMAGES_CDN}/${w.imageURL}?v=${IMAGE_VERSION}`
         }));
           const ids = all.map(w => (w.id ?? w.name) + '');
           const dup = ids.find((id, i) => ids.indexOf(id) !== i);
